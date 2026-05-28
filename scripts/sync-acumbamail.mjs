@@ -35,6 +35,7 @@ async function addToAcumbamail({ email, lang }) {
   params.set("merge_fields[email]", email);
   params.set("double_optin", "1");
   params.set("update_subscriber", "0");
+  params.set("response_type", "json");
 
   const r = await fetch("https://acumbamail.com/api/1/addSubscriber/", {
     method: "POST",
@@ -45,7 +46,11 @@ async function addToAcumbamail({ email, lang }) {
     body: params.toString(),
   });
   const text = await r.text();
-  const ok = r.ok && !/\berror\b/i.test(text);
+  // Éxito real: status 2xx Y la respuesta es un entero (subscriber_id) o un objeto sin "error".
+  let parsed = null;
+  try { parsed = JSON.parse(text); } catch (_) {}
+  const hasErrorField = parsed && typeof parsed === "object" && (parsed.error !== undefined || parsed.errors !== undefined);
+  const ok = r.ok && !hasErrorField && !/\berror\b/i.test(text);
   return { ok, status: r.status, body: text.slice(0, 300) };
 }
 
@@ -71,12 +76,12 @@ async function main() {
   for (const s of pending) {
     try {
       const r = await addToAcumbamail(s);
+      // Siempre logueamos el body para inspección.
+      console.log(`→ ${s.email}  HTTP ${r.status}  body=${r.body}`);
       if (r.ok) {
         synced.push(s.email);
-        console.log(`✓ ${s.email}`);
       } else {
         failed.push({ email: s.email, status: r.status, body: r.body });
-        console.error(`✗ ${s.email} → ${r.status} ${r.body}`);
       }
     } catch (e) {
       failed.push({ email: s.email, error: String(e?.message || e) });

@@ -15,6 +15,7 @@ function jsonResponse(data, status) {
 export async function onRequestPost({ request, env }) {
   const url = new URL(request.url);
   const key = url.searchParams.get("key") || "";
+  const undo = url.searchParams.get("undo") === "1"; // si =1, quita synced_at en vez de añadirlo
 
   if (!env || !env.ADMIN_KEY || key.length === 0 || key !== env.ADMIN_KEY) {
     return new Response("Forbidden", { status: 403 });
@@ -25,8 +26,10 @@ export async function onRequestPost({ request, env }) {
 
   let body = {};
   try { body = await request.json(); } catch (_) {}
+  // emails específicos o "all": true (con ?undo=1, resetea todos los synced)
+  const targetAll = body && body.all === true;
   const emails = Array.isArray(body && body.emails) ? body.emails : [];
-  if (emails.length === 0) {
+  if (!targetAll && emails.length === 0) {
     return jsonResponse({ ok: false, error: "no_emails" }, 400);
   }
 
@@ -34,15 +37,17 @@ export async function onRequestPost({ request, env }) {
   const marked = [];
   const failed = [];
 
-  for (const raw of emails) {
-    const email = String(raw || "").trim().toLowerCase();
-    if (!email) continue;
+  async function process(email) {
     const k = "subscriber:" + email;
     try {
       const cur = await env.SUBSCRIBERS.get(k);
-      if (!cur) { failed.push({ email, error: "not_found" }); continue; }
+      if (!cur) { failed.push({ email, error: "not_found" }); return; }
       const rec = JSON.parse(cur);
-      rec.synced_at = now;
+      if (undo) {
+        delete rec.synced_at;
+      } else {
+        rec.synced_at = now;
+      }
       await env.SUBSCRIBERS.put(k, JSON.stringify(rec));
       marked.push(email);
     } catch (e) {
@@ -50,5 +55,22 @@ export async function onRequestPost({ request, env }) {
     }
   }
 
-  return jsonResponse({ ok: true, marked_count: marked.length, marked, failed });
+  if (targetAll) {
+    let cursor;
+    while (true) {
+      const list = await env.SUBSCRIBERS.list({ prefix: "subscriber:", cursor });
+      for (const { name } of list.keys) {
+        await process(name.replace(/^subscriber:/, ""));
+      }
+      if (list.list_complete) break;
+      cursor = list.cursor;
+    }
+  } else {
+    for (const raw of emails) {
+      const email = String(raw || "").trim().toLowerCase();
+      if (email) await process(email);
+    }
+  }
+
+  return jsonResponse({ ok: true, mode: undo ? "undo" : "mark", count: marked.length, marked, failed });
 }
