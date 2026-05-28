@@ -8,21 +8,21 @@
     "features": "Funktionen",
     "tools": "Werkzeuge",
     "support": "Hilfe",
-    "download": "Beta beitreten",
+    "download": "Laden",
     "menu_open": "Menü öffnen",
     "menu_close": "Menü schließen"
   },
   "hero": {
-    "badge": "Bald · Mac App Store",
+    "badge": "Jetzt im Mac App Store",
     "title_line1": "Aufnehmen. Markieren.",
     "title_line2": "Mit einem Klick teilen.",
     "lead": "iSkitch ist eine moderne, native macOS-Neuauflage des klassischen Skitch. Lebt in deiner Menüleiste, jederzeit bereit für ⌥⌘4 — und teilt über das macOS-Teilen-Menü.",
-    "cta_primary": "Beta beitreten",
+    "cta_primary": "Kostenlos laden",
     "cta_secondary": "Was drin ist",
-    "appstore_coming_top": "Demnächst im",
+    "appstore_coming_top": "Verfügbar im",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
-      "Kostenlos während der Beta",
+      "Bis 15. Juni 2026 gratis",
       "Kein Tracking",
       "Universal Binary",
       "English · Español · Français · Deutsch"
@@ -46,20 +46,39 @@
     "lead": "14 Werkzeuge, immer einen Klick entfernt.",
     "names": ["Auswählen", "Pfeil", "Text", "Rechteck", "Ellipse", "Linie", "Hervorheben", "Pixeln", "Stempel", "Stift", "Spotlight", "Sticker", "Bild", "Zuschneiden"]
   },
+  "appstore": {
+    "url": "https://apps.apple.com/app/iskitch/id6773733499",
+    "badge_top": "Laden im",
+    "badge_bottom": "Mac App Store"
+  },
+  "pricing": {
+    "badge": "Preis",
+    "free_until": "Bis 15. Juni 2026 gratis",
+    "intro": "Jetzt kostenlos sichern. Ab dem 15. Juni wird sie kostenpflichtig — Einmalkauf, kein Abo.",
+    "price_display": "9,99 €",
+    "price_note": "Einmalkauf",
+    "price_amount": "9.99",
+    "price_currency": "EUR",
+    "meta": [
+      "macOS 14 oder neuer",
+      "Apple Silicon und Intel",
+      "Kein Tracking"
+    ]
+  },
   "beta": {
-    "badge": "Beta öffnet bald",
-    "title": "Sei der Erste, der iSkitch ausprobiert",
-    "lead": "Tritt der privaten Beta bei und erhalte die App, bevor sie im Mac App Store landet.",
+    "badge": "Bleib auf dem Laufenden",
+    "title": "Mehr Sprachen und Funktionen kommen",
+    "lead": "Wir arbeiten bereits an der nächsten Version mit mehr Sprachen. Hinterlass deine E-Mail und wir informieren dich über wichtige Updates.",
     "email_label": "Deine E-Mail",
     "email_placeholder": "du@beispiel.de",
-    "submit": "Beta beitreten",
-    "success": "Du bist dabei. Wir schreiben dir, sobald die Beta öffnet.",
+    "submit": "Benachrichtigen",
+    "success": "Du bist dabei. Wir melden uns bei wichtigen Updates.",
     "error": "Etwas ist schiefgelaufen. Versuche es erneut oder schreibe an hello@iskitch.com.",
-    "privacy_note": "Wir verwenden deine E-Mail nur für die Beta. Kein Marketing. Jederzeit abmeldbar."
+    "privacy_note": "Wir nutzen deine E-Mail nur für Produktneuigkeiten. Kein Spam. Jederzeit abbestellbar."
   },
   "cta": {
-    "title": "Bereit, iSkitch vor allen anderen auszuprobieren?",
-    "lead": "Melde dich für die Beta an und wir senden dir den Link, sobald sie öffnet.",
+    "title": "Mach heute deinen ersten Screenshot",
+    "lead": "Bis 15. Juni 2026 gratis im Mac App Store. Jetzt laden.",
     "button": "Anmelden"
   },
   "footer": {

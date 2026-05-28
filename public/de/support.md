@@ -4,7 +4,7 @@
 
 ## Schnellstart
 
-1. **Installiere iSkitch** aus dem Mac App Store (bald — bis dahin [tritt der Beta bei](https://iskitch.com/de/#beta)).
+1. **Installiere iSkitch** aus dem [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499) — bis 15. Juni 2026 gratis.
 2. **Öffne iSkitch.** Pfeilsymbol in der Menüleiste (oben rechts).
 3. **Erteile die Bildschirmaufnahme-Berechtigung** unter *Systemeinstellungen ▸ Datenschutz und Sicherheit ▸ Bildschirmaufnahme ▸ iSkitch ✓*. Starte iSkitch neu.
 4. **Drücke ⌥⌘4**, ziehe einen Bereich — Editor öffnet sich.

@@ -1,4 +1,5 @@
 ---
+import AppStoreBadge from "./AppStoreBadge.astro";
 interface Props { t: any }
 const { t } = Astro.props as Props;
 // Heros generados con la app real (tools/make_hero_screenshots.sh).
@@ -21,10 +22,7 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
       <p class="lead" set:html={t.hero.lead.replace(/⌥⌘4/g, '<kbd>⌥⌘4</kbd>')}></p>
 
       <div class="cta-row">
-        <a class="btn btn-primary btn-lg" href="#beta">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 12l1.4-1.4L11 16.2V4h2v12.2l5.6-5.6L20 12l-8 8z"/></svg>
-          {t.hero.cta_primary}
-        </a>
+        <AppStoreBadge t={t} size="lg" />
         <a class="btn btn-outline btn-lg" href="#features">{t.hero.cta_secondary}</a>
       </div>
 

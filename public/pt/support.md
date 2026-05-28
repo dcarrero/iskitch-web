@@ -4,7 +4,7 @@
 
 ## Arranque rápido
 
-1. **Instale o iSkitch** da Mac App Store (em breve — entretanto [entre na beta](https://iskitch.com/pt/#beta)).
+1. **Instale o iSkitch** da [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499) — grátis até 15 de junho de 2026.
 2. **Abra o iSkitch.** Ícone de seta na barra de menus.
 3. **Conceda Gravação de ecrã** em *Definições do Sistema ▸ Privacidade e segurança ▸ Gravação de ecrã ▸ iSkitch ✓*. Reinicie.
 4. **Carregue em ⌥⌘4**, arraste uma região — o editor abre.

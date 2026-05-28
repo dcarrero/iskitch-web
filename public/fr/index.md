@@ -2,10 +2,10 @@
 
 > iSkitch est une réinterprétation moderne et native pour macOS du classique Skitch — capturez une zone, une fenêtre ou tout l'écran, annotez-la instantanément et partagez en un clic.
 
-**Statut :** Bientôt sur le Mac App Store. Bêta privée bientôt disponible.
+**Statut :** Disponible maintenant sur le Mac App Store.
 **Plateforme :** macOS 14 ou ultérieur. Universal Binary (Apple Silicon + Intel).
 **Langues :** Français, English, Español.
-**Prix :** Gratuit pendant la bêta.
+**Prix :** Gratuit jusqu'au 15 juin 2026 — ensuite, un achat unique de 9,99 € (EUR). Sans abonnement.
 
 ## Qu'est-ce qu'iSkitch
 
@@ -26,9 +26,9 @@ Développée en SwiftUI + AppKit par [Color Vivo Internet, S.L.](https://colorvi
 
 Sélectionner · Flèche · Texte · Rectangle · Ellipse · Ligne · Surligner · Pixeliser · Tampon · Crayon · Spotlight · Autocollant · Image · Recadrer.
 
-## Bêta
+## Télécharger
 
-Rejoignez la bêta privée sur https://iskitch.com/fr/#beta et nous vous écrirons à l'ouverture. Nous utilisons votre email uniquement pour la bêta — pas de marketing.
+Téléchargez iSkitch sur le Mac App Store : https://apps.apple.com/app/iskitch/id6773733499 — gratuit jusqu'au 15 juin 2026, puis un achat unique de 9,99 €. Sans abonnement ni compte.
 
 ## Contact
 

@@ -1,0 +1,26 @@
+---
+import AppStoreBadge from "./AppStoreBadge.astro";
+interface Props { t: any }
+const { t } = Astro.props as Props;
+const p = t.pricing;
+---
+<section id="download" class="pricing">
+  <div class="container">
+    <div class="badge">{p.badge}</div>
+    <h2>{p.free_until}</h2>
+    <p class="lead">{p.intro}</p>
+
+    <div class="price-card">
+      <span class="price-amount">{p.price_display}</span>
+      <span class="price-note">{p.price_note}</span>
+    </div>
+
+    <div class="pricing-actions">
+      <AppStoreBadge t={t} size="lg" />
+    </div>
+
+    <ul class="pricing-meta">
+      {p.meta.map((m: string) => (<li><span class="dot dot-green"></span> {m}</li>))}
+    </ul>
+  </div>
+</section>

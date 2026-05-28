@@ -34,7 +34,9 @@ const homeSchema = {
   "description": t.meta.description,
   "url": canonical,
   "inLanguage": t.lang,
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder" },
+  "offers": { "@type": "Offer", "price": t.pricing.price_amount, "priceCurrency": t.pricing.price_currency, "availability": "https://schema.org/InStock", "url": t.appstore.url },
+  "downloadUrl": t.appstore.url,
+  "softwareVersion": "1.0",
   "publisher": { "@id": `${site}/#organization` },
   "image": `${site}/og-cover.png`
 };

@@ -6,7 +6,7 @@ Estamos para ayudar — echa un vistazo a las respuestas rápidas y, si no encue
 
 ## Inicio rápido
 
-1. **Instala iSkitch** desde la Mac App Store (próximamente — mientras tanto, [apúntate a la beta](https://iskitch.com/es/#beta)).
+1. **Instala iSkitch** desde la [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499) — gratis hasta el 15 de junio de 2026.
 2. **Abre iSkitch.** Verás un pequeño icono de flecha en la barra de menús (arriba a la derecha). La primera vez se muestra la ventana de bienvenida.
 3. **Concede el permiso de Grabación de pantalla** cuando macOS lo pida: *Ajustes del Sistema ▸ Privacidad y seguridad ▸ Grabación de pantalla ▸ iSkitch ✓*. Reinicia iSkitch.
 4. **Pulsa ⌥⌘4** en cualquier momento, arrastra para seleccionar una región — el editor se abre con todas las herramientas.

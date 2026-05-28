@@ -8,21 +8,21 @@
     "features": "機能",
     "tools": "ツール",
     "support": "サポート",
-    "download": "ベータに参加",
+    "download": "ダウンロード",
     "menu_open": "メニューを開く",
     "menu_close": "メニューを閉じる"
   },
   "hero": {
-    "badge": "近日公開 · Mac App Store",
+    "badge": "Mac App Store で配信中",
     "title_line1": "キャプチャ。注釈。",
     "title_line2": "ワンクリックで共有。",
     "lead": "iSkitch は伝説の Skitch を現代的に再構築した macOS ネイティブアプリです。メニューバーに常駐し、⌥⌘4 でいつでも起動 — macOS の共有シートから直接送れます。",
-    "cta_primary": "ベータに参加",
+    "cta_primary": "無料でダウンロード",
     "cta_secondary": "中身を見る",
-    "appstore_coming_top": "近日公開",
+    "appstore_coming_top": "配信中",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
-      "ベータ期間中は無料",
+      "2026年6月15日まで無料",
       "トラッキングなし",
       "Universal Binary",
       "English · Español · Français · Deutsch · Italiano · Português · 日本語"
@@ -46,20 +46,39 @@
     "lead": "14 種類のツール、いつでもワンクリック。",
     "names": ["選択", "矢印", "テキスト", "長方形", "楕円", "直線", "ハイライト", "ピクセル化", "スタンプ", "ペン", "スポットライト", "ステッカー", "画像", "切り抜き"]
   },
+  "appstore": {
+    "url": "https://apps.apple.com/app/iskitch/id6773733499",
+    "badge_top": "ダウンロード",
+    "badge_bottom": "Mac App Store"
+  },
+  "pricing": {
+    "badge": "価格",
+    "free_until": "2026年6月15日まで無料",
+    "intro": "今なら無料で入手できます。6月15日以降は有料に — 買い切り、サブスクなし。",
+    "price_display": "¥1,500",
+    "price_note": "買い切り",
+    "price_amount": "1500",
+    "price_currency": "JPY",
+    "meta": [
+      "macOS 14 以降",
+      "Apple Silicon と Intel",
+      "トラッキングなし"
+    ]
+  },
   "beta": {
-    "badge": "ベータ近日開始",
-    "title": "誰よりも早く iSkitch を試そう",
-    "lead": "プライベートベータに参加し、Mac App Store 公開前にアプリを入手しましょう。",
+    "badge": "最新情報をチェック",
+    "title": "対応言語と機能を追加予定",
+    "lead": "より多くの言語に対応した次のバージョンを準備中です。メールをご登録いただくと、大きなアップデートをお知らせします。",
     "email_label": "メールアドレス",
     "email_placeholder": "you@example.com",
-    "submit": "ベータに参加",
-    "success": "登録完了。ベータ開始時にメールでお知らせします。",
+    "submit": "通知を受け取る",
+    "success": "登録完了。大きなアップデートをお知らせします。",
     "error": "問題が発生しました。もう一度お試しいただくか、hello@iskitch.com までご連絡ください。",
-    "privacy_note": "メールアドレスはベータのためにのみ使用します。マーケティング配信はありません。いつでも解除できます。"
+    "privacy_note": "メールアドレスは製品の最新情報のためにのみ使用します。スパムはありません。いつでも解除できます。"
   },
   "cta": {
-    "title": "誰よりも先に iSkitch を試しませんか?",
-    "lead": "ベータに登録すると、開始時にリンクをお送りします。",
+    "title": "今日から使ってみよう",
+    "lead": "2026年6月15日まで Mac App Store で無料。今すぐダウンロード。",
     "button": "登録する"
   },
   "footer": {

@@ -151,6 +151,40 @@ a:hover { color: var(--brand-2); }
 .cta h2 { color: #fff; font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; margin: 0 0 14px; letter-spacing: -.01em; }
 .cta p { color: rgba(255,255,255,.95); font-size: 16px; max-width: 560px; margin: 0 auto 26px; line-height: 1.55; }
 
+/* App Store badge (estilo oficial "Download on the Mac App Store") */
+.appstore-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #000; color: #fff;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 0 18px; height: 48px;
+  text-decoration: none; line-height: 1;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.appstore-badge:hover { color: #fff; background: #1a1a1a; box-shadow: 0 10px 26px -12px rgba(0,0,0,.55); }
+.appstore-badge:active { transform: translateY(1px); }
+.appstore-badge__logo { flex: 0 0 auto; }
+.appstore-badge__text { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.appstore-badge__text small { font-size: 10px; font-weight: 500; letter-spacing: .01em; opacity: .92; }
+.appstore-badge__text strong { font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
+.appstore-badge--lg { height: 54px; padding: 0 22px; }
+.appstore-badge--lg .appstore-badge__text strong { font-size: 19px; }
+
+/* Pricing / download */
+.pricing { padding: 88px 0; background: linear-gradient(180deg, #fff 0%, #FFF5F8 100%); text-align: center; }
+.pricing .badge { margin-bottom: 16px; }
+.pricing h2 { font-size: clamp(28px, 3.5vw, 40px); font-weight: 800; letter-spacing: -.01em; margin: 0 0 12px; color: var(--ink-1); }
+.pricing .lead { max-width: 560px; margin: 0 auto 28px; color: var(--ink-2); font-size: 16px; line-height: 1.55; }
+.price-card { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; margin: 0 auto 26px; }
+.price-amount { font-size: clamp(38px, 5vw, 46px); font-weight: 800; letter-spacing: -.02em; color: var(--ink-1); line-height: 1; }
+.price-note { font-size: 12px; font-weight: 700; color: var(--brand-2); text-transform: uppercase; letter-spacing: .08em; }
+.pricing-actions { display: flex; justify-content: center; margin: 0 0 26px; }
+.pricing-meta { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 22px; padding: 0; margin: 0; font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.pricing-meta li { display: inline-flex; align-items: center; gap: 6px; }
+
+/* Badge del CTA final (sobre fondo rosa) */
+.cta-badge { display: flex; justify-content: center; }
+
 /* Footer */
 .footer { background: var(--ink-1); color: #fff; padding: 34px 0; font-size: 13px; }
 .footer-grid { display: flex; align-items: center; gap: 16px; }

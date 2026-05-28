@@ -4,7 +4,7 @@
 
 ## 빠른 시작
 
-1. **iSkitch를 Mac App Store에서 설치**(곧 출시 — 그동안 [베타에 등록](https://iskitch.com/ko/#beta)).
+1. **iSkitch를 [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499)에서 설치** — 2026년 6월 15일까지 무료.
 2. **iSkitch 실행.** 메뉴 막대(우측 상단)에 화살표 아이콘.
 3. **화면 녹화 권한 부여**: *시스템 설정 ▸ 개인정보 보호 및 보안 ▸ 화면 녹화 ▸ iSkitch ✓*. 재시작.
 4. **⌥⌘4 누르고** 영역을 드래그 — 편집기 열림.
