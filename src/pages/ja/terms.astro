@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/ja.json";
+const t = { ...baseT,
+  meta: {
+    title: "利用規約 — iSkitch",
+    description: "macOS 用 iSkitch の利用に適用される規約。Mac App Store にて Color Vivo Internet, S.L. が配布。"
+  }
+};
+---
+<Layout t={t} markdownPath="/ja/terms.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>利用規約</h1>
+    <p class="effective">発効日: 2026年5月28日</p>
+
+    <p>本規約(以下「<strong>規約</strong>」)は、macOS 用 <strong>iSkitch</strong> アプリ(以下「<strong>本アプリ</strong>」)の利用について定めます。本アプリはスペイン・マドリードに拠点を置く <strong>Color Vivo Internet, S.L.</strong>(以下「当社」)が配布します。本アプリのインストールまたは利用により、本規約に同意したものとみなされます。</p>
+
+    <h2>1. ライセンス</h2>
+    <p>本アプリは <strong>Mac App Store</strong> から無料で配布されます。Apple Media Services の規約および本規約に従い、お客様が所有または管理する Mac に本アプリをインストールおよび利用するための個人的・世界的・取り消し可能・非独占的・譲渡不能なライセンスを付与します。</p>
+
+    <h2>2. 本アプリの機能</h2>
+    <p>iSkitch は画面のキャプチャ、画像への注釈、共有を行うネイティブ macOS アプリです。処理はすべて Mac 上でローカルに実行されます。アカウントは不要で、当社サーバーには接続しません。</p>
+    <p>iSkitch は、Plasq により創作されその後 Evernote / Bending Spoons に保有された、終了済みの <em>Skitch</em> へのオマージュです。<strong>当社は Skitch ではなく、Plasq、Evernote、Bending Spoons との提携・支持・スポンサー関係はありません。</strong></p>
+
+    <h2>3. 権限と責任</h2>
+    <p>本アプリは macOS の <strong>画面収録</strong> 権限を必要とします。お客様は、キャプチャする内容、および画面上の素材に適用される法律・契約上の義務・第三者の権利の遵守について責任を負います。</p>
+
+    <h2>4. 「現状のまま」 — 保証なし</h2>
+    <p>本アプリは「<strong>現状のまま</strong>」「<strong>利用可能な範囲で</strong>」提供され、明示または黙示の保証はありません。</p>
+
+    <h2>5. 責任の制限</h2>
+    <p>法律で認められる最大限の範囲で、本アプリの使用に関連する間接的・付随的・特別・結果的・懲罰的損害(データ消失、業務損失、ダウンタイムを含む)について、当社は責任を負いません。EU の強行的消費者保護権を制限・排除するものではありません。</p>
+
+    <h2>6. 第三者サービス</h2>
+    <ul>
+      <li><strong>Apple</strong> — Mac App Store による配布、App Store 決済、画面収録 TCC 権限。</li>
+      <li><strong>macOS 共有エクステンション</strong>(Mail、メッセージなど)を共有シートから選択した場合。</li>
+    </ul>
+
+    <h2>7. アップデート</h2>
+    <p>Mac App Store を通じて配布。機能やアプリ自体を予告なく終了する場合があります。</p>
+
+    <h2>8. 本規約の変更</h2>
+    <p>本規約を随時更新することがあります。重要な変更は新しい発効日とともに本ページに掲載します。</p>
+
+    <h2>9. 準拠法</h2>
+    <p>本規約は<strong>スペイン法</strong>に準拠します。友好的に解決できない紛争は<strong>マドリード(スペイン)の裁判所</strong>に提起されます。EU 内の居住国における強行的消費者保護権は影響を受けません。</p>
+
+    <h2>10. 連絡先</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>マドリード、スペイン<br>メール: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>ウェブ: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>

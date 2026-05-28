@@ -10,11 +10,14 @@ const supportHref = `${prefix}/support`;
 // convención i18n para que cada usuario reconozca el suyo sin necesidad
 // de traducirlo (Wikipedia, MDN, etc. lo hacen así).
 const allLocales = [
-  { code: 'en', name: 'English',  href: '/' },
-  { code: 'es', name: 'Español',  href: '/es/' },
-  { code: 'fr', name: 'Français', href: '/fr/' },
-  { code: 'de', name: 'Deutsch',  href: '/de/' },
-  { code: 'it', name: 'Italiano', href: '/it/' }
+  { code: 'en', name: 'English',    href: '/' },
+  { code: 'es', name: 'Español',    href: '/es/' },
+  { code: 'fr', name: 'Français',   href: '/fr/' },
+  { code: 'de', name: 'Deutsch',    href: '/de/' },
+  { code: 'it', name: 'Italiano',   href: '/it/' },
+  { code: 'pt', name: 'Português',  href: '/pt/' },
+  { code: 'ja', name: '日本語',      href: '/ja/' },
+  { code: 'ko', name: '한국어',      href: '/ko/' }
 ];
 const current = allLocales.find(l => l.code === t.lang) ?? allLocales[0];
 ---

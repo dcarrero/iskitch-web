@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/pt.json";
+const t = { ...baseT,
+  meta: {
+    title: "Ajuda — iSkitch",
+    description: "Como instalar o iSkitch, conceder a permissão de Gravação de ecrã, perguntas frequentes e como contactar-nos."
+  }
+};
+---
+<Layout t={t} markdownPath="/pt/support.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Ajuda</h1>
+    <p class="effective">Estamos cá para ajudar — leia as respostas rápidas abaixo. Se não encontrar o que procura, escreva-nos.</p>
+
+    <h2>Arranque rápido</h2>
+    <ol>
+      <li><strong>Instale o iSkitch</strong> a partir da Mac App Store (em breve — entretanto, <a href="/pt/#beta">entre na beta</a>).</li>
+      <li><strong>Abra o iSkitch.</strong> Um pequeno ícone de seta aparece na barra de menus (canto superior direito). Na primeira vez, a janela de boas-vindas guia-o.</li>
+      <li><strong>Conceda a permissão de Gravação de ecrã</strong> quando o macOS pedir: <em>Definições do Sistema ▸ Privacidade e segurança ▸ Gravação de ecrã ▸ iSkitch ✓</em>. Reinicie o iSkitch.</li>
+      <li><strong>Carregue em <kbd>⌥⌘4</kbd></strong> em qualquer sítio, arraste para selecionar uma região — o editor abre com todas as ferramentas.</li>
+    </ol>
+
+    <h2>Perguntas frequentes</h2>
+
+    <h3>Porque é que o iSkitch não captura nada?</h3>
+    <p>A causa mais comum é a permissão de Gravação de ecrã. Após conceder, <strong>reinicie o iSkitch</strong>.</p>
+
+    <h3>Onde são guardadas as minhas capturas?</h3>
+    <p>O iSkitch nunca guarda em silêncio. Você decide o destino quando carrega em <strong>Guardar…</strong>. Em <em>iSkitch ▸ Definições ▸ Captura</em> pode fixar pasta e formato predefinidos.</p>
+
+    <h3>Posso mudar o atalho de captura?</h3>
+    <p>O atalho predefinido é <kbd>⌥⌘4</kbd>. Atalhos personalizáveis estão no roadmap.</p>
+
+    <h3>Como partilho para uma app específica?</h3>
+    <p>Carregue em <strong>Partilhar</strong> na barra inferior do editor. O macOS abre a folha de partilha nativa.</p>
+
+    <h3>O iSkitch envia os meus dados para algum sítio?</h3>
+    <p>Não. O iSkitch funciona totalmente offline — sem contas, rastreamento ou analítica. Mais info na nossa <a href="/pt/privacy">Política de privacidade</a>.</p>
+
+    <h3>Posso executar o iSkitch só quando preciso?</h3>
+    <p>Sim. Em <em>Definições ▸ Geral</em> desative <strong>"Manter o iSkitch na barra de menus"</strong>.</p>
+
+    <h3>Como escondo informação sensível numa captura?</h3>
+    <p>Use a ferramenta <strong>Pixelizar</strong>. Quatro estilos: <em>Pixelizar</em>, <em>Desfocar</em>, <em>Bloco sólido</em> e <em>Riscas</em>.</p>
+
+    <h3>Que Macs são compatíveis?</h3>
+    <p>macOS 14 (Sonoma) ou superior. Universal Binary — Apple Silicon e Intel.</p>
+
+    <h2>Precisa de mais ajuda?</h2>
+    <p>Escreva para <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Respondemos em 24-48 horas (seg-sex, hora CET).</p>
+
+    <h2>Legal</h2>
+    <p>
+      <a href="/pt/privacy">Privacidade</a> · <a href="/pt/terms">Termos de serviço</a>
+    </p>
+  </main>
+  <Footer t={t} />
+</Layout>

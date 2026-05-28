@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://iskitch.com',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'fr', 'de', 'it'],
+    locales: ['en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'ko'],
     routing: { prefixDefaultLocale: false }
   },
   build: {
@@ -20,7 +20,7 @@ export default defineConfig({
       // Una URL por idioma con sus alternates hreflang.
       i18n: {
         defaultLocale: 'en',
-        locales: { en: 'en', es: 'es', fr: 'fr', de: 'de', it: 'it' }
+        locales: { en: 'en', es: 'es', fr: 'fr', de: 'de', it: 'it', pt: 'pt', ja: 'ja', ko: 'ko' }
       }
     })
   ]

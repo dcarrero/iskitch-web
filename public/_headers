@@ -111,6 +111,51 @@
 /it/support/
   Link: </it/support.md>; rel="alternate"; type="text/markdown"
 
+/pt/
+  Link: </pt/index.md>; rel="alternate"; type="text/markdown"
+/pt/privacy
+  Link: </pt/privacy.md>; rel="alternate"; type="text/markdown"
+/pt/privacy/
+  Link: </pt/privacy.md>; rel="alternate"; type="text/markdown"
+/pt/terms
+  Link: </pt/terms.md>; rel="alternate"; type="text/markdown"
+/pt/terms/
+  Link: </pt/terms.md>; rel="alternate"; type="text/markdown"
+/pt/support
+  Link: </pt/support.md>; rel="alternate"; type="text/markdown"
+/pt/support/
+  Link: </pt/support.md>; rel="alternate"; type="text/markdown"
+
+/ja/
+  Link: </ja/index.md>; rel="alternate"; type="text/markdown"
+/ja/privacy
+  Link: </ja/privacy.md>; rel="alternate"; type="text/markdown"
+/ja/privacy/
+  Link: </ja/privacy.md>; rel="alternate"; type="text/markdown"
+/ja/terms
+  Link: </ja/terms.md>; rel="alternate"; type="text/markdown"
+/ja/terms/
+  Link: </ja/terms.md>; rel="alternate"; type="text/markdown"
+/ja/support
+  Link: </ja/support.md>; rel="alternate"; type="text/markdown"
+/ja/support/
+  Link: </ja/support.md>; rel="alternate"; type="text/markdown"
+
+/ko/
+  Link: </ko/index.md>; rel="alternate"; type="text/markdown"
+/ko/privacy
+  Link: </ko/privacy.md>; rel="alternate"; type="text/markdown"
+/ko/privacy/
+  Link: </ko/privacy.md>; rel="alternate"; type="text/markdown"
+/ko/terms
+  Link: </ko/terms.md>; rel="alternate"; type="text/markdown"
+/ko/terms/
+  Link: </ko/terms.md>; rel="alternate"; type="text/markdown"
+/ko/support
+  Link: </ko/support.md>; rel="alternate"; type="text/markdown"
+/ko/support/
+  Link: </ko/support.md>; rel="alternate"; type="text/markdown"
+
 # Fuente local — cache largo (es immutable, no cambia).
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable

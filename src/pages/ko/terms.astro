@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/ko.json";
+const t = { ...baseT,
+  meta: {
+    title: "이용약관 — iSkitch",
+    description: "macOS용 iSkitch 사용에 적용되는 약관. Color Vivo Internet, S.L.이 Mac App Store를 통해 배포."
+  }
+};
+---
+<Layout t={t} markdownPath="/ko/terms.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>이용약관</h1>
+    <p class="effective">시행일: 2026년 5월 28일</p>
+
+    <p>본 약관(이하 "<strong>약관</strong>")은 macOS용 <strong>iSkitch</strong> 앱(이하 "<strong>본 앱</strong>")의 사용을 규율합니다. 본 앱은 스페인 마드리드에 본사를 둔 <strong>Color Vivo Internet, S.L.</strong>(이하 "당사")이 배포합니다. 본 앱을 설치하거나 사용하면 본 약관에 동의하는 것으로 간주됩니다.</p>
+
+    <h2>1. 라이선스</h2>
+    <p>본 앱은 <strong>Mac App Store</strong>를 통해 무료로 배포됩니다. Apple Media Services 약관 및 본 약관에 따라, 사용자가 소유하거나 통제하는 Mac에 본 앱을 설치 및 사용할 수 있는 개인적, 전 세계적, 취소 가능, 비독점, 양도 불가능한 라이선스를 부여합니다.</p>
+
+    <h2>2. 본 앱의 기능</h2>
+    <p>iSkitch는 화면을 캡처하고 이미지에 주석을 달아 공유하는 macOS 네이티브 앱입니다. 모든 처리는 로컬에서 이루어집니다. 계정이 필요하지 않으며 당사 서버에 연결되지 않습니다.</p>
+    <p>iSkitch는 Plasq가 처음 만들고 이후 Evernote / Bending Spoons가 보유했던 단종된 <em>Skitch</em>에 대한 오마주입니다. <strong>당사는 Skitch가 아니며 Plasq, Evernote 또는 Bending Spoons와 제휴, 보증, 후원 관계에 있지 않습니다.</strong></p>
+
+    <h2>3. 권한과 책임</h2>
+    <p>본 앱은 macOS의 <strong>화면 녹화</strong> 권한을 필요로 합니다. 사용자는 캡처하는 콘텐츠와 화면상의 자료에 적용되는 법률, 계약, 제3자 권리를 준수할 책임을 집니다.</p>
+
+    <h2>4. "있는 그대로" — 보증 없음</h2>
+    <p>본 앱은 "<strong>있는 그대로</strong>", "<strong>가용한 상태로</strong>" 제공되며, 명시적이거나 묵시적인 어떠한 보증도 없습니다.</p>
+
+    <h2>5. 책임의 제한</h2>
+    <p>법이 허용하는 최대 범위 내에서, 당사는 데이터 손실, 작업 손실, 다운타임을 포함한 간접적, 부수적, 특별, 결과적, 징벌적 손해에 대해 책임지지 않습니다. EU의 강행적 소비자 보호 권리에는 영향을 주지 않습니다.</p>
+
+    <h2>6. 제3자 서비스</h2>
+    <ul>
+      <li><strong>Apple</strong> — Mac App Store 배포, App Store 결제, 화면 녹화 TCC 권한.</li>
+      <li><strong>macOS 공유 확장</strong>(메일, 메시지 등)을 공유 시트에서 선택하는 경우.</li>
+    </ul>
+
+    <h2>7. 업데이트</h2>
+    <p>Mac App Store를 통해 배포됩니다. 사전 통지 없이 기능이나 앱 자체를 중단할 수 있습니다.</p>
+
+    <h2>8. 본 약관의 변경</h2>
+    <p>당사는 본 약관을 언제든지 업데이트할 수 있습니다. 중요한 변경은 새로운 시행일과 함께 이 페이지에 게시됩니다.</p>
+
+    <h2>9. 준거법</h2>
+    <p>본 약관은 <strong>스페인 법</strong>에 따릅니다. 우호적으로 해결할 수 없는 분쟁은 <strong>마드리드(스페인) 법원</strong>에 제기됩니다. EU 거주국의 강행적 소비자 보호 권리에는 영향을 주지 않습니다.</p>
+
+    <h2>10. 문의</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>스페인 마드리드<br>이메일: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>웹: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>

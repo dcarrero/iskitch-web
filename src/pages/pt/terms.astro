@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/pt.json";
+const t = { ...baseT,
+  meta: {
+    title: "Termos de serviço — iSkitch",
+    description: "Os termos que regem o uso do iSkitch para macOS, distribuído pela Mac App Store pela Color Vivo Internet, S.L."
+  }
+};
+---
+<Layout t={t} markdownPath="/pt/terms.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Termos de serviço</h1>
+    <p class="effective">Data de entrada em vigor: 28 de maio de 2026</p>
+
+    <p>Estes termos (os "<strong>Termos</strong>") regem o uso da aplicação <strong>iSkitch</strong> para macOS (a "<strong>App</strong>"), distribuída pela <strong>Color Vivo Internet, S.L.</strong>, sociedade espanhola com sede em Madrid (Espanha) ("nós"). Ao instalar ou usar a App aceita estes Termos.</p>
+
+    <h2>1. Licença</h2>
+    <p>A App é distribuída gratuitamente através da <strong>Mac App Store</strong>. Concedemos-lhe uma licença pessoal, mundial, revogável, não exclusiva e intransferível para instalar e usar a App nos Macs que possui ou controla.</p>
+
+    <h2>2. O que a App faz</h2>
+    <p>O iSkitch é uma aplicação macOS nativa para capturar o ecrã, anotar imagens e partilhá-las. Todo o processamento é local. A App não requer conta e não se liga aos nossos servidores.</p>
+    <p>O iSkitch é uma homenagem ao <em>Skitch</em>, app descontinuada criada originalmente pela Plasq e mais tarde propriedade da Evernote / Bending Spoons. <strong>Não somos a Skitch nem estamos afiliados, apoiados ou patrocinados por essas entidades.</strong></p>
+
+    <h2>3. Permissões e responsabilidade</h2>
+    <p>A App requer a permissão <strong>Gravação de ecrã</strong>. É responsável pelo que captura e por cumprir todas as leis, obrigações contratuais ou direitos de terceiros aplicáveis ao conteúdo do seu ecrã.</p>
+
+    <h2>4. "Tal como está" — Sem garantia</h2>
+    <p>A App é fornecida "<strong>tal como está</strong>" e "<strong>conforme disponível</strong>", sem garantias de qualquer tipo, expressas ou implícitas.</p>
+
+    <h2>5. Limitação de responsabilidade</h2>
+    <p>No máximo permitido pela lei, não seremos responsáveis por danos indiretos, incidentais, especiais, consequenciais ou punitivos — incluindo perda de dados, trabalho ou tempo de inatividade — sem prejuízo dos direitos imperativos do consumidor na UE.</p>
+
+    <h2>6. Serviços de terceiros</h2>
+    <ul>
+      <li><strong>Apple</strong> — distribuição via Mac App Store, pagamentos da App Store e permissão TCC de Gravação de ecrã.</li>
+      <li><strong>Extensões de partilha do macOS</strong> da sua escolha (Mail, Mensagens, etc.).</li>
+    </ul>
+
+    <h2>7. Atualizações</h2>
+    <p>Distribuídas via Mac App Store. Podemos descontinuar funcionalidades sem aviso prévio.</p>
+
+    <h2>8. Alterações</h2>
+    <p>Podemos atualizar estes Termos a qualquer momento. Mudanças substanciais serão publicadas nesta página com nova data de entrada em vigor.</p>
+
+    <h2>9. Lei aplicável</h2>
+    <p>Estes Termos são regidos pela <strong>lei espanhola</strong>. Litígios serão submetidos aos <strong>tribunais de Madrid (Espanha)</strong>, sem prejuízo dos direitos imperativos do consumidor no seu país de residência na UE.</p>
+
+    <h2>10. Contacto</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>Madrid, Espanha<br>Email: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>Web: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>

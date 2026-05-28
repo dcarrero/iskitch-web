@@ -1,0 +1,75 @@
+{
+  "lang": "ja",
+  "meta": {
+    "title": "iSkitch — macOS でキャプチャ、注釈、共有",
+    "description": "iSkitch は伝説の Skitch を現代的に再構築した macOS ネイティブアプリです。領域・ウインドウ・全画面をキャプチャし、すぐに注釈を加えて、ワンクリックで共有できます。"
+  },
+  "nav": {
+    "features": "機能",
+    "tools": "ツール",
+    "support": "サポート",
+    "download": "ベータに参加",
+    "menu_open": "メニューを開く",
+    "menu_close": "メニューを閉じる"
+  },
+  "hero": {
+    "badge": "近日公開 · Mac App Store",
+    "title_line1": "キャプチャ。注釈。",
+    "title_line2": "ワンクリックで共有。",
+    "lead": "iSkitch は伝説の Skitch を現代的に再構築した macOS ネイティブアプリです。メニューバーに常駐し、⌥⌘4 でいつでも起動 — macOS の共有シートから直接送れます。",
+    "cta_primary": "ベータに参加",
+    "cta_secondary": "中身を見る",
+    "appstore_coming_top": "近日公開",
+    "appstore_coming_bottom": "Mac App Store",
+    "meta": [
+      "ベータ期間中は無料",
+      "トラッキングなし",
+      "Universal Binary",
+      "English · Español · Français · Deutsch · Italiano · Português · 日本語"
+    ],
+    "image_alt": "iSkitch 注釈エディタのスクリーンショット。マーケティングサイトのキャプチャに赤い矢印、テキストラベル、マゼンタのハイライト、ピクセル化された領域が描かれている — macOS 上で動作する注釈ツールのデモ。"
+  },
+  "features": {
+    "title": "今お使いの macOS のために",
+    "lead": "ネイティブ SwiftUI + AppKit。メニューバーに常駐。⌥⌘4 を押すまで邪魔をしません。",
+    "items": [
+      { "title": "なんでもキャプチャ", "desc": "領域 (⌥⌘4)、ウインドウ、全画面。エディタで直接開きます。" },
+      { "title": "14 種類の注釈ツール", "desc": "テーパード矢印、システムフォントによるテキスト、図形、マーカー、ペン、スタンプなど。" },
+      { "title": "機密情報を隠す", "desc": "ピクセル化、ぼかし、ベタ塗り、ストライプ — 読み取り不能に。" },
+      { "title": "ネイティブ共有", "desc": "macOS の共有シート、任意のアプリへのドラッグ、PNG/JPG/PDF として保存・コピー。" },
+      { "title": "スポットライトとトリミング", "desc": "重要な部分に注目させる。プリセット比率でトリミング。" },
+      { "title": "プライバシー第一", "desc": "アカウント不要。トラッキングなし。データは Mac から出ません。" }
+    ]
+  },
+  "tools": {
+    "title": "必要なマーキングツールがすべて",
+    "lead": "14 種類のツール、いつでもワンクリック。",
+    "names": ["選択", "矢印", "テキスト", "長方形", "楕円", "直線", "ハイライト", "ピクセル化", "スタンプ", "ペン", "スポットライト", "ステッカー", "画像", "切り抜き"]
+  },
+  "beta": {
+    "badge": "ベータ近日開始",
+    "title": "誰よりも早く iSkitch を試そう",
+    "lead": "プライベートベータに参加し、Mac App Store 公開前にアプリを入手しましょう。",
+    "email_label": "メールアドレス",
+    "email_placeholder": "you@example.com",
+    "submit": "ベータに参加",
+    "success": "登録完了。ベータ開始時にメールでお知らせします。",
+    "error": "問題が発生しました。もう一度お試しいただくか、hello@iskitch.com までご連絡ください。",
+    "privacy_note": "メールアドレスはベータのためにのみ使用します。マーケティング配信はありません。いつでも解除できます。"
+  },
+  "cta": {
+    "title": "誰よりも先に iSkitch を試しませんか?",
+    "lead": "ベータに登録すると、開始時にリンクをお送りします。",
+    "button": "登録する"
+  },
+  "footer": {
+    "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "links": [
+      { "text": "機能", "href": "/ja/#features" },
+      { "text": "プライバシー", "href": "/ja/privacy" },
+      { "text": "利用規約", "href": "/ja/terms" },
+      { "text": "サポート", "href": "/ja/support" },
+      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/ja.json";
+const t = { ...baseT,
+  meta: {
+    title: "サポート — iSkitch",
+    description: "iSkitch のインストール方法、画面収録の許可、よくある質問、連絡方法。"
+  }
+};
+---
+<Layout t={t} markdownPath="/ja/support.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>サポート</h1>
+    <p class="effective">お手伝いいたします — 下のクイック回答をご覧いただき、必要なものが見つからない場合はご連絡ください。</p>
+
+    <h2>クイックスタート</h2>
+    <ol>
+      <li><strong>iSkitch をインストール</strong> Mac App Store から(近日公開 — それまでは <a href="/ja/#beta">ベータにご登録</a> ください)。</li>
+      <li><strong>iSkitch を開く。</strong> メニューバー(右上)に小さな矢印アイコンが表示されます。</li>
+      <li><strong>画面収録を許可</strong>: <em>システム設定 ▸ プライバシーとセキュリティ ▸ 画面収録 ▸ iSkitch ✓</em>。iSkitch を再起動。</li>
+      <li><strong><kbd>⌥⌘4</kbd> を押す</strong>と、ドラッグで領域を選択でき、エディタが開きます。</li>
+    </ol>
+
+    <h2>よくある質問</h2>
+
+    <h3>iSkitch がキャプチャできないのはなぜ?</h3>
+    <p>多くの場合、画面収録の許可が原因です。許可後、<strong>iSkitch を再起動</strong>してください。</p>
+
+    <h3>キャプチャはどこに保存されますか?</h3>
+    <p>iSkitch は自動保存しません。<strong>保存…</strong> を押したときに保存先を選びます。<em>iSkitch ▸ 設定 ▸ キャプチャ</em> で既定のフォルダと形式を指定できます。</p>
+
+    <h3>キャプチャのショートカットは変更できますか?</h3>
+    <p>既定は <kbd>⌥⌘4</kbd> です。ショートカットのカスタマイズはロードマップに含まれています。</p>
+
+    <h3>特定のアプリへ共有するには?</h3>
+    <p>エディタ下部の <strong>共有</strong> をクリックすると、macOS のネイティブ共有シートが開きます。</p>
+
+    <h3>iSkitch は私のデータをどこかへ送信しますか?</h3>
+    <p>いいえ。完全オフラインで動作します。詳しくは <a href="/ja/privacy">プライバシーポリシー</a> をご覧ください。</p>
+
+    <h3>必要なときだけ iSkitch を実行できますか?</h3>
+    <p>はい。<em>設定 ▸ 一般</em> で <strong>「メニューバーに常駐」</strong> をオフにしてください。</p>
+
+    <h3>機密情報を隠すには?</h3>
+    <p><strong>ピクセル化</strong> ツールを使用します。4 種類:ピクセル化、ぼかし、ベタ塗り、ストライプ。</p>
+
+    <h3>対応する Mac は?</h3>
+    <p>macOS 14 (Sonoma) 以降。Universal Binary。</p>
+
+    <h2>まだ解決しない場合</h2>
+    <p><a href="mailto:hello@iskitch.com">hello@iskitch.com</a> までご連絡ください。月〜金、CET、24〜48 時間以内に返信します。</p>
+
+    <h2>規約等</h2>
+    <p>
+      <a href="/ja/privacy">プライバシーポリシー</a> · <a href="/ja/terms">利用規約</a>
+    </p>
+  </main>
+  <Footer t={t} />
+</Layout>

@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/ko.json";
+const t = { ...baseT,
+  meta: {
+    title: "개인정보처리방침 — iSkitch",
+    description: "iSkitch가 데이터를 다루는 방식: 아무 것도 수집하지 않습니다. 캡처는 Mac에 남아 있으며 앱은 저희 서버에 연결되지 않습니다."
+  }
+};
+---
+<Layout t={t} markdownPath="/ko/privacy.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>개인정보처리방침</h1>
+    <p class="effective">시행일: 2026년 5월 28일</p>
+
+    <p>본 방침은 macOS용 <strong>iSkitch</strong> 앱이 사용자 데이터를 어떻게 다루는지 설명합니다. 본 앱은 스페인 마드리드에 본사를 둔 <strong>Color Vivo Internet, S.L.</strong>이 개발 및 배포합니다.</p>
+
+    <h2>요약</h2>
+    <ul>
+      <li><strong>개인정보를 수집하지 않습니다.</strong></li>
+      <li><strong>분석도 추적도 없습니다.</strong> 텔레메트리, 분석 SDK, 크래시 리포팅 없음.</li>
+      <li><strong>캡처는 Mac에 남아 있습니다.</strong> 모든 처리는 로컬에서 수행됩니다.</li>
+      <li><strong>화면 녹화 권한은 요청 시에만.</strong> 캡처를 시작할 때만 macOS가 권한을 요청합니다.</li>
+    </ul>
+
+    <h2>앱이 기기에 저장하는 것</h2>
+    <p>세션 간 환경설정을 기억하기 위해 약간의 정보를 Mac에 저장합니다: <code>UserDefaults</code>의 환경설정(기본 내보내기 형식, 폴더, 외관, 언어 등), 편집기 창의 위치/크기, 그리고 사용자가 명시적으로 내보낸 파일. 어떤 것도 저희에게 전송되지 않습니다.</p>
+
+    <h2>앱이 네트워크로 보내는 것</h2>
+    <p>iSkitch는 <strong>자체적으로 외부 연결을 만들지 않습니다</strong>. 사용자의 데이터를 받는 서버를 운영하지 않습니다. 선택적 <code>com.apple.security.network.client</code> entitlement는 macOS 공유 시트를 통해 사용자가 직접 시작한 공유가 작동하기 위해서만 선언되어 있습니다.</p>
+
+    <h2>iSkitch가 요청할 수 있는 권한</h2>
+    <ul>
+      <li><strong>화면 녹화</strong>(필수): <em>시스템 설정 ▸ 개인정보 보호 및 보안 ▸ 화면 녹화</em>에서 부여.</li>
+      <li><strong>파일 접근</strong>: 표준 열기/저장 패널.</li>
+      <li><strong>클립보드/드래그 앤 드롭</strong>.</li>
+    </ul>
+
+    <h2>이 웹사이트(iskitch.com)에 대하여</h2>
+    <p>마케팅 웹사이트 <strong>iskitch.com</strong>은 <strong>Google Analytics 4</strong>를 사용하여 집계된 트래픽(방문 페이지, 국가, 브라우저)을 파악합니다. Google이 쿠키를 설정하고 EU 외부에서 데이터를 처리할 수 있습니다. 이 정보를 개인 식별, 프로파일링, 광고에는 <strong>사용하지 않습니다</strong>.</p>
+    <p>홈페이지 양식을 통해 비공개 베타에 등록하시면 이메일 주소를 Cloudflare KV에 저장하고 뉴스레터 제공업체 <strong>Acumbamail</strong>로 한 번 복사합니다. 베타 시작 시 알려 드리기 위해서만 사용합니다. <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>으로 언제든 삭제를 요청할 수 있습니다.</p>
+    <p>웹사이트의 데이터 수집은 <strong>앱과는 독립적</strong>입니다. Mac의 iSkitch에는 Google Analytics나 어떤 추적 SDK도 포함되어 있지 않습니다.</p>
+
+    <h2>제3자로서의 Apple</h2>
+    <p>iSkitch는 <strong>Mac App Store</strong>를 통해 배포됩니다. Apple은 다운로드, 평점, 결제, 진단 데이터에 대해 독립적인 처리자로 행동합니다. <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple의 개인정보처리방침</a>을 참조하세요.</p>
+
+    <h2>아동</h2>
+    <p>iSkitch는 App Store에서 <strong>4+</strong>로 분류되며 모든 연령에 적합합니다. 13세 미만을 포함한 누구로부터도 데이터를 의도적으로 수집하지 않습니다.</p>
+
+    <h2>GDPR 권리</h2>
+    <p>iSkitch는 서버 측 처리를 수행하지 않으며 저희가 사용자 데이터를 전혀 받지 않으므로, 저희가 보유한 접근·수정·이전·삭제 대상 개인정보는 존재하지 않습니다.</p>
+
+    <h2>본 방침의 변경</h2>
+    <p>iSkitch가 데이터를 다루는 방식이 변경되면, 사용자에게 영향이 미치기 전에 새로운 시행일로 이 페이지가 업데이트됩니다.</p>
+
+    <h2>문의</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>스페인 마드리드<br>이메일: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>웹: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>
