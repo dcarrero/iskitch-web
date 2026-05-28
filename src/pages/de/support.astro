@@ -1,0 +1,69 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/de.json";
+const t = { ...baseT,
+  meta: {
+    title: "Hilfe — iSkitch",
+    description: "Wie du iSkitch installierst, die Bildschirmaufnahme-Berechtigung erteilst, häufige Fragen und wie du uns erreichst."
+  }
+};
+---
+<Layout t={t} markdownPath="/de/support.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Hilfe</h1>
+    <p class="effective">Wir helfen gerne — lies die schnellen Antworten unten. Wenn du nicht findest, was du suchst, schreib uns.</p>
+
+    <h2>Schnellstart</h2>
+    <ol>
+      <li><strong>Installiere iSkitch</strong> aus dem Mac App Store (bald — bis dahin <a href="/de/#beta">tritt der Beta bei</a>).</li>
+      <li><strong>Öffne iSkitch.</strong> Ein kleines Pfeilsymbol erscheint in der Menüleiste (oben rechts). Beim ersten Mal führt dich das Willkommensfenster.</li>
+      <li><strong>Erteile die Bildschirmaufnahme-Berechtigung</strong>, wenn macOS fragt: <em>Systemeinstellungen ▸ Datenschutz und Sicherheit ▸ Bildschirmaufnahme ▸ iSkitch ✓</em>. Starte iSkitch neu.</li>
+      <li><strong>Drücke <kbd>⌥⌘4</kbd></strong> irgendwo, ziehe einen Bereich — der Editor öffnet sich mit allen Annotationswerkzeugen.</li>
+    </ol>
+
+    <h2>Häufige Fragen</h2>
+
+    <h3>Warum nimmt iSkitch nichts auf?</h3>
+    <p>Der häufigste Grund ist die Bildschirmaufnahme-Berechtigung. Nach dem ersten Start fragt macOS danach; nach der Erteilung musst du <strong>iSkitch neu starten</strong>, damit sie wirksam wird.</p>
+
+    <h3>Wo werden meine Aufnahmen gespeichert?</h3>
+    <p>iSkitch speichert nie still im Hintergrund. Du entscheidest mit <strong>Sichern…</strong>, wohin jede Aufnahme geht. Unter <em>iSkitch ▸ Einstellungen ▸ Aufnahme</em> kannst du einen <strong>Standardordner</strong> und ein <strong>Standardformat</strong> festlegen.</p>
+
+    <h3>Kann ich das Aufnahme-Kürzel ändern?</h3>
+    <p>Standard ist <kbd>⌥⌘4</kbd>. Anpassbare Kürzel sind auf der Roadmap.</p>
+
+    <h3>Wie teile ich an eine bestimmte App?</h3>
+    <p>Klicke auf <strong>Teilen</strong> in der Editor-Leiste unten. macOS öffnet das native Teilen-Menü mit allen Apps, die Bilder annehmen. Du kannst das Bild auch direkt aus iSkitch in jede App ziehen.</p>
+
+    <h3>Sendet iSkitch meine Daten irgendwohin?</h3>
+    <p>Nein. iSkitch arbeitet komplett offline — keine Konten, kein Tracking, keine Analytik. Aufnahmen bleiben auf deinem Mac. Mehr in unserer <a href="/de/privacy">Datenschutzrichtlinie</a>.</p>
+
+    <h3>Kann ich iSkitch nur bei Bedarf laufen lassen?</h3>
+    <p>Ja. Unter <em>Einstellungen ▸ Allgemein</em> deaktiviere <strong>"iSkitch in der Menüleiste behalten (beim Anmelden öffnen)"</strong>.</p>
+
+    <h3>Wie verberge ich sensible Infos in einem Screenshot?</h3>
+    <p>Nutze das Werkzeug <strong>Pixeln</strong> — ziehe über den zu verbergenden Bereich. Du kannst zwischen vier Stilen wählen: <em>Pixeln</em>, <em>Weichzeichnen</em>, <em>Fester Block</em> und <em>Streifen</em>.</p>
+
+    <h3>Welche Macs sind kompatibel?</h3>
+    <p>macOS 14 (Sonoma) oder neuer. Universal Binary — läuft nativ auf Apple Silicon und Intel.</p>
+
+    <h2>Brauchst du weitere Hilfe?</h2>
+    <p>Schreib uns an <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Wir lesen jede Nachricht und versuchen, in 24-48 Stunden (Mo-Fr, MEZ) zu antworten.</p>
+    <p>Beim Melden eines Bugs bitte angeben:</p>
+    <ul>
+      <li>macOS-Version (Apple-Menü ▸ Über diesen Mac)</li>
+      <li>iSkitch-Version (Einstellungen ▸ Allgemein — unten)</li>
+      <li>Was du getan hast und was du erwartet hast</li>
+      <li>Ein Screenshot, falls relevant (kannst du mit iSkitch machen 😉)</li>
+    </ul>
+
+    <h2>Rechtliches</h2>
+    <p>
+      <a href="/de/privacy">Datenschutz</a> · <a href="/de/terms">Nutzungsbedingungen</a>
+    </p>
+  </main>
+  <Footer t={t} />
+</Layout>

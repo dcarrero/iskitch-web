@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Hero from "../../components/Hero.astro";
+import Features from "../../components/Features.astro";
+import Tools from "../../components/Tools.astro";
+import BetaSignup from "../../components/BetaSignup.astro";
+import CTA from "../../components/CTA.astro";
+import Footer from "../../components/Footer.astro";
+import t from "../../i18n/it.json";
+---
+<Layout t={t} isHome={true} markdownPath="/it/index.md">
+  <Nav t={t} />
+  <main id="main">
+    <Hero t={t} />
+    <Features t={t} />
+    <Tools t={t} />
+    <BetaSignup t={t} />
+    <CTA t={t} />
+  </main>
+  <Footer t={t} />
+</Layout>

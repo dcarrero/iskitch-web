@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/de.json";
+const t = { ...baseT,
+  meta: {
+    title: "Nutzungsbedingungen — iSkitch",
+    description: "Die Bedingungen, die deine Nutzung von iSkitch für macOS regeln, vertrieben über den Mac App Store durch Color Vivo Internet, S.L."
+  }
+};
+---
+<Layout t={t} markdownPath="/de/terms.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Nutzungsbedingungen</h1>
+    <p class="effective">Gültig ab: 28. Mai 2026</p>
+
+    <p>Diese Bedingungen (die "<strong>Bedingungen</strong>") regeln deine Nutzung der macOS-App <strong>iSkitch</strong> (die "<strong>App</strong>"), vertrieben von <strong>Color Vivo Internet, S.L.</strong>, einer spanischen Gesellschaft mit Sitz in Madrid (Spanien) ("wir", "uns"). Mit der Installation oder Nutzung der App akzeptierst du diese Bedingungen.</p>
+
+    <h2>1. Lizenz</h2>
+    <p>Die App wird kostenlos über den <strong>Mac App Store</strong> vertrieben. Wir gewähren dir eine persönliche, weltweite, widerrufliche, nicht ausschließliche, nicht übertragbare Lizenz zur Installation und Nutzung der App auf Macs, die du besitzt oder kontrollierst, gemäß den Apple Media Services Allgemeinen Geschäftsbedingungen und diesen Bedingungen.</p>
+
+    <h2>2. Was die App tut</h2>
+    <p>iSkitch ist eine native macOS-Anwendung zur Bildschirmaufnahme, Annotation von Bildern und deren Teilen. Die gesamte Verarbeitung erfolgt lokal auf deinem Mac. Die App benötigt kein Konto und verbindet sich nicht mit unseren Servern.</p>
+    <p>iSkitch ist eine Hommage an die eingestellte App <em>Skitch</em>, ursprünglich von Plasq und später im Besitz von Evernote / Bending Spoons. <strong>Wir sind nicht Skitch und nicht mit Plasq, Evernote oder Bending Spoons verbunden, befürwortet oder gesponsert.</strong></p>
+
+    <h2>3. Berechtigungen und Verantwortung</h2>
+    <p>Die App benötigt die macOS-Berechtigung <strong>Bildschirmaufnahme</strong>. Du bist verantwortlich für die Inhalte, die du aufnimmst, und für die Einhaltung aller Gesetze, vertraglichen Verpflichtungen oder Rechte Dritter, die für das Material auf deinem Bildschirm gelten.</p>
+
+    <h2>4. "Wie besehen" — Keine Garantie</h2>
+    <p>Die App wird "<strong>wie besehen</strong>" und "<strong>wie verfügbar</strong>" bereitgestellt, ohne ausdrückliche oder stillschweigende Gewährleistungen jeglicher Art.</p>
+
+    <h2>5. Haftungsbeschränkung</h2>
+    <p>Im gesetzlich zulässigen Umfang haften wir nicht für indirekte, beiläufige, besondere, Folge- oder Strafschäden — einschließlich Datenverlust, Arbeitsverlust oder Ausfallzeiten — die sich aus oder im Zusammenhang mit deiner Nutzung der App ergeben. Nichts in diesen Bedingungen beschränkt oder schließt eine Haftung aus, die nach geltendem Recht nicht beschränkt oder ausgeschlossen werden kann (insbesondere zwingende EU-Verbraucherrechte).</p>
+
+    <h2>6. Drittanbieter-Dienste</h2>
+    <ul>
+      <li><strong>Apple</strong> — Vertrieb über Mac App Store, App-Store-Zahlungen und TCC-Bildschirmaufnahmeberechtigung.</li>
+      <li><strong>macOS-Teilen-Erweiterungen</strong> deiner Wahl (Mail, Nachrichten usw.) bei Verwendung des nativen Teilen-Menüs.</li>
+    </ul>
+
+    <h2>7. Aktualisierungen</h2>
+    <p>Updates werden über den Mac App Store verteilt. Wir können Funktionen oder die App selbst ohne Vorankündigung einstellen.</p>
+
+    <h2>8. Änderungen dieser Bedingungen</h2>
+    <p>Wir können diese Bedingungen jederzeit aktualisieren. Wesentliche Änderungen werden auf dieser Seite mit einem neuen Stichdatum veröffentlicht.</p>
+
+    <h2>9. Geltendes Recht</h2>
+    <p>Diese Bedingungen unterliegen <strong>spanischem Recht</strong>. Streitigkeiten, die nicht gütlich beigelegt werden können, werden den <strong>Gerichten von Madrid (Spanien)</strong> vorgelegt, unbeschadet der zwingenden Verbraucherschutzrechte, die dir in deinem Wohnsitzland innerhalb der EU zustehen.</p>
+
+    <h2>10. Kontakt</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>Madrid, Spanien<br>E-Mail: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>Web: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>

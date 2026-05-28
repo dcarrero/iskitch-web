@@ -1,0 +1,75 @@
+{
+  "lang": "de",
+  "meta": {
+    "title": "iSkitch — Aufnehmen, markieren und teilen für macOS",
+    "description": "iSkitch ist eine moderne, native macOS-Neuauflage des klassischen Skitch — nimm einen Bereich, ein Fenster oder den ganzen Bildschirm auf, markiere es sofort und teile es mit einem Klick."
+  },
+  "nav": {
+    "features": "Funktionen",
+    "tools": "Werkzeuge",
+    "support": "Hilfe",
+    "download": "Beta beitreten",
+    "menu_open": "Menü öffnen",
+    "menu_close": "Menü schließen"
+  },
+  "hero": {
+    "badge": "Bald · Mac App Store",
+    "title_line1": "Aufnehmen. Markieren.",
+    "title_line2": "Mit einem Klick teilen.",
+    "lead": "iSkitch ist eine moderne, native macOS-Neuauflage des klassischen Skitch. Lebt in deiner Menüleiste, jederzeit bereit für ⌥⌘4 — und teilt über das macOS-Teilen-Menü.",
+    "cta_primary": "Beta beitreten",
+    "cta_secondary": "Was drin ist",
+    "appstore_coming_top": "Demnächst im",
+    "appstore_coming_bottom": "Mac App Store",
+    "meta": [
+      "Kostenlos während der Beta",
+      "Kein Tracking",
+      "Universal Binary",
+      "English · Español · Français · Deutsch"
+    ],
+    "image_alt": "Screenshot des iSkitch-Annotationseditors mit einer aufgenommenen Marketing-Website, roten Pfeilen, Textbeschriftungen, magenta Hervorhebung und pixelisierten Bereichen — Annotationswerkzeuge in Aktion auf macOS."
+  },
+  "features": {
+    "title": "Gebaut für das macOS, das du heute nutzt",
+    "lead": "Natives SwiftUI + AppKit. Lebt in der Menüleiste. Bleibt aus deinem Weg, bis du ⌥⌘4 drückst.",
+    "items": [
+      { "title": "Nimm alles auf", "desc": "Bereich (⌥⌘4), Fenster oder ganzer Bildschirm. Öffnet direkt im Editor." },
+      { "title": "14 Annotationswerkzeuge", "desc": "Spitz zulaufende Pfeile, Text mit Systemschriften, Formen, Textmarker, Stift, Stempel und mehr." },
+      { "title": "Sensible Infos verbergen", "desc": "Pixeln, weichzeichnen, fester Block oder Streifen — zuverlässig unleserlich." },
+      { "title": "Natives Teilen", "desc": "macOS-Teilen-Menü, in jede App ziehen, als PNG/JPG/PDF kopieren oder speichern." },
+      { "title": "Spotlight und Zuschnitt", "desc": "Lenke die Aufmerksamkeit auf das Wesentliche. Schneide mit Seitenverhältnis-Voreinstellungen zu." },
+      { "title": "Datenschutz zuerst", "desc": "Keine Konten. Kein Tracking. Keine Daten verlassen deinen Mac." }
+    ]
+  },
+  "tools": {
+    "title": "Alle Markierungswerkzeuge, die du brauchst",
+    "lead": "14 Werkzeuge, immer einen Klick entfernt.",
+    "names": ["Auswählen", "Pfeil", "Text", "Rechteck", "Ellipse", "Linie", "Hervorheben", "Pixeln", "Stempel", "Stift", "Spotlight", "Sticker", "Bild", "Zuschneiden"]
+  },
+  "beta": {
+    "badge": "Beta öffnet bald",
+    "title": "Sei der Erste, der iSkitch ausprobiert",
+    "lead": "Tritt der privaten Beta bei und erhalte die App, bevor sie im Mac App Store landet.",
+    "email_label": "Deine E-Mail",
+    "email_placeholder": "du@beispiel.de",
+    "submit": "Beta beitreten",
+    "success": "Du bist dabei. Wir schreiben dir, sobald die Beta öffnet.",
+    "error": "Etwas ist schiefgelaufen. Versuche es erneut oder schreibe an hello@iskitch.com.",
+    "privacy_note": "Wir verwenden deine E-Mail nur für die Beta. Kein Marketing. Jederzeit abmeldbar."
+  },
+  "cta": {
+    "title": "Bereit, iSkitch vor allen anderen auszuprobieren?",
+    "lead": "Melde dich für die Beta an und wir senden dir den Link, sobald sie öffnet.",
+    "button": "Anmelden"
+  },
+  "footer": {
+    "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "links": [
+      { "text": "Funktionen", "href": "/de/#features" },
+      { "text": "Datenschutz", "href": "/de/privacy" },
+      { "text": "AGB", "href": "/de/terms" },
+      { "text": "Hilfe", "href": "/de/support" },
+      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+    ]
+  }
+}

@@ -69,6 +69,48 @@
 /fr/support/
   Link: </fr/support.md>; rel="alternate"; type="text/markdown"
 
+/de/
+  Link: </de/index.md>; rel="alternate"; type="text/markdown"
+
+/de/privacy
+  Link: </de/privacy.md>; rel="alternate"; type="text/markdown"
+
+/de/privacy/
+  Link: </de/privacy.md>; rel="alternate"; type="text/markdown"
+
+/de/terms
+  Link: </de/terms.md>; rel="alternate"; type="text/markdown"
+
+/de/terms/
+  Link: </de/terms.md>; rel="alternate"; type="text/markdown"
+
+/de/support
+  Link: </de/support.md>; rel="alternate"; type="text/markdown"
+
+/de/support/
+  Link: </de/support.md>; rel="alternate"; type="text/markdown"
+
+/it/
+  Link: </it/index.md>; rel="alternate"; type="text/markdown"
+
+/it/privacy
+  Link: </it/privacy.md>; rel="alternate"; type="text/markdown"
+
+/it/privacy/
+  Link: </it/privacy.md>; rel="alternate"; type="text/markdown"
+
+/it/terms
+  Link: </it/terms.md>; rel="alternate"; type="text/markdown"
+
+/it/terms/
+  Link: </it/terms.md>; rel="alternate"; type="text/markdown"
+
+/it/support
+  Link: </it/support.md>; rel="alternate"; type="text/markdown"
+
+/it/support/
+  Link: </it/support.md>; rel="alternate"; type="text/markdown"
+
 # Fuente local — cache largo (es immutable, no cambia).
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable

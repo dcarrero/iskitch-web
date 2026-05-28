@@ -1,20 +1,22 @@
 ---
 interface Props { t: any }
 const { t } = Astro.props as Props;
-// Prefijo del idioma actual ('' para EN, '/es' para ES, '/fr' para FR).
+// Prefijo del idioma actual ('' para EN, '/<code>' para el resto).
 const prefix = t.lang === 'en' ? '' : `/${t.lang}`;
 const homeHref = `${prefix}/`;
 const supportHref = `${prefix}/support`;
 
-// Idiomas alternativos para el switcher. Si la page especifica t.alternates
-// los usamos tal cual; si no, asumimos la portada de cada idioma.
+// Catálogo de idiomas disponibles. El nombre nativo (autonym) es la
+// convención i18n para que cada usuario reconozca el suyo sin necesidad
+// de traducirlo (Wikipedia, MDN, etc. lo hacen así).
 const allLocales = [
-  { code: 'en', label: 'EN', href: '/' },
-  { code: 'es', label: 'ES', href: '/es/' },
-  { code: 'fr', label: 'FR', href: '/fr/' }
+  { code: 'en', name: 'English',  href: '/' },
+  { code: 'es', name: 'Español',  href: '/es/' },
+  { code: 'fr', name: 'Français', href: '/fr/' },
+  { code: 'de', name: 'Deutsch',  href: '/de/' },
+  { code: 'it', name: 'Italiano', href: '/it/' }
 ];
-const alternates: { code: string; label: string; href: string }[] =
-  (t.alternates as any) ?? allLocales.filter(l => l.code !== t.lang);
+const current = allLocales.find(l => l.code === t.lang) ?? allLocales[0];
 ---
 <nav class="nav" id="nav">
   <a class="brand" href={homeHref}>
@@ -31,11 +33,26 @@ const alternates: { code: string; label: string; href: string }[] =
   </div>
 
   <div class="nav-actions">
-    <div class="lang-switch" role="group" aria-label="Language">
-      {alternates.map((l) => (
-        <a class="lang" href={l.href} hreflang={l.code} aria-label={`Switch to ${l.label}`}>{l.label}</a>
-      ))}
-    </div>
+    <details class="lang-menu" aria-label="Language">
+      <summary class="lang" aria-label={`Language: ${current.name}`}>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+        </svg>
+        <span class="lang-current">{current.name}</span>
+        <svg viewBox="0 0 12 12" width="9" height="9" fill="currentColor" aria-hidden="true"><path d="M6 8L1.5 3.5h9z"/></svg>
+      </summary>
+      <ul class="lang-list" role="menu">
+        {allLocales.map((l) => (
+          <li role="none">
+            <a role="menuitem" href={l.href} hreflang={l.code} aria-current={l.code === t.lang ? 'true' : undefined} class={l.code === t.lang ? 'is-active' : ''}>
+              {l.name}
+              <span class="lang-code">{l.code.toUpperCase()}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
     <a class="btn btn-primary btn-sm" href="#beta">
       <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4 12l1.4-1.4L11 16.2V4h2v12.2l5.6-5.6L20 12l-8 8z"/></svg>
       {t.nav.download}
@@ -50,18 +67,28 @@ const alternates: { code: string; label: string; href: string }[] =
   (function () {
     const nav = document.getElementById('nav');
     const burger = nav && nav.querySelector('.hamburger');
-    if (!burger) return;
-    burger.addEventListener('click', function () {
-      const open = nav.classList.toggle('is-open');
-      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      burger.setAttribute('aria-label', open ? burger.dataset.closeLabel || 'Close menu' : burger.dataset.openLabel || 'Open menu');
-    });
-    // Cierra al clicar un enlace.
-    nav.querySelectorAll('.nav-links a').forEach((a) => {
-      a.addEventListener('click', function () {
-        nav.classList.remove('is-open');
-        burger.setAttribute('aria-expanded', 'false');
+    if (burger) {
+      burger.addEventListener('click', function () {
+        const open = nav.classList.toggle('is-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        burger.setAttribute('aria-label', open ? burger.dataset.closeLabel || 'Close menu' : burger.dataset.openLabel || 'Open menu');
       });
-    });
+      nav.querySelectorAll('.nav-links a').forEach((a) => {
+        a.addEventListener('click', function () {
+          nav.classList.remove('is-open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+    // Cerrar el dropdown de idiomas al hacer click fuera o pulsar Escape.
+    const langMenu = document.querySelector('.lang-menu');
+    if (langMenu) {
+      document.addEventListener('click', function (e) {
+        if (!langMenu.contains(e.target)) langMenu.open = false;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && langMenu.open) langMenu.open = false;
+      });
+    }
   })();
 </script>

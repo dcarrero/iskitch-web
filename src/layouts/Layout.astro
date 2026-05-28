@@ -66,11 +66,19 @@ const jsonLd = isHome ? [homeSchema, organization] : [pageSchema, organization];
 <meta property="og:image" content={`${site}/og-cover.png`} />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonical} />
-<meta property="og:locale" content={t.lang === 'es' ? 'es_ES' : t.lang === 'fr' ? 'fr_FR' : 'en_US'} />
+<meta property="og:locale" content={
+  t.lang === 'es' ? 'es_ES' :
+  t.lang === 'fr' ? 'fr_FR' :
+  t.lang === 'de' ? 'de_DE' :
+  t.lang === 'it' ? 'it_IT' :
+  'en_US'
+} />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="alternate" hreflang="en" href={`${site}/`} />
 <link rel="alternate" hreflang="es" href={`${site}/es/`} />
 <link rel="alternate" hreflang="fr" href={`${site}/fr/`} />
+<link rel="alternate" hreflang="de" href={`${site}/de/`} />
+<link rel="alternate" hreflang="it" href={`${site}/it/`} />
 <link rel="alternate" hreflang="x-default" href={`${site}/`} />
 {markdownPath && (
   <link rel="alternate" type="text/markdown" href={`${site}${markdownPath}`} title="Markdown version (Markdown for Agents)" />

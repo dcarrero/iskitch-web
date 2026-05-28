@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/de.json";
+const t = { ...baseT,
+  meta: {
+    title: "Datenschutzrichtlinie — iSkitch",
+    description: "Wie iSkitch deine Daten behandelt: gar nicht. Aufnahmen bleiben auf deinem Mac und die App verbindet sich nie mit unseren Servern."
+  }
+};
+---
+<Layout t={t} markdownPath="/de/privacy.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Datenschutzrichtlinie</h1>
+    <p class="effective">Gültig ab: 28. Mai 2026</p>
+
+    <p>Diese Richtlinie erklärt, wie die <strong>iSkitch</strong>-App für macOS deine Daten behandelt. Die App wird entwickelt und vertrieben von <strong>Color Vivo Internet, S.L.</strong>, einer spanischen Gesellschaft mit Sitz in Madrid (Spanien).</p>
+
+    <h2>Zusammenfassung</h2>
+    <ul>
+      <li><strong>Keine Erhebung personenbezogener Daten.</strong> iSkitch sammelt, speichert oder überträgt keine personenbezogenen Daten an uns oder an Dritte.</li>
+      <li><strong>Keine Analytik, kein Tracking.</strong> Die App enthält keine Telemetrie, keine Analytik-SDKs und keinen Crash-Reporting-Dienst.</li>
+      <li><strong>Aufnahmen bleiben auf deinem Mac.</strong> Screenshots, Annotationen und Bearbeitungen werden lokal verarbeitet und verlassen dein Gerät nur, wenn du sie teilst.</li>
+      <li><strong>Bildschirmaufnahme nur auf Anforderung.</strong> macOS fragt nach dieser Berechtigung nur, wenn du eine Aufnahme startest.</li>
+    </ul>
+
+    <h2>Was die App auf deinem Gerät speichert</h2>
+    <p>iSkitch speichert eine kleine Menge Informationen auf deinem Mac, um Einstellungen zwischen Sitzungen zu merken:</p>
+    <ul>
+      <li><strong>Einstellungen</strong> in <code>UserDefaults</code>: Standardexportformat, Standardordner, Standardfarbe und Pfeilstil, Erscheinungsbild (hell/dunkel/System), Sprache und andere UI-Optionen.</li>
+      <li><strong>Fensterzustand</strong>: Größe und Position des Editors.</li>
+      <li><strong>Aufnahmen und gespeicherte Dateien</strong>: nur wenn du sie explizit exportierst, und nur am gewählten Speicherort.</li>
+    </ul>
+    <p>Nichts davon wird an uns übertragen.</p>
+
+    <h2>Was die App über das Netzwerk sendet</h2>
+    <p>iSkitch <strong>baut von sich aus keine ausgehenden Netzwerkverbindungen auf</strong>. Wir betreiben keine Server, die deine Daten empfangen.</p>
+    <p>Das optionale Entitlement <code>com.apple.security.network.client</code> wird nur deklariert, damit das von dir initiierte Teilen über das native macOS-Teilen-Menü wie erwartet funktioniert (zum Beispiel, einen Screenshot per Mail oder Nachrichten zu versenden).</p>
+
+    <h2>Berechtigungen, die iSkitch anfordern kann</h2>
+    <ul>
+      <li><strong>Bildschirmaufnahme</strong> (erforderlich): erteilt unter <em>Systemeinstellungen ▸ Datenschutz und Sicherheit ▸ Bildschirmaufnahme</em>.</li>
+      <li><strong>Dateizugriff</strong> über die Standard-Öffnen-/Sichern-Dialoge.</li>
+      <li><strong>Zwischenablage / Drag &amp; Drop</strong>.</li>
+    </ul>
+
+    <h2>Über diese Website (iskitch.com)</h2>
+    <p>Die Marketing-Website <strong>iskitch.com</strong> nutzt <strong>Google Analytics 4</strong>, um aggregierten Traffic zu verstehen — besuchte Seiten, Land, Browser. Google kann Cookies setzen und Daten außerhalb der EU verarbeiten. Wir <strong>verwenden diese Informationen nicht</strong>, um Einzelpersonen zu identifizieren, Profile zu erstellen oder Werbung auszuspielen.</p>
+    <p>Wenn du dich über das Formular auf der Startseite zur privaten Beta anmeldest, speichern wir deine <strong>E-Mail-Adresse</strong> in Cloudflare KV und kopieren sie einmal zu <strong>Acumbamail</strong> (unserem Newsletter-Anbieter). Wir nutzen sie ausschließlich, um dich zur Beta-Öffnung anzuschreiben; kein Marketing. Du kannst jederzeit eine Löschung anfordern unter <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>.</p>
+    <p>Diese Datenerhebung auf der Website ist <strong>unabhängig von der App</strong>: iSkitch auf deinem Mac enthält weder Google Analytics noch ein anderes Tracking-SDK.</p>
+
+    <h2>Apple als Dritter</h2>
+    <p>iSkitch wird über den <strong>Mac App Store</strong> vertrieben. Apple agiert als unabhängiger Datenverantwortlicher für Downloads, Bewertungen, Zahlungen und Diagnosedaten, die du freiwillig mit Entwicklern über den App Store teilst. Bitte lies die <a href="https://www.apple.com/legal/privacy/" rel="noopener">Datenschutzrichtlinie von Apple</a>.</p>
+
+    <h2>Kinder</h2>
+    <p>iSkitch ist im App Store mit <strong>4+</strong> bewertet und für alle Zielgruppen geeignet. Wir erheben wissentlich keine Daten von Personen, einschließlich Kindern unter 13 Jahren.</p>
+
+    <h2>Deine Rechte unter der DSGVO</h2>
+    <p>Da iSkitch keine serverseitige Verarbeitung durchführt und wir keine deiner Daten erhalten, gibt es bei uns keine personenbezogenen Daten, auf die du zugreifen, die du berichtigen, übertragen oder löschen lassen kannst. Du behältst die volle Kontrolle über alles, was auf deinem Mac gespeichert ist.</p>
+
+    <h2>Änderungen dieser Richtlinie</h2>
+    <p>Wenn wir je ändern, wie iSkitch Daten behandelt, wird diese Seite mit einem neuen Stichdatum aktualisiert, bevor die Änderung Nutzer erreicht.</p>
+
+    <h2>Kontakt</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>Madrid, Spanien<br>E-Mail: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>Web: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>
