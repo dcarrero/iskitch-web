@@ -1,0 +1,10 @@
+# robots.txt — iskitch.com
+# Sitio público de marketing. Permitimos a todos los buscadores el acceso completo.
+
+User-agent: *
+Allow: /
+
+# No exponemos secciones admin; los endpoints /api/admin/* requieren clave
+# y devuelven 401 sin ella, no hay rutas privadas que ocultar aquí.
+
+Sitemap: https://iskitch.com/sitemap-index.xml
