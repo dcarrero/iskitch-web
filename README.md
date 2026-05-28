@@ -60,39 +60,61 @@ npm run preview   # sirve dist/ para verificar
   3. Añadir `xx` a `locales` en `astro.config.mjs`.
   4. Añadir un `hreflang` en `src/layouts/Layout.astro`.
 
-## Formulario de Beta (Pages Function + Acumbamail)
+## Formulario de Beta (Pages Function + Cloudflare KV)
 
-La landing tiene un formulario para recopilar emails de la beta privada. Funciona con
-una **Cloudflare Pages Function** (`functions/api/subscribe.ts`) que añade el email
-a una lista de **Acumbamail** vía su API.
+La landing tiene un formulario para recopilar emails de la beta privada. Los emails
+se guardan en **Cloudflare KV** (gratis: 100k lecturas/día, 1k escrituras/día, 1 GB
+de almacenamiento) y se pueden exportar por un endpoint admin.
 
-### Variables de entorno en Cloudflare Pages
-En el panel del proyecto → **Settings** → **Environment variables**, añadir (para
-*Production* y *Preview*):
+> Acumbamail bloquea las IPs salientes de Cloudflare Workers, por eso no podemos
+> usar su API directamente desde la Pages Function. Por eso almacenamos en KV y se
+> exportan los emails a Acumbamail manualmente cuando quieras.
 
-| Variable | Valor |
-|---|---|
-| `ACUMBAMAIL_AUTH_TOKEN` | tu `auth_token` de la API de Acumbamail |
-| `ACUMBAMAIL_LIST_ID` | el ID de la lista "iSkitch Beta" |
+### 1) Crear el namespace de KV
+1. **Cloudflare Dashboard → Workers & Pages → KV** (en el menú lateral).
+2. **Create a namespace** → nombre p. ej. `iskitch_subscribers` → Create.
 
-Sin ambas variables, el endpoint responde `500 server_not_configured`.
+### 2) Bindear el namespace al proyecto Pages
+1. **Workers & Pages → `iskitch-web` → Settings → Bindings** (o *Functions* en interfaces antiguas).
+2. **Add binding → KV namespace**.
+3. Variable name: `SUBSCRIBERS` · Namespace: `iskitch_subscribers`.
+4. Guardar para *Production* **y** *Preview*.
 
-### Pruebas locales
-La Pages Function NO se ejecuta con `npm run dev` (Astro dev). Para probarla en
-local hace falta usar **Wrangler** del lado de Cloudflare:
+### 3) Crear el secreto de admin
+En **Settings → Environment variables → Add variable** (Production + Preview):
 
-```sh
-npm i -g wrangler
-wrangler pages dev dist --compatibility-date=2025-01-01 \
-  --binding ACUMBAMAIL_AUTH_TOKEN=xxx \
-  --binding ACUMBAMAIL_LIST_ID=yyy
-```
+| Variable | Valor | Type |
+|---|---|---|
+| `ADMIN_KEY` | un string aleatorio (p. ej. `openssl rand -hex 24`) | **Secret** 🔒 |
+
+> Las antiguas `ACUMBAMAIL_AUTH_TOKEN` y `ACUMBAMAIL_LIST_ID` ya **no se usan**, puedes borrarlas.
+
+### 4) Probar
+- Formulario en la web → status `ok` (verde).
+- `GET https://iskitch.com/api/subscribe` → debe devolver `{"configured":{"kv_subscribers":true}}`.
+- `GET https://iskitch.com/api/admin/subscribers?key=TU_ADMIN_KEY` → JSON con lista de suscriptores.
+- `GET https://iskitch.com/api/admin/subscribers?key=TU_ADMIN_KEY&format=csv` → descarga CSV.
+
+### 5) Exportar a Acumbamail
+1. Visitar el URL CSV de arriba en el navegador → descarga `iskitch-beta-subscribers-YYYY-MM-DD.csv`.
+2. En Acumbamail → tu lista 1355595 → **Importar suscriptores** → subir el CSV (columnas: `email,lang,timestamp,country`).
+3. Listo. (Opcional: borrar los emails ya importados de KV.)
 
 ### Notas
 - El formulario tiene **honeypot** anti-bots (campo invisible).
-- La función fuerza `double_optin=1`: Acumbamail manda email de confirmación.
-- Validación de email también del lado del cliente (`type="email"` + regex en server).
-- Si Acumbamail falla, devuelve `502 acumbamail_error`.
+- La clave KV es `subscriber:<email>` → re-suscripciones del mismo email sobrescriben en vez de duplicar.
+- KV guarda además `__meta:count` (total acumulado) y `__meta:last` (timestamp última suscripción).
+- Validación de email del lado cliente (`type="email"`) y servidor (regex).
+
+### Pruebas locales
+La Pages Function NO se ejecuta con `npm run dev` (Astro dev). Para probarla en
+local con KV simulado:
+
+```sh
+npm i -g wrangler
+npm run build
+wrangler pages dev dist --kv SUBSCRIBERS --binding ADMIN_KEY=test
+```
 
 ## Pendiente
 - [ ] `src/pages/privacy.astro` + `src/pages/es/privacy.astro` (texto base en `mac/LAUNCH.md` §7).
