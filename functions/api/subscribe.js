@@ -49,48 +49,41 @@ export async function onRequestPost({ request, env }) {
       return jsonResponse({ ok: true, debug: true, email_received: email });
     }
 
-    // Acumbamail acepta merge_fields como JSON string. La clave estándar es "email".
-    const params = new URLSearchParams();
-    params.append("auth_token", env.ACUMBAMAIL_AUTH_TOKEN);
-    params.append("list_id", String(env.ACUMBAMAIL_LIST_ID));
-    params.append("merge_fields", JSON.stringify({ email }));
-    params.append("double_optin", "1");
-    params.append("update_subscriber", "0");
-    params.append("response_type", "json");
+    // Cuerpo form-encoded, construido a mano para minimizar dependencias.
+    // Acumbamail acepta merge_fields[email] (notación PHP dict).
+    const payload =
+      "auth_token=" + encodeURIComponent(env.ACUMBAMAIL_AUTH_TOKEN) +
+      "&list_id=" + encodeURIComponent(env.ACUMBAMAIL_LIST_ID) +
+      "&merge_fields%5Bemail%5D=" + encodeURIComponent(email) +
+      "&double_optin=1" +
+      "&update_subscriber=0";
 
     let acumStatus = 0;
     let acumText = "";
     try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 8000);
       const r = await fetch("https://acumbamail.com/api/1/addSubscriber/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          "Accept": "application/json",
-          "User-Agent": "iSkitchBetaForm/1.0",
-        },
-        body: params.toString(),
-        signal: controller.signal,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: payload,
       });
-      clearTimeout(timer);
       acumStatus = r.status;
       acumText = await r.text();
     } catch (fetchErr) {
       return jsonResponse({
-        ok: false, error: "acumbamail_fetch_failed",
+        ok: false, error: "fetch_failed",
         detail: String((fetchErr && fetchErr.message) || fetchErr).slice(0, 300),
       }, 502);
     }
 
-    // Si la respuesta contiene un mensaje de error JSON (Acumbamail a veces devuelve 200 + error).
-    let acumParsed = null;
-    try { acumParsed = JSON.parse(acumText); } catch (_) {}
-    const hasError =
+    // Acumbamail: 2xx con cuerpo no-error = OK. Cuerpos "error", "Unauthorized", etc = fallo.
+    const lc = acumText.toLowerCase();
+    const looksLikeError =
       acumStatus < 200 || acumStatus >= 300 ||
-      (acumParsed && typeof acumParsed === "object" && (acumParsed.error || acumParsed.errors));
+      lc.includes("\"error\"") ||
+      lc.startsWith("unauthorized") ||
+      lc.startsWith("error");
 
-    if (hasError) {
+    if (looksLikeError) {
       return jsonResponse({
         ok: false, error: "acumbamail_error",
         status: acumStatus,
