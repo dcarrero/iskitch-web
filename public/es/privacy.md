@@ -35,6 +35,14 @@ El permiso opcional `com.apple.security.network.client` se declara únicamente p
 - **Acceso a archivos** mediante los paneles estándar de abrir y guardar: limitado al archivo o carpeta que selecciones en cada momento.
 - **Portapapeles y arrastrar y soltar**: cuando pulsas "Copiar" o arrastras una imagen fuera de iSkitch, se escribe la imagen aplanada en el portapapeles o el destino que elijas.
 
+## Sobre esta web (iskitch.com)
+
+La web de marketing **iskitch.com** (donde estás leyendo esto) utiliza **Google Analytics 4** para entender el tráfico agregado — páginas visitadas, país, navegador. Google puede establecer cookies y procesar datos fuera de la UE. **No** usamos esta información para identificar personas, perfilar ni hacer publicidad.
+
+Si te apuntas a la beta privada con el formulario de la portada, guardamos tu **dirección de email** en Cloudflare KV y la copiamos una vez a **Acumbamail** (nuestro proveedor de newsletter). La usamos únicamente para avisarte cuando abra la beta; no hay marketing. Puedes pedir su eliminación cuando quieras en hello@iskitch.com.
+
+Esta recogida de datos en la web es **independiente de la app**: iSkitch en tu Mac no incluye Google Analytics ni ningún SDK de tracking.
+
 ## Apple como tercero
 
 iSkitch se distribuye a través de la **Mac App Store**. Apple actúa como responsable del tratamiento independiente para descargas, valoraciones, pagos y los datos de diagnóstico que decidas compartir con los desarrolladores desde la App Store. Consulta la [Política de privacidad de Apple](https://www.apple.com/legal/privacy/) para entender cómo trata esa información.

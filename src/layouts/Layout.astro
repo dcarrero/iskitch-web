@@ -76,6 +76,14 @@ const jsonLd = isHome ? [homeSchema, organization] : [pageSchema, organization];
 )}
 <link rel="preload" href="/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin />
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
+<!-- Google Analytics (GA4) — cargado async, no bloquea el render -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3L2G7Z90J"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D3L2G7Z90J');
+</script>
 </head>
 <body>
 <slot />

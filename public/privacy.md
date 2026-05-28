@@ -35,6 +35,14 @@ The optional `com.apple.security.network.client` entitlement is declared only so
 - **File access** via the standard Open and Save panels: limited to the file or folder you pick at that moment.
 - **Pasteboard / drag & drop**: when you press "Copy" or drag an image out, iSkitch writes the flattened image to the macOS clipboard or to the destination you choose.
 
+## About this website (iskitch.com)
+
+The marketing website at **iskitch.com** (where you are reading this) uses **Google Analytics 4** to understand aggregated traffic — visited pages, country, browser. Google may set cookies and process data outside the EU. We do **not** use this information to identify individuals, build profiles or run advertising.
+
+If you opt in to the private beta via the form on the homepage, we keep your **email address** on our Cloudflare KV store and copy it once to **Acumbamail** (our newsletter provider). We use it solely to email you when the beta opens; there is no marketing. You can request deletion at any time at hello@iskitch.com.
+
+This data collection on the website is **independent from the app**: iSkitch on your Mac does not contain Google Analytics or any other tracking SDK.
+
 ## Apple as a third party
 
 iSkitch is distributed through the **Mac App Store**. Apple acts as an independent data controller for downloads, ratings, payments and any diagnostics you opt in to share with developers via the App Store. Please refer to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/) to understand how they handle that information.
