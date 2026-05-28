@@ -46,12 +46,17 @@ async function addToAcumbamail({ email, lang }) {
     body: params.toString(),
   });
   const text = await r.text();
-  // Éxito real: status 2xx Y la respuesta es un entero (subscriber_id) o un objeto sin "error".
   let parsed = null;
   try { parsed = JSON.parse(text); } catch (_) {}
-  const hasErrorField = parsed && typeof parsed === "object" && (parsed.error !== undefined || parsed.errors !== undefined);
-  const ok = r.ok && !hasErrorField && !/\berror\b/i.test(text);
-  return { ok, status: r.status, body: text.slice(0, 300) };
+  const errMsg = parsed && typeof parsed === "object" ? String(parsed.error || "") : "";
+  const alreadyExists = /already exists/i.test(errMsg) || /already exists/i.test(text);
+  // Éxito: respuesta 2xx, o bien 4xx con "already exists" (el subscriber ya está creado).
+  const hasOtherError =
+    !alreadyExists &&
+    ((parsed && typeof parsed === "object" && (parsed.error !== undefined || parsed.errors !== undefined)) ||
+     /\berror\b/i.test(text));
+  const ok = (r.ok && !hasOtherError) || alreadyExists;
+  return { ok, alreadyExists, status: r.status, body: text.slice(0, 300) };
 }
 
 async function markSynced(emails) {
@@ -76,8 +81,8 @@ async function main() {
   for (const s of pending) {
     try {
       const r = await addToAcumbamail(s);
-      // Siempre logueamos el body para inspección.
-      console.log(`→ ${s.email}  HTTP ${r.status}  body=${r.body}`);
+      const tag = r.alreadyExists ? "≈" : (r.ok ? "✓" : "✗");
+      console.log(`${tag} ${s.email}  HTTP ${r.status}  body=${r.body}`);
       if (r.ok) {
         synced.push(s.email);
       } else {
