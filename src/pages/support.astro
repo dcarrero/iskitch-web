@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import baseT from "../i18n/en.json";
+const t = { ...baseT,
+  switcher: { label: "ES", href: "/es/support" },
+  meta: {
+    title: "Support — iSkitch",
+    description: "How to install iSkitch, grant Screen Recording permission, frequently asked questions, and how to get in touch."
+  }
+};
+---
+<Layout t={t}>
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Support</h1>
+    <p class="effective">We're happy to help — read the quick answers below, and if you don't find what you need, drop us a line.</p>
+
+    <h2>Quick start</h2>
+    <ol>
+      <li><strong>Install iSkitch</strong> from the Mac App Store (coming soon — <a href="/#beta">join the beta</a> meanwhile).</li>
+      <li><strong>Open iSkitch.</strong> A small arrow icon appears in your menu bar (top-right). The first time, the welcome window will guide you.</li>
+      <li><strong>Grant Screen Recording permission</strong> when macOS asks: <em>System Settings ▸ Privacy &amp; Security ▸ Screen Recording ▸ iSkitch ✓</em>. Relaunch iSkitch.</li>
+      <li><strong>Press <kbd>⌥⌘4</kbd></strong> anywhere, drag to select a region — the editor opens with all annotation tools.</li>
+    </ol>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Why doesn't iSkitch capture anything?</h3>
+    <p>The most common reason is the Screen Recording permission. After the first launch macOS asks for it; once you grant it, <strong>relaunch iSkitch</strong> so the permission takes effect.</p>
+    <p>Open <em>System Settings ▸ Privacy &amp; Security ▸ Screen Recording</em>, find iSkitch in the list and make sure its switch is ON. If it isn't listed yet, just press <kbd>⌥⌘4</kbd> once — macOS will prompt automatically.</p>
+
+    <h3>Where are my screenshots saved?</h3>
+    <p>iSkitch never saves silently. You decide where each capture goes when you press <strong>Save…</strong> (or drag the image out of the window). In <em>iSkitch ▸ Settings ▸ Capture</em> you can set a <strong>default folder</strong> and <strong>default format</strong> (PNG/JPG/PDF/TIFF) so the dialog opens already where you want it.</p>
+
+    <h3>Can I change the capture shortcut?</h3>
+    <p>The default is <kbd>⌥⌘4</kbd>. Customising shortcuts is on the roadmap — it'll arrive in a future update.</p>
+
+    <h3>How do I share to a specific app?</h3>
+    <p>Click <strong>Share</strong> in the bottom bar of the editor. macOS opens its native share sheet with every app that supports receiving images (Mail, Messages, Notes, Slack, Reminders, AirDrop…). You can also <strong>drag the image directly</strong> out of iSkitch into any app.</p>
+
+    <h3>Does iSkitch send my data anywhere?</h3>
+    <p>No. iSkitch works entirely offline — no accounts, no tracking, no analytics. Captures stay on your Mac unless you explicitly choose to share them. Read more in our <a href="/privacy">Privacy Policy</a>.</p>
+
+    <h3>Can I run iSkitch only when I need it?</h3>
+    <p>Yes. In <em>Settings ▸ General</em> toggle off <strong>"Keep iSkitch in the menu bar (launch at login)"</strong>. Then open it manually from Spotlight or your Applications folder only when you need to capture.</p>
+
+    <h3>How do I hide sensitive info in a screenshot?</h3>
+    <p>Use the <strong>Pixelate</strong> tool — drag over the area to obscure. You can choose between four styles in the toolbar: <em>Pixelate</em>, <em>Blur</em>, <em>Solid block</em> and <em>Stripes</em>. All four are non-reversible visually.</p>
+
+    <h3>Which Macs is iSkitch compatible with?</h3>
+    <p>macOS 14 (Sonoma) or later. Universal Binary — runs natively on both Apple Silicon (M-series) and Intel Macs.</p>
+
+    <h2>Still need help?</h2>
+    <p>Send us an email at <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. We read every message and try to reply within 24-48 hours (Mon-Fri, CET).</p>
+    <p>Reporting a bug? Please include:</p>
+    <ul>
+      <li>Your macOS version (Apple menu ▸ About This Mac)</li>
+      <li>iSkitch version (Settings ▸ General — at the bottom)</li>
+      <li>What you were doing and what you expected to happen</li>
+      <li>A screenshot if relevant (you can use iSkitch 😉)</li>
+    </ul>
+
+    <h2>Legal</h2>
+    <p>
+      <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a>
+    </p>
+  </main>
+  <Footer t={t} />
+</Layout>

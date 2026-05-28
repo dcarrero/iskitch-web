@@ -8,9 +8,10 @@
   "nav": {
     "features": "Features",
     "tools": "Tools",
-    "privacy": "Privacy",
     "support": "Support",
-    "download": "Join beta"
+    "download": "Join beta",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
   },
   "hero": {
     "badge": "Coming soon · Mac App Store",
@@ -62,7 +63,7 @@
       { "text": "Features", "href": "/#features" },
       { "text": "Privacy", "href": "/privacy" },
       { "text": "Terms", "href": "/terms" },
-      { "text": "Support", "href": "mailto:hello@iskitch.com" },
+      { "text": "Support", "href": "/support" },
       { "text": "Color Vivo", "href": "https://colorvivo.com" }
     ]
   }

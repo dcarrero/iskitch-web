@@ -1,25 +1,51 @@
 ---
 interface Props { t: any }
 const { t } = Astro.props as Props;
+const homeHref = t.lang === 'es' ? '/es/' : '/';
+const supportHref = t.lang === 'es' ? '/es/support' : '/support';
 ---
-<nav class="nav">
-  <a class="brand" href={t.lang === 'es' ? '/es/' : '/'}>
+<nav class="nav" id="nav">
+  <a class="brand" href={homeHref}>
     <span class="brand-mark" aria-hidden="true">
       <svg viewBox="0 0 100 100" width="18" height="18"><path fill="#fff" d="M10.4 90.4 L77.3 28.4 L82.2 33.3 L90 10 L66.7 17.8 L71.6 22.7 L9.6 89.6 Z"/></svg>
     </span>
     <span>iSkitch</span>
   </a>
+
   <div class="nav-links">
-    <a href="#features">{t.nav.features}</a>
-    <a href="#tools">{t.nav.tools}</a>
-    <a href={t.lang === 'es' ? '/es/privacy' : '/privacy'}>{t.nav.privacy}</a>
-    <a href="mailto:hello@iskitch.com">{t.nav.support}</a>
+    <a href={`${homeHref}#features`}>{t.nav.features}</a>
+    <a href={`${homeHref}#tools`}>{t.nav.tools}</a>
+    <a href={supportHref}>{t.nav.support}</a>
   </div>
+
   <div class="nav-actions">
     <a class="lang" href={t.switcher.href} aria-label="Switch language">{t.switcher.label}</a>
     <a class="btn btn-primary btn-sm" href="#beta">
       <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4 12l1.4-1.4L11 16.2V4h2v12.2l5.6-5.6L20 12l-8 8z"/></svg>
       {t.nav.download}
     </a>
+    <button class="hamburger" type="button" aria-label={t.nav.menu_open} aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<script is:inline>
+  (function () {
+    const nav = document.getElementById('nav');
+    const burger = nav && nav.querySelector('.hamburger');
+    if (!burger) return;
+    burger.addEventListener('click', function () {
+      const open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? burger.dataset.closeLabel || 'Close menu' : burger.dataset.openLabel || 'Open menu');
+    });
+    // Cierra al clicar un enlace.
+    nav.querySelectorAll('.nav-links a').forEach((a) => {
+      a.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>

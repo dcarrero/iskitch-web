@@ -8,9 +8,10 @@
   "nav": {
     "features": "Características",
     "tools": "Herramientas",
-    "privacy": "Privacidad",
     "support": "Soporte",
-    "download": "Apuntarme"
+    "download": "Apuntarme",
+    "menu_open": "Abrir menú",
+    "menu_close": "Cerrar menú"
   },
   "hero": {
     "badge": "Próximamente · Mac App Store",
@@ -62,7 +63,7 @@
       { "text": "Características", "href": "/es/#features" },
       { "text": "Privacidad", "href": "/es/privacy" },
       { "text": "Términos", "href": "/es/terms" },
-      { "text": "Soporte", "href": "mailto:hello@iskitch.com" },
+      { "text": "Soporte", "href": "/es/support" },
       { "text": "Color Vivo", "href": "https://colorvivo.com" }
     ]
   }
