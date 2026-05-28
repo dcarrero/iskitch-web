@@ -1,7 +1,10 @@
 ---
 interface Props { t: any }
 const { t } = Astro.props as Props;
-const slug = t.lang === 'es' ? 'es' : 'en';
+// Heros generados con la app real (tools/make_hero_screenshots.sh).
+// Si llega un código sin asset (ej. nuevo idioma sin captura todavía), caemos a EN.
+const availableHeroLangs = ['en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'ko'];
+const slug = availableHeroLangs.includes(t.lang) ? t.lang : 'en';
 const heroBase = `/assets/editor-hero-${slug}`;
 const heroImage = `${heroBase}.png`;          // PNG original (lightbox)
 const heroLargeWebp = `${heroBase}-2240.webp`; // WebP máxima para lightbox
