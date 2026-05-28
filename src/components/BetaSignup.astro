@@ -1,0 +1,71 @@
+---
+interface Props { t: any }
+const { t } = Astro.props as Props;
+---
+<section id="beta" class="beta">
+  <div class="container">
+    <div class="badge">
+      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2 14 8 20 9 16 13 17 19 12 16 7 19 8 13 4 9 10 8 Z"/></svg>
+      {t.beta.badge}
+    </div>
+    <h2>{t.beta.title}</h2>
+    <p class="lead">{t.beta.lead}</p>
+
+    <form class="beta-form" id="beta-form"
+          data-success={t.beta.success}
+          data-error={t.beta.error}>
+      <label class="sr-only" for="beta-email">{t.beta.email_label}</label>
+      <input type="email" id="beta-email" name="email" required autocomplete="email"
+             placeholder={t.beta.email_placeholder} />
+      <input type="text" name="honeypot" tabindex="-1" autocomplete="off"
+             aria-hidden="true" class="hp" />
+      <button type="submit" class="btn btn-primary btn-lg">{t.beta.submit}</button>
+      <p class="beta-status" id="beta-status" aria-live="polite"></p>
+    </form>
+
+    <p class="beta-meta">{t.beta.privacy_note}</p>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('beta-form');
+    if (!form) return;
+    const status = document.getElementById('beta-status');
+    const input = form.querySelector('input[type="email"]');
+    const submit = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const payload = {
+        email: input.value,
+        honeypot: form.querySelector('input[name="honeypot"]').value,
+        lang: document.documentElement.lang || 'en'
+      };
+      submit.disabled = true;
+      status.textContent = '…';
+      status.className = 'beta-status pending';
+      try {
+        const resp = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const json = await resp.json().catch(() => ({}));
+        if (resp.ok && json.ok) {
+          status.textContent = form.dataset.success;
+          status.className = 'beta-status ok';
+          input.value = '';
+        } else {
+          status.textContent = form.dataset.error;
+          status.className = 'beta-status err';
+        }
+      } catch (_) {
+        status.textContent = form.dataset.error;
+        status.className = 'beta-status err';
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  })();
+</script>

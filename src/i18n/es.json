@@ -39,6 +39,17 @@
     "lead": "14 herramientas, siempre a un clic.",
     "names": ["Seleccionar", "Flecha", "Texto", "Rectángulo", "Elipse", "Línea", "Resaltado", "Pixelar", "Sello", "Lápiz", "Foco", "Sticker", "Imagen", "Recortar"]
   },
+  "beta": {
+    "badge": "Beta abriendo pronto",
+    "title": "Sé de los primeros en probar iSkitch",
+    "lead": "Apúntate a la beta privada y recibe la app antes de su llegada a la Mac App Store.",
+    "email_label": "Tu email",
+    "email_placeholder": "tucorreo@ejemplo.com",
+    "submit": "Apuntarme a la beta",
+    "success": "¡Apuntado! Te avisamos en cuanto abramos la beta.",
+    "error": "Algo ha ido mal. Inténtalo de nuevo o escríbenos a hello@iskitch.com.",
+    "privacy_note": "Solo usamos tu email para la beta. Sin marketing. Puedes darte de baja en cualquier momento."
+  },
   "cta": {
     "title": "¿Listo para olvidar las capturas aburridas?",
     "lead": "Gratis en la Mac App Store. Sin cuentas. Solo ábrela, pulsa ⌥⌘4 y listo."

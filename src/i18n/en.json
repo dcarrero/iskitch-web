@@ -39,6 +39,17 @@
     "lead": "14 tools, always one click away.",
     "names": ["Select", "Arrow", "Text", "Rectangle", "Ellipse", "Line", "Highlight", "Pixelate", "Stamp", "Pen", "Spotlight", "Sticker", "Image", "Crop"]
   },
+  "beta": {
+    "badge": "Beta opening soon",
+    "title": "Be the first to try iSkitch",
+    "lead": "Join the private beta and get the app before it lands on the Mac App Store.",
+    "email_label": "Your email",
+    "email_placeholder": "you@example.com",
+    "submit": "Join the beta",
+    "success": "You're in. We'll email you when the beta opens.",
+    "error": "Something went wrong. Try again or email hello@iskitch.com.",
+    "privacy_note": "We only use your email for the beta. No marketing. Unsubscribe anytime."
+  },
   "cta": {
     "title": "Ready to ditch boring screenshots?",
     "lead": "Free on the Mac App Store. No accounts. Just open it, press ⌥⌘4 and you're done."

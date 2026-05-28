@@ -60,6 +60,40 @@ npm run preview   # sirve dist/ para verificar
   3. Añadir `xx` a `locales` en `astro.config.mjs`.
   4. Añadir un `hreflang` en `src/layouts/Layout.astro`.
 
+## Formulario de Beta (Pages Function + Acumbamail)
+
+La landing tiene un formulario para recopilar emails de la beta privada. Funciona con
+una **Cloudflare Pages Function** (`functions/api/subscribe.ts`) que añade el email
+a una lista de **Acumbamail** vía su API.
+
+### Variables de entorno en Cloudflare Pages
+En el panel del proyecto → **Settings** → **Environment variables**, añadir (para
+*Production* y *Preview*):
+
+| Variable | Valor |
+|---|---|
+| `ACUMBAMAIL_AUTH_TOKEN` | tu `auth_token` de la API de Acumbamail |
+| `ACUMBAMAIL_LIST_ID` | el ID de la lista "iSkitch Beta" |
+
+Sin ambas variables, el endpoint responde `500 server_not_configured`.
+
+### Pruebas locales
+La Pages Function NO se ejecuta con `npm run dev` (Astro dev). Para probarla en
+local hace falta usar **Wrangler** del lado de Cloudflare:
+
+```sh
+npm i -g wrangler
+wrangler pages dev dist --compatibility-date=2025-01-01 \
+  --binding ACUMBAMAIL_AUTH_TOKEN=xxx \
+  --binding ACUMBAMAIL_LIST_ID=yyy
+```
+
+### Notas
+- El formulario tiene **honeypot** anti-bots (campo invisible).
+- La función fuerza `double_optin=1`: Acumbamail manda email de confirmación.
+- Validación de email también del lado del cliente (`type="email"` + regex en server).
+- Si Acumbamail falla, devuelve `502 acumbamail_error`.
+
 ## Pendiente
 - [ ] `src/pages/privacy.astro` + `src/pages/es/privacy.astro` (texto base en `mac/LAUNCH.md` §7).
 - [ ] `public/og-cover.png` — 1200×630 para Open Graph.
