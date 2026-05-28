@@ -33,7 +33,8 @@ async function addToAcumbamail({ email, lang }) {
   params.set("auth_token", TOKEN);
   params.set("list_id", String(LIST));
   params.set("merge_fields[email]", email);
-  params.set("double_optin", "1");
+  // double_optin=0 → alta directa (David desactivó el doble opt-in en la lista).
+  params.set("double_optin", "0");
   params.set("update_subscriber", "0");
   params.set("response_type", "json");
 

@@ -198,16 +198,13 @@ npm run sync
 
 ## License
 
-Copyright © 2026 **Color Vivo Internet, S.L.** All rights reserved.
+Source code is released under the **[MIT License](./LICENSE)**.
+Copyright © 2026 **Color Vivo Internet, S.L.**
 
-This repository contains the marketing website for iSkitch. The source code is
-made public for transparency and convenience (free Cloudflare Pages + GitHub
-Actions on public repos), but **no open-source license is granted**. You are
-welcome to read the code, learn from it and report issues, but please do not
-copy substantial portions, the iSkitch name, logo, copy, or brand assets without
-written permission.
-
-For licensing inquiries, partnerships or press: <hello@iskitch.com>.
+> The MIT license covers the **source code** of this website only.
+> The "iSkitch" **name, logo and brand assets** are trademarks of
+> Color Vivo Internet, S.L. and are **not** licensed under MIT.
+> For brand or commercial use, contact <hello@iskitch.com>.
 
 ---
 
