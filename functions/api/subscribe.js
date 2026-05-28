@@ -49,6 +49,21 @@ export async function onRequestPost({ request, env }) {
       return jsonResponse({ ok: true, debug: true, email_received: email });
     }
 
+    // Test de control: fetch a httpbin para confirmar si el problema es general o solo Acumbamail.
+    if (url.searchParams.get("test") === "httpbin") {
+      try {
+        const r = await fetch("https://httpbin.org/post", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: "hello=world",
+        });
+        const t = await r.text();
+        return jsonResponse({ ok: true, httpbin_status: r.status, body_length: t.length });
+      } catch (e) {
+        return jsonResponse({ ok: false, error: "httpbin_fetch_failed", detail: String(e?.message ?? e).slice(0, 300) }, 502);
+      }
+    }
+
     // Cuerpo form-encoded, construido a mano para minimizar dependencias.
     // Acumbamail acepta merge_fields[email] (notación PHP dict).
     const payload =
