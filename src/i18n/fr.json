@@ -1,0 +1,123 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "iSkitch — Capturer, annoter et partager pour macOS",
+    "description": "iSkitch est une réinterprétation moderne et native pour macOS du classique Skitch — capturez une zone, une fenêtre ou tout l'écran, annotez-la instantanément et partagez en un clic."
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "tools": "Outils",
+    "support": "Aide",
+    "download": "Rejoindre la bêta",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu"
+  },
+  "hero": {
+    "badge": "Bientôt · Mac App Store",
+    "title_line1": "Capturez. Annotez.",
+    "title_line2": "Partagez en un clic.",
+    "lead": "iSkitch est une réinterprétation moderne et native pour macOS du classique Skitch. Vit dans la barre des menus, prêt pour ⌥⌘4 à tout moment — et partage via la feuille de partage de macOS.",
+    "cta_primary": "Rejoindre la bêta",
+    "cta_secondary": "Voir ce qu'il propose",
+    "appstore_coming_top": "Bientôt sur le",
+    "appstore_coming_bottom": "Mac App Store",
+    "meta": [
+      "Gratuit pendant la bêta",
+      "Sans pistage",
+      "Universal Binary",
+      "English · Español · Français"
+    ],
+    "image_alt": "Capture d'écran de l'éditeur d'annotations iSkitch montrant la capture d'un site marketing avec des flèches rouges, des étiquettes de texte, un surlignage magenta et des zones pixelisées — démonstration des outils d'annotation sur macOS."
+  },
+  "features": {
+    "title": "Pensé pour le macOS d'aujourd'hui",
+    "lead": "SwiftUI + AppKit natifs. Vit dans la barre des menus. Conçu pour ne pas vous gêner jusqu'à ce que vous appuyiez sur ⌥⌘4.",
+    "items": [
+      {
+        "title": "Capturez tout",
+        "desc": "Zone (⌥⌘4), fenêtre ou écran complet. S'ouvre directement dans l'éditeur."
+      },
+      {
+        "title": "14 outils d'annotation",
+        "desc": "Flèches affinées, texte avec les polices système, formes, surligneur, crayon, tampons et plus."
+      },
+      {
+        "title": "Masquez l'info sensible",
+        "desc": "Pixelisation, flou, bloc plein ou rayures — illisible de manière fiable."
+      },
+      {
+        "title": "Partage natif",
+        "desc": "Feuille de partage macOS, glisser-déposer vers n'importe quelle app, copier ou enregistrer en PNG/JPG/PDF."
+      },
+      {
+        "title": "Spotlight et recadrage",
+        "desc": "Concentrez l'attention sur l'essentiel. Recadrez avec des proportions prédéfinies."
+      },
+      {
+        "title": "Priorité à la vie privée",
+        "desc": "Aucun compte. Aucun pistage. Vos données restent sur votre Mac."
+      }
+    ]
+  },
+  "tools": {
+    "title": "Tous les outils de marquage dont vous avez besoin",
+    "lead": "14 outils, toujours à un clic.",
+    "names": [
+      "Sélectionner",
+      "Flèche",
+      "Texte",
+      "Rectangle",
+      "Ellipse",
+      "Ligne",
+      "Surligner",
+      "Pixeliser",
+      "Tampon",
+      "Crayon",
+      "Spotlight",
+      "Autocollant",
+      "Image",
+      "Recadrer"
+    ]
+  },
+  "beta": {
+    "badge": "Bêta bientôt disponible",
+    "title": "Soyez le premier à essayer iSkitch",
+    "lead": "Rejoignez la bêta privée et recevez l'app avant qu'elle n'arrive sur le Mac App Store.",
+    "email_label": "Votre email",
+    "email_placeholder": "vous@exemple.com",
+    "submit": "Rejoindre la bêta",
+    "success": "C'est noté. Nous vous écrirons à l'ouverture de la bêta.",
+    "error": "Quelque chose s'est mal passé. Réessayez ou écrivez-nous à hello@iskitch.com.",
+    "privacy_note": "Nous utilisons votre email uniquement pour la bêta. Pas de marketing. Désinscription à tout moment."
+  },
+  "cta": {
+    "title": "Prêt à essayer iSkitch avant tout le monde ?",
+    "lead": "Inscrivez-vous à la bêta et nous vous enverrons le lien dès l'ouverture.",
+    "button": "M'inscrire"
+  },
+  "footer": {
+    "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "links": [
+      {
+        "text": "Fonctionnalités",
+        "href": "/fr/#features"
+      },
+      {
+        "text": "Confidentialité",
+        "href": "/fr/privacy"
+      },
+      {
+        "text": "Conditions",
+        "href": "/fr/terms"
+      },
+      {
+        "text": "Aide",
+        "href": "/fr/support"
+      },
+      {
+        "text": "Color Vivo",
+        "href": "https://colorvivo.com"
+      }
+    ]
+  }
+}

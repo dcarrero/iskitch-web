@@ -48,6 +48,27 @@
 /es/support/
   Link: </es/support.md>; rel="alternate"; type="text/markdown"
 
+/fr/
+  Link: </fr/index.md>; rel="alternate"; type="text/markdown"
+
+/fr/privacy
+  Link: </fr/privacy.md>; rel="alternate"; type="text/markdown"
+
+/fr/privacy/
+  Link: </fr/privacy.md>; rel="alternate"; type="text/markdown"
+
+/fr/terms
+  Link: </fr/terms.md>; rel="alternate"; type="text/markdown"
+
+/fr/terms/
+  Link: </fr/terms.md>; rel="alternate"; type="text/markdown"
+
+/fr/support
+  Link: </fr/support.md>; rel="alternate"; type="text/markdown"
+
+/fr/support/
+  Link: </fr/support.md>; rel="alternate"; type="text/markdown"
+
 # Fuente local — cache largo (es immutable, no cambia).
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable

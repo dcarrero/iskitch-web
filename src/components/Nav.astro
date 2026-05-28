@@ -1,8 +1,20 @@
 ---
 interface Props { t: any }
 const { t } = Astro.props as Props;
-const homeHref = t.lang === 'es' ? '/es/' : '/';
-const supportHref = t.lang === 'es' ? '/es/support' : '/support';
+// Prefijo del idioma actual ('' para EN, '/es' para ES, '/fr' para FR).
+const prefix = t.lang === 'en' ? '' : `/${t.lang}`;
+const homeHref = `${prefix}/`;
+const supportHref = `${prefix}/support`;
+
+// Idiomas alternativos para el switcher. Si la page especifica t.alternates
+// los usamos tal cual; si no, asumimos la portada de cada idioma.
+const allLocales = [
+  { code: 'en', label: 'EN', href: '/' },
+  { code: 'es', label: 'ES', href: '/es/' },
+  { code: 'fr', label: 'FR', href: '/fr/' }
+];
+const alternates: { code: string; label: string; href: string }[] =
+  (t.alternates as any) ?? allLocales.filter(l => l.code !== t.lang);
 ---
 <nav class="nav" id="nav">
   <a class="brand" href={homeHref}>
@@ -19,7 +31,11 @@ const supportHref = t.lang === 'es' ? '/es/support' : '/support';
   </div>
 
   <div class="nav-actions">
-    <a class="lang" href={t.switcher.href} aria-label="Switch language">{t.switcher.label}</a>
+    <div class="lang-switch" role="group" aria-label="Language">
+      {alternates.map((l) => (
+        <a class="lang" href={l.href} hreflang={l.code} aria-label={`Switch to ${l.label}`}>{l.label}</a>
+      ))}
+    </div>
     <a class="btn btn-primary btn-sm" href="#beta">
       <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4 12l1.4-1.4L11 16.2V4h2v12.2l5.6-5.6L20 12l-8 8z"/></svg>
       {t.nav.download}

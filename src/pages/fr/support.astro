@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/fr.json";
+const t = { ...baseT,
+  meta: {
+    title: "Aide — iSkitch",
+    description: "Comment installer iSkitch, accorder l'autorisation Enregistrement de l'écran, questions fréquentes et comment nous contacter."
+  }
+};
+---
+<Layout t={t} markdownPath="/fr/support.md">
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Aide</h1>
+    <p class="effective">Nous sommes là pour vous aider — consultez les réponses rapides ci-dessous, et si vous ne trouvez pas ce qu'il vous faut, écrivez-nous.</p>
+
+    <h2>Démarrage rapide</h2>
+    <ol>
+      <li><strong>Installez iSkitch</strong> depuis le Mac App Store (bientôt — en attendant, <a href="/fr/#beta">rejoignez la bêta</a>).</li>
+      <li><strong>Ouvrez iSkitch.</strong> Une petite icône de flèche apparaît dans votre barre des menus (en haut à droite). La première fois, la fenêtre de bienvenue vous guidera.</li>
+      <li><strong>Accordez l'autorisation Enregistrement de l'écran</strong> quand macOS la demande : <em>Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l'écran ▸ iSkitch ✓</em>. Relancez iSkitch.</li>
+      <li><strong>Appuyez sur <kbd>⌥⌘4</kbd></strong> n'importe où, faites glisser pour sélectionner une zone — l'éditeur s'ouvre avec tous les outils d'annotation.</li>
+    </ol>
+
+    <h2>Questions fréquentes</h2>
+
+    <h3>Pourquoi iSkitch ne capture-t-il rien ?</h3>
+    <p>La cause la plus fréquente est l'autorisation Enregistrement de l'écran. Après le premier lancement, macOS la demande ; une fois accordée, <strong>relancez iSkitch</strong> pour que l'autorisation prenne effet.</p>
+    <p>Ouvrez <em>Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l'écran</em>, trouvez iSkitch dans la liste et vérifiez que son interrupteur est activé. S'il n'apparaît pas, appuyez simplement une fois sur <kbd>⌥⌘4</kbd> — macOS vous le demandera automatiquement.</p>
+
+    <h3>Où sont enregistrées mes captures ?</h3>
+    <p>iSkitch n'enregistre jamais en silence. Vous décidez où va chaque capture en appuyant sur <strong>Enregistrer…</strong> (ou en faisant glisser l'image hors de la fenêtre). Dans <em>iSkitch ▸ Réglages ▸ Capture</em>, vous pouvez définir un <strong>dossier par défaut</strong> et un <strong>format par défaut</strong> (PNG/JPG/PDF/TIFF).</p>
+
+    <h3>Puis-je changer le raccourci de capture ?</h3>
+    <p>Le raccourci par défaut est <kbd>⌥⌘4</kbd>. La personnalisation des raccourcis est sur la feuille de route — elle arrivera dans une future mise à jour.</p>
+
+    <h3>Comment partager vers une application précise ?</h3>
+    <p>Cliquez sur <strong>Partager</strong> dans la barre inférieure de l'éditeur. macOS ouvre sa feuille de partage native avec toutes les apps qui acceptent les images (Mail, Messages, Notes, Slack, Rappels, AirDrop…). Vous pouvez aussi <strong>glisser l'image directement</strong> depuis iSkitch vers n'importe quelle app.</p>
+
+    <h3>iSkitch envoie-t-il mes données quelque part ?</h3>
+    <p>Non. iSkitch fonctionne entièrement hors-ligne — pas de compte, pas de pistage, pas d'analytique. Les captures restent sur votre Mac sauf si vous choisissez explicitement de les partager. Plus d'infos dans notre <a href="/fr/privacy">Politique de confidentialité</a>.</p>
+
+    <h3>Puis-je n'exécuter iSkitch que lorsque j'en ai besoin ?</h3>
+    <p>Oui. Dans <em>Réglages ▸ Général</em>, désactivez <strong>"Garder iSkitch dans la barre des menus (lancer à la connexion)"</strong>. Lancez-la ensuite manuellement depuis Spotlight ou votre dossier Applications uniquement quand vous avez besoin de capturer.</p>
+
+    <h3>Comment masquer des informations sensibles dans une capture ?</h3>
+    <p>Utilisez l'outil <strong>Pixeliser</strong> — faites glisser sur la zone à masquer. Vous pouvez choisir parmi quatre styles dans la barre d'outils : <em>Pixeliser</em>, <em>Flou</em>, <em>Bloc plein</em> et <em>Rayures</em>. Les quatre sont visuellement irréversibles.</p>
+
+    <h3>Quels Mac sont compatibles avec iSkitch ?</h3>
+    <p>macOS 14 (Sonoma) ou ultérieur. Universal Binary — fonctionne nativement sur Apple Silicon (série M) et Intel.</p>
+
+    <h2>Besoin d'aide supplémentaire ?</h2>
+    <p>Écrivez-nous à <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Nous lisons chaque message et essayons de répondre sous 24-48 heures (lun-ven, heure CET).</p>
+    <p>Vous signalez un bug ? Merci d'inclure :</p>
+    <ul>
+      <li>Votre version de macOS (menu Pomme ▸ À propos de ce Mac)</li>
+      <li>La version d'iSkitch (Réglages ▸ Général — en bas)</li>
+      <li>Ce que vous faisiez et ce que vous attendiez</li>
+      <li>Une capture si pertinent (vous pouvez la faire avec iSkitch 😉)</li>
+    </ul>
+
+    <h2>Légal</h2>
+    <p>
+      <a href="/fr/privacy">Politique de confidentialité</a> · <a href="/fr/terms">Conditions d'utilisation</a>
+    </p>
+  </main>
+  <Footer t={t} />
+</Layout>
