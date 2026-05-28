@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import baseT from "../i18n/en.json";
+const t = { ...baseT,
+  switcher: { label: "ES", href: "/es/terms" },
+  meta: {
+    title: "Terms of Service — iSkitch",
+    description: "The terms that govern your use of iSkitch for macOS, distributed via the Mac App Store by Color Vivo Internet, S.L."
+  }
+};
+---
+<Layout t={t}>
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Terms of Service</h1>
+    <p class="effective">Effective Date: 28 May 2026</p>
+
+    <p>These terms (the "<strong>Terms</strong>") govern your use of the <strong>iSkitch</strong> macOS application (the "<strong>App</strong>"), distributed by <strong>Color Vivo Internet, S.L.</strong>, a Spanish company based in Madrid (Spain) ("we", "us"). By installing or using the App you agree to these Terms.</p>
+
+    <h2>1. License</h2>
+    <p>The App is distributed free of charge via the <strong>Mac App Store</strong>. We grant you a personal, worldwide, revocable, non-exclusive, non-transferable license to install and use the App on Macs that you own or control, in accordance with the Apple Media Services Terms and Conditions and these Terms.</p>
+
+    <h2>2. What the App does</h2>
+    <p>iSkitch is a native macOS application for capturing the screen, annotating images and sharing them. All processing happens locally on your Mac. The App does not require an account and does not connect to our servers.</p>
+    <p>iSkitch is a tribute to the discontinued <em>Skitch</em> app originally created by Plasq and later owned by Evernote / Bending Spoons. <strong>We are not Skitch and we are not affiliated with, endorsed by or sponsored by Plasq, Evernote or Bending Spoons.</strong></p>
+
+    <h2>3. Permissions and responsibility</h2>
+    <p>The App requires the macOS <strong>Screen Recording</strong> permission to capture the screen. You are responsible for the contents you capture and for complying with any laws, contractual obligations or third-party rights that may apply to the material on your screen (for example, do not capture material protected by copyright or confidentiality without authorisation).</p>
+
+    <h2>4. "As is" — No Warranty</h2>
+    <p>The App is provided "<strong>as is</strong>" and "<strong>as available</strong>", without warranties of any kind, whether express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy or non-infringement. We do not warrant that the App will be uninterrupted, error-free, or compatible with any specific hardware or macOS version.</p>
+
+    <h2>5. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential or punitive damages — including loss of data, loss of work or downtime — arising out of or in connection with your use of the App. Nothing in these Terms limits or excludes any liability that cannot be limited or excluded under applicable law (in particular mandatory EU consumer rights).</p>
+
+    <h2>6. Third-party services</h2>
+    <p>The App relies on third-party services that operate under their own terms:</p>
+    <ul>
+      <li><strong>Apple</strong> — Mac App Store distribution, App Store payments and Screen Recording TCC permission.</li>
+      <li><strong>macOS share extensions</strong> chosen by you (Mail, Messages, etc.) when you use the native share sheet.</li>
+    </ul>
+    <p>We assume no responsibility for the availability or practices of these services.</p>
+
+    <h2>7. Updates</h2>
+    <p>Updates are distributed through the Mac App Store. We may discontinue features or the App itself without notice, although your locally saved files remain accessible since they reside on your Mac and on the locations you chose.</p>
+
+    <h2>8. Changes to these Terms</h2>
+    <p>We may update these Terms at any time. Material changes will be posted on this page with a new effective date. Continued use of the App after a change constitutes acceptance of the modified Terms.</p>
+
+    <h2>9. Governing law</h2>
+    <p>These Terms are governed by <strong>Spanish law</strong>. Any dispute that cannot be resolved amicably shall be submitted to the courts of <strong>Madrid (Spain)</strong>, without prejudice to the mandatory consumer protection rights you may have in your country of residence within the European Union.</p>
+
+    <h2>10. Contact</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>Madrid, Spain<br>Email: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>Website: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>

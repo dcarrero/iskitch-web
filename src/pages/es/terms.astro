@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/es.json";
+const t = { ...baseT,
+  switcher: { label: "EN", href: "/terms" },
+  meta: {
+    title: "Términos de servicio — iSkitch",
+    description: "Términos que rigen el uso de iSkitch para macOS, distribuida a través de la Mac App Store por Color Vivo Internet, S.L."
+  }
+};
+---
+<Layout t={t}>
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Términos de servicio</h1>
+    <p class="effective">Fecha de entrada en vigor: 28 de mayo de 2026</p>
+
+    <p>Estos términos (los "<strong>Términos</strong>") rigen el uso de la aplicación <strong>iSkitch</strong> para macOS (la "<strong>App</strong>"), distribuida por <strong>Color Vivo Internet, S.L.</strong>, sociedad española con domicilio en Madrid (España) ("nosotros"). Al instalar o usar la App, aceptas estos Términos.</p>
+
+    <h2>1. Licencia</h2>
+    <p>La App se distribuye de forma gratuita a través de la <strong>Mac App Store</strong>. Te concedemos una licencia personal, mundial, revocable, no exclusiva e intransferible para instalar y usar la App en los Mac de los que seas propietario o tengas control, conforme a los Términos y condiciones de Apple Media Services y a estos Términos.</p>
+
+    <h2>2. Qué hace la App</h2>
+    <p>iSkitch es una aplicación nativa de macOS para capturar la pantalla, marcar imágenes y compartirlas. Todo el procesamiento se realiza localmente en tu Mac. La App no requiere cuenta y no se conecta a nuestros servidores.</p>
+    <p>iSkitch es un homenaje a la app <em>Skitch</em>, ya descontinuada, creada originalmente por Plasq y posteriormente propiedad de Evernote / Bending Spoons. <strong>No somos Skitch ni estamos afiliados, respaldados ni patrocinados por Plasq, Evernote o Bending Spoons.</strong></p>
+
+    <h2>3. Permisos y responsabilidad</h2>
+    <p>La App requiere el permiso de <strong>Grabación de pantalla</strong> de macOS para capturar la pantalla. Eres responsable del contenido que captures y de cumplir cualquier ley, obligación contractual o derecho de terceros que pueda aplicar al material presente en tu pantalla (por ejemplo, no captures material protegido por derechos de autor o confidencialidad sin autorización).</p>
+
+    <h2>4. "Tal cual" — Sin garantía</h2>
+    <p>La App se ofrece "<strong>tal cual</strong>" y "<strong>según disponibilidad</strong>", sin garantías de ningún tipo, expresas o implícitas, incluidas garantías de comerciabilidad, idoneidad para un fin concreto, exactitud o no infracción. No garantizamos que la App vaya a funcionar sin interrupciones, sin errores ni de forma compatible con un hardware o versión de macOS específicos.</p>
+
+    <h2>5. Limitación de responsabilidad</h2>
+    <p>En la máxima medida permitida por la ley, no seremos responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos — incluida la pérdida de datos, de trabajo o tiempo de inactividad — derivados o relacionados con tu uso de la App. Nada en estos Términos limita o excluye responsabilidades que no puedan limitarse o excluirse según la ley aplicable (en particular los derechos imperativos del consumidor en la UE).</p>
+
+    <h2>6. Servicios de terceros</h2>
+    <p>La App depende de servicios de terceros que operan bajo sus propios términos:</p>
+    <ul>
+      <li><strong>Apple</strong> — distribución vía Mac App Store, pagos del App Store y permiso de Grabación de pantalla TCC.</li>
+      <li><strong>Extensiones de compartir de macOS</strong> que elijas tú (Mail, Mensajes, etc.) al usar la hoja nativa de compartir.</li>
+    </ul>
+    <p>No asumimos responsabilidad por la disponibilidad o las prácticas de estos servicios.</p>
+
+    <h2>7. Actualizaciones</h2>
+    <p>Las actualizaciones se distribuyen a través de la Mac App Store. Podemos discontinuar funcionalidades o la propia App sin previo aviso, aunque tus archivos guardados localmente seguirán siendo accesibles porque residen en tu Mac y en las ubicaciones que tú elegiste.</p>
+
+    <h2>8. Cambios en estos Términos</h2>
+    <p>Podemos actualizar estos Términos en cualquier momento. Los cambios sustanciales se publicarán en esta página con una nueva fecha de entrada en vigor. El uso continuado de la App tras un cambio supone la aceptación de los Términos modificados.</p>
+
+    <h2>9. Ley aplicable</h2>
+    <p>Estos Términos se rigen por la <strong>legislación española</strong>. Cualquier controversia que no pueda resolverse de forma amistosa se someterá a los <strong>tribunales de Madrid (España)</strong>, sin perjuicio de los derechos imperativos de protección al consumidor que puedan corresponderte en tu país de residencia dentro de la Unión Europea.</p>
+
+    <h2>10. Contacto</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>Madrid, España<br>Email: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>Web: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>

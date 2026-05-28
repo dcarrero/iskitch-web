@@ -46,8 +46,9 @@
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
     "links": [
-      { "text": "Features", "href": "#features" },
+      { "text": "Features", "href": "/#features" },
       { "text": "Privacy", "href": "/privacy" },
+      { "text": "Terms", "href": "/terms" },
       { "text": "Support", "href": "mailto:hello@iskitch.com" },
       { "text": "Color Vivo", "href": "https://colorvivo.com" }
     ]

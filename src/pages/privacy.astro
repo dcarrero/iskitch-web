@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import baseT from "../i18n/en.json";
+const t = { ...baseT,
+  switcher: { label: "ES", href: "/es/privacy" },
+  meta: {
+    title: "Privacy Policy — iSkitch",
+    description: "How iSkitch handles your data: it doesn't collect any. Captures stay on your Mac and the app never connects to our servers."
+  }
+};
+---
+<Layout t={t}>
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective Date: 28 May 2026</p>
+
+    <p>This policy explains how the <strong>iSkitch</strong> macOS application handles your data. The app is built and distributed by <strong>Color Vivo Internet, S.L.</strong>, a Spanish company based in Madrid (Spain).</p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li><strong>No personal data collection.</strong> iSkitch does not collect, store or transmit personal data to us or to any third party.</li>
+      <li><strong>No analytics, no tracking.</strong> The app contains no telemetry, no analytics SDKs and no crash-reporting services.</li>
+      <li><strong>Captures stay on your Mac.</strong> Screenshots, annotations and edits are processed locally and never leave your device unless you choose to share them.</li>
+      <li><strong>Screen Recording is only used on demand.</strong> macOS requests this permission only when you initiate a capture.</li>
+    </ul>
+
+    <h2>What the app stores on your device</h2>
+    <p>iSkitch saves a small amount of information on your Mac so it can remember your preferences between sessions:</p>
+    <ul>
+      <li><strong>App preferences</strong> in <code>UserDefaults</code>: default export format, default save folder, default color and arrow style, appearance (Light/Dark/System), language, and similar UI choices.</li>
+      <li><strong>Window state</strong>: editor window size and position, so the next launch opens where you left off.</li>
+      <li><strong>Captures and saved files</strong>: only when you explicitly save or export them, and only to the location you choose.</li>
+    </ul>
+    <p>None of this is transmitted to us.</p>
+
+    <h2>What the app sends over the network</h2>
+    <p>iSkitch <strong>does not make any outbound network connections on its own</strong>. We do not operate any servers that receive your data.</p>
+    <p>The optional <code>com.apple.security.network.client</code> entitlement is declared only so that user-initiated sharing through the macOS share sheet can work as expected (for example, sending a screenshot via Mail or Messages). Anything that happens after you pick a share extension is handled by that extension, not by iSkitch.</p>
+
+    <h2>Permissions iSkitch may request</h2>
+    <ul>
+      <li><strong>Screen Recording</strong> (required): granted via <em>System Settings ▸ Privacy &amp; Security ▸ Screen Recording</em>. macOS uses this permission so iSkitch can read pixels of the area you select with <kbd>⌥⌘4</kbd>, a window or full screen. The captured image stays on your Mac.</li>
+      <li><strong>File access</strong> via the standard Open and Save panels: limited to the file or folder you pick at that moment.</li>
+      <li><strong>Pasteboard / drag &amp; drop</strong>: when you press "Copy" or drag an image out, iSkitch writes the flattened image to the macOS clipboard or to the destination you choose.</li>
+    </ul>
+
+    <h2>Apple as a third party</h2>
+    <p>iSkitch is distributed through the <strong>Mac App Store</strong>. Apple acts as an independent data controller for downloads, ratings, payments and any diagnostics you opt in to share with developers via the App Store. Please refer to <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a> to understand how they handle that information.</p>
+
+    <h2>Children</h2>
+    <p>iSkitch is rated <strong>4+</strong> in the App Store and is suitable for all audiences. We do not knowingly collect any data from anyone, including children under 13.</p>
+
+    <h2>Your rights under GDPR</h2>
+    <p>Because iSkitch performs no server-side processing and we receive none of your data, there is no personal data on our side to access, rectify, port or erase. You remain in full control of everything stored on your Mac and can delete the app and its preferences at any time.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we ever change how iSkitch handles data, this page will be updated with a new effective date before the change reaches users.</p>
+
+    <h2>Contact</h2>
+    <p><strong>Color Vivo Internet, S.L.</strong><br>Madrid, Spain<br>Email: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a><br>Website: <a href="https://iskitch.com">iskitch.com</a></p>
+  </main>
+  <Footer t={t} />
+</Layout>
