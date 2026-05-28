@@ -1,137 +1,80 @@
 # iskitch-web
 
-Sitio público de **iSkitch** — landing, política de privacidad y soporte.
-Construido con **[Astro](https://astro.build)** (multi-idioma EN/ES) y desplegado en **Cloudflare Pages**.
+Public website for **iSkitch** — landing page, privacy policy, terms of service and
+support, all at [iskitch.com](https://iskitch.com).
 
-## Estructura
+## About the project
+
+**iSkitch** is the idea of [David Carrero](https://github.com/dcarrero) (Color Vivo
+Internet, S.L.): a modern, native macOS take on the classic **Skitch** annotation
+tool. The original Skitch app has been effectively abandoned and only ships an
+Intel binary — leaving Apple Silicon Macs (M1, M2, M3, M4…) running it under
+Rosetta with quirks and bugs.
+
+iSkitch is a ground-up rewrite in **Swift / SwiftUI / AppKit** that runs natively
+on Apple Silicon, keeps the iconic Skitch-style tapered arrow, and adds modern
+touches (pixelate, spotlight, native share sheet, App Store distribution).
+The macOS app lives in a separate, private repository.
+
+This repo contains only the **public marketing site**.
+
+## Stack
+
+- **[Astro](https://astro.build)** 5 (static site generator)
+- **Multi-language**: English (`/`) + Spanish (`/es/`)
+- **[Cloudflare Pages](https://pages.cloudflare.com)** for hosting
+- **Cloudflare Pages Functions** for the beta signup form
+- **Cloudflare KV** for storing beta subscribers
+- **GitHub Actions** for the daily sync to Acumbamail
+
+## Project structure
+
 ```
 .
-├── astro.config.mjs        # config Astro + i18n (en / es)
+├── astro.config.mjs        # Astro + i18n config (en / es)
 ├── package.json
 ├── tsconfig.json
-├── public/                 # estáticos servidos tal cual
+├── public/                 # Static assets served as-is
 │   └── assets/
-│       ├── editor-hero.png
+│       ├── editor-hero-en.png
+│       ├── editor-hero-es.png
 │       └── app-icon.png
 ├── src/
 │   ├── i18n/
-│   │   ├── en.json         # traducciones inglés (idioma por defecto)
-│   │   └── es.json         # traducciones español
+│   │   ├── en.json         # English translations
+│   │   └── es.json         # Spanish translations
 │   ├── layouts/Layout.astro
-│   ├── components/         # Nav, Hero, Features, Tools, CTA, Footer
+│   ├── components/         # Nav, Hero, Features, Tools, BetaSignup, CTA, Footer
 │   ├── pages/
 │   │   ├── index.astro     # EN → /
-│   │   └── es/index.astro  # ES → /es/
+│   │   ├── privacy.astro   # EN → /privacy
+│   │   ├── terms.astro     # EN → /terms
+│   │   ├── support.astro   # EN → /support
+│   │   └── es/             # Same pages under /es/
 │   └── styles/global.css
-└── dist/                   # SALIDA del build (ignorado en git)
+├── functions/              # Cloudflare Pages Functions
+│   └── api/
+│       ├── subscribe.js            # POST: store email in KV
+│       ├── ping.js                 # GET: health check
+│       └── admin/
+│           ├── subscribers.js      # GET: list/export subscribers
+│           ├── mark-synced.js      # POST: mark as synced
+│           └── delete.js           # POST: delete subscribers
+├── scripts/
+│   └── sync-acumbamail.mjs # KV → Acumbamail sync
+├── .github/workflows/
+│   └── sync-acumbamail.yml # Daily cron (07:30 UTC) + manual dispatch
+└── dist/                   # Build output (gitignored, deployed by Cloudflare)
 ```
 
-## Desarrollo local
+## Local development
+
 ```sh
 npm install
-npm run dev       # → http://localhost:4321
+npm run dev       # http://localhost:4321
 ```
 
-## Build
-```sh
-npm run build     # genera dist/
-npm run preview   # sirve dist/ para verificar
-```
-
-## Despliegue en Cloudflare Pages
-1. **Create a project → Connect to Git → seleccionar `iskitch-web`**.
-2. Build settings:
-   - Framework preset: **Astro**
-   - Build command: `npm run build`
-   - **Build output directory: `dist`**
-   - Node version: 20 (o superior)
-3. Conectar el dominio **iskitch.com** en *Custom domains*.
-
-> Cloudflare publicará solo el contenido de `dist/`. Los `.md`, configs y `src/`
-> se quedan en el repo pero **no se sirven**.
-
-## i18n
-- **Inglés** es el idioma por defecto → URL raíz `/`.
-- **Español** está bajo `/es/`.
-- El selector de idioma vive en la navegación (botón EN/ES).
-- Para añadir un idioma nuevo:
-  1. Copiar `src/i18n/en.json` → `src/i18n/xx.json` y traducir.
-  2. Crear `src/pages/xx/index.astro` (basado en `es/index.astro`).
-  3. Añadir `xx` a `locales` en `astro.config.mjs`.
-  4. Añadir un `hreflang` en `src/layouts/Layout.astro`.
-
-## Formulario de Beta (Pages Function + Cloudflare KV)
-
-La landing tiene un formulario para recopilar emails de la beta privada. Los emails
-se guardan en **Cloudflare KV** (gratis: 100k lecturas/día, 1k escrituras/día, 1 GB
-de almacenamiento) y se pueden exportar por un endpoint admin.
-
-> Acumbamail bloquea las IPs salientes de Cloudflare Workers, por eso no podemos
-> usar su API directamente desde la Pages Function. Por eso almacenamos en KV y se
-> exportan los emails a Acumbamail manualmente cuando quieras.
-
-### 1) Crear el namespace de KV
-1. **Cloudflare Dashboard → Workers & Pages → KV** (en el menú lateral).
-2. **Create a namespace** → nombre p. ej. `iskitch_subscribers` → Create.
-
-### 2) Bindear el namespace al proyecto Pages
-1. **Workers & Pages → `iskitch-web` → Settings → Bindings** (o *Functions* en interfaces antiguas).
-2. **Add binding → KV namespace**.
-3. Variable name: `SUBSCRIBERS` · Namespace: `iskitch_subscribers`.
-4. Guardar para *Production* **y** *Preview*.
-
-### 3) Crear el secreto de admin
-En **Settings → Environment variables → Add variable** (Production + Preview):
-
-| Variable | Valor | Type |
-|---|---|---|
-| `ADMIN_KEY` | un string aleatorio (p. ej. `openssl rand -hex 24`) | **Secret** 🔒 |
-
-> Las antiguas `ACUMBAMAIL_AUTH_TOKEN` y `ACUMBAMAIL_LIST_ID` ya **no se usan**, puedes borrarlas.
-
-### 4) Probar
-- Formulario en la web → status `ok` (verde).
-- `GET https://iskitch.com/api/subscribe` → debe devolver `{"configured":{"kv_subscribers":true}}`.
-- `GET https://iskitch.com/api/admin/subscribers?key=TU_ADMIN_KEY` → JSON con lista de suscriptores.
-- `GET https://iskitch.com/api/admin/subscribers?key=TU_ADMIN_KEY&format=csv` → descarga CSV.
-
-### 5) Exportar a Acumbamail
-
-#### Manual (rápido, un clic)
-1. Visitar el URL CSV de arriba en el navegador → descarga `iskitch-beta-subscribers-YYYY-MM-DD.csv`.
-2. En Acumbamail → tu lista → **Importar suscriptores** → subir el CSV.
-
-#### Sincronizar desde tu Mac (script local)
-1. Copia `.env.example` a `.env` y rellena los valores (`ADMIN_KEY`, `ACUMBAMAIL_AUTH_TOKEN`, `ACUMBAMAIL_LIST_ID`).
-2. `npm run sync` cuando quieras sincronizar.
-3. El script lee los pendientes del KV y los añade a Acumbamail con double opt-in, marcándolos como `synced_at`.
-
-> El `.env` está en `.gitignore`, no se sube al repo.
-
-#### Automático (GitHub Actions diario)
-Hay un workflow en `.github/workflows/sync-acumbamail.yml` que corre **una vez al día** y sincroniza los pendientes del KV a Acumbamail.
-
-⚠️ Requiere GitHub Actions habilitado (en repos privados consume cuota mensual).
-
-**Secrets a configurar en GitHub** (`Settings → Secrets and variables → Actions → New repository secret`):
-
-| Secret | Valor |
-|---|---|
-| `ADMIN_KEY` | el mismo que pusiste en Cloudflare Pages |
-| `ACUMBAMAIL_AUTH_TOKEN` | tu auth_token de Acumbamail (regenera el viejo) |
-| `ACUMBAMAIL_LIST_ID` | el ID de la lista (`1355595` en tu caso) |
-
-El workflow se puede lanzar también **a mano** desde *GitHub → Actions → Sync KV → Acumbamail → Run workflow*.
-
-### Notas
-- El formulario tiene **honeypot** anti-bots (campo invisible).
-- La clave KV es `subscriber:<email>` → re-suscripciones del mismo email sobrescriben en vez de duplicar.
-- KV guarda además `__meta:count` (total acumulado) y `__meta:last` (timestamp última suscripción).
-- Validación de email del lado cliente (`type="email"`) y servidor (regex).
-
-### Pruebas locales
-La Pages Function NO se ejecuta con `npm run dev` (Astro dev). Para probarla en
-local con KV simulado:
+Pages Functions don't run with `astro dev`. To test them locally use Wrangler:
 
 ```sh
 npm i -g wrangler
@@ -139,8 +82,135 @@ npm run build
 wrangler pages dev dist --kv SUBSCRIBERS --binding ADMIN_KEY=test
 ```
 
-## Pendiente
-- [ ] `src/pages/privacy.astro` + `src/pages/es/privacy.astro` (texto base en `mac/LAUNCH.md` §7).
-- [ ] `public/og-cover.png` — 1200×630 para Open Graph.
-- [ ] `public/favicon.png` — 32×32 + 180×180 apple-touch-icon.
-- [ ] Cuando esté la app en la Store, actualizar el enlace de descarga (`#download`) con la URL real de App Store Connect.
+## Build
+
+```sh
+npm run build     # output → dist/
+npm run preview   # serve dist/ locally
+```
+
+## Deployment (Cloudflare Pages)
+
+1. **Workers & Pages → Create application → Connect to Git → `iskitch-web`**.
+2. Build settings:
+   - Framework preset: **Astro**
+   - Build command: `npm run build`
+   - **Build output directory: `dist`**
+   - Node version: 20+
+3. Custom domain → `iskitch.com`.
+
+Only the contents of `dist/` are served. `README.md`, `src/`, configs, etc. stay
+in the repo but are **not** deployed.
+
+## Beta signup form
+
+The landing page has a form for collecting beta signups. The flow:
+
+1. User submits email on the landing page.
+2. Cloudflare Pages Function (`functions/api/subscribe.js`) writes the email to
+   **Cloudflare KV** (key `subscriber:<email>`).
+3. A daily GitHub Action syncs new subscribers to **Acumbamail** with double
+   opt-in (Acumbamail's WAF blocks Cloudflare Worker IPs, hence the indirection).
+
+### Cloudflare configuration
+
+In **Pages → `iskitch-web` → Settings**:
+
+**KV namespace binding** (Bindings tab):
+
+| Variable name | KV namespace |
+|---|---|
+| `SUBSCRIBERS` | `iskitch-kv` |
+
+**Environment variables / Secrets**:
+
+| Variable | Value | Type |
+|---|---|---|
+| `ADMIN_KEY` | random string (used to protect admin endpoints) | Secret 🔒 |
+
+### GitHub Secrets (for the daily sync action)
+
+In **Settings → Secrets and variables → Actions**:
+
+| Secret | Value |
+|---|---|
+| `ADMIN_KEY` | same as in Cloudflare |
+| `ACUMBAMAIL_AUTH_TOKEN` | your Acumbamail API token |
+| `ACUMBAMAIL_LIST_ID` | numeric ID of the target list |
+
+### Manual operations
+
+Once `ADMIN_KEY` is set, you can hit the admin endpoints:
+
+```sh
+# List all subscribers (JSON)
+curl 'https://iskitch.com/api/admin/subscribers?key=ADMIN_KEY'
+
+# Pending subscribers only (not yet synced)
+curl 'https://iskitch.com/api/admin/subscribers?key=ADMIN_KEY&only=pending'
+
+# Already synced
+curl 'https://iskitch.com/api/admin/subscribers?key=ADMIN_KEY&only=synced'
+
+# Export as CSV
+curl 'https://iskitch.com/api/admin/subscribers?key=ADMIN_KEY&format=csv' \
+  -o subscribers.csv
+
+# Delete subscribers
+curl -X POST 'https://iskitch.com/api/admin/delete?key=ADMIN_KEY' \
+  -H 'Content-Type: application/json' \
+  -d '{"emails": ["a@b.com", "c@d.com"]}'
+
+# Health check (also returns whether bindings are configured)
+curl https://iskitch.com/api/subscribe
+```
+
+### Run the sync manually
+
+From GitHub: **Actions → "Sync KV → Acumbamail" → Run workflow**.
+
+Or from your terminal:
+
+```sh
+gh workflow run sync-acumbamail.yml --repo dcarrero/iskitch-web
+```
+
+Or locally on your Mac (no GitHub Actions needed):
+
+```sh
+cp .env.example .env       # then edit .env with real values
+npm run sync
+```
+
+## i18n — adding a new language
+
+1. Copy `src/i18n/en.json` → `src/i18n/xx.json` and translate.
+2. Create `src/pages/xx/index.astro` (use `src/pages/es/index.astro` as a template).
+3. Add `xx` to the `locales` array in `astro.config.mjs`.
+4. Add a `<link rel="alternate" hreflang="xx" …>` in `src/layouts/Layout.astro`.
+
+## Roadmap
+
+- [ ] `public/og-cover.png` — 1200×630 Open Graph image.
+- [ ] `public/favicon.png` — 32×32 + apple-touch-icon.
+- [ ] Update Mac App Store links when iSkitch ships.
+- [ ] Add more languages (FR, DE, PT, IT…).
+
+## License
+
+Copyright © 2026 **Color Vivo Internet, S.L.** All rights reserved.
+
+This repository contains the marketing website for iSkitch. The source code is
+made public for transparency and convenience (free Cloudflare Pages + GitHub
+Actions on public repos), but **no open-source license is granted**. You are
+welcome to read the code, learn from it and report issues, but please do not
+copy substantial portions, the iSkitch name, logo, copy, or brand assets without
+written permission.
+
+For licensing inquiries, partnerships or press: <hello@iskitch.com>.
+
+---
+
+**iSkitch** is a tribute to the discontinued Skitch app (originally by Plasq,
+later Evernote / Bending Spoons). We are not affiliated with, endorsed by or
+sponsored by Plasq, Evernote or Bending Spoons.
