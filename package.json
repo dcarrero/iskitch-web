@@ -8,7 +8,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sync": "node --env-file=.env scripts/sync-acumbamail.mjs"
   },
   "devDependencies": {
     "astro": "^5.0.0"

@@ -101,8 +101,17 @@ En **Settings → Environment variables → Add variable** (Production + Preview
 1. Visitar el URL CSV de arriba en el navegador → descarga `iskitch-beta-subscribers-YYYY-MM-DD.csv`.
 2. En Acumbamail → tu lista → **Importar suscriptores** → subir el CSV.
 
-#### Automático (recomendado — GitHub Actions diario)
-Hay un workflow en `.github/workflows/sync-acumbamail.yml` que corre **una vez al día** y sincroniza los pendientes del KV a Acumbamail (las IPs de GitHub no están bloqueadas).
+#### Sincronizar desde tu Mac (script local)
+1. Copia `.env.example` a `.env` y rellena los valores (`ADMIN_KEY`, `ACUMBAMAIL_AUTH_TOKEN`, `ACUMBAMAIL_LIST_ID`).
+2. `npm run sync` cuando quieras sincronizar.
+3. El script lee los pendientes del KV y los añade a Acumbamail con double opt-in, marcándolos como `synced_at`.
+
+> El `.env` está en `.gitignore`, no se sube al repo.
+
+#### Automático (GitHub Actions diario)
+Hay un workflow en `.github/workflows/sync-acumbamail.yml` que corre **una vez al día** y sincroniza los pendientes del KV a Acumbamail.
+
+⚠️ Requiere GitHub Actions habilitado (en repos privados consume cuota mensual).
 
 **Secrets a configurar en GitHub** (`Settings → Secrets and variables → Actions → New repository secret`):
 
