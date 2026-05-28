@@ -52,7 +52,10 @@ export async function onRequestPost({ request, env }) {
     // Test: fetch a la home de Acumbamail (sin API) para ver si bloquean Cloudflare.
     if (url.searchParams.get("test") === "acumba-home") {
       try {
-        const r = await fetch("https://acumbamail.com/", { method: "GET" });
+        const r = await fetch("https://acumbamail.com/", {
+          method: "GET",
+          headers: { "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" },
+        });
         return jsonResponse({ ok: true, status: r.status, ct: r.headers.get("content-type") });
       } catch (e) {
         return jsonResponse({ ok: false, error: "home_fetch_failed", detail: String(e?.message ?? e).slice(0, 300) }, 502);
