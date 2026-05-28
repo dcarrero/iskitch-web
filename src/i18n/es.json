@@ -10,17 +10,18 @@
     "tools": "Herramientas",
     "privacy": "Privacidad",
     "support": "Soporte",
-    "download": "Descargar"
+    "download": "Apuntarme"
   },
   "hero": {
-    "badge": "Ya en la Mac App Store",
+    "badge": "Próximamente · Mac App Store",
     "title_line1": "Captura. Marca.",
     "title_line2": "Comparte en un clic.",
     "lead": "iSkitch es la versión moderna y nativa del clásico Skitch para macOS. Vive en la barra de menús, lista para ⌥⌘4 en cualquier momento — y comparte con la hoja nativa de macOS.",
-    "cta_top": "Descargar en la",
-    "cta_bottom": "Mac App Store",
+    "cta_primary": "Apuntarme a la beta",
     "cta_secondary": "Ver qué incluye",
-    "meta": ["Gratis", "Sin seguimiento", "Universal Binary", "Inglés · Español"]
+    "appstore_coming_top": "Próximamente en la",
+    "appstore_coming_bottom": "Mac App Store",
+    "meta": ["Gratis en beta", "Sin seguimiento", "Universal Binary", "Inglés · Español"]
   },
   "features": {
     "title": "Pensada para el macOS de hoy",
@@ -51,8 +52,9 @@
     "privacy_note": "Solo usamos tu email para la beta. Sin marketing. Puedes darte de baja en cualquier momento."
   },
   "cta": {
-    "title": "¿Listo para olvidar las capturas aburridas?",
-    "lead": "Gratis en la Mac App Store. Sin cuentas. Solo ábrela, pulsa ⌥⌘4 y listo."
+    "title": "¿Quieres probar iSkitch antes que nadie?",
+    "lead": "Apúntate a la beta y te enviaremos el enlace en cuanto se abra.",
+    "button": "Apuntarme"
   },
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",

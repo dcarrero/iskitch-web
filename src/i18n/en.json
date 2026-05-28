@@ -10,17 +10,18 @@
     "tools": "Tools",
     "privacy": "Privacy",
     "support": "Support",
-    "download": "Download"
+    "download": "Join beta"
   },
   "hero": {
-    "badge": "Now on the Mac App Store",
+    "badge": "Coming soon · Mac App Store",
     "title_line1": "Capture. Annotate.",
     "title_line2": "Share in one click.",
     "lead": "iSkitch is a modern, native macOS take on the classic Skitch. Lives in your menu bar, ready for ⌥⌘4 at any moment — and shares through the macOS share sheet.",
-    "cta_top": "Download on the",
-    "cta_bottom": "Mac App Store",
+    "cta_primary": "Join the beta",
     "cta_secondary": "See what's inside",
-    "meta": ["Free to use", "No tracking", "Universal Binary", "English · Español"]
+    "appstore_coming_top": "Coming soon to the",
+    "appstore_coming_bottom": "Mac App Store",
+    "meta": ["Free for the beta", "No tracking", "Universal Binary", "English · Español"]
   },
   "features": {
     "title": "Built for the macOS you use today",
@@ -51,8 +52,9 @@
     "privacy_note": "We only use your email for the beta. No marketing. Unsubscribe anytime."
   },
   "cta": {
-    "title": "Ready to ditch boring screenshots?",
-    "lead": "Free on the Mac App Store. No accounts. Just open it, press ⌥⌘4 and you're done."
+    "title": "Ready to try iSkitch before everyone else?",
+    "lead": "Sign up for the beta and we'll email you the link the moment it opens.",
+    "button": "Sign me up"
   },
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
