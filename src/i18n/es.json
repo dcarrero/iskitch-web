@@ -1,6 +1,9 @@
 {
   "lang": "es",
-  "switcher": { "label": "EN", "href": "/" },
+  "switcher": {
+    "label": "EN",
+    "href": "/"
+  },
   "meta": {
     "title": "iSkitch — Captura, marca y comparte para macOS",
     "description": "iSkitch es la versión moderna y nativa del clásico Skitch para macOS — captura cualquier región, ventana o la pantalla completa, márcala al instante y compártela en un clic."
@@ -22,24 +25,63 @@
     "cta_secondary": "Ver qué incluye",
     "appstore_coming_top": "Próximamente en la",
     "appstore_coming_bottom": "Mac App Store",
-    "meta": ["Gratis en beta", "Sin seguimiento", "Universal Binary", "Inglés · Español"]
+    "meta": [
+      "Gratis en beta",
+      "Sin seguimiento",
+      "Universal Binary",
+      "Inglés · Español"
+    ],
+    "image_alt": "Captura del editor de anotaciones de iSkitch mostrando una web de marketing capturada con flechas rojas, etiquetas de texto, un resaltado magenta y zonas pixeladas — herramientas de anotación funcionando en macOS."
   },
   "features": {
     "title": "Pensada para el macOS de hoy",
     "lead": "SwiftUI + AppKit nativos. Vive en la barra de menús. Diseñada para no estorbar hasta que pulsas ⌥⌘4.",
     "items": [
-      { "title": "Captura cualquier cosa", "desc": "Región (⌥⌘4), ventana o pantalla completa. Se abre directamente en el editor." },
-      { "title": "14 herramientas de marcado", "desc": "Flechas afiladas, texto con fuentes del sistema, formas, resaltado, lápiz, sellos y más." },
-      { "title": "Oculta información sensible", "desc": "Pixelar, difuminar, bloque sólido o rayado — ilegible de forma fiable." },
-      { "title": "Compartir nativo", "desc": "Hoja de macOS, arrastrar a cualquier app, copiar o guardar como PNG/JPG/PDF." },
-      { "title": "Foco y recorte", "desc": "Destaca lo que importa. Recorta con proporciones predefinidas." },
-      { "title": "Privacidad ante todo", "desc": "Sin cuentas. Sin seguimiento. Tus datos no salen del Mac." }
+      {
+        "title": "Captura cualquier cosa",
+        "desc": "Región (⌥⌘4), ventana o pantalla completa. Se abre directamente en el editor."
+      },
+      {
+        "title": "14 herramientas de marcado",
+        "desc": "Flechas afiladas, texto con fuentes del sistema, formas, resaltado, lápiz, sellos y más."
+      },
+      {
+        "title": "Oculta información sensible",
+        "desc": "Pixelar, difuminar, bloque sólido o rayado — ilegible de forma fiable."
+      },
+      {
+        "title": "Compartir nativo",
+        "desc": "Hoja de macOS, arrastrar a cualquier app, copiar o guardar como PNG/JPG/PDF."
+      },
+      {
+        "title": "Foco y recorte",
+        "desc": "Destaca lo que importa. Recorta con proporciones predefinidas."
+      },
+      {
+        "title": "Privacidad ante todo",
+        "desc": "Sin cuentas. Sin seguimiento. Tus datos no salen del Mac."
+      }
     ]
   },
   "tools": {
     "title": "Todas las herramientas que necesitas",
     "lead": "14 herramientas, siempre a un clic.",
-    "names": ["Seleccionar", "Flecha", "Texto", "Rectángulo", "Elipse", "Línea", "Resaltado", "Pixelar", "Sello", "Lápiz", "Foco", "Sticker", "Imagen", "Recortar"]
+    "names": [
+      "Seleccionar",
+      "Flecha",
+      "Texto",
+      "Rectángulo",
+      "Elipse",
+      "Línea",
+      "Resaltado",
+      "Pixelar",
+      "Sello",
+      "Lápiz",
+      "Foco",
+      "Sticker",
+      "Imagen",
+      "Recortar"
+    ]
   },
   "beta": {
     "badge": "Beta abriendo pronto",
@@ -60,11 +102,26 @@
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
     "links": [
-      { "text": "Características", "href": "/es/#features" },
-      { "text": "Privacidad", "href": "/es/privacy" },
-      { "text": "Términos", "href": "/es/terms" },
-      { "text": "Soporte", "href": "/es/support" },
-      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+      {
+        "text": "Características",
+        "href": "/es/#features"
+      },
+      {
+        "text": "Privacidad",
+        "href": "/es/privacy"
+      },
+      {
+        "text": "Términos",
+        "href": "/es/terms"
+      },
+      {
+        "text": "Soporte",
+        "href": "/es/support"
+      },
+      {
+        "text": "Color Vivo",
+        "href": "https://colorvivo.com"
+      }
     ]
   }
 }

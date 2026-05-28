@@ -1,0 +1,59 @@
+# Cloudflare Pages — cabeceras estáticas.
+# Sirve los .md como text/markdown (la extensión por sí sola no lo garantiza)
+# y anuncia el equivalente markdown vía cabecera Link (Markdown for Agents).
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=300, must-revalidate
+
+/
+  Link: </index.md>; rel="alternate"; type="text/markdown"
+
+/es/
+  Link: </es/index.md>; rel="alternate"; type="text/markdown"
+
+/privacy
+  Link: </privacy.md>; rel="alternate"; type="text/markdown"
+
+/privacy/
+  Link: </privacy.md>; rel="alternate"; type="text/markdown"
+
+/terms
+  Link: </terms.md>; rel="alternate"; type="text/markdown"
+
+/terms/
+  Link: </terms.md>; rel="alternate"; type="text/markdown"
+
+/support
+  Link: </support.md>; rel="alternate"; type="text/markdown"
+
+/support/
+  Link: </support.md>; rel="alternate"; type="text/markdown"
+
+/es/privacy
+  Link: </es/privacy.md>; rel="alternate"; type="text/markdown"
+
+/es/privacy/
+  Link: </es/privacy.md>; rel="alternate"; type="text/markdown"
+
+/es/terms
+  Link: </es/terms.md>; rel="alternate"; type="text/markdown"
+
+/es/terms/
+  Link: </es/terms.md>; rel="alternate"; type="text/markdown"
+
+/es/support
+  Link: </es/support.md>; rel="alternate"; type="text/markdown"
+
+/es/support/
+  Link: </es/support.md>; rel="alternate"; type="text/markdown"
+
+# Fuente local — cache largo (es immutable, no cambia).
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# WebP y PNG del hero — cache razonable.
+/assets/*.webp
+  Cache-Control: public, max-age=604800
+/assets/*.png
+  Cache-Control: public, max-age=604800

@@ -30,7 +30,7 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
       </ul>
     </div>
 
-    <button class="hero-shot-link" type="button" data-lightbox-src={heroLargeWebp} aria-label="Expand screenshot">
+    <button class="hero-shot-link" type="button" data-lightbox-src={heroLargeWebp} data-lightbox-alt={t.hero.image_alt} aria-label="Expand screenshot">
       <picture>
         <source
           type="image/webp"
@@ -38,7 +38,7 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
           sizes="(max-width: 768px) 92vw, (max-width: 1180px) 50vw, 560px" />
         <img
           src={`${heroBase}-1280.webp`}
-          alt="iSkitch editor with annotations"
+          alt={t.hero.image_alt}
           fetchpriority="high"
           decoding="async"
           width="1000"
@@ -67,8 +67,9 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
     if (!lightbox) return;
     const lbImg = lightbox.querySelector('.lightbox-img');
     const lbClose = lightbox.querySelector('.lightbox-close');
-    function open(src) {
+    function open(src, alt) {
       lbImg.src = src;
+      lbImg.alt = alt || '';
       lightbox.classList.add('is-open');
       lightbox.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
@@ -81,7 +82,7 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
     }
     triggers.forEach((el) => el.addEventListener('click', (e) => {
       e.preventDefault();
-      open(el.getAttribute('data-lightbox-src'));
+      open(el.getAttribute('data-lightbox-src'), el.getAttribute('data-lightbox-alt'));
     }));
     lbClose.addEventListener('click', close);
     lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });

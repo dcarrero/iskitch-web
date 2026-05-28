@@ -4,7 +4,65 @@
 User-agent: *
 Allow: /
 
-# No exponemos secciones admin; los endpoints /api/admin/* requieren clave
-# y devuelven 401 sin ella, no hay rutas privadas que ocultar aquí.
+# Permisos explícitos para bots de IA / agentes (OpenAI, Anthropic, Perplexity y otros
+# que respetan robots.txt). Sin esto, algunos asumen una negativa implícita.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# Sin secciones admin públicas; /api/admin/* requiere clave y devuelve 401 sin ella.
 
 Sitemap: https://iskitch.com/sitemap-index.xml

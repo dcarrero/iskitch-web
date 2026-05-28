@@ -1,6 +1,9 @@
 {
   "lang": "en",
-  "switcher": { "label": "ES", "href": "/es/" },
+  "switcher": {
+    "label": "ES",
+    "href": "/es/"
+  },
   "meta": {
     "title": "iSkitch — Capture, annotate & share for macOS",
     "description": "iSkitch is a modern, native macOS take on the classic Skitch — capture any region, window or full screen, annotate it instantly, and share with one click."
@@ -22,24 +25,63 @@
     "cta_secondary": "See what's inside",
     "appstore_coming_top": "Coming soon to the",
     "appstore_coming_bottom": "Mac App Store",
-    "meta": ["Free for the beta", "No tracking", "Universal Binary", "English · Español"]
+    "meta": [
+      "Free for the beta",
+      "No tracking",
+      "Universal Binary",
+      "English · Español"
+    ],
+    "image_alt": "Screenshot of the iSkitch annotation editor showing a captured window of a marketing site with red arrows, text labels, a magenta highlight and pixelated areas — demonstrating annotation tools in action on macOS."
   },
   "features": {
     "title": "Built for the macOS you use today",
     "lead": "Native SwiftUI + AppKit. Lives in the menu bar. Designed to get out of your way until you press ⌥⌘4.",
     "items": [
-      { "title": "Capture anything", "desc": "Region (⌥⌘4), window or full screen. Opens straight in the editor." },
-      { "title": "14 annotation tools", "desc": "Tapered arrows, text with system fonts, shapes, highlighter, pen, stamps and more." },
-      { "title": "Hide sensitive info", "desc": "Pixelate, blur, solid block or stripes — reliably unreadable." },
-      { "title": "Native sharing", "desc": "macOS share sheet, drag-out to any app, copy or save as PNG/JPG/PDF." },
-      { "title": "Spotlight & crop", "desc": "Focus attention on what matters. Crop with aspect ratio presets." },
-      { "title": "Privacy first", "desc": "No accounts. No tracking. No data leaves your Mac." }
+      {
+        "title": "Capture anything",
+        "desc": "Region (⌥⌘4), window or full screen. Opens straight in the editor."
+      },
+      {
+        "title": "14 annotation tools",
+        "desc": "Tapered arrows, text with system fonts, shapes, highlighter, pen, stamps and more."
+      },
+      {
+        "title": "Hide sensitive info",
+        "desc": "Pixelate, blur, solid block or stripes — reliably unreadable."
+      },
+      {
+        "title": "Native sharing",
+        "desc": "macOS share sheet, drag-out to any app, copy or save as PNG/JPG/PDF."
+      },
+      {
+        "title": "Spotlight & crop",
+        "desc": "Focus attention on what matters. Crop with aspect ratio presets."
+      },
+      {
+        "title": "Privacy first",
+        "desc": "No accounts. No tracking. No data leaves your Mac."
+      }
     ]
   },
   "tools": {
     "title": "All the marking tools you need",
     "lead": "14 tools, always one click away.",
-    "names": ["Select", "Arrow", "Text", "Rectangle", "Ellipse", "Line", "Highlight", "Pixelate", "Stamp", "Pen", "Spotlight", "Sticker", "Image", "Crop"]
+    "names": [
+      "Select",
+      "Arrow",
+      "Text",
+      "Rectangle",
+      "Ellipse",
+      "Line",
+      "Highlight",
+      "Pixelate",
+      "Stamp",
+      "Pen",
+      "Spotlight",
+      "Sticker",
+      "Image",
+      "Crop"
+    ]
   },
   "beta": {
     "badge": "Beta opening soon",
@@ -60,11 +102,26 @@
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
     "links": [
-      { "text": "Features", "href": "/#features" },
-      { "text": "Privacy", "href": "/privacy" },
-      { "text": "Terms", "href": "/terms" },
-      { "text": "Support", "href": "/support" },
-      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+      {
+        "text": "Features",
+        "href": "/#features"
+      },
+      {
+        "text": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "text": "Terms",
+        "href": "/terms"
+      },
+      {
+        "text": "Support",
+        "href": "/support"
+      },
+      {
+        "text": "Color Vivo",
+        "href": "https://colorvivo.com"
+      }
     ]
   }
 }
