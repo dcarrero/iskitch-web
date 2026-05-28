@@ -49,6 +49,15 @@ export async function onRequestPost({ request, env }) {
       return jsonResponse({ ok: true, debug: true, email_received: email });
     }
 
+    // Test: fetch a la home de Acumbamail (sin API) para ver si bloquean Cloudflare.
+    if (url.searchParams.get("test") === "acumba-home") {
+      try {
+        const r = await fetch("https://acumbamail.com/", { method: "GET" });
+        return jsonResponse({ ok: true, status: r.status, ct: r.headers.get("content-type") });
+      } catch (e) {
+        return jsonResponse({ ok: false, error: "home_fetch_failed", detail: String(e?.message ?? e).slice(0, 300) }, 502);
+      }
+    }
     // Test de control: fetch a httpbin para confirmar si el problema es general o solo Acumbamail.
     if (url.searchParams.get("test") === "httpbin") {
       try {
