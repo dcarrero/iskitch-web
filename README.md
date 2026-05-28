@@ -96,9 +96,23 @@ En **Settings → Environment variables → Add variable** (Production + Preview
 - `GET https://iskitch.com/api/admin/subscribers?key=TU_ADMIN_KEY&format=csv` → descarga CSV.
 
 ### 5) Exportar a Acumbamail
+
+#### Manual (rápido, un clic)
 1. Visitar el URL CSV de arriba en el navegador → descarga `iskitch-beta-subscribers-YYYY-MM-DD.csv`.
-2. En Acumbamail → tu lista 1355595 → **Importar suscriptores** → subir el CSV (columnas: `email,lang,timestamp,country`).
-3. Listo. (Opcional: borrar los emails ya importados de KV.)
+2. En Acumbamail → tu lista → **Importar suscriptores** → subir el CSV.
+
+#### Automático (recomendado — GitHub Actions diario)
+Hay un workflow en `.github/workflows/sync-acumbamail.yml` que corre **una vez al día** y sincroniza los pendientes del KV a Acumbamail (las IPs de GitHub no están bloqueadas).
+
+**Secrets a configurar en GitHub** (`Settings → Secrets and variables → Actions → New repository secret`):
+
+| Secret | Valor |
+|---|---|
+| `ADMIN_KEY` | el mismo que pusiste en Cloudflare Pages |
+| `ACUMBAMAIL_AUTH_TOKEN` | tu auth_token de Acumbamail (regenera el viejo) |
+| `ACUMBAMAIL_LIST_ID` | el ID de la lista (`1355595` en tu caso) |
+
+El workflow se puede lanzar también **a mano** desde *GitHub → Actions → Sync KV → Acumbamail → Run workflow*.
 
 ### Notas
 - El formulario tiene **honeypot** anti-bots (campo invisible).

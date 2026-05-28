@@ -1,0 +1,26 @@
+name: Sync KV → Acumbamail
+
+# Una vez al día (07:30 UTC ≈ 09:30 hora España en verano) + lanzable a mano.
+on:
+  schedule:
+    - cron: "30 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync pending subscribers to Acumbamail
+        env:
+          ISKITCH_BASE_URL: https://iskitch.com
+          ADMIN_KEY: ${{ secrets.ADMIN_KEY }}
+          ACUMBAMAIL_AUTH_TOKEN: ${{ secrets.ACUMBAMAIL_AUTH_TOKEN }}
+          ACUMBAMAIL_LIST_ID: ${{ secrets.ACUMBAMAIL_LIST_ID }}
+        run: node scripts/sync-acumbamail.mjs

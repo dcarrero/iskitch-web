@@ -19,6 +19,7 @@ export async function onRequestGet({ request, env }) {
   }
 
   const format = (url.searchParams.get("format") || "json").toLowerCase();
+  const only = (url.searchParams.get("only") || "").toLowerCase(); // "pending" | "synced" | ""
 
   // Listamos todas las claves con prefijo "subscriber:" (paginación si hay >1000).
   const subscribers = [];
@@ -27,9 +28,13 @@ export async function onRequestGet({ request, env }) {
     const list = await env.SUBSCRIBERS.list({ prefix: "subscriber:", cursor });
     for (const { name } of list.keys) {
       const v = await env.SUBSCRIBERS.get(name);
-      if (v) {
-        try { subscribers.push(JSON.parse(v)); } catch (_) {}
-      }
+      if (!v) continue;
+      try {
+        const rec = JSON.parse(v);
+        if (only === "pending" && rec.synced_at) continue;
+        if (only === "synced" && !rec.synced_at) continue;
+        subscribers.push(rec);
+      } catch (_) {}
     }
     if (list.list_complete) break;
     cursor = list.cursor;
