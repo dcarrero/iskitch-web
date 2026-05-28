@@ -1,5 +1,14 @@
 /* iSkitch — landing page styles */
 
+/* Inter self-hosted (latin variable subset). Evitamos Google Fonts bloqueando el render. */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-variable-latin.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --brand: #FF3366;
   --brand-2: #E61F5C;

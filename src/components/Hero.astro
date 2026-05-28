@@ -1,7 +1,11 @@
 ---
 interface Props { t: any }
 const { t } = Astro.props as Props;
-const heroImage = t.lang === 'es' ? '/assets/editor-hero-es.png' : '/assets/editor-hero-en.png';
+const slug = t.lang === 'es' ? 'es' : 'en';
+const heroBase = `/assets/editor-hero-${slug}`;
+const heroImage = `${heroBase}.png`;          // PNG original (lightbox)
+const heroLargeWebp = `${heroBase}-2240.webp`; // WebP máxima para lightbox
+const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${heroBase}-1600.webp 1600w`;
 ---
 <header class="hero">
   <div class="container hero-grid">
@@ -26,9 +30,19 @@ const heroImage = t.lang === 'es' ? '/assets/editor-hero-es.png' : '/assets/edit
       </ul>
     </div>
 
-    <button class="hero-shot-link" type="button" data-lightbox-src={heroImage} aria-label="Expand screenshot">
+    <button class="hero-shot-link" type="button" data-lightbox-src={heroLargeWebp} aria-label="Expand screenshot">
       <picture>
-        <img src={heroImage} alt="iSkitch editor with annotations" loading="lazy" width="1000" height="660" />
+        <source
+          type="image/webp"
+          srcset={heroSrcset}
+          sizes="(max-width: 768px) 92vw, (max-width: 1180px) 50vw, 560px" />
+        <img
+          src={`${heroBase}-1280.webp`}
+          alt="iSkitch editor with annotations"
+          fetchpriority="high"
+          decoding="async"
+          width="1000"
+          height="660" />
       </picture>
       <span class="hero-shot-badge">{t.hero.appstore_coming_top} {t.hero.appstore_coming_bottom}</span>
       <span class="hero-shot-zoom" aria-hidden="true">

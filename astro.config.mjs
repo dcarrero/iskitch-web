@@ -10,6 +10,8 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false }
   },
   build: {
-    inlineStylesheets: 'auto'
+    // Inlinea todo el CSS en el HTML: nuestro bundle es ~4 KiB, así que evitar
+    // la solicitud render-blocking adicional baja el LCP unos cientos de ms.
+    inlineStylesheets: 'always'
   }
 });
