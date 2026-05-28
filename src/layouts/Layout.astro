@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+interface Props { t: any }
+const { t } = Astro.props as Props;
+const site = "https://iskitch.com";
+---
+<!doctype html>
+<html lang={t.lang}>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{t.meta.title}</title>
+<meta name="description" content={t.meta.description} />
+<meta name="theme-color" content="#FF3366" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:title" content={t.meta.title} />
+<meta property="og:description" content={t.meta.description} />
+<meta property="og:image" content={`${site}/og-cover.png`} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={site} />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="alternate" hreflang="en" href={`${site}/`} />
+<link rel="alternate" hreflang="es" href={`${site}/es/`} />
+<link rel="alternate" hreflang="x-default" href={`${site}/`} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+</head>
+<body>
+<slot />
+</body>
+</html>

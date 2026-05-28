@@ -136,3 +136,8 @@ a:hover { color: var(--brand); }
   .badge { background: rgba(255,51,102,.14); border-color: rgba(255,51,102,.34); }
   .hero kbd { background: rgba(255,255,255,.10); }
 }
+
+/* Language switcher in nav */
+.nav-actions { display: flex; align-items: center; gap: 14px; }
+.lang { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--ink-2); padding: 6px 10px; border-radius: 6px; border: 1px solid var(--line); }
+.lang:hover { color: var(--ink-1); background: var(--bg-3); }

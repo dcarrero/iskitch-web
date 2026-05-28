@@ -1,0 +1,22 @@
+---
+interface Props { t: any }
+const { t } = Astro.props as Props;
+---
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="brand brand-foot">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" width="14" height="14"><path fill="#fff" d="M10.4 90.4 L77.3 28.4 L82.2 33.3 L90 10 L66.7 17.8 L71.6 22.7 L9.6 89.6 Z"/></svg>
+      </span>
+      <div>
+        <strong>iSkitch</strong>
+        <small>{t.footer.copyright}</small>
+      </div>
+    </div>
+    <nav class="footer-links">
+      {t.footer.links.map((l: any) => (
+        <a href={l.href} rel={l.href.startsWith('http') ? 'noopener' : undefined}>{l.text}</a>
+      ))}
+    </nav>
+  </div>
+</footer>

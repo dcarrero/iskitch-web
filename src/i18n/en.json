@@ -1,0 +1,55 @@
+{
+  "lang": "en",
+  "switcher": { "label": "ES", "href": "/es/" },
+  "meta": {
+    "title": "iSkitch — Capture, annotate & share for macOS",
+    "description": "iSkitch is a modern, native macOS take on the classic Skitch — capture any region, window or full screen, annotate it instantly, and share with one click."
+  },
+  "nav": {
+    "features": "Features",
+    "tools": "Tools",
+    "privacy": "Privacy",
+    "support": "Support",
+    "download": "Download"
+  },
+  "hero": {
+    "badge": "Now on the Mac App Store",
+    "title_line1": "Capture. Annotate.",
+    "title_line2": "Share in one click.",
+    "lead": "iSkitch is a modern, native macOS take on the classic Skitch. Lives in your menu bar, ready for ⌥⌘4 at any moment — and shares through the macOS share sheet.",
+    "cta_top": "Download on the",
+    "cta_bottom": "Mac App Store",
+    "cta_secondary": "See what's inside",
+    "meta": ["Free to use", "No tracking", "Universal Binary", "English · Español"]
+  },
+  "features": {
+    "title": "Built for the macOS you use today",
+    "lead": "Native SwiftUI + AppKit. Lives in the menu bar. Designed to get out of your way until you press ⌥⌘4.",
+    "items": [
+      { "title": "Capture anything", "desc": "Region (⌥⌘4), window or full screen. Opens straight in the editor." },
+      { "title": "14 annotation tools", "desc": "Tapered arrows, text with system fonts, shapes, highlighter, pen, stamps and more." },
+      { "title": "Hide sensitive info", "desc": "Pixelate, blur, solid block or stripes — reliably unreadable." },
+      { "title": "Native sharing", "desc": "macOS share sheet, drag-out to any app, copy or save as PNG/JPG/PDF." },
+      { "title": "Spotlight & crop", "desc": "Focus attention on what matters. Crop with aspect ratio presets." },
+      { "title": "Privacy first", "desc": "No accounts. No tracking. No data leaves your Mac." }
+    ]
+  },
+  "tools": {
+    "title": "All the marking tools you need",
+    "lead": "14 tools, always one click away.",
+    "names": ["Select", "Arrow", "Text", "Rectangle", "Ellipse", "Line", "Highlight", "Pixelate", "Stamp", "Pen", "Spotlight", "Sticker", "Image", "Crop"]
+  },
+  "cta": {
+    "title": "Ready to ditch boring screenshots?",
+    "lead": "Free on the Mac App Store. No accounts. Just open it, press ⌥⌘4 and you're done."
+  },
+  "footer": {
+    "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "links": [
+      { "text": "Features", "href": "#features" },
+      { "text": "Privacy", "href": "/privacy" },
+      { "text": "Support", "href": "mailto:hola@iskitch.com" },
+      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+    ]
+  }
+}

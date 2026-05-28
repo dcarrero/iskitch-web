@@ -1,0 +1,25 @@
+---
+interface Props { t: any }
+const { t } = Astro.props as Props;
+---
+<nav class="nav">
+  <a class="brand" href={t.lang === 'es' ? '/es/' : '/'}>
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="18" height="18"><path fill="#fff" d="M10.4 90.4 L77.3 28.4 L82.2 33.3 L90 10 L66.7 17.8 L71.6 22.7 L9.6 89.6 Z"/></svg>
+    </span>
+    <span>iSkitch</span>
+  </a>
+  <div class="nav-links">
+    <a href="#features">{t.nav.features}</a>
+    <a href="#tools">{t.nav.tools}</a>
+    <a href={t.lang === 'es' ? '/es/privacy' : '/privacy'}>{t.nav.privacy}</a>
+    <a href="mailto:hola@iskitch.com">{t.nav.support}</a>
+  </div>
+  <div class="nav-actions">
+    <a class="lang" href={t.switcher.href} aria-label="Switch language">{t.switcher.label}</a>
+    <a class="btn btn-primary btn-sm" href="#download">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16 13v5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-5H4l8-8 8 8h-4Z"/></svg>
+      {t.nav.download}
+    </a>
+  </div>
+</nav>

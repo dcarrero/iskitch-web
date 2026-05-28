@@ -1,0 +1,55 @@
+{
+  "lang": "es",
+  "switcher": { "label": "EN", "href": "/" },
+  "meta": {
+    "title": "iSkitch — Captura, marca y comparte para macOS",
+    "description": "iSkitch es la versión moderna y nativa del clásico Skitch para macOS — captura cualquier región, ventana o la pantalla completa, márcala al instante y compártela en un clic."
+  },
+  "nav": {
+    "features": "Características",
+    "tools": "Herramientas",
+    "privacy": "Privacidad",
+    "support": "Soporte",
+    "download": "Descargar"
+  },
+  "hero": {
+    "badge": "Ya en la Mac App Store",
+    "title_line1": "Captura. Marca.",
+    "title_line2": "Comparte en un clic.",
+    "lead": "iSkitch es la versión moderna y nativa del clásico Skitch para macOS. Vive en la barra de menús, lista para ⌥⌘4 en cualquier momento — y comparte con la hoja nativa de macOS.",
+    "cta_top": "Descargar en la",
+    "cta_bottom": "Mac App Store",
+    "cta_secondary": "Ver qué incluye",
+    "meta": ["Gratis", "Sin seguimiento", "Universal Binary", "Inglés · Español"]
+  },
+  "features": {
+    "title": "Pensada para el macOS de hoy",
+    "lead": "SwiftUI + AppKit nativos. Vive en la barra de menús. Diseñada para no estorbar hasta que pulsas ⌥⌘4.",
+    "items": [
+      { "title": "Captura cualquier cosa", "desc": "Región (⌥⌘4), ventana o pantalla completa. Se abre directamente en el editor." },
+      { "title": "14 herramientas de marcado", "desc": "Flechas afiladas, texto con fuentes del sistema, formas, resaltado, lápiz, sellos y más." },
+      { "title": "Oculta información sensible", "desc": "Pixelar, difuminar, bloque sólido o rayado — ilegible de forma fiable." },
+      { "title": "Compartir nativo", "desc": "Hoja de macOS, arrastrar a cualquier app, copiar o guardar como PNG/JPG/PDF." },
+      { "title": "Foco y recorte", "desc": "Destaca lo que importa. Recorta con proporciones predefinidas." },
+      { "title": "Privacidad ante todo", "desc": "Sin cuentas. Sin seguimiento. Tus datos no salen del Mac." }
+    ]
+  },
+  "tools": {
+    "title": "Todas las herramientas que necesitas",
+    "lead": "14 herramientas, siempre a un clic.",
+    "names": ["Seleccionar", "Flecha", "Texto", "Rectángulo", "Elipse", "Línea", "Resaltado", "Pixelar", "Sello", "Lápiz", "Foco", "Sticker", "Imagen", "Recortar"]
+  },
+  "cta": {
+    "title": "¿Listo para olvidar las capturas aburridas?",
+    "lead": "Gratis en la Mac App Store. Sin cuentas. Solo ábrela, pulsa ⌥⌘4 y listo."
+  },
+  "footer": {
+    "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "links": [
+      { "text": "Características", "href": "#features" },
+      { "text": "Privacidad", "href": "/es/privacy" },
+      { "text": "Soporte", "href": "mailto:hola@iskitch.com" },
+      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+    ]
+  }
+}
