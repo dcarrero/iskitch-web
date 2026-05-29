@@ -186,14 +186,22 @@ a:hover { color: var(--brand-2); }
 .cta-badge { display: flex; justify-content: center; }
 
 /* Footer */
-.footer { background: var(--ink-1); color: #fff; padding: 34px 0; font-size: 13px; }
+.footer { background: var(--ink-1); color: #fff; padding: 34px 0 30px; font-size: 13px; }
 .footer-grid { display: flex; align-items: center; gap: 16px; }
 .brand-foot { color: #fff; }
-.brand-foot strong { display: block; font-size: 14px; font-weight: 700; color: #fff; }
-.brand-foot small { font-size: 11px; color: #C9C9D0; }
+.brand-foot strong { font-size: 15px; font-weight: 700; color: #fff; }
 .footer-links { display: flex; gap: 24px; margin-left: auto; }
 .footer-links a { color: #fff; font-weight: 500; }
 .footer-links a:hover { color: var(--brand-soft); }
+.footer-bottom {
+  margin-top: 24px; padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,.10);
+  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  text-align: center;
+}
+.footer-copy { margin: 0; font-size: 12.5px; color: #C9C9D0; letter-spacing: .01em; }
+.footer-made { margin: 0; font-size: 12.5px; color: #9A9AA2; }
+.footer-heart { color: var(--brand); font-style: normal; padding: 0 1px; }
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -275,6 +283,27 @@ html { color-scheme: light; }
 .prose strong { color: var(--ink-1); font-weight: 600; }
 .prose a { color: var(--brand-2); text-decoration: underline; text-underline-offset: 3px; }
 .prose a:hover { color: var(--brand-2); }
+
+/* FAQ (acordeón con <details>) */
+.faq-list { margin-top: 10px; }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary {
+  cursor: pointer; list-style: none;
+  padding: 18px 32px 18px 0;
+  font-size: 16px; font-weight: 600; color: var(--ink-1);
+  position: relative;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--brand-2); }
+.faq-item summary::after {
+  content: "+"; position: absolute; right: 2px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px; font-weight: 300; color: var(--ink-3);
+  transition: color .15s ease;
+}
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item[open] summary { color: var(--ink-1); }
+.faq-item p { margin: 0 0 20px; color: var(--ink-2); font-size: 15px; line-height: 1.7; }
 
 /* Beta signup */
 .beta { padding: 84px 0 92px; background: linear-gradient(180deg, var(--bg-2) 0%, #FFF5F8 100%); text-align: center; }

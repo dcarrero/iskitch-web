@@ -81,8 +81,25 @@
     "lead": "Bis 15. Juni 2026 gratis im Mac App Store. Jetzt laden.",
     "button": "Anmelden"
   },
+  "faq": {
+    "title": "Häufige Fragen",
+    "lead": "Alles Wichtige zu iSkitch — Aufnahme, Preis, Datenschutz und mehr.",
+    "items": [
+      { "q": "Was ist iSkitch?", "a": "iSkitch ist eine moderne, native macOS-App, um deinen Bildschirm aufzunehmen, sofort zu markieren und mit einem Klick zu teilen. Es ist eine unabhängige, von Grund auf neue Umsetzung des klassischen Skitch, in SwiftUI und AppKit für das heutige macOS gebaut. Sie stammt nicht von Evernote oder dem originalen Skitch und ist nicht mit ihnen verbunden." },
+      { "q": "Was kostet iSkitch?", "a": "iSkitch ist bis zum 15. Juni 2026 gratis. Danach wird sie ein Einmalkauf von 9,99 € (oder dem Gegenwert in deiner lokalen Währung) — kein Abo. Wenn du sie lädst, solange sie gratis ist, bleibt sie dir." },
+      { "q": "Welche Macs und macOS-Versionen werden unterstützt?", "a": "macOS 14 (Sonoma) oder neuer. iSkitch ist ein Universal Binary und läuft nativ auf Macs mit Apple Silicon (M-Reihe) und mit Intel." },
+      { "q": "In welchen Sprachen gibt es iSkitch?", "a": "In acht: Englisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Japanisch und Koreanisch. Sie folgt automatisch deiner Systemsprache, ändern kannst du sie unter Einstellungen ▸ Allgemein ▸ Sprache." },
+      { "q": "Ich drücke ⌥⌘4, aber nichts wird aufgenommen. Woran liegt das?", "a": "Fast immer an der Bildschirmaufnahme-Berechtigung. Öffne Systemeinstellungen ▸ Datenschutz & Sicherheit ▸ Bildschirmaufnahme, aktiviere iSkitch und starte die App neu. Beim ersten Aufnehmen fragt macOS automatisch danach." },
+      { "q": "Wo werden meine Screenshots gespeichert?", "a": "Nirgendwo, bis du es entscheidest. iSkitch speichert nie im Stillen: Du wählst das Ziel, wenn du auf Sichern drückst oder das Bild aus dem Fenster ziehst. Unter Einstellungen ▸ Aufnahme kannst du einen Standardordner und ein Standardformat festlegen (PNG, JPG, PDF oder TIFF)." },
+      { "q": "Wie teile oder exportiere ich eine Aufnahme?", "a": "Klicke auf Teilen für das native macOS-Teilen-Menü (Mail, Nachrichten, Notizen, Slack, AirDrop und mehr), kopiere in die Zwischenablage, zieh das Bild direkt in jede App oder exportiere als PNG, JPEG, PDF oder TIFF." },
+      { "q": "Kann ich sensible Infos verbergen?", "a": "Ja. Nutze das Werkzeug Verbergen und wähle Pixeln, Weichzeichnen, Vollfläche oder Streifen, um zuverlässig abzudecken, was du nicht zeigen willst." },
+      { "q": "Sammelt iSkitch meine Daten?", "a": "Nein. iSkitch funktioniert komplett offline — keine Konten, kein Tracking, keine Analytik — und deine Aufnahmen verlassen nie deinen Mac." }
+    ]
+  },
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "rights": "Alle Rechte vorbehalten.",
+    "made": "Mit ❤ gemacht in Madrid und Herencia (Ciudad Real) — Spanien.",
     "links": [
       { "text": "Funktionen", "href": "/de/#features" },
       { "text": "Datenschutz", "href": "/de/privacy" },

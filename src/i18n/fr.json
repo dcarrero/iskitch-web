@@ -114,8 +114,25 @@
     "lead": "Gratuit jusqu'au 15 juin 2026 sur le Mac App Store. Téléchargez-la maintenant.",
     "button": "M'inscrire"
   },
+  "faq": {
+    "title": "Questions fréquentes",
+    "lead": "Tout ce qu'il faut savoir sur iSkitch — capture, tarif, confidentialité et plus.",
+    "items": [
+      { "q": "Qu'est-ce qu'iSkitch ?", "a": "iSkitch est une app macOS moderne et native pour capturer votre écran, l'annoter instantanément et le partager en un clic. C'est une recréation indépendante, repensée de zéro, du classique Skitch, reconstruite en SwiftUI et AppKit pour le macOS d'aujourd'hui. Elle n'est ni créée par Evernote ou le Skitch original, ni affiliée à eux." },
+      { "q": "Combien coûte iSkitch ?", "a": "iSkitch est gratuite jusqu'au 15 juin 2026. Ensuite, elle devient un achat unique de 9,99 € (ou l'équivalent dans votre devise locale) — sans abonnement. Si vous la téléchargez pendant qu'elle est gratuite, elle reste à vous." },
+      { "q": "Quels Mac et versions de macOS sont pris en charge ?", "a": "macOS 14 (Sonoma) ou ultérieur. iSkitch est un Universal Binary : elle fonctionne nativement sur les Mac Apple Silicon (série M) comme sur les Mac Intel." },
+      { "q": "Dans quelles langues est iSkitch ?", "a": "Huit : anglais, espagnol, français, allemand, italien, portugais, japonais et coréen. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue." },
+      { "q": "J'appuie sur ⌥⌘4 mais rien n'est capturé. Pourquoi ?", "a": "C'est presque toujours l'autorisation Enregistrement de l'écran. Ouvrez Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l'écran, activez iSkitch et relancez l'app. La première fois que vous capturez, macOS demande cette autorisation automatiquement." },
+      { "q": "Où sont enregistrées mes captures ?", "a": "Nulle part jusqu'à ce que vous décidiez. iSkitch n'enregistre jamais en silence : vous choisissez la destination en appuyant sur Enregistrer ou en glissant l'image hors de la fenêtre. Dans Réglages ▸ Capture, vous pouvez définir un dossier et un format par défaut (PNG, JPG, PDF ou TIFF)." },
+      { "q": "Comment partager ou exporter une capture ?", "a": "Cliquez sur Partager pour utiliser la feuille de partage native de macOS (Mail, Messages, Notes, Slack, AirDrop et plus), copiez dans le presse-papiers, glissez l'image directement dans n'importe quelle app, ou exportez en PNG, JPEG, PDF ou TIFF." },
+      { "q": "Puis-je masquer des informations sensibles ?", "a": "Oui. Utilisez l'outil Masquer et choisissez Pixeliser, Flouter, Bloc plein ou Rayures pour couvrir de manière fiable ce que vous ne voulez pas montrer." },
+      { "q": "iSkitch collecte-t-elle mes données ?", "a": "Non. iSkitch fonctionne entièrement hors-ligne — pas de comptes, pas de pistage, pas d'analytique — et vos captures ne quittent jamais votre Mac." }
+    ]
+  },
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "rights": "Tous droits réservés.",
+    "made": "Fait avec ❤ depuis Madrid et Herencia (Ciudad Real) — Espagne.",
     "links": [
       {
         "text": "Fonctionnalités",

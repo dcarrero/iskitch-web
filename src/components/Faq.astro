@@ -1,0 +1,28 @@
+---
+interface Props { t: any }
+const { t } = Astro.props as Props;
+// JSON-LD FAQPage para resultados enriquecidos en Google.
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": t.lang,
+  "mainEntity": t.faq.items.map((it: any) => ({
+    "@type": "Question",
+    "name": it.q,
+    "acceptedAnswer": { "@type": "Answer", "text": it.a }
+  }))
+};
+---
+<main class="prose faq" id="main">
+  <h1>{t.faq.title}</h1>
+  <p class="effective">{t.faq.lead}</p>
+  <div class="faq-list">
+    {t.faq.items.map((it: any, i: number) => (
+      <details class="faq-item" open={i === 0}>
+        <summary>{it.q}</summary>
+        <p>{it.a}</p>
+      </details>
+    ))}
+  </div>
+</main>
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>

@@ -81,8 +81,25 @@
     "lead": "Grátis até 15 de junho de 2026 na Mac App Store. Descarregue-a agora.",
     "button": "Inscrever-me"
   },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "lead": "Tudo o que precisa de saber sobre o iSkitch — captura, preço, privacidade e mais.",
+    "items": [
+      { "q": "O que é o iSkitch?", "a": "O iSkitch é uma app macOS moderna e nativa para capturar o ecrã, anotá-lo instantaneamente e partilhá-lo num clique. É uma releitura independente e construída de raiz do clássico Skitch, em SwiftUI e AppKit para o macOS de hoje. Não é feita pela Evernote nem pelo Skitch original, nem afiliada a eles." },
+      { "q": "Quanto custa o iSkitch?", "a": "O iSkitch é grátis até 15 de junho de 2026. Depois passa a ser uma compra única de 9,99 € (ou o equivalente na sua moeda local) — sem subscrições. Se a descarregar enquanto é grátis, fica sua." },
+      { "q": "Que Macs e versões de macOS são suportados?", "a": "macOS 14 (Sonoma) ou posterior. O iSkitch é Universal Binary, por isso funciona de forma nativa tanto em Macs com Apple Silicon (série M) como com Intel." },
+      { "q": "Em que idiomas está o iSkitch?", "a": "Em oito: inglês, espanhol, francês, alemão, italiano, português, japonês e coreano. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma." },
+      { "q": "Carrego em ⌥⌘4 mas não captura nada. Porquê?", "a": "Quase sempre é a permissão de Gravação de ecrã. Abra Definições do Sistema ▸ Privacidade e segurança ▸ Gravação de ecrã, ative o iSkitch e reinicie a app. Na primeira captura, o macOS pede esta permissão automaticamente." },
+      { "q": "Onde são guardadas as minhas capturas?", "a": "Em lado nenhum até decidir. O iSkitch nunca guarda em silêncio: escolhe o destino ao carregar em Guardar ou ao arrastar a imagem para fora da janela. Em Definições ▸ Captura pode definir uma pasta e um formato predefinidos (PNG, JPG, PDF ou TIFF)." },
+      { "q": "Como partilho ou exporto uma captura?", "a": "Toque em Partilhar para usar a folha de partilha nativa do macOS (Mail, Mensagens, Notas, Slack, AirDrop e mais), copie para a área de transferência, arraste a imagem diretamente para qualquer app, ou exporte para PNG, JPEG, PDF ou TIFF." },
+      { "q": "Posso esconder informação sensível?", "a": "Sim. Use a ferramenta Esconder e escolha Pixelizar, Desfocar, Bloco sólido ou Riscas para tapar de forma fiável o que não quer mostrar." },
+      { "q": "O iSkitch recolhe os meus dados?", "a": "Não. O iSkitch funciona totalmente sem ligação — sem contas, sem rastreamento, sem analítica — e as suas capturas nunca saem do Mac." }
+    ]
+  },
   "footer": {
     "copyright": "© 2026 Color Vivo Internet, S.L.",
+    "rights": "Todos os direitos reservados.",
+    "made": "Feito com ❤ a partir de Madrid e Herencia (Ciudad Real) — Espanha.",
     "links": [
       { "text": "Funcionalidades", "href": "/pt/#features" },
       { "text": "Privacidade", "href": "/pt/privacy" },

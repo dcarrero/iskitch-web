@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Faq from "../../components/Faq.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/pt.json";
+const t = { ...baseT,
+  switcher: { label: "EN", href: "/faq" },
+  meta: {
+    title: "Perguntas frequentes — iSkitch",
+    description: "Perguntas frequentes sobre o iSkitch: preço, macOS suportado, idiomas, permissões, privacidade e mais."
+  }
+};
+---
+<Layout t={t}>
+  <Nav t={t} />
+  <Faq t={t} />
+  <Footer t={t} />
+</Layout>
