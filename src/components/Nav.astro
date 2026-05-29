@@ -9,16 +9,31 @@ const supportHref = `${prefix}/support`;
 // Catálogo de idiomas disponibles. El nombre nativo (autonym) es la
 // convención i18n para que cada usuario reconozca el suyo sin necesidad
 // de traducirlo (Wikipedia, MDN, etc. lo hacen así).
-const allLocales = [
-  { code: 'en', name: 'English',    href: '/' },
-  { code: 'es', name: 'Español',    href: '/es/' },
-  { code: 'fr', name: 'Français',   href: '/fr/' },
-  { code: 'de', name: 'Deutsch',    href: '/de/' },
-  { code: 'it', name: 'Italiano',   href: '/it/' },
-  { code: 'pt', name: 'Português',  href: '/pt/' },
-  { code: 'ja', name: '日本語',      href: '/ja/' },
-  { code: 'ko', name: '한국어',      href: '/ko/' }
+const localeCatalog = [
+  { code: 'en', name: 'English'  },
+  { code: 'es', name: 'Español'  },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch'  },
+  { code: 'it', name: 'Italiano' },
+  { code: 'pt', name: 'Português' },
+  { code: 'ja', name: '日本語'    },
+  { code: 'ko', name: '한국어'    }
 ];
+const codes = localeCatalog.map(l => l.code);
+
+// Página actual sin el prefijo de idioma: '' (home), 'support', 'privacy', 'terms'.
+// Así el selector lleva a la página equivalente en el idioma elegido, no a la home.
+const segments = Astro.url.pathname.split('/').filter(Boolean);
+const pageSlug = (segments.length && codes.includes(segments[0]))
+  ? segments.slice(1).join('/')
+  : segments.join('/');
+
+function localizedHref(code: string) {
+  const p = code === 'en' ? '' : `/${code}`;
+  return pageSlug ? `${p}/${pageSlug}` : (p === '' ? '/' : `${p}/`);
+}
+
+const allLocales = localeCatalog.map(l => ({ ...l, href: localizedHref(l.code) }));
 const current = allLocales.find(l => l.code === t.lang) ?? allLocales[0];
 ---
 <nav class="nav" id="nav">
