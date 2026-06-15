@@ -1,0 +1,29 @@
+---
+interface Props { t: any }
+const { t } = Astro.props as Props;
+const cl = t.changelog;
+---
+<main class="prose changelog" id="main">
+  <h1>{cl.title}</h1>
+  <p class="effective">{cl.lead}</p>
+
+  <ol class="cl-list">
+    {cl.versions.map((v: any, i: number) => (
+      <li class="cl-entry">
+        <div class="cl-meta">
+          <span class={`cl-version${i === 0 ? " is-latest" : ""}`}>v{v.version}</span>
+          <span class="cl-date">{v.date}</span>
+        </div>
+        <p class="cl-title">{v.title}</p>
+        <ul class="cl-items">
+          {v.items.map((it: any) => (
+            <li class="cl-item">
+              <span class={`cl-tag cl-tag--${it.type}`}>{cl.tags[it.type] ?? it.type}</span>
+              <span class="cl-text">{it.text}</span>
+            </li>
+          ))}
+        </ul>
+      </li>
+    ))}
+  </ol>
+</main>

@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Changelog from "../../components/Changelog.astro";
+import Footer from "../../components/Footer.astro";
+import baseT from "../../i18n/fr.json";
+const t = { ...baseT,
+  switcher: { label: "EN", href: "/changelog" },
+  meta: {
+    title: "Nouveautés — iSkitch",
+    description: "Notes de version d'iSkitch — toutes les versions et leurs nouveautés, de la plus récente à la première."
+  }
+};
+---
+<Layout t={t}>
+  <Nav t={t} />
+  <Changelog t={t} />
+  <Footer t={t} />
+</Layout>

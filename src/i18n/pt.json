@@ -10,22 +10,23 @@
     "support": "Ajuda",
     "download": "Descarregar",
     "menu_open": "Abrir menu",
-    "menu_close": "Fechar menu"
+    "menu_close": "Fechar menu",
+    "changelog": "Novidades"
   },
   "hero": {
     "badge": "Já na Mac App Store",
     "title_line1": "Capture. Anote.",
     "title_line2": "Partilhe com um clique.",
     "lead": "iSkitch é uma releitura moderna e nativa para macOS do clássico Skitch. Vive na barra de menus, pronto para ⌥⌘4 a qualquer momento — e partilha através da folha de partilha do macOS.",
-    "cta_primary": "Descarregar grátis",
+    "cta_primary": "Descarregar",
     "cta_secondary": "Ver o que tem",
     "appstore_coming_top": "Disponível na",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
-      "Grátis até 15 de junho de 2026",
+      "Pagamento único",
       "Sem rastreamento",
       "Universal Binary",
-      "English · Español · Français · Deutsch · Italiano · Português"
+      "8 idiomas"
     ],
     "image_alt": "Captura de ecrã do editor de anotações do iSkitch a mostrar a captura de um site de marketing com setas vermelhas, etiquetas de texto, realce magenta e zonas pixelizadas — ferramentas de anotação em ação no macOS."
   },
@@ -33,18 +34,51 @@
     "title": "Feito para o macOS que usa hoje",
     "lead": "SwiftUI + AppKit nativos. Vive na barra de menus. Pensado para não atrapalhar até carregar em ⌥⌘4.",
     "items": [
-      { "title": "Capture tudo", "desc": "Região (⌥⌘4), janela ou ecrã completo. Abre diretamente no editor." },
-      { "title": "14 ferramentas de anotação", "desc": "Setas afiladas, texto com tipos de letra do sistema, formas, marcador, lápis, carimbos e mais." },
-      { "title": "Esconda info sensível", "desc": "Pixelizar, desfocar, bloco sólido ou riscas — ilegível de forma fiável." },
-      { "title": "Partilha nativa", "desc": "Folha de partilha do macOS, arrastar para qualquer app, copiar ou guardar como PNG/JPG/PDF." },
-      { "title": "Foco e recorte", "desc": "Concentre a atenção no que importa. Recorte com proporções predefinidas." },
-      { "title": "Privacidade em primeiro lugar", "desc": "Sem contas. Sem rastreamento. Nenhum dado sai do Mac." }
+      {
+        "title": "Capture tudo",
+        "desc": "Região (⌥⌘4), janela ou ecrã completo. Abre diretamente no editor."
+      },
+      {
+        "title": "14 ferramentas de anotação",
+        "desc": "Setas afiladas, texto com tipos de letra do sistema, formas, marcador, lápis, carimbos e mais."
+      },
+      {
+        "title": "Esconda info sensível",
+        "desc": "Pixelizar, desfocar, bloco sólido ou riscas — ilegível de forma fiável."
+      },
+      {
+        "title": "Partilha nativa",
+        "desc": "Folha de partilha do macOS, arrastar para qualquer app, copiar ou guardar como PNG/JPG/PDF."
+      },
+      {
+        "title": "Foco e recorte",
+        "desc": "Concentre a atenção no que importa. Recorte com proporções predefinidas."
+      },
+      {
+        "title": "Privacidade em primeiro lugar",
+        "desc": "Sem contas. Sem rastreamento. Nenhum dado sai do Mac."
+      }
     ]
   },
   "tools": {
     "title": "Todas as ferramentas de marcação de que precisa",
     "lead": "14 ferramentas, sempre a um clique.",
-    "names": ["Selecionar", "Seta", "Texto", "Retângulo", "Elipse", "Linha", "Realçar", "Pixelizar", "Carimbo", "Lápis", "Foco", "Autocolante", "Imagem", "Recortar"]
+    "names": [
+      "Selecionar",
+      "Seta",
+      "Texto",
+      "Retângulo",
+      "Elipse",
+      "Linha",
+      "Realçar",
+      "Pixelizar",
+      "Carimbo",
+      "Lápis",
+      "Foco",
+      "Autocolante",
+      "Imagem",
+      "Recortar"
+    ]
   },
   "appstore": {
     "url": "https://apps.apple.com/app/iskitch/id6773733499",
@@ -53,8 +87,8 @@
   },
   "pricing": {
     "badge": "Preço",
-    "free_until": "Grátis até 15 de junho de 2026",
-    "intro": "Obtenha-a grátis agora. A partir de 15 de junho passa a ser paga — uma única compra, sem subscrições.",
+    "free_until": "Um só pagamento. Tua para sempre.",
+    "intro": "Um pagamento único, sem subscrições nem contas. Pagas uma vez e é tua, com atualizações incluídas.",
     "price_display": "9,99 €",
     "price_note": "compra única",
     "price_amount": "9.99",
@@ -78,22 +112,49 @@
   },
   "cta": {
     "title": "Capture o seu primeiro ecrã hoje",
-    "lead": "Grátis até 15 de junho de 2026 na Mac App Store. Descarregue-a agora.",
+    "lead": "Na Mac App Store — um pagamento único, sem subscrições. Descarrega-a agora.",
     "button": "Inscrever-me"
   },
   "faq": {
     "title": "Perguntas frequentes",
     "lead": "Tudo o que precisa de saber sobre o iSkitch — captura, preço, privacidade e mais.",
     "items": [
-      { "q": "O que é o iSkitch?", "a": "O iSkitch é uma app macOS moderna e nativa para capturar o ecrã, anotá-lo instantaneamente e partilhá-lo num clique. É uma releitura independente e construída de raiz do clássico Skitch, em SwiftUI e AppKit para o macOS de hoje. Não é feita pela Evernote nem pelo Skitch original, nem afiliada a eles." },
-      { "q": "Quanto custa o iSkitch?", "a": "O iSkitch é grátis até 15 de junho de 2026. Depois passa a ser uma compra única de 9,99 € (ou o equivalente na sua moeda local) — sem subscrições. Se a descarregar enquanto é grátis, fica sua." },
-      { "q": "Que Macs e versões de macOS são suportados?", "a": "macOS 14 (Sonoma) ou posterior. O iSkitch é Universal Binary, por isso funciona de forma nativa tanto em Macs com Apple Silicon (série M) como com Intel." },
-      { "q": "Em que idiomas está o iSkitch?", "a": "Em oito: inglês, espanhol, francês, alemão, italiano, português, japonês e coreano. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma." },
-      { "q": "Carrego em ⌥⌘4 mas não captura nada. Porquê?", "a": "Quase sempre é a permissão de Gravação de ecrã. Abra Definições do Sistema ▸ Privacidade e segurança ▸ Gravação de ecrã, ative o iSkitch e reinicie a app. Na primeira captura, o macOS pede esta permissão automaticamente." },
-      { "q": "Onde são guardadas as minhas capturas?", "a": "Em lado nenhum até decidir. O iSkitch nunca guarda em silêncio: escolhe o destino ao carregar em Guardar ou ao arrastar a imagem para fora da janela. Em Definições ▸ Captura pode definir uma pasta e um formato predefinidos (PNG, JPG, PDF ou TIFF)." },
-      { "q": "Como partilho ou exporto uma captura?", "a": "Toque em Partilhar para usar a folha de partilha nativa do macOS (Mail, Mensagens, Notas, Slack, AirDrop e mais), copie para a área de transferência, arraste a imagem diretamente para qualquer app, ou exporte para PNG, JPEG, PDF ou TIFF." },
-      { "q": "Posso esconder informação sensível?", "a": "Sim. Use a ferramenta Esconder e escolha Pixelizar, Desfocar, Bloco sólido ou Riscas para tapar de forma fiável o que não quer mostrar." },
-      { "q": "O iSkitch recolhe os meus dados?", "a": "Não. O iSkitch funciona totalmente sem ligação — sem contas, sem rastreamento, sem analítica — e as suas capturas nunca saem do Mac." }
+      {
+        "q": "O que é o iSkitch?",
+        "a": "O iSkitch é uma app macOS moderna e nativa para capturar o ecrã, anotá-lo instantaneamente e partilhá-lo num clique. É uma releitura independente e construída de raiz do clássico Skitch, em SwiftUI e AppKit para o macOS de hoje. Não é feita pela Evernote nem pelo Skitch original, nem afiliada a eles."
+      },
+      {
+        "q": "Quanto custa o iSkitch?",
+        "a": "O iSkitch é um pagamento único de 9,99 € (ou o equivalente na tua moeda) — sem subscrições. Compras uma vez e é tua, incluindo atualizações futuras."
+      },
+      {
+        "q": "Que Macs e versões de macOS são suportados?",
+        "a": "macOS 14 (Sonoma) ou posterior. O iSkitch é Universal Binary, por isso funciona de forma nativa tanto em Macs com Apple Silicon (série M) como com Intel."
+      },
+      {
+        "q": "Em que idiomas está o iSkitch?",
+        "a": "Em oito: inglês, espanhol, francês, alemão, italiano, português, japonês e coreano. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma."
+      },
+      {
+        "q": "Carrego em ⌥⌘4 mas não captura nada. Porquê?",
+        "a": "Quase sempre é a permissão de Gravação de ecrã. Abra Definições do Sistema ▸ Privacidade e segurança ▸ Gravação de ecrã, ative o iSkitch e reinicie a app. Na primeira captura, o macOS pede esta permissão automaticamente."
+      },
+      {
+        "q": "Onde são guardadas as minhas capturas?",
+        "a": "Em lado nenhum até decidir. O iSkitch nunca guarda em silêncio: escolhe o destino ao carregar em Guardar ou ao arrastar a imagem para fora da janela. Em Definições ▸ Captura pode definir uma pasta e um formato predefinidos (PNG, JPG, PDF ou TIFF)."
+      },
+      {
+        "q": "Como partilho ou exporto uma captura?",
+        "a": "Toque em Partilhar para usar a folha de partilha nativa do macOS (Mail, Mensagens, Notas, Slack, AirDrop e mais), copie para a área de transferência, arraste a imagem diretamente para qualquer app, ou exporte para PNG, JPEG, PDF ou TIFF."
+      },
+      {
+        "q": "Posso esconder informação sensível?",
+        "a": "Sim. Use a ferramenta Esconder e escolha Pixelizar, Desfocar, Bloco sólido ou Riscas para tapar de forma fiável o que não quer mostrar."
+      },
+      {
+        "q": "O iSkitch recolhe os meus dados?",
+        "a": "Não. O iSkitch funciona totalmente sem ligação — sem contas, sem rastreamento, sem analítica — e as suas capturas nunca saem do Mac."
+      }
     ]
   },
   "footer": {
@@ -101,11 +162,113 @@
     "rights": "Todos os direitos reservados.",
     "made": "Feito com ❤ a partir de Madrid e Herencia (Ciudad Real) — Espanha.",
     "links": [
-      { "text": "Funcionalidades", "href": "/pt/#features" },
-      { "text": "Privacidade", "href": "/pt/privacy" },
-      { "text": "Termos", "href": "/pt/terms" },
-      { "text": "Ajuda", "href": "/pt/support" },
-      { "text": "Color Vivo", "href": "https://colorvivo.com" }
+      {
+        "text": "Funcionalidades",
+        "href": "/pt/#features"
+      },
+      {
+        "text": "Privacidade",
+        "href": "/pt/privacy"
+      },
+      {
+        "text": "Termos",
+        "href": "/pt/terms"
+      },
+      {
+        "text": "Ajuda",
+        "href": "/pt/support"
+      },
+      {
+        "text": "Color Vivo",
+        "href": "https://colorvivo.com"
+      }
     ]
+  },
+  "changelog": {
+    "title": "Novidades do iSkitch",
+    "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
+    "versions": [
+      {
+        "version": "1.2.2",
+        "date": "16 de junho de 2026",
+        "title": "Um recorte mais inteligente",
+        "items": [
+          {
+            "type": "improved",
+            "text": "Ao recortar, a imagem completa ajusta-se à janela, com tudo selecionado por predefinição."
+          },
+          {
+            "type": "improved",
+            "text": "As pegas e a grelha de terços mantêm um tamanho cómodo em qualquer zoom."
+          },
+          {
+            "type": "fixed",
+            "text": "Corrigido um cursor de redimensionar que aparecia ao abrir uma imagem."
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "date": "junho de 2026",
+        "title": "Captura à tua maneira",
+        "items": [
+          {
+            "type": "new",
+            "text": "Abre o editor automaticamente após uma captura do sistema."
+          },
+          {
+            "type": "new",
+            "text": "Escolhe o que acontece após cada captura: mostrar, copiar ou guardar."
+          },
+          {
+            "type": "new",
+            "text": "Atalho de captura personalizável."
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "date": "junho de 2026",
+        "title": "Oito idiomas",
+        "items": [
+          {
+            "type": "new",
+            "text": "Adicionados francês, alemão, italiano, português, japonês e coreano."
+          },
+          {
+            "type": "improved",
+            "text": "Janela «Sobre» ampliada e totalmente traduzida."
+          },
+          {
+            "type": "improved",
+            "text": "Muitas melhorias no editor."
+          }
+        ]
+      },
+      {
+        "version": "1.0",
+        "date": "maio de 2026",
+        "title": "Olá, iSkitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "Primeira versão: captura uma região, janela ou o ecrã inteiro."
+          },
+          {
+            "type": "new",
+            "text": "14 ferramentas de anotação e partilha nativa do macOS."
+          },
+          {
+            "type": "new",
+            "text": "Privacidade primeiro: sem contas, sem rastreio, nada sai do teu Mac."
+          }
+        ]
+      }
+    ],
+    "tags": {
+      "new": "Novo",
+      "improved": "Melhorado",
+      "fixed": "Corrigido"
+    }
   }
 }

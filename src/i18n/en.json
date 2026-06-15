@@ -14,22 +14,23 @@
     "support": "Support",
     "download": "Download",
     "menu_open": "Open menu",
-    "menu_close": "Close menu"
+    "menu_close": "Close menu",
+    "changelog": "Changelog"
   },
   "hero": {
     "badge": "Now on the Mac App Store",
     "title_line1": "Capture. Annotate.",
     "title_line2": "Share in one click.",
     "lead": "iSkitch is a modern, native macOS take on the classic Skitch. Lives in your menu bar, ready for ⌥⌘4 at any moment — and shares through the macOS share sheet.",
-    "cta_primary": "Download free",
+    "cta_primary": "Download",
     "cta_secondary": "See what's inside",
     "appstore_coming_top": "Available on the",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
-      "Free until June 15, 2026",
+      "One-time purchase",
       "No tracking",
       "Universal Binary",
-      "English · Español"
+      "8 languages"
     ],
     "image_alt": "Screenshot of the iSkitch annotation editor showing a captured window of a marketing site with red arrows, text labels, a magenta highlight and pixelated areas — demonstrating annotation tools in action on macOS."
   },
@@ -90,8 +91,8 @@
   },
   "pricing": {
     "badge": "Pricing",
-    "free_until": "Free until June 15, 2026",
-    "intro": "Get it free now. After June 15 it becomes a paid app — one purchase, no subscriptions.",
+    "free_until": "One purchase. Yours forever.",
+    "intro": "A one-time purchase — no subscriptions, no accounts. Pay once and it's yours, updates included.",
     "price_display": "$9.99",
     "price_note": "one-time purchase",
     "price_amount": "9.99",
@@ -115,22 +116,49 @@
   },
   "cta": {
     "title": "Capture your first screenshot today",
-    "lead": "Free until June 15, 2026 on the Mac App Store. Download it now.",
+    "lead": "On the Mac App Store — a one-time purchase, no subscriptions. Download it now.",
     "button": "Sign me up"
   },
   "faq": {
     "title": "Frequently asked questions",
     "lead": "Everything you need to know about iSkitch — capture, pricing, privacy and more.",
     "items": [
-      { "q": "What is iSkitch?", "a": "iSkitch is a modern, native macOS app to capture your screen, annotate it instantly and share it in one click. It's an independent, ground-up recreation of the classic Skitch experience, rebuilt in SwiftUI and AppKit for today's macOS. It is not made by or affiliated with Evernote or the original Skitch." },
-      { "q": "How much does iSkitch cost?", "a": "iSkitch is free until June 15, 2026. After that it becomes a one-time purchase of US$9.99 (or the equivalent in your local currency) — no subscription, ever. If you download it while it's free, it stays yours." },
-      { "q": "Which Macs and macOS versions does it support?", "a": "macOS 14 (Sonoma) or later. iSkitch is a Universal Binary, so it runs natively on both Apple Silicon (M-series) and Intel Macs." },
-      { "q": "What languages does iSkitch support?", "a": "Eight: English, Spanish, French, German, Italian, Portuguese, Japanese and Korean. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language." },
-      { "q": "I press ⌥⌘4 but nothing is captured. What's wrong?", "a": "It's almost always the Screen Recording permission. Open System Settings ▸ Privacy & Security ▸ Screen Recording, turn on iSkitch, and relaunch the app. The first time you capture, macOS asks for this permission automatically." },
-      { "q": "Where are my screenshots saved?", "a": "Nowhere until you decide. iSkitch never saves silently: you choose the destination when you press Save or drag the image out of the window. In Settings ▸ Capture you can set a default folder and format (PNG, JPG, PDF or TIFF)." },
-      { "q": "How do I share or export a capture?", "a": "Click Share to use the native macOS share sheet (Mail, Messages, Notes, Slack, AirDrop and more), copy to the clipboard, drag the image straight into any app, or export to PNG, JPEG, PDF or TIFF." },
-      { "q": "Can I hide sensitive information?", "a": "Yes. Use the Obscure tool and choose Pixelate, Blur, Solid block or Stripes to reliably cover anything you don't want to show." },
-      { "q": "Does iSkitch collect my data?", "a": "No. iSkitch works entirely offline — no accounts, no tracking, no analytics — and your captures never leave your Mac." }
+      {
+        "q": "What is iSkitch?",
+        "a": "iSkitch is a modern, native macOS app to capture your screen, annotate it instantly and share it in one click. It's an independent, ground-up recreation of the classic Skitch experience, rebuilt in SwiftUI and AppKit for today's macOS. It is not made by or affiliated with Evernote or the original Skitch."
+      },
+      {
+        "q": "How much does iSkitch cost?",
+        "a": "iSkitch is a one-time purchase of US$9.99 (or the equivalent in your local currency) — no subscription, ever. Buy it once and it's yours, including future updates."
+      },
+      {
+        "q": "Which Macs and macOS versions does it support?",
+        "a": "macOS 14 (Sonoma) or later. iSkitch is a Universal Binary, so it runs natively on both Apple Silicon (M-series) and Intel Macs."
+      },
+      {
+        "q": "What languages does iSkitch support?",
+        "a": "Eight: English, Spanish, French, German, Italian, Portuguese, Japanese and Korean. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
+      },
+      {
+        "q": "I press ⌥⌘4 but nothing is captured. What's wrong?",
+        "a": "It's almost always the Screen Recording permission. Open System Settings ▸ Privacy & Security ▸ Screen Recording, turn on iSkitch, and relaunch the app. The first time you capture, macOS asks for this permission automatically."
+      },
+      {
+        "q": "Where are my screenshots saved?",
+        "a": "Nowhere until you decide. iSkitch never saves silently: you choose the destination when you press Save or drag the image out of the window. In Settings ▸ Capture you can set a default folder and format (PNG, JPG, PDF or TIFF)."
+      },
+      {
+        "q": "How do I share or export a capture?",
+        "a": "Click Share to use the native macOS share sheet (Mail, Messages, Notes, Slack, AirDrop and more), copy to the clipboard, drag the image straight into any app, or export to PNG, JPEG, PDF or TIFF."
+      },
+      {
+        "q": "Can I hide sensitive information?",
+        "a": "Yes. Use the Obscure tool and choose Pixelate, Blur, Solid block or Stripes to reliably cover anything you don't want to show."
+      },
+      {
+        "q": "Does iSkitch collect my data?",
+        "a": "No. iSkitch works entirely offline — no accounts, no tracking, no analytics — and your captures never leave your Mac."
+      }
     ]
   },
   "footer": {
@@ -159,5 +187,92 @@
         "href": "https://colorvivo.com"
       }
     ]
+  },
+  "changelog": {
+    "title": "What's new in iSkitch",
+    "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
+    "versions": [
+      {
+        "version": "1.2.2",
+        "date": "June 16, 2026",
+        "title": "Smarter cropping",
+        "items": [
+          {
+            "type": "improved",
+            "text": "Crop now fits the whole image to the window, with everything selected by default."
+          },
+          {
+            "type": "improved",
+            "text": "Crop handles and the rule-of-thirds grid stay a comfortable size at any zoom."
+          },
+          {
+            "type": "fixed",
+            "text": "Fixed a stray resize cursor when opening an image."
+          }
+        ]
+      },
+      {
+        "version": "1.2.0",
+        "date": "June 2026",
+        "title": "Capture, your way",
+        "items": [
+          {
+            "type": "new",
+            "text": "Open the editor automatically after a system screenshot."
+          },
+          {
+            "type": "new",
+            "text": "Choose what happens after each capture: show, copy or save."
+          },
+          {
+            "type": "new",
+            "text": "Customisable capture shortcut."
+          }
+        ]
+      },
+      {
+        "version": "1.1.0",
+        "date": "June 2026",
+        "title": "Eight languages",
+        "items": [
+          {
+            "type": "new",
+            "text": "Added French, German, Italian, Portuguese, Japanese and Korean."
+          },
+          {
+            "type": "improved",
+            "text": "Expanded, fully localized About window."
+          },
+          {
+            "type": "improved",
+            "text": "Many editor refinements."
+          }
+        ]
+      },
+      {
+        "version": "1.0",
+        "date": "May 2026",
+        "title": "Hello, iSkitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "First release: capture a region, window or the full screen."
+          },
+          {
+            "type": "new",
+            "text": "14 annotation tools and native macOS sharing."
+          },
+          {
+            "type": "new",
+            "text": "Privacy-first: no accounts, no tracking, nothing leaves your Mac."
+          }
+        ]
+      }
+    ],
+    "tags": {
+      "new": "New",
+      "improved": "Improved",
+      "fixed": "Fixed"
+    }
   }
 }

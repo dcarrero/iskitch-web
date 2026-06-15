@@ -6,7 +6,7 @@ We're happy to help — read the quick answers below, and if you don't find what
 
 ## Quick start
 
-1. **Install iSkitch** from the [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499) — free until June 15, 2026.
+1. **Install iSkitch** from the [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499).
 2. **Open iSkitch.** A small arrow icon appears in your menu bar (top-right). The first time, the welcome window will guide you.
 3. **Grant Screen Recording permission** when macOS asks: *System Settings ▸ Privacy & Security ▸ Screen Recording ▸ iSkitch ✓*. Relaunch iSkitch.
 4. **Press ⌥⌘4** anywhere, drag to select a region — the editor opens with all annotation tools.

@@ -5,7 +5,7 @@
 **Statut :** Disponible maintenant sur le Mac App Store.
 **Plateforme :** macOS 14 ou ultérieur. Universal Binary (Apple Silicon + Intel).
 **Langues :** Français, English, Español.
-**Prix :** Gratuit jusqu'au 15 juin 2026 — ensuite, un achat unique de 9,99 € (EUR). Sans abonnement.
+**Prix :** Un achat unique de 9,99 € (EUR). Sans abonnement ni compte.
 
 ## Qu'est-ce qu'iSkitch
 
@@ -28,7 +28,7 @@ Sélectionner · Flèche · Texte · Rectangle · Ellipse · Ligne · Surligner 
 
 ## Télécharger
 
-Téléchargez iSkitch sur le Mac App Store : https://apps.apple.com/app/iskitch/id6773733499 — gratuit jusqu'au 15 juin 2026, puis un achat unique de 9,99 €. Sans abonnement ni compte.
+Téléchargez iSkitch sur le Mac App Store : https://apps.apple.com/app/iskitch/id6773733499 — un achat unique de 9,99 €. Sans abonnement ni compte.
 
 ## Contact
 

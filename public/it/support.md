@@ -4,7 +4,7 @@
 
 ## Avvio rapido
 
-1. **Installa iSkitch** dal [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499) — gratis fino al 15 giugno 2026.
+1. **Installa iSkitch** dal [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499).
 2. **Apri iSkitch.** Freccia in alto a destra (barra dei menu).
 3. **Concedi Registrazione dello schermo** in *Impostazioni di Sistema ▸ Privacy e sicurezza ▸ Registrazione dello schermo ▸ iSkitch ✓*. Riavvia.
 4. **Premi ⌥⌘4**, trascina una regione — l'editor si apre.

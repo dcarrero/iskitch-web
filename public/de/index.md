@@ -5,7 +5,7 @@
 **Status:** Jetzt im Mac App Store verfügbar.
 **Plattform:** macOS 14 oder neuer. Universal Binary (Apple Silicon + Intel).
 **Sprachen:** Deutsch, English, Español, Français, Italiano.
-**Preis:** Bis 15. Juni 2026 gratis — danach ein Einmalkauf von 9,99 € (EUR). Kein Abo.
+**Preis:** Ein Einmalkauf von 9,99 € (EUR). Kein Abo, keine Konten.
 
 ## Was ist iSkitch
 
@@ -28,7 +28,7 @@ Auswählen · Pfeil · Text · Rechteck · Ellipse · Linie · Hervorheben · Pi
 
 ## Laden
 
-Lade iSkitch im Mac App Store: https://apps.apple.com/app/iskitch/id6773733499 — bis 15. Juni 2026 gratis, danach ein Einmalkauf von 9,99 €. Kein Abo, keine Konten.
+Lade iSkitch im Mac App Store: https://apps.apple.com/app/iskitch/id6773733499 — ein Einmalkauf von 9,99 €. Kein Abo, keine Konten.
 
 ## Kontakt
 

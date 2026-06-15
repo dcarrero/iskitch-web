@@ -5,7 +5,7 @@
 **Status:** Available now on the Mac App Store.
 **Platform:** macOS 14 or later. Universal Binary (Apple Silicon + Intel).
 **Languages:** English, Español.
-**Price:** Free until June 15, 2026 — then a one-time $9.99 (USD). No subscription.
+**Price:** A one-time $9.99 (USD). No subscription, no accounts.
 
 ## What is iSkitch
 
@@ -28,7 +28,7 @@ Select · Arrow · Text · Rectangle · Ellipse · Line · Highlight · Pixelate
 
 ## Download
 
-Download iSkitch on the Mac App Store: https://apps.apple.com/app/iskitch/id6773733499 — free until June 15, 2026, then a one-time purchase of $9.99. No subscription, no accounts.
+Download iSkitch on the Mac App Store: https://apps.apple.com/app/iskitch/id6773733499 — a one-time purchase of $9.99. No subscription, no accounts.
 
 ## Contact
 

@@ -5,7 +5,7 @@
 **ステータス:** Mac App Store で配信中。
 **プラットフォーム:** macOS 14 以降。Universal Binary (Apple Silicon + Intel)。
 **言語:** 日本語、English、Español、Français、Deutsch、Italiano、Português。
-**価格:** 2026年6月15日まで無料 — 以降は ¥1,500 (JPY) の買い切り。サブスクなし。
+**価格:** ¥1,500 (JPY) の買い切り。サブスクもアカウントも不要。
 
 ## iSkitch とは
 
@@ -28,7 +28,7 @@
 
 ## ダウンロード
 
-Mac App Store で iSkitch をダウンロード: https://apps.apple.com/app/iskitch/id6773733499 — 2026年6月15日まで無料、以降は ¥1,500 の買い切り。サブスクもアカウントも不要。
+Mac App Store で iSkitch をダウンロード: https://apps.apple.com/app/iskitch/id6773733499 — ¥1,500 の買い切り。サブスクもアカウントも不要。
 
 ## 連絡先
 

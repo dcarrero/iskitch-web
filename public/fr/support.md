@@ -6,7 +6,7 @@ Nous sommes là pour vous aider — consultez les réponses rapides ci-dessous, 
 
 ## Démarrage rapide
 
-1. **Installez iSkitch** depuis le [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499) — gratuit jusqu'au 15 juin 2026.
+1. **Installez iSkitch** depuis le [Mac App Store](https://apps.apple.com/app/iskitch/id6773733499).
 2. **Ouvrez iSkitch.** Une petite icône de flèche apparaît dans votre barre des menus (en haut à droite). La première fois, la fenêtre de bienvenue vous guidera.
 3. **Accordez l'autorisation Enregistrement de l'écran** quand macOS la demande : *Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l'écran ▸ iSkitch ✓*. Relancez iSkitch.
 4. **Appuyez sur ⌥⌘4** n'importe où, faites glisser pour sélectionner une zone — l'éditeur s'ouvre avec tous les outils d'annotation.
