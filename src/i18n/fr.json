@@ -208,6 +208,25 @@
         ]
       },
       {
+        "version": "1.2.1",
+        "date": "juin 2026",
+        "title": "Menus et finitions",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "La barre de menus complète de macOS (Fichier, Édition, Capture, Image, Outils) s'affiche désormais de façon fiable dans l'éditeur."
+          },
+          {
+            "type": "improved",
+            "text": "Bouton Enregistrer plus clair : choisissez le format dans un menu dédié et enregistrez en un clic."
+          },
+          {
+            "type": "improved",
+            "text": "Fenêtre « À propos » enrichie et entièrement traduite."
+          }
+        ]
+      },
+      {
         "version": "1.2.0",
         "date": "juin 2026",
         "title": "La capture à votre façon",

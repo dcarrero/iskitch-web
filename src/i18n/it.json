@@ -208,6 +208,25 @@
         ]
       },
       {
+        "version": "1.2.1",
+        "date": "giugno 2026",
+        "title": "Menu e rifiniture",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "La barra dei menu completa di macOS (File, Modifica, Cattura, Immagine, Strumenti) ora compare in modo affidabile nell'editor."
+          },
+          {
+            "type": "improved",
+            "text": "Pulsante Salva più chiaro: scegli il formato da un menu dedicato e salva con un clic."
+          },
+          {
+            "type": "improved",
+            "text": "Finestra «Informazioni» ampliata e completamente tradotta."
+          }
+        ]
+      },
+      {
         "version": "1.2.0",
         "date": "giugno 2026",
         "title": "Cattura a modo tuo",

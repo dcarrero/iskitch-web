@@ -212,6 +212,25 @@
         ]
       },
       {
+        "version": "1.2.1",
+        "date": "junio de 2026",
+        "title": "Menús y pulido",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "La barra de menús completa de macOS (Archivo, Edición, Captura, Imagen, Herramientas) ahora aparece de forma fiable en el editor."
+          },
+          {
+            "type": "improved",
+            "text": "Botón de Guardar más claro: elige el formato en un menú propio y guarda con un clic."
+          },
+          {
+            "type": "improved",
+            "text": "Ventana «Acerca de» ampliada y totalmente traducida."
+          }
+        ]
+      },
+      {
         "version": "1.2.0",
         "date": "junio de 2026",
         "title": "Captura a tu manera",

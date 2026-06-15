@@ -208,6 +208,25 @@
         ]
       },
       {
+        "version": "1.2.1",
+        "date": "Juni 2026",
+        "title": "Menüs & Feinschliff",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "Die komplette macOS-Menüleiste (Datei, Bearbeiten, Aufnahme, Bild, Werkzeuge) erscheint jetzt zuverlässig im Editor."
+          },
+          {
+            "type": "improved",
+            "text": "Übersichtlicherer Sichern-Button — Format in einem eigenen Menü wählen und mit einem Klick sichern."
+          },
+          {
+            "type": "improved",
+            "text": "Erweitertes, vollständig lokalisiertes „Über“-Fenster."
+          }
+        ]
+      },
+      {
         "version": "1.2.0",
         "date": "Juni 2026",
         "title": "Aufnehmen, wie du willst",

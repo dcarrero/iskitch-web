@@ -212,6 +212,25 @@
         ]
       },
       {
+        "version": "1.2.1",
+        "date": "June 2026",
+        "title": "Menus & polish",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "The full macOS menu bar (File, Edit, Capture, Image, Tools) now reliably appears in the editor."
+          },
+          {
+            "type": "improved",
+            "text": "Clearer Save button — pick the format from a dedicated menu and save in one click."
+          },
+          {
+            "type": "improved",
+            "text": "Expanded, fully localized About window."
+          }
+        ]
+      },
+      {
         "version": "1.2.0",
         "date": "June 2026",
         "title": "Capture, your way",

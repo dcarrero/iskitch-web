@@ -208,6 +208,25 @@
         ]
       },
       {
+        "version": "1.2.1",
+        "date": "junho de 2026",
+        "title": "Menus e polimento",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "A barra de menus completa do macOS (Ficheiro, Editar, Captura, Imagem, Ferramentas) passa a aparecer de forma fiável no editor."
+          },
+          {
+            "type": "improved",
+            "text": "Botão Guardar mais claro: escolhe o formato num menu próprio e guarda com um clique."
+          },
+          {
+            "type": "improved",
+            "text": "Janela «Sobre» ampliada e totalmente traduzida."
+          }
+        ]
+      },
+      {
         "version": "1.2.0",
         "date": "junho de 2026",
         "title": "Captura à tua maneira",
