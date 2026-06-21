@@ -193,6 +193,42 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.3.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Faster documentation",
+        "items": [
+          {
+            "type": "new",
+            "text": "Numbered stamps (1·2·3) that auto-increment — perfect for tutorials and runbooks."
+          },
+          {
+            "type": "new",
+            "text": "Capture timer: a 3/5/10s countdown before the shot, to open a menu or trigger a hover state."
+          },
+          {
+            "type": "new",
+            "text": "Recapture the last region with a single shortcut, without selecting again."
+          },
+          {
+            "type": "new",
+            "text": "Multi-display: choose which screen to capture in full screen."
+          },
+          {
+            "type": "new",
+            "text": "Quick capture: send a region or the full screen straight to the clipboard or a file, skipping the editor."
+          },
+          {
+            "type": "new",
+            "text": "Copy to clipboard at full size (1x) so Retina screenshots paste at full resolution — plus a size and resolution (DPI) readout in the editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Cropping now shows your annotations too, so you crop the full composition."
+          }
+        ]
+      },
+      {
         "version": "1.2.2",
         "date": "June 16, 2026",
         "title": "Smarter cropping",
@@ -292,6 +328,7 @@
       "new": "New",
       "improved": "Improved",
       "fixed": "Fixed"
-    }
+    },
+    "comingSoon": "Coming soon"
   }
 }

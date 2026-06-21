@@ -189,6 +189,42 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.3.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Schneller dokumentieren",
+        "items": [
+          {
+            "type": "new",
+            "text": "Nummerierte Stempel (1·2·3), die automatisch hochzählen — ideal für Tutorials und Runbooks."
+          },
+          {
+            "type": "new",
+            "text": "Aufnahme-Timer: Countdown von 3/5/10 s vor dem Auslösen, um ein Menü zu öffnen oder einen Hover-Zustand auszulösen."
+          },
+          {
+            "type": "new",
+            "text": "Letzten Bereich mit einem einzigen Kurzbefehl erneut aufnehmen, ohne neue Auswahl."
+          },
+          {
+            "type": "new",
+            "text": "Mehrere Bildschirme: Wähle, welchen Bildschirm du als Vollbild aufnimmst."
+          },
+          {
+            "type": "new",
+            "text": "Schnellaufnahme: Sende einen Bereich oder den ganzen Bildschirm direkt in die Zwischenablage oder eine Datei, ohne den Editor."
+          },
+          {
+            "type": "new",
+            "text": "In Originalgröße in die Zwischenablage kopieren (1x), damit Retina-Aufnahmen in voller Auflösung eingefügt werden — samt Anzeige von Größe und Auflösung (DPI) im Editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Beim Zuschneiden werden jetzt auch deine Anmerkungen angezeigt, sodass du die komplette Komposition zuschneidest."
+          }
+        ]
+      },
+      {
         "version": "1.2.2",
         "date": "16. Juni 2026",
         "title": "Intelligenteres Zuschneiden",
@@ -288,6 +324,7 @@
       "new": "Neu",
       "improved": "Verbessert",
       "fixed": "Behoben"
-    }
+    },
+    "comingSoon": "Demnächst"
   }
 }

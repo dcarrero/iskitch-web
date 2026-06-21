@@ -189,6 +189,42 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.3.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Documentar mais depressa",
+        "items": [
+          {
+            "type": "new",
+            "text": "Carimbos numerados (1·2·3) que se incrementam sozinhos, ideais para tutoriais e runbooks."
+          },
+          {
+            "type": "new",
+            "text": "Temporizador de captura: contagem decrescente de 3/5/10 s antes do disparo, para abrir um menu ou um estado de rato sobre."
+          },
+          {
+            "type": "new",
+            "text": "Recaptura a última região com um único atalho, sem voltar a selecionar."
+          },
+          {
+            "type": "new",
+            "text": "Multiecrã: escolhe que ecrã capturar em ecrã inteiro."
+          },
+          {
+            "type": "new",
+            "text": "Captura rápida: envia uma região ou o ecrã inteiro diretamente para a área de transferência ou um ficheiro, sem passar pelo editor."
+          },
+          {
+            "type": "new",
+            "text": "Copiar para a área de transferência em tamanho real (1x) para que as capturas Retina sejam coladas em resolução plena, com indicação de tamanho e resolução (DPI) no editor."
+          },
+          {
+            "type": "fixed",
+            "text": "O recorte passa a mostrar também as tuas anotações, para recortares a composição completa."
+          }
+        ]
+      },
+      {
         "version": "1.2.2",
         "date": "16 de junho de 2026",
         "title": "Um recorte mais inteligente",
@@ -288,6 +324,7 @@
       "new": "Novo",
       "improved": "Melhorado",
       "fixed": "Corrigido"
-    }
+    },
+    "comingSoon": "Em breve"
   }
 }

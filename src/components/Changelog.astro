@@ -12,7 +12,8 @@ const cl = t.changelog;
       <li class="cl-entry">
         <div class="cl-meta">
           <span class={`cl-version${i === 0 ? " is-latest" : ""}`}>v{v.version}</span>
-          <span class="cl-date">{v.date}</span>
+          {v.comingSoon && <span class="cl-badge">{cl.comingSoon}</span>}
+          {v.date && <span class="cl-date">{v.date}</span>}
         </div>
         <p class="cl-title">{v.title}</p>
         <ul class="cl-items">

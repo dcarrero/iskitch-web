@@ -189,6 +189,42 @@
     "lead": "Toutes les versions d'iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l'app.",
     "versions": [
       {
+        "version": "1.3.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Documenter plus vite",
+        "items": [
+          {
+            "type": "new",
+            "text": "Tampons numérotés (1·2·3) qui s'incrémentent, parfaits pour les tutoriels et runbooks."
+          },
+          {
+            "type": "new",
+            "text": "Minuteur de capture : compte à rebours de 3/5/10 s avant la prise, pour ouvrir un menu ou un état de survol."
+          },
+          {
+            "type": "new",
+            "text": "Recapturez la dernière zone d'un seul raccourci, sans resélectionner."
+          },
+          {
+            "type": "new",
+            "text": "Multi-écran : choisissez quel écran capturer en plein écran."
+          },
+          {
+            "type": "new",
+            "text": "Capture rapide : envoyez une zone ou tout l'écran directement vers le presse-papiers ou un fichier, sans passer par l'éditeur."
+          },
+          {
+            "type": "new",
+            "text": "Copier dans le presse-papiers en taille réelle (1x) pour que les captures Retina se collent en pleine résolution, avec un affichage de la taille et de la résolution (DPI) dans l'éditeur."
+          },
+          {
+            "type": "fixed",
+            "text": "Le recadrage affiche désormais aussi vos annotations, pour recadrer la composition complète."
+          }
+        ]
+      },
+      {
         "version": "1.2.2",
         "date": "16 juin 2026",
         "title": "Un recadrage plus intelligent",
@@ -288,6 +324,7 @@
       "new": "Nouveau",
       "improved": "Amélioré",
       "fixed": "Corrigé"
-    }
+    },
+    "comingSoon": "Bientôt disponible"
   }
 }

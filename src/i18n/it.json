@@ -189,6 +189,42 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l'app.",
     "versions": [
       {
+        "version": "1.3.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Documentare più in fretta",
+        "items": [
+          {
+            "type": "new",
+            "text": "Timbri numerati (1·2·3) che si incrementano da soli, ideali per tutorial e runbook."
+          },
+          {
+            "type": "new",
+            "text": "Timer di cattura: conto alla rovescia di 3/5/10 s prima dello scatto, per aprire un menu o uno stato hover."
+          },
+          {
+            "type": "new",
+            "text": "Ricattura l'ultima area con una sola scorciatoia, senza riselezionare."
+          },
+          {
+            "type": "new",
+            "text": "Multi-schermo: scegli quale schermo catturare a schermo intero."
+          },
+          {
+            "type": "new",
+            "text": "Cattura rapida: invia un'area o l'intero schermo direttamente negli appunti o in un file, saltando l'editor."
+          },
+          {
+            "type": "new",
+            "text": "Copia negli appunti a dimensione intera (1x) così gli screenshot Retina si incollano a piena risoluzione, con indicazione di dimensione e risoluzione (DPI) nell'editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Ora il ritaglio mostra anche le tue annotazioni, per ritagliare l'intera composizione."
+          }
+        ]
+      },
+      {
         "version": "1.2.2",
         "date": "16 giugno 2026",
         "title": "Ritaglio più intelligente",
@@ -288,6 +324,7 @@
       "new": "Nuovo",
       "improved": "Migliorato",
       "fixed": "Corretto"
-    }
+    },
+    "comingSoon": "Prossimamente"
   }
 }

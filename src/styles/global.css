@@ -397,6 +397,12 @@ html { color-scheme: light; }
 .changelog .cl-meta { display: flex; align-items: baseline; gap: 12px; margin-bottom: 2px; }
 .changelog .cl-version { font-size: 26px; font-weight: 800; letter-spacing: -.01em; color: var(--ink-1); font-variant-numeric: tabular-nums; }
 .changelog .cl-version.is-latest { color: var(--brand-2); }
+.changelog .cl-badge {
+  align-self: center;
+  padding: 3px 10px; border-radius: 999px;
+  background: var(--brand-soft); color: var(--brand-2);
+  font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
 .changelog .cl-date { color: var(--ink-3); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
 .changelog .cl-title { font-size: 17px; font-weight: 600; color: var(--ink-2); margin: 2px 0 16px; }
 .changelog .cl-items { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
