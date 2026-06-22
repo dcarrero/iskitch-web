@@ -194,8 +194,8 @@
     "versions": [
       {
         "version": "1.3.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "June 22, 2026",
+        "comingSoon": false,
         "title": "Faster documentation",
         "items": [
           {

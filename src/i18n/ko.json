@@ -190,8 +190,8 @@
     "versions": [
       {
         "version": "1.3.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "2026년 6월 22일",
+        "comingSoon": false,
         "title": "더 빠른 문서화",
         "items": [
           {
