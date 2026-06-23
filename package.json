@@ -10,6 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "og": "node scripts/generate-og.mjs",
+    "icons": "node scripts/generate-icons.mjs",
     "sync": "node --env-file=.env scripts/sync-acumbamail.mjs"
   },
   "devDependencies": {
