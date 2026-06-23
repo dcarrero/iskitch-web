@@ -4,6 +4,9 @@
   "description": "iskitch.com — landing page and privacy/support pages for iSkitch (macOS app).",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -14,7 +17,7 @@
     "sync": "node --env-file=.env scripts/sync-acumbamail.mjs"
   },
   "devDependencies": {
-    "astro": "^5.0.0",
+    "astro": "^6.4.8",
     "sharp": "^0.34.5"
   },
   "dependencies": {
