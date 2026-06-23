@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import BlogList from "../../components/BlogList.astro";
+import baseT from "../../i18n/en.json";
+import { articlePath, blogIndexPath, entrySlug, readingMinutes, dateLabel, LANGS, SITE } from "../../lib/blog";
+
+const LANG = "en";
+const entries = (await getCollection("blog"))
+  .filter((e) => e.data.lang === LANG)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const posts = entries.map((e) => ({
+  href: articlePath(LANG, entrySlug(e.id)),
+  title: e.data.title,
+  description: e.data.description,
+  dateLabel: dateLabel(e.data.pubDate, LANG),
+  minutes: readingMinutes(e.body, LANG),
+}));
+
+const t = { ...baseT, meta: { title: baseT.blog.index_title, description: baseT.blog.index_description } };
+const alternates = LANGS.map((l) => ({ hreflang: l, href: `${SITE}${blogIndexPath(l)}` }));
+---
+<Layout t={t} alternates={alternates}>
+  <BlogList t={t} posts={posts} />
+</Layout>

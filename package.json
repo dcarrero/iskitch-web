@@ -9,10 +9,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "og": "node scripts/generate-og.mjs",
     "sync": "node --env-file=.env scripts/sync-acumbamail.mjs"
   },
   "devDependencies": {
-    "astro": "^5.0.0"
+    "astro": "^5.0.0",
+    "sharp": "^0.34.5"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3"

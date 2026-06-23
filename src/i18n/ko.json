@@ -11,7 +11,22 @@
     "download": "다운로드",
     "menu_open": "메뉴 열기",
     "menu_close": "메뉴 닫기",
-    "changelog": "변경 내역"
+    "changelog": "변경 내역",
+    "blog": "가이드"
+  },
+  "blog": {
+    "index_title": "가이드 — iSkitch",
+    "index_description": "macOS에서 스크린샷을 캡처하고, 주석을 달고, 민감 정보를 가리고, 공유하는 실전 가이드 — iSkitch 제작팀이 제공합니다.",
+    "heading": "가이드",
+    "subheading": "Mac에서 스크린샷을 캡처하고, 주석을 달고, 공유하는 실전 가이드.",
+    "read_more": "가이드 읽기",
+    "back": "모든 가이드",
+    "updated": "업데이트",
+    "min_read": "분 읽기",
+    "related": "이어서 읽기",
+    "cta_title": "캡처. 주석. 클릭 한 번으로 공유.",
+    "cta_text": "iSkitch는 메뉴 막대에 상주하며 ⌥⌘4로 바로 호출 — 네이티브, 프라이버시, 한 번 결제.",
+    "cta_button": "iSkitch 받기"
   },
   "hero": {
     "badge": "이제 Mac App Store에서",
@@ -177,6 +192,10 @@
       {
         "text": "지원",
         "href": "/ko/support"
+      },
+      {
+        "text": "가이드",
+        "href": "/ko/blog"
       },
       {
         "text": "Color Vivo",

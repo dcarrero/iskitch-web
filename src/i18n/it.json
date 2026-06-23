@@ -11,7 +11,22 @@
     "download": "Scarica",
     "menu_open": "Apri menu",
     "menu_close": "Chiudi menu",
-    "changelog": "Novità"
+    "changelog": "Novità",
+    "blog": "Guide"
+  },
+  "blog": {
+    "index_title": "Guide — iSkitch",
+    "index_description": "Guide pratiche per catturare, annotare, nascondere informazioni sensibili e condividere screenshot su macOS — dai creatori di iSkitch.",
+    "heading": "Guide",
+    "subheading": "Guide pratiche per catturare, annotare e condividere screenshot sul Mac.",
+    "read_more": "Leggi la guida",
+    "back": "Tutte le guide",
+    "updated": "Aggiornato",
+    "min_read": "min di lettura",
+    "related": "Continua a leggere",
+    "cta_title": "Cattura. Annota. Condividi con un clic.",
+    "cta_text": "iSkitch vive nella tua barra dei menu, pronto per ⌥⌘4 — nativo, privato, acquisto singolo.",
+    "cta_button": "Scarica iSkitch"
   },
   "hero": {
     "badge": "Ora sul Mac App Store",
@@ -177,6 +192,10 @@
       {
         "text": "Supporto",
         "href": "/it/support"
+      },
+      {
+        "text": "Guide",
+        "href": "/it/blog"
       },
       {
         "text": "Color Vivo",

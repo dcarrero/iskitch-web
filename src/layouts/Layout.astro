@@ -7,9 +7,19 @@ interface Props {
   /** Ruta de la versión markdown de esta página (relativa a site). Si se omite,
       no añadimos <link rel="alternate" type="text/markdown">. */
   markdownPath?: string;
+  /** Tipo Open Graph. Por defecto 'website'; los artículos usan 'article'. */
+  ogType?: string;
+  /** Alternates hreflang específicos de esta página. Si se omiten, usamos los
+      de la home. Cada artículo del blog pasa los suyos (una URL por idioma). */
+  alternates?: { hreflang: string; href: string }[];
+  /** JSON-LD de artículo (BlogPosting) que sustituye al WebPage por defecto. */
+  articleSchema?: Record<string, unknown>;
+  /** Imagen OG/Twitter. Ruta absoluta (relativa a site). Por defecto la portada. */
+  ogImage?: string;
 }
-const { t, isHome = false, markdownPath } = Astro.props as Props;
+const { t, isHome = false, markdownPath, ogType = "website", alternates, articleSchema, ogImage } = Astro.props as Props;
 const site = "https://iskitch.com";
+const ogImageUrl = `${site}${ogImage ?? "/og-cover.png"}`;
 const path = Astro.url.pathname.replace(/\/+$/, "") || "/";
 const canonical = `${site}${path === "/" ? "/" : `${path}/`}`;
 
@@ -51,7 +61,25 @@ const pageSchema = {
   "isPartOf": { "@type": "WebSite", "name": "iSkitch", "url": site },
   "publisher": { "@id": `${site}/#organization` }
 };
-const jsonLd = isHome ? [homeSchema, organization] : [pageSchema, organization];
+const jsonLd = isHome
+  ? [homeSchema, organization]
+  : articleSchema
+    ? [articleSchema, organization]
+    : [pageSchema, organization];
+
+// Lista de alternates: la propia de la página si se pasa, o la de la home por defecto.
+const homeAlternates = [
+  { hreflang: "en", href: `${site}/` },
+  { hreflang: "es", href: `${site}/es/` },
+  { hreflang: "fr", href: `${site}/fr/` },
+  { hreflang: "de", href: `${site}/de/` },
+  { hreflang: "it", href: `${site}/it/` },
+  { hreflang: "pt", href: `${site}/pt/` },
+  { hreflang: "ja", href: `${site}/ja/` },
+  { hreflang: "ko", href: `${site}/ko/` },
+];
+const altLinks = alternates ?? homeAlternates;
+const xDefault = (alternates ?? homeAlternates).find((a) => a.hreflang === "en")?.href ?? `${site}/`;
 ---
 <!doctype html>
 <html lang={t.lang}>
@@ -65,8 +93,8 @@ const jsonLd = isHome ? [homeSchema, organization] : [pageSchema, organization];
 <link rel="canonical" href={canonical} />
 <meta property="og:title" content={t.meta.title} />
 <meta property="og:description" content={t.meta.description} />
-<meta property="og:image" content={`${site}/og-cover.png`} />
-<meta property="og:type" content="website" />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:type" content={ogType} />
 <meta property="og:url" content={canonical} />
 <meta property="og:locale" content={
   t.lang === 'es' ? 'es_ES' :
@@ -79,15 +107,11 @@ const jsonLd = isHome ? [homeSchema, organization] : [pageSchema, organization];
   'en_US'
 } />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="alternate" hreflang="en" href={`${site}/`} />
-<link rel="alternate" hreflang="es" href={`${site}/es/`} />
-<link rel="alternate" hreflang="fr" href={`${site}/fr/`} />
-<link rel="alternate" hreflang="de" href={`${site}/de/`} />
-<link rel="alternate" hreflang="it" href={`${site}/it/`} />
-<link rel="alternate" hreflang="pt" href={`${site}/pt/`} />
-<link rel="alternate" hreflang="ja" href={`${site}/ja/`} />
-<link rel="alternate" hreflang="ko" href={`${site}/ko/`} />
-<link rel="alternate" hreflang="x-default" href={`${site}/`} />
+<meta name="twitter:image" content={ogImageUrl} />
+{altLinks.map((a) => (
+  <link rel="alternate" hreflang={a.hreflang} href={a.href} />
+))}
+<link rel="alternate" hreflang="x-default" href={xDefault} />
 {markdownPath && (
   <link rel="alternate" type="text/markdown" href={`${site}${markdownPath}`} title="Markdown version (Markdown for Agents)" />
 )}

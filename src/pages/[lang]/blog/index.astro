@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import BlogList from "../../../components/BlogList.astro";
+import { DICT } from "../../../i18n/all";
+import { articlePath, blogIndexPath, entrySlug, readingMinutes, dateLabel, LANGS, SITE } from "../../../lib/blog";
+
+export async function getStaticPaths() {
+  // Todos los idiomas salvo EN (que va sin prefijo en /blog).
+  // Solo idiomas con el bloque i18n del blog ya traducido.
+  return LANGS.filter((l) => l !== "en" && DICT[l]?.blog).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: string };
+const baseT = DICT[lang];
+
+const entries = (await getCollection("blog"))
+  .filter((e) => e.data.lang === lang)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const posts = entries.map((e) => ({
+  href: articlePath(lang, entrySlug(e.id)),
+  title: e.data.title,
+  description: e.data.description,
+  dateLabel: dateLabel(e.data.pubDate, lang),
+  minutes: readingMinutes(e.body, lang),
+}));
+
+const t = { ...baseT, meta: { title: baseT.blog.index_title, description: baseT.blog.index_description } };
+const alternates = LANGS.map((l) => ({ hreflang: l, href: `${SITE}${blogIndexPath(l)}` }));
+---
+<Layout t={t} alternates={alternates}>
+  <BlogList t={t} posts={posts} />
+</Layout>

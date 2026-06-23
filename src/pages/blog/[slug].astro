@@ -1,0 +1,59 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import BlogArticle from "../../components/BlogArticle.astro";
+import baseT from "../../i18n/en.json";
+import { articlePath, blogIndexPath, articleAlternates, entrySlug, readingMinutes, dateLabel, SITE } from "../../lib/blog";
+
+const LANG = "en";
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("blog")).filter((e) => e.data.lang === "en");
+  return entries.map((entry) => ({ params: { slug: entrySlug(entry.id) }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const slug = entrySlug(entry.id);
+
+const all = (await getCollection("blog")).filter((e) => e.data.lang === LANG);
+const related = (d.related ?? [])
+  .map((rel) => all.find((e) => entrySlug(e.id) === rel))
+  .filter(Boolean)
+  .map((e) => ({ href: articlePath(LANG, entrySlug(e!.id)), title: e!.data.title }));
+
+const minutes = readingMinutes(entry.body, LANG);
+const t = { ...baseT, meta: { title: `${d.title} — iSkitch`, description: d.description } };
+
+const canonical = `${SITE}${articlePath(LANG, slug)}`;
+const ogImage = `/blog/og/${LANG}-${slug}.png`;
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: d.title,
+  description: d.description,
+  inLanguage: LANG,
+  datePublished: d.pubDate.toISOString(),
+  dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
+  url: canonical,
+  mainEntityOfPage: canonical,
+  image: `${SITE}${ogImage}`,
+  author: { "@id": `${SITE}/#organization` },
+  publisher: { "@id": `${SITE}/#organization` },
+};
+---
+<Layout t={t} ogType="article" alternates={articleAlternates(slug)} articleSchema={articleSchema} ogImage={ogImage}>
+  <BlogArticle
+    t={t}
+    title={d.title}
+    description={d.description}
+    dateLabel={dateLabel(d.pubDate, LANG)}
+    updatedLabel={d.updatedDate ? dateLabel(d.updatedDate, LANG) : undefined}
+    minutes={minutes}
+    blogHref={blogIndexPath(LANG)}
+    related={related}
+  >
+    <Content />
+  </BlogArticle>
+</Layout>

@@ -1,0 +1,52 @@
+---
+import Nav from "./Nav.astro";
+import Footer from "./Footer.astro";
+interface Related { href: string; title: string }
+interface Props {
+  t: any;
+  title: string;
+  description: string;
+  dateLabel: string;
+  updatedLabel?: string;
+  minutes: number;
+  blogHref: string;
+  related: Related[];
+}
+const { t, title, description, dateLabel, updatedLabel, minutes, blogHref, related } = Astro.props as Props;
+---
+<Nav t={t} />
+<main id="main" class="blog-main">
+  <article class="article container">
+    <nav class="article-back" aria-label={t.blog.heading}>
+      <a href={blogHref}>← {t.blog.back}</a>
+    </nav>
+    <header class="article-head">
+      <h1>{title}</h1>
+      <p class="article-lead">{description}</p>
+      <p class="article-meta">
+        <span>{updatedLabel ? `${t.blog.updated} ${updatedLabel}` : dateLabel}</span>
+        <span aria-hidden="true">·</span>
+        <span>{minutes} {t.blog.min_read}</span>
+      </p>
+    </header>
+    <div class="prose">
+      <slot />
+    </div>
+    {related.length > 0 && (
+      <aside class="article-related" aria-label={t.blog.related}>
+        <h2>{t.blog.related}</h2>
+        <ul role="list">
+          {related.map((r) => (
+            <li><a href={r.href}>{r.title} →</a></li>
+          ))}
+        </ul>
+      </aside>
+    )}
+    <div class="article-cta">
+      <h2>{t.blog.cta_title}</h2>
+      <p>{t.blog.cta_text}</p>
+      <a class="btn btn-primary" href={t.appstore.url} target="_blank" rel="noopener">{t.blog.cta_button}</a>
+    </div>
+  </article>
+</main>
+<Footer t={t} />

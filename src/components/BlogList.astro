@@ -1,0 +1,39 @@
+---
+import Nav from "./Nav.astro";
+import Footer from "./Footer.astro";
+interface Post {
+  href: string;
+  title: string;
+  description: string;
+  dateLabel: string;
+  minutes: number;
+}
+interface Props { t: any; posts: Post[] }
+const { t, posts } = Astro.props as Props;
+---
+<Nav t={t} />
+<main id="main" class="blog-main">
+  <header class="blog-head container">
+    <p class="eyebrow">{t.blog.heading}</p>
+    <h1>{t.blog.subheading}</h1>
+  </header>
+  <div class="container">
+    <ul class="blog-grid" role="list">
+      {posts.map((p) => (
+        <li class="blog-card">
+          <a href={p.href} class="blog-card-link">
+            <h2 class="blog-card-title">{p.title}</h2>
+            <p class="blog-card-desc">{p.description}</p>
+            <p class="blog-card-meta">
+              <span>{p.dateLabel}</span>
+              <span aria-hidden="true">·</span>
+              <span>{p.minutes} {t.blog.min_read}</span>
+            </p>
+            <span class="blog-card-cta">{t.blog.read_more} →</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</main>
+<Footer t={t} />

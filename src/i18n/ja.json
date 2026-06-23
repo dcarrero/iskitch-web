@@ -11,7 +11,22 @@
     "download": "ダウンロード",
     "menu_open": "メニューを開く",
     "menu_close": "メニューを閉じる",
-    "changelog": "更新履歴"
+    "changelog": "更新履歴",
+    "blog": "ガイド"
+  },
+  "blog": {
+    "index_title": "ガイド — iSkitch",
+    "index_description": "macOS でスクリーンショットをキャプチャ、注釈、機密情報の非表示、共有するための実践ガイド — iSkitch の開発元より。",
+    "heading": "ガイド",
+    "subheading": "Mac でスクリーンショットをキャプチャ・注釈・共有するための実践ガイド。",
+    "read_more": "ガイドを読む",
+    "back": "すべてのガイド",
+    "updated": "更新日",
+    "min_read": "分で読めます",
+    "related": "続けて読む",
+    "cta_title": "キャプチャ。注釈。ワンクリックで共有。",
+    "cta_text": "iSkitch はメニューバーに常駐し、⌥⌘4 でいつでも起動 — ネイティブ、プライベート、買い切り。",
+    "cta_button": "iSkitch を入手"
   },
   "hero": {
     "badge": "Mac App Store で配信中",
@@ -177,6 +192,10 @@
       {
         "text": "サポート",
         "href": "/ja/support"
+      },
+      {
+        "text": "ガイド",
+        "href": "/ja/blog"
       },
       {
         "text": "Color Vivo",

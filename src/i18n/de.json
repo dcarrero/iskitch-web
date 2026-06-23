@@ -11,7 +11,22 @@
     "download": "Laden",
     "menu_open": "Menü öffnen",
     "menu_close": "Menü schließen",
-    "changelog": "Änderungen"
+    "changelog": "Änderungen",
+    "blog": "Anleitungen"
+  },
+  "blog": {
+    "index_title": "Anleitungen — iSkitch",
+    "index_description": "Praktische Anleitungen zum Aufnehmen, Markieren, Verbergen sensibler Infos und Teilen von Screenshots unter macOS — von den Machern von iSkitch.",
+    "heading": "Anleitungen",
+    "subheading": "Praktische Anleitungen zum Aufnehmen, Markieren und Teilen von Screenshots auf dem Mac.",
+    "read_more": "Anleitung lesen",
+    "back": "Alle Anleitungen",
+    "updated": "Aktualisiert",
+    "min_read": "Min. Lesezeit",
+    "related": "Weiterlesen",
+    "cta_title": "Aufnehmen. Markieren. Mit einem Klick teilen.",
+    "cta_text": "iSkitch lebt in deiner Menüleiste, bereit für ⌥⌘4 — nativ, privat, einmaliger Kauf.",
+    "cta_button": "iSkitch holen"
   },
   "hero": {
     "badge": "Jetzt im Mac App Store",
@@ -177,6 +192,10 @@
       {
         "text": "Hilfe",
         "href": "/de/support"
+      },
+      {
+        "text": "Anleitungen",
+        "href": "/de/blog"
       },
       {
         "text": "Color Vivo",

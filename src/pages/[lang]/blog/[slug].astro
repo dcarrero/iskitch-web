@@ -1,0 +1,61 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import BlogArticle from "../../../components/BlogArticle.astro";
+import { DICT } from "../../../i18n/all";
+import { articlePath, blogIndexPath, articleAlternates, entrySlug, readingMinutes, dateLabel, LANGS, SITE } from "../../../lib/blog";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("blog");
+  return entries
+    .filter((e) => e.data.lang !== "en")
+    .map((entry) => ({ params: { lang: entry.data.lang, slug: entrySlug(entry.id) }, props: { entry } }));
+}
+
+const { lang } = Astro.params as { lang: string };
+const { entry } = Astro.props;
+const baseT = DICT[lang];
+const { Content } = await render(entry);
+const d = entry.data;
+const slug = entrySlug(entry.id);
+
+const all = (await getCollection("blog")).filter((e) => e.data.lang === lang);
+const related = (d.related ?? [])
+  .map((rel) => all.find((e) => entrySlug(e.id) === rel))
+  .filter(Boolean)
+  .map((e) => ({ href: articlePath(lang, entrySlug(e!.id)), title: e!.data.title }));
+
+const minutes = readingMinutes(entry.body, lang);
+const t = { ...baseT, meta: { title: `${d.title} — iSkitch`, description: d.description } };
+
+const canonical = `${SITE}${articlePath(lang, slug)}`;
+const ogImage = `/blog/og/${lang}-${slug}.png`;
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: d.title,
+  description: d.description,
+  inLanguage: lang,
+  datePublished: d.pubDate.toISOString(),
+  dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
+  url: canonical,
+  mainEntityOfPage: canonical,
+  image: `${SITE}${ogImage}`,
+  author: { "@id": `${SITE}/#organization` },
+  publisher: { "@id": `${SITE}/#organization` },
+};
+---
+<Layout t={t} ogType="article" alternates={articleAlternates(slug)} articleSchema={articleSchema} ogImage={ogImage}>
+  <BlogArticle
+    t={t}
+    title={d.title}
+    description={d.description}
+    dateLabel={dateLabel(d.pubDate, lang)}
+    updatedLabel={d.updatedDate ? dateLabel(d.updatedDate, lang) : undefined}
+    minutes={minutes}
+    blogHref={blogIndexPath(lang)}
+    related={related}
+  >
+    <Content />
+  </BlogArticle>
+</Layout>

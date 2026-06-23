@@ -15,7 +15,22 @@
     "download": "Download",
     "menu_open": "Open menu",
     "menu_close": "Close menu",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "blog": "Guides"
+  },
+  "blog": {
+    "index_title": "Guides — iSkitch",
+    "index_description": "Practical guides to capturing, annotating, hiding sensitive info and sharing screenshots on macOS — from the makers of iSkitch.",
+    "heading": "Guides",
+    "subheading": "Practical guides to capturing, annotating and sharing screenshots on the Mac.",
+    "read_more": "Read guide",
+    "back": "All guides",
+    "updated": "Updated",
+    "min_read": "min read",
+    "related": "Keep reading",
+    "cta_title": "Capture. Annotate. Share in one click.",
+    "cta_text": "iSkitch lives in your menu bar, ready for ⌥⌘4 — native, private, one-time purchase.",
+    "cta_button": "Get iSkitch"
   },
   "hero": {
     "badge": "Now on the Mac App Store",
@@ -181,6 +196,10 @@
       {
         "text": "Support",
         "href": "/support"
+      },
+      {
+        "text": "Guides",
+        "href": "/blog"
       },
       {
         "text": "Color Vivo",
