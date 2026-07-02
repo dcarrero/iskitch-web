@@ -208,6 +208,26 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l'app.",
     "versions": [
       {
+        "version": "1.4.0",
+        "date": "2 luglio 2026",
+        "comingSoon": false,
+        "title": "Finestre a dimensione reale e cursori di precisione",
+        "items": [
+          {
+            "type": "new",
+            "text": "Cursori di precisione: ogni strumento di disegno (e il ritaglio) mostra un mirino con la mini-icona dello strumento attivo, che cambia all'istante quando cambi strumento."
+          },
+          {
+            "type": "improved",
+            "text": "La finestra dell'editor si apre ora alla dimensione della tua cattura allo zoom 100% quando sta nello schermo; basta finestra fissa con l'immagine rimpicciolita."
+          },
+          {
+            "type": "improved",
+            "text": "Con più monitor, l'editor appare sullo schermo dove stai lavorando, non sempre su quello principale."
+          }
+        ]
+      },
+      {
         "version": "1.3.0",
         "date": "22 giugno 2026",
         "comingSoon": false,

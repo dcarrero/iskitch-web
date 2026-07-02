@@ -208,6 +208,26 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.4.0",
+        "date": "2. Juli 2026",
+        "comingSoon": false,
+        "title": "Fenster in echter Größe und Präzisionscursor",
+        "items": [
+          {
+            "type": "new",
+            "text": "Präzisionscursor: jedes Zeichenwerkzeug (und das Zuschneiden) zeigt ein Fadenkreuz mit einem Mini-Symbol des aktiven Werkzeugs, das sofort beim Werkzeugwechsel wechselt."
+          },
+          {
+            "type": "improved",
+            "text": "Das Editorfenster öffnet sich jetzt in der Größe deiner Aufnahme bei 100 % Zoom, wenn sie auf den Bildschirm passt; kein festes Fenster mehr mit verkleinertem Bild."
+          },
+          {
+            "type": "improved",
+            "text": "Bei mehreren Monitoren erscheint der Editor auf dem Bildschirm, an dem du arbeitest, nicht immer auf dem Hauptbildschirm."
+          }
+        ]
+      },
+      {
         "version": "1.3.0",
         "date": "22. Juni 2026",
         "comingSoon": false,

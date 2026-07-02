@@ -208,6 +208,26 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.4.0",
+        "date": "2 de julho de 2026",
+        "comingSoon": false,
+        "title": "Janelas em tamanho real e cursores de precisão",
+        "items": [
+          {
+            "type": "new",
+            "text": "Cursores de precisão: cada ferramenta de desenho (e o recorte) mostra uma mira com o mini-ícone da ferramenta ativa, que muda no instante em que trocas de ferramenta."
+          },
+          {
+            "type": "improved",
+            "text": "A janela do editor abre agora com a tua captura em zoom 100% quando cabe no ecrã; acabou-se a janela fixa com a imagem encolhida."
+          },
+          {
+            "type": "improved",
+            "text": "Com vários monitores, o editor aparece no ecrã onde estás a trabalhar, não sempre no principal."
+          }
+        ]
+      },
+      {
         "version": "1.3.0",
         "date": "22 de junho de 2026",
         "comingSoon": false,
