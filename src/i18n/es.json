@@ -219,19 +219,27 @@
         "items": [
           {
             "type": "new",
-            "text": "Mucho mejor con VoiceOver y teclado: controles, herramientas y anotaciones con nombre y estado; mueve la selección y define la captura con las flechas."
+            "text": "Accesibilidad: VoiceOver nombra ahora los controles, herramientas, colores y anotaciones con su estado, y puedes trabajar sin ratón: las flechas mueven la selección y definen la captura, Retorno confirma."
           },
           {
             "type": "new",
-            "text": "La captura de región y ventana funciona ahora en cualquier pantalla, no solo en la principal."
+            "text": "La captura de región y ventana funciona en cualquier pantalla, no solo en la principal."
+          },
+          {
+            "type": "new",
+            "text": "Copia la imagen desde el menú Edición con atajo (⌘⇧C), y Deshacer/Rehacer también están en el menú."
           },
           {
             "type": "improved",
-            "text": "Copia la imagen desde el menú Edición con atajo (⌘⇧C); copiar es ahora instantáneo."
+            "text": "Copiar es ahora instantáneo, y una captura directa al portapapeles avisa al copiarse."
+          },
+          {
+            "type": "improved",
+            "text": "Recortar responde al teclado (Esc cancela, Retorno aplica) y se comporta igual desde todos los menús."
           },
           {
             "type": "fixed",
-            "text": "Corregidas una fuga de memoria en sesiones largas y el deshacer tras recortar o rotar."
+            "text": "Corregidas una fuga de memoria en sesiones largas, el deshacer tras recortar o rotar, y un guardado que podía fallar sin avisar."
           }
         ]
       },

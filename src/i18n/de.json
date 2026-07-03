@@ -215,19 +215,27 @@
         "items": [
           {
             "type": "new",
-            "text": "Viel besser mit VoiceOver und Tastatur: Bedienelemente, Werkzeuge und Anmerkungen sind benannt und zeigen ihren Zustand; bewege die Auswahl und lege eine Aufnahme mit den Pfeiltasten fest."
+            "text": "Barrierefreiheit: VoiceOver benennt jetzt Bedienelemente, Werkzeuge, Farben und Anmerkungen mit ihrem Zustand, und du kannst ohne Maus arbeiten — Pfeiltasten bewegen die Auswahl und legen eine Aufnahme fest, die Eingabetaste bestätigt."
           },
           {
             "type": "new",
-            "text": "Bereichs- und Fensteraufnahme funktioniert jetzt auf jedem Bildschirm, nicht nur auf dem Hauptbildschirm."
+            "text": "Bereichs- und Fensteraufnahme funktioniert auf jedem Bildschirm, nicht nur auf dem Hauptbildschirm."
+          },
+          {
+            "type": "new",
+            "text": "Kopiere das Bild über das Menü „Bearbeiten“ mit Kurzbefehl (⌘⇧C), und Widerrufen/Wiederholen sind ebenfalls im Menü."
           },
           {
             "type": "improved",
-            "text": "Kopiere das Bild über das Menü „Bearbeiten“ mit Kurzbefehl (⌘⇧C); das Kopieren ist jetzt sofort."
+            "text": "Das Kopieren ist jetzt sofort, und eine Aufnahme direkt in die Zwischenablage bestätigt, wenn sie fertig ist."
+          },
+          {
+            "type": "improved",
+            "text": "Das Zuschneiden reagiert auf die Tastatur (Esc bricht ab, Eingabe wendet an) und verhält sich aus jedem Menü gleich."
           },
           {
             "type": "fixed",
-            "text": "Behoben: ein Speicherleck bei langen Sitzungen und das Widerrufen nach Zuschneiden oder Drehen."
+            "text": "Behoben: ein Speicherleck bei langen Sitzungen, das Widerrufen nach Zuschneiden oder Drehen und ein Sichern, das stillschweigend fehlschlagen konnte."
           }
         ]
       },

@@ -215,19 +215,27 @@
         "items": [
           {
             "type": "new",
-            "text": "Molto meglio con VoiceOver e tastiera: controlli, strumenti e annotazioni hanno un nome e mostrano il proprio stato; sposta la selezione e definisci una cattura con le frecce."
+            "text": "Accessibilità: VoiceOver ora nomina i controlli, gli strumenti, i colori e le annotazioni con il loro stato, e puoi lavorare senza mouse — le frecce spostano la selezione e definiscono una cattura, Invio conferma."
           },
           {
             "type": "new",
-            "text": "La cattura di area e finestra ora funziona su qualsiasi schermo, non solo su quello principale."
+            "text": "La cattura di area e finestra funziona su qualsiasi schermo, non solo su quello principale."
+          },
+          {
+            "type": "new",
+            "text": "Copia l'immagine dal menu Modifica con una scorciatoia (⌘⇧C), e Annulla/Ripristina sono anche nel menu."
           },
           {
             "type": "improved",
-            "text": "Copia l'immagine dal menu Modifica con una scorciatoia (⌘⇧C); la copia è ora istantanea."
+            "text": "La copia è ora istantanea, e una cattura diretta negli appunti conferma quando è fatta."
+          },
+          {
+            "type": "improved",
+            "text": "Il ritaglio risponde alla tastiera (Esc annulla, Invio applica) e si comporta allo stesso modo da ogni menu."
           },
           {
             "type": "fixed",
-            "text": "Corretti una perdita di memoria nelle sessioni lunghe e l'annulla dopo ritaglio o rotazione."
+            "text": "Corretti una perdita di memoria nelle sessioni lunghe, l'annulla dopo ritaglio o rotazione e un salvataggio che poteva fallire in silenzio."
           }
         ]
       },

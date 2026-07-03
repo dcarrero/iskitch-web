@@ -215,19 +215,27 @@
         "items": [
           {
             "type": "new",
-            "text": "Muito melhor com o VoiceOver e o teclado: controlos, ferramentas e anotações têm nome e mostram o seu estado; move a seleção e define uma captura com as setas."
+            "text": "Acessibilidade: o VoiceOver passa a nomear os controlos, ferramentas, cores e anotações com o seu estado, e podes trabalhar sem rato — as setas movem a seleção e definem uma captura, Enter confirma."
           },
           {
             "type": "new",
-            "text": "A captura de região e janela funciona agora em qualquer ecrã, não apenas no principal."
+            "text": "A captura de região e janela funciona em qualquer ecrã, não apenas no principal."
+          },
+          {
+            "type": "new",
+            "text": "Copia a imagem a partir do menu Editar com um atalho (⌘⇧C), e Anular/Refazer também estão no menu."
           },
           {
             "type": "improved",
-            "text": "Copia a imagem a partir do menu Editar com um atalho (⌘⇧C); copiar é agora instantâneo."
+            "text": "Copiar é agora instantâneo, e uma captura direta para a área de transferência confirma quando termina."
+          },
+          {
+            "type": "improved",
+            "text": "O recorte responde ao teclado (Esc cancela, Enter aplica) e comporta-se da mesma forma a partir de qualquer menu."
           },
           {
             "type": "fixed",
-            "text": "Corrigidos uma fuga de memória em sessões longas e o anular depois de recortar ou rodar."
+            "text": "Corrigidos uma fuga de memória em sessões longas, o anular depois de recortar ou rodar, e uma gravação que podia falhar sem avisar."
           }
         ]
       },

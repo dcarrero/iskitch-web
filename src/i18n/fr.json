@@ -215,19 +215,27 @@
         "items": [
           {
             "type": "new",
-            "text": "Bien mieux avec VoiceOver et le clavier : les contrôles, outils et annotations sont nommés et exposent leur état ; déplacez la sélection et définissez une capture aux flèches."
+            "text": "Accessibilité : VoiceOver nomme désormais les contrôles, outils, couleurs et annotations avec leur état, et vous pouvez travailler sans souris — les flèches déplacent la sélection et définissent une capture, Entrée valide."
           },
           {
             "type": "new",
-            "text": "La capture de zone et de fenêtre fonctionne désormais sur tous les écrans, pas seulement le principal."
+            "text": "La capture de zone et de fenêtre fonctionne sur tous les écrans, pas seulement le principal."
+          },
+          {
+            "type": "new",
+            "text": "Copiez l'image depuis le menu Édition avec un raccourci (⌘⇧C), et Annuler/Rétablir sont aussi dans le menu."
           },
           {
             "type": "improved",
-            "text": "Copiez l'image depuis le menu Édition avec un raccourci (⌘⇧C) ; la copie est désormais instantanée."
+            "text": "La copie est désormais instantanée, et une capture directe vers le presse-papiers confirme quand c'est fait."
+          },
+          {
+            "type": "improved",
+            "text": "Le recadrage répond au clavier (Échap annule, Entrée applique) et se comporte de la même façon depuis chaque menu."
           },
           {
             "type": "fixed",
-            "text": "Corrigé : une fuite de mémoire lors des longues sessions et l'annulation après un recadrage ou une rotation."
+            "text": "Corrigé : une fuite de mémoire lors des longues sessions, l'annulation après un recadrage ou une rotation, et une sauvegarde qui pouvait échouer en silence."
           }
         ]
       },

@@ -219,19 +219,27 @@
         "items": [
           {
             "type": "new",
-            "text": "Much better with VoiceOver and the keyboard: controls, tools and annotations are named and expose their state; move the selection and define a capture with the arrow keys."
+            "text": "Accessibility: VoiceOver now names the controls, tools, colors and annotations with their state, and you can work without a mouse — arrow keys move the selection and define a capture, Return confirms."
           },
           {
             "type": "new",
-            "text": "Region and window capture now works on any display, not just the main one."
+            "text": "Region and window capture works on any display, not just the main one."
+          },
+          {
+            "type": "new",
+            "text": "Copy the image from the Edit menu with a shortcut (⌘⇧C), and Undo/Redo are in the menu too."
           },
           {
             "type": "improved",
-            "text": "Copy the image from the Edit menu with a shortcut (⌘⇧C); copying is now instant."
+            "text": "Copying is now instant, and capturing straight to the clipboard confirms when it is done."
+          },
+          {
+            "type": "improved",
+            "text": "Cropping responds to the keyboard (Escape cancels, Return applies) and behaves the same from every menu."
           },
           {
             "type": "fixed",
-            "text": "Fixed a memory leak in long sessions and undo after cropping or rotating."
+            "text": "Fixed a memory leak in long sessions, undo after cropping or rotating, and a save that could fail silently."
           }
         ]
       },
