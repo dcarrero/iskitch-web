@@ -209,8 +209,8 @@
     "versions": [
       {
         "version": "1.4.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "4 juillet 2026",
+        "comingSoon": false,
         "title": "Modifiez un texte déjà saisi",
         "items": [
           {

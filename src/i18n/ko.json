@@ -209,8 +209,8 @@
     "versions": [
       {
         "version": "1.4.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "2026년 7월 4일",
+        "comingSoon": false,
         "title": "이미 입력한 텍스트 편집",
         "items": [
           {

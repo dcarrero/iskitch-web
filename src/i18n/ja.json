@@ -209,8 +209,8 @@
     "versions": [
       {
         "version": "1.4.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "2026年7月4日",
+        "comingSoon": false,
         "title": "書いたテキストを後から編集",
         "items": [
           {

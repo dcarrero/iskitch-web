@@ -213,8 +213,8 @@
     "versions": [
       {
         "version": "1.4.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "July 4, 2026",
+        "comingSoon": false,
         "title": "Edit text you've already added",
         "items": [
           {
