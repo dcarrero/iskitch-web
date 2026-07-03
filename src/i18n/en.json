@@ -212,6 +212,26 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.4.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Edit text you've already added",
+        "items": [
+          {
+            "type": "new",
+            "text": "Edit a text annotation after creating it: double-click it with the Select tool, or click it with the Text tool to change the words."
+          },
+          {
+            "type": "improved",
+            "text": "Selecting a text now shows its color, font, size and bold/italic in the top bar, so you can restyle it without switching tools."
+          },
+          {
+            "type": "fixed",
+            "text": "New text now keeps the font you've chosen from the very first character."
+          }
+        ]
+      },
+      {
         "version": "1.4.0",
         "date": "July 2, 2026",
         "comingSoon": false,

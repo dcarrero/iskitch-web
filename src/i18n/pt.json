@@ -208,6 +208,26 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.4.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Edita o texto que já escreveste",
+        "items": [
+          {
+            "type": "new",
+            "text": "Edita uma anotação de texto depois de a criares: duplo clique com a ferramenta Selecionar, ou clique com a ferramenta Texto para mudar as palavras."
+          },
+          {
+            "type": "improved",
+            "text": "Ao selecionar um texto, a barra de cima mostra a sua cor, tipo de letra, tamanho e negrito/itálico, para o formatares sem trocar de ferramenta."
+          },
+          {
+            "type": "fixed",
+            "text": "O texto novo mantém a fonte escolhida desde o primeiro caráter."
+          }
+        ]
+      },
+      {
         "version": "1.4.0",
         "date": "2 de julho de 2026",
         "comingSoon": false,

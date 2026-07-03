@@ -208,6 +208,26 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l'app.",
     "versions": [
       {
+        "version": "1.4.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Modifica il testo già scritto",
+        "items": [
+          {
+            "type": "new",
+            "text": "Modifica un'annotazione di testo dopo averla creata: doppio clic con lo strumento Seleziona, o clic con lo strumento Testo per cambiare le parole."
+          },
+          {
+            "type": "improved",
+            "text": "Selezionando un testo, la barra in alto ne mostra colore, font, dimensione e grassetto/corsivo, per formattarlo senza cambiare strumento."
+          },
+          {
+            "type": "fixed",
+            "text": "Il nuovo testo mantiene il font scelto fin dal primo carattere."
+          }
+        ]
+      },
+      {
         "version": "1.4.0",
         "date": "2 luglio 2026",
         "comingSoon": false,

@@ -208,6 +208,26 @@
     "lead": "Toutes les versions d'iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l'app.",
     "versions": [
       {
+        "version": "1.4.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Modifiez un texte déjà saisi",
+        "items": [
+          {
+            "type": "new",
+            "text": "Modifiez une annotation de texte après l'avoir créée : double-clic avec l'outil Sélection, ou clic avec l'outil Texte pour changer les mots."
+          },
+          {
+            "type": "improved",
+            "text": "En sélectionnant un texte, la barre du haut affiche sa couleur, sa police, sa taille et gras/italique, pour le mettre en forme sans changer d'outil."
+          },
+          {
+            "type": "fixed",
+            "text": "Un nouveau texte conserve la police choisie dès le premier caractère."
+          }
+        ]
+      },
+      {
         "version": "1.4.0",
         "date": "2 juillet 2026",
         "comingSoon": false,

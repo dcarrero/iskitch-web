@@ -208,6 +208,26 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.4.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Bereits geschriebenen Text bearbeiten",
+        "items": [
+          {
+            "type": "new",
+            "text": "Bearbeite eine Textanmerkung nach dem Erstellen: Doppelklick mit dem Auswahl-Werkzeug oder Klick mit dem Text-Werkzeug, um die Wörter zu ändern."
+          },
+          {
+            "type": "improved",
+            "text": "Beim Auswählen eines Textes zeigt die obere Leiste Farbe, Schriftart, Größe und Fett/Kursiv — zum Formatieren ohne Werkzeugwechsel."
+          },
+          {
+            "type": "fixed",
+            "text": "Neuer Text übernimmt die gewählte Schriftart ab dem ersten Zeichen."
+          }
+        ]
+      },
+      {
         "version": "1.4.0",
         "date": "2. Juli 2026",
         "comingSoon": false,
