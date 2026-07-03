@@ -212,6 +212,30 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.5.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Accessibility and reliability",
+        "items": [
+          {
+            "type": "new",
+            "text": "Much better with VoiceOver and the keyboard: controls, tools and annotations are named and expose their state; move the selection and define a capture with the arrow keys."
+          },
+          {
+            "type": "new",
+            "text": "Region and window capture now works on any display, not just the main one."
+          },
+          {
+            "type": "improved",
+            "text": "Copy the image from the Edit menu with a shortcut (⌘⇧C); copying is now instant."
+          },
+          {
+            "type": "fixed",
+            "text": "Fixed a memory leak in long sessions and undo after cropping or rotating."
+          }
+        ]
+      },
+      {
         "version": "1.4.1",
         "date": "July 4, 2026",
         "comingSoon": false,

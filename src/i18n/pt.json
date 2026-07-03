@@ -208,6 +208,30 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.5.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Acessibilidade e fiabilidade",
+        "items": [
+          {
+            "type": "new",
+            "text": "Muito melhor com o VoiceOver e o teclado: controlos, ferramentas e anotações têm nome e mostram o seu estado; move a seleção e define uma captura com as setas."
+          },
+          {
+            "type": "new",
+            "text": "A captura de região e janela funciona agora em qualquer ecrã, não apenas no principal."
+          },
+          {
+            "type": "improved",
+            "text": "Copia a imagem a partir do menu Editar com um atalho (⌘⇧C); copiar é agora instantâneo."
+          },
+          {
+            "type": "fixed",
+            "text": "Corrigidos uma fuga de memória em sessões longas e o anular depois de recortar ou rodar."
+          }
+        ]
+      },
+      {
         "version": "1.4.1",
         "date": "4 de julho de 2026",
         "comingSoon": false,

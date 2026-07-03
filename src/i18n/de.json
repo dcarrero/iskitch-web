@@ -208,6 +208,30 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.5.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Barrierefreiheit und Zuverlässigkeit",
+        "items": [
+          {
+            "type": "new",
+            "text": "Viel besser mit VoiceOver und Tastatur: Bedienelemente, Werkzeuge und Anmerkungen sind benannt und zeigen ihren Zustand; bewege die Auswahl und lege eine Aufnahme mit den Pfeiltasten fest."
+          },
+          {
+            "type": "new",
+            "text": "Bereichs- und Fensteraufnahme funktioniert jetzt auf jedem Bildschirm, nicht nur auf dem Hauptbildschirm."
+          },
+          {
+            "type": "improved",
+            "text": "Kopiere das Bild über das Menü „Bearbeiten“ mit Kurzbefehl (⌘⇧C); das Kopieren ist jetzt sofort."
+          },
+          {
+            "type": "fixed",
+            "text": "Behoben: ein Speicherleck bei langen Sitzungen und das Widerrufen nach Zuschneiden oder Drehen."
+          }
+        ]
+      },
+      {
         "version": "1.4.1",
         "date": "4. Juli 2026",
         "comingSoon": false,
