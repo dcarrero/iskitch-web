@@ -3,6 +3,7 @@
 // post (updatedDate ?? pubDate) y una fecha FIJA para las páginas estáticas (que solo
 // se sube cuando su contenido cambia, no en cada build). Ver la guía SEO/GEO.
 import { getCollection } from "astro:content";
+import { latestLastmod } from "./sitemap-pro/core";
 import type { SitemapUrl, SubSitemap } from "./sitemap-pro/core";
 import { LANGS, SITE, articlePath, blogIndexPath, entrySlug } from "./blog";
 
@@ -107,10 +108,11 @@ export async function blogUrls(): Promise<SitemapUrl[]> {
   return urls;
 }
 
-/** Índice: lista los sub-sitemaps por tipo de contenido. */
-export function subs(): SubSitemap[] {
+/** Índice: lista los sub-sitemaps por tipo de contenido, con un `lastmod` honesto
+ *  derivado de las URLs que contiene cada uno (latestLastmod, sitemap-pro 0.4.0). */
+export async function subs(): Promise<SubSitemap[]> {
   return [
-    { loc: `${SITE}/page-sitemap.xml` },
-    { loc: `${SITE}/blog-sitemap.xml` },
+    { loc: `${SITE}/page-sitemap.xml`, lastmod: latestLastmod(pageUrls()) },
+    { loc: `${SITE}/blog-sitemap.xml`, lastmod: latestLastmod(await blogUrls()) },
   ];
 }
