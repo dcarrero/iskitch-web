@@ -14,10 +14,12 @@ interface Props {
   alternates?: { hreflang: string; href: string }[];
   /** JSON-LD de artículo (BlogPosting) que sustituye al WebPage por defecto. */
   articleSchema?: Record<string, unknown>;
+  /** JSON-LD BreadcrumbList opcional (páginas profundas: blog › post). */
+  breadcrumb?: Record<string, unknown>;
   /** Imagen OG/Twitter. Ruta absoluta (relativa a site). Por defecto la portada. */
   ogImage?: string;
 }
-const { t, isHome = false, markdownPath, ogType = "website", alternates, articleSchema, ogImage } = Astro.props as Props;
+const { t, isHome = false, markdownPath, ogType = "website", alternates, articleSchema, breadcrumb, ogImage } = Astro.props as Props;
 const site = "https://iskitch.com";
 const ogImageUrl = `${site}${ogImage ?? "/og-cover.png"}`;
 const path = Astro.url.pathname.replace(/\/+$/, "") || "/";
@@ -61,11 +63,12 @@ const pageSchema = {
   "isPartOf": { "@type": "WebSite", "name": "iSkitch", "url": site },
   "publisher": { "@id": `${site}/#organization` }
 };
-const jsonLd = isHome
+const baseLd = isHome
   ? [homeSchema, organization]
   : articleSchema
     ? [articleSchema, organization]
     : [pageSchema, organization];
+const jsonLd = breadcrumb ? [...baseLd, breadcrumb] : baseLd;
 
 // Lista de alternates: la propia de la página si se pasa, o la de la home por defecto.
 const homeAlternates = [

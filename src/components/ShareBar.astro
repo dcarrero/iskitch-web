@@ -1,0 +1,103 @@
+---
+// ShareBar — share + "summarize with AI" deep links for the current article/page.
+// Self-contained & dependency-free: all inputs via props, all styles scoped here with CSS-variable
+// fallbacks (inherits a host theme if present, works standalone otherwise). i18n built in (25
+// languages); pick which networks/AIs appear. See README/docs for details.
+import { PLATFORMS, SHARE_DEFAULT, STRINGS, type Strings } from './platforms';
+
+interface Props {
+  title: string;                 // article title (used in share text)
+  url: string;                   // canonical absolute URL of the page
+  handle?: string;               // e.g. "@you" appended to the X/Twitter text ("via @you")
+  platforms?: string[];          // which platforms / order; defaults to all
+  labels?: boolean;              // icon + text (default) or icon-only
+  lang?: string;                 // i18n key (default 'en'); see STRINGS for the 25 built-in
+  strings?: Partial<Strings>;    // override any string (heading, shareIn, summarizeIn, via, aiPrompt)
+  heading?: string | null;       // override just the heading; null/'' hides it
+  via?: boolean;                 // append "via @handle" on X (default true when handle is set)
+  credit?: boolean;              // tiny "via Astro AI Component" attribution link (default true)
+  class?: string;
+}
+const {
+  title, url, handle,
+  platforms = SHARE_DEFAULT,
+  labels = true,
+  lang = 'en',
+  strings,
+  heading,
+  via = true,
+  credit = true,
+  class: extra = '',
+} = Astro.props;
+const CREDIT_URL = 'https://github.com/dcarrero/Astro-Social-AI-Component';
+
+const S: Strings = { ...(STRINGS[lang] || STRINGS.en), ...(strings || {}) };
+const head = heading === undefined ? S.heading : heading;
+const ctx = { title, url, handle, via: via ? S.via : '', prompt: S.aiPrompt(url) };
+const items = platforms.map((k) => PLATFORMS[k]).filter(Boolean);
+---
+<section class={`share-bar ${labels ? '' : 'is-iconly'} ${extra}`} aria-label={head || 'Share'}>
+  {head && <span class="share-bar__title">{head}</span>}
+  <div class="share-bar__btns">
+    {items.map((p) => (
+      <a
+        class={`share-bar__btn${p.kind === 'ai' ? ' is-ai' : ''}`}
+        href={p.href(ctx)}
+        target="_blank"
+        rel="nofollow noopener"
+        aria-label={`${p.kind === 'ai' ? S.summarizeIn : S.shareIn} ${p.label}`}
+        title={`${p.kind === 'ai' ? S.summarizeIn : S.shareIn} ${p.label}`}
+      >
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d={p.icon} /></svg>
+        {labels && <span class="share-bar__label">{p.label}</span>}
+      </a>
+    ))}
+    {credit && (
+      <a class="share-bar__credit" href={CREDIT_URL} target="_blank" rel="nofollow noopener" title="Astro Social AI Component — share + summarize with AI">✦ Astro AI</a>
+    )}
+  </div>
+</section>
+
+<style>
+  /* Themable via --sb-* vars; falls back to host theme tokens, then to sensible defaults. */
+  .share-bar {
+    --sb-fg: var(--ink, #1a1814);
+    --sb-muted: var(--muted, rgba(0, 0, 0, .55));
+    --sb-accent: var(--accent, #b45309);
+    --sb-border: var(--border-strong, rgba(0, 0, 0, .16));
+    --sb-bg: var(--surface, #fff);
+    --sb-accent-soft: var(--accent-soft, rgba(180, 83, 9, .08));
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px;
+    margin: 16px 0;
+    font-family: var(--font-mono, ui-monospace, monospace);
+  }
+  .share-bar__title {
+    font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--sb-muted);
+    margin-right: 2px;
+  }
+  .share-bar__btns { display: flex; flex-wrap: wrap; gap: 7px; }
+  .share-bar__btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 9px; border: 1px solid var(--sb-border); border-radius: 4px;
+    color: var(--sb-fg); background: var(--sb-bg); text-decoration: none;
+    font-size: 12px; line-height: 1; transition: border-color .12s, color .12s, background .12s;
+  }
+  .share-bar__btn:hover { border-color: var(--sb-accent); color: var(--sb-accent); }
+  .share-bar__btn svg { flex: none; opacity: .85; }
+  .share-bar__btn:hover svg { opacity: 1; }
+  .share-bar__btn.is-ai { border-style: dashed; }
+  .share-bar__btn.is-ai:hover { background: var(--sb-accent-soft); }
+  .share-bar.is-iconly .share-bar__btn { padding: 6px; }
+  .share-bar.is-iconly .share-bar__label { display: none; }
+  /* Ghost chip after the last button: a "button but different" so it reads as the component. */
+  .share-bar__credit {
+    display: inline-flex; align-items: center; padding: 5px 8px; border: 1px solid transparent;
+    border-radius: 4px; font-size: 11px; letter-spacing: .04em; color: var(--sb-muted);
+    text-decoration: none; opacity: .8; align-self: stretch;
+  }
+  .share-bar__credit:hover { opacity: 1; color: var(--sb-accent); border-color: var(--sb-border); background: var(--sb-accent-soft); }
+  @media (max-width: 520px) {
+    .share-bar__label { display: none; }      /* icon-only on phones to stay ~2 lines */
+    .share-bar__btn { padding: 6px; }
+  }
+</style>

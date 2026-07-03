@@ -65,4 +65,4 @@ Allow: /
 
 # Sin secciones admin públicas; /api/admin/* requiere clave y devuelve 401 sin ella.
 
-Sitemap: https://iskitch.com/sitemap-index.xml
+Sitemap: https://iskitch.com/sitemap.xml

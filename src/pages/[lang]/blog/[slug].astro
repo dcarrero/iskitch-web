@@ -44,12 +44,23 @@ const articleSchema = {
   author: { "@id": `${SITE}/#organization` },
   publisher: { "@id": `${SITE}/#organization` },
 };
+const homeUrl = lang === "en" ? `${SITE}/` : `${SITE}/${lang}/`;
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "iSkitch", item: homeUrl },
+    { "@type": "ListItem", position: 2, name: baseT.blog.heading, item: `${SITE}${blogIndexPath(lang)}` },
+    { "@type": "ListItem", position: 3, name: d.title, item: canonical },
+  ],
+};
 ---
-<Layout t={t} ogType="article" alternates={articleAlternates(slug)} articleSchema={articleSchema} ogImage={ogImage}>
+<Layout t={t} ogType="article" alternates={articleAlternates(slug)} articleSchema={articleSchema} breadcrumb={breadcrumb} ogImage={ogImage}>
   <BlogArticle
     t={t}
     title={d.title}
     description={d.description}
+    url={canonical}
     dateLabel={dateLabel(d.pubDate, lang)}
     updatedLabel={d.updatedDate ? dateLabel(d.updatedDate, lang) : undefined}
     minutes={minutes}

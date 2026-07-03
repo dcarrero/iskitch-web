@@ -1,18 +1,21 @@
 ---
 import Nav from "./Nav.astro";
 import Footer from "./Footer.astro";
+import ShareBar from "./ShareBar.astro";
 interface Related { href: string; title: string }
 interface Props {
   t: any;
   title: string;
   description: string;
+  /** URL canónica absoluta del artículo (para compartir / resumir con IA). */
+  url: string;
   dateLabel: string;
   updatedLabel?: string;
   minutes: number;
   blogHref: string;
   related: Related[];
 }
-const { t, title, description, dateLabel, updatedLabel, minutes, blogHref, related } = Astro.props as Props;
+const { t, title, description, url, dateLabel, updatedLabel, minutes, blogHref, related } = Astro.props as Props;
 ---
 <Nav t={t} />
 <main id="main" class="blog-main">
@@ -29,9 +32,11 @@ const { t, title, description, dateLabel, updatedLabel, minutes, blogHref, relat
         <span>{minutes} {t.blog.min_read}</span>
       </p>
     </header>
+    <ShareBar lang={t.lang} title={title} url={url} credit={false} class="article-share" />
     <div class="prose">
       <slot />
     </div>
+    <ShareBar lang={t.lang} title={title} url={url} credit={false} class="article-share" />
     {related.length > 0 && (
       <aside class="article-related" aria-label={t.blog.related}>
         <h2>{t.blog.related}</h2>
