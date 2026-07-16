@@ -2,7 +2,7 @@
   "lang": "fr",
   "meta": {
     "title": "iSkitch — Capturer, annoter et partager pour macOS",
-    "description": "iSkitch est une réinterprétation moderne et native pour macOS du classique Skitch — capturez une zone, une fenêtre ou tout l'écran, annotez-la instantanément et partagez en un clic."
+    "description": "iSkitch est une réinterprétation moderne et native pour macOS du classique Skitch — capturez une zone, une fenêtre ou tout l’écran, annotez-la instantanément et partagez en un clic."
   },
   "nav": {
     "features": "Fonctionnalités",
@@ -16,9 +16,9 @@
   },
   "blog": {
     "index_title": "Guides — iSkitch",
-    "index_description": "Des guides pratiques pour capturer, annoter, masquer les infos sensibles et partager des captures d'écran sur macOS — par les créateurs d'iSkitch.",
+    "index_description": "Des guides pratiques pour capturer, annoter, masquer les infos sensibles et partager des captures d’écran sur macOS — par les créateurs d’iSkitch.",
     "heading": "Guides",
-    "subheading": "Des guides pratiques pour capturer, annoter et partager des captures d'écran sur le Mac.",
+    "subheading": "Des guides pratiques pour capturer, annoter et partager des captures d’écran sur le Mac.",
     "read_more": "Lire le guide",
     "back": "Tous les guides",
     "updated": "Mis à jour",
@@ -34,7 +34,7 @@
     "title_line2": "Partagez en un clic.",
     "lead": "iSkitch est une réinterprétation moderne et native pour macOS du classique Skitch. Vit dans la barre des menus, prêt pour ⌥⌘4 à tout moment — et partage via la feuille de partage de macOS.",
     "cta_primary": "Télécharger",
-    "cta_secondary": "Voir ce qu'il propose",
+    "cta_secondary": "Voir ce qu’il propose",
     "appstore_coming_top": "Disponible sur le",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
@@ -43,31 +43,31 @@
       "Universal Binary",
       "8 langues"
     ],
-    "image_alt": "Capture d'écran de l'éditeur d'annotations iSkitch montrant la capture d'un site marketing avec des flèches rouges, des étiquettes de texte, un surlignage magenta et des zones pixelisées — démonstration des outils d'annotation sur macOS."
+    "image_alt": "Capture d’écran de l’éditeur d’annotations iSkitch montrant la capture d’un site marketing avec des flèches rouges, des étiquettes de texte, un surlignage magenta et des zones pixelisées — démonstration des outils d’annotation sur macOS."
   },
   "features": {
-    "title": "Pensé pour le macOS d'aujourd'hui",
-    "lead": "SwiftUI + AppKit natifs. Vit dans la barre des menus. Conçu pour ne pas vous gêner jusqu'à ce que vous appuyiez sur ⌥⌘4.",
+    "title": "Pensé pour le macOS d’aujourd’hui",
+    "lead": "SwiftUI + AppKit natifs. Vit dans la barre des menus. Conçu pour ne pas vous gêner jusqu’à ce que vous appuyiez sur ⌥⌘4.",
     "items": [
       {
         "title": "Capturez tout",
-        "desc": "Zone (⌥⌘4), fenêtre ou écran complet. S'ouvre directement dans l'éditeur."
+        "desc": "Zone (⌥⌘4), fenêtre ou écran complet. S’ouvre directement dans l’éditeur."
       },
       {
-        "title": "14 outils d'annotation",
+        "title": "14 outils d’annotation",
         "desc": "Flèches affinées, texte avec les polices système, formes, surligneur, crayon, tampons et plus."
       },
       {
-        "title": "Masquez l'info sensible",
+        "title": "Masquez l’info sensible",
         "desc": "Pixelisation, flou, bloc plein ou rayures — illisible de manière fiable."
       },
       {
         "title": "Partage natif",
-        "desc": "Feuille de partage macOS, glisser-déposer vers n'importe quelle app, copier ou enregistrer en PNG/JPG/PDF."
+        "desc": "Feuille de partage macOS, glisser-déposer vers n’importe quelle app, copier ou enregistrer en PNG/JPG/PDF."
       },
       {
         "title": "Spotlight et recadrage",
-        "desc": "Concentrez l'attention sur l'essentiel. Recadrez avec des proportions prédéfinies."
+        "desc": "Concentrez l’attention sur l’essentiel. Recadrez avec des proportions prédéfinies."
       },
       {
         "title": "Priorité à la vie privée",
@@ -103,7 +103,7 @@
   "pricing": {
     "badge": "Tarif",
     "free_until": "Un seul achat. À vous pour toujours.",
-    "intro": "Un achat unique, sans abonnement ni compte. Payez une fois, c'est à vous — mises à jour incluses.",
+    "intro": "Un achat unique, sans abonnement ni compte. Payez une fois, c’est à vous — mises à jour incluses.",
     "price_display": "9,99 €",
     "price_note": "achat unique",
     "price_amount": "9.99",
@@ -121,26 +121,26 @@
     "email_label": "Votre email",
     "email_placeholder": "vous@exemple.com",
     "submit": "Me prévenir",
-    "success": "C'est fait. Nous vous écrirons pour les grandes nouveautés.",
-    "error": "Quelque chose s'est mal passé. Réessayez ou écrivez-nous à hello@iskitch.com.",
+    "success": "C’est fait. Nous vous écrirons pour les grandes nouveautés.",
+    "error": "Quelque chose s’est mal passé. Réessayez ou écrivez-nous à hello@iskitch.com.",
     "privacy_note": "Nous utilisons votre email uniquement pour les actualités du produit. Pas de spam. Désinscription à tout moment."
   },
   "cta": {
-    "title": "Capturez votre premier écran aujourd'hui",
+    "title": "Capturez votre premier écran aujourd’hui",
     "lead": "Sur le Mac App Store — un achat unique, sans abonnement. Téléchargez-la maintenant.",
-    "button": "M'inscrire"
+    "button": "M’inscrire"
   },
   "faq": {
     "title": "Questions fréquentes",
-    "lead": "Tout ce qu'il faut savoir sur iSkitch — capture, tarif, confidentialité et plus.",
+    "lead": "Tout ce qu’il faut savoir sur iSkitch — capture, tarif, confidentialité et plus.",
     "items": [
       {
-        "q": "Qu'est-ce qu'iSkitch ?",
-        "a": "iSkitch est une app macOS moderne et native pour capturer votre écran, l'annoter instantanément et le partager en un clic. C'est une recréation indépendante, repensée de zéro, du classique Skitch, reconstruite en SwiftUI et AppKit pour le macOS d'aujourd'hui. Elle n'est ni créée par Evernote ou le Skitch original, ni affiliée à eux."
+        "q": "Qu’est-ce qu’iSkitch ?",
+        "a": "iSkitch est une app macOS moderne et native pour capturer votre écran, l’annoter instantanément et le partager en un clic. C’est une recréation indépendante, repensée de zéro, du classique Skitch, reconstruite en SwiftUI et AppKit pour le macOS d’aujourd’hui. Elle n’est ni créée par Evernote ou le Skitch original, ni affiliée à eux."
       },
       {
         "q": "Combien coûte iSkitch ?",
-        "a": "iSkitch est un achat unique de 9,99 € (ou l'équivalent dans votre monnaie locale) — sans abonnement. Achetez-la une fois, elle est à vous, mises à jour comprises."
+        "a": "iSkitch est un achat unique de 9,99 € (ou l’équivalent dans votre monnaie locale) — sans abonnement. Achetez-la une fois, elle est à vous, mises à jour comprises."
       },
       {
         "q": "Quels Mac et versions de macOS sont pris en charge ?",
@@ -151,24 +151,24 @@
         "a": "Huit : anglais, espagnol, français, allemand, italien, portugais, japonais et coréen. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue."
       },
       {
-        "q": "J'appuie sur ⌥⌘4 mais rien n'est capturé. Pourquoi ?",
-        "a": "C'est presque toujours l'autorisation Enregistrement de l'écran. Ouvrez Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l'écran, activez iSkitch et relancez l'app. La première fois que vous capturez, macOS demande cette autorisation automatiquement."
+        "q": "J’appuie sur ⌥⌘4 mais rien n’est capturé. Pourquoi ?",
+        "a": "C’est presque toujours l’autorisation Enregistrement de l’écran. Ouvrez Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l’écran, activez iSkitch et relancez l’app. La première fois que vous capturez, macOS demande cette autorisation automatiquement."
       },
       {
         "q": "Où sont enregistrées mes captures ?",
-        "a": "Nulle part jusqu'à ce que vous décidiez. iSkitch n'enregistre jamais en silence : vous choisissez la destination en appuyant sur Enregistrer ou en glissant l'image hors de la fenêtre. Dans Réglages ▸ Capture, vous pouvez définir un dossier et un format par défaut (PNG, JPG, PDF ou TIFF)."
+        "a": "Nulle part jusqu’à ce que vous décidiez. iSkitch n’enregistre jamais en silence : vous choisissez la destination en appuyant sur Enregistrer ou en glissant l’image hors de la fenêtre. Dans Réglages ▸ Capture, vous pouvez définir un dossier et un format par défaut (PNG, JPG, PDF ou TIFF)."
       },
       {
         "q": "Comment partager ou exporter une capture ?",
-        "a": "Cliquez sur Partager pour utiliser la feuille de partage native de macOS (Mail, Messages, Notes, Slack, AirDrop et plus), copiez dans le presse-papiers, glissez l'image directement dans n'importe quelle app, ou exportez en PNG, JPEG, PDF ou TIFF."
+        "a": "Cliquez sur Partager pour utiliser la feuille de partage native de macOS (Mail, Messages, Notes, Slack, AirDrop et plus), copiez dans le presse-papiers, glissez l’image directement dans n’importe quelle app, ou exportez en PNG, JPEG, PDF ou TIFF."
       },
       {
         "q": "Puis-je masquer des informations sensibles ?",
-        "a": "Oui. Utilisez l'outil Masquer et choisissez Pixeliser, Flouter, Bloc plein ou Rayures pour couvrir de manière fiable ce que vous ne voulez pas montrer."
+        "a": "Oui. Utilisez l’outil Masquer et choisissez Pixeliser, Flouter, Bloc plein ou Rayures pour couvrir de manière fiable ce que vous ne voulez pas montrer."
       },
       {
         "q": "iSkitch collecte-t-elle mes données ?",
-        "a": "Non. iSkitch fonctionne entièrement hors-ligne — pas de comptes, pas de pistage, pas d'analytique — et vos captures ne quittent jamais votre Mac."
+        "a": "Non. iSkitch fonctionne entièrement hors-ligne — pas de comptes, pas de pistage, pas d’analytique — et vos captures ne quittent jamais votre Mac."
       }
     ]
   },
@@ -204,8 +204,8 @@
     ]
   },
   "changelog": {
-    "title": "Nouveautés d'iSkitch",
-    "lead": "Toutes les versions d'iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l'app.",
+    "title": "Nouveautés d’iSkitch",
+    "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
         "version": "1.5.0",
@@ -223,11 +223,11 @@
           },
           {
             "type": "new",
-            "text": "Copiez l'image depuis le menu Édition avec un raccourci (⌘⇧C), et Annuler/Rétablir sont aussi dans le menu."
+            "text": "Copiez l’image depuis le menu Édition avec un raccourci (⌘⇧C), et Annuler/Rétablir sont aussi dans le menu."
           },
           {
             "type": "improved",
-            "text": "La copie est désormais instantanée, et une capture directe vers le presse-papiers confirme quand c'est fait."
+            "text": "La copie est désormais instantanée, et une capture directe vers le presse-papiers confirme quand c’est fait."
           },
           {
             "type": "improved",
@@ -235,7 +235,7 @@
           },
           {
             "type": "fixed",
-            "text": "Corrigé : une fuite de mémoire lors des longues sessions, l'annulation après un recadrage ou une rotation, et une sauvegarde qui pouvait échouer en silence."
+            "text": "Corrigé : une fuite de mémoire lors des longues sessions, l’annulation après un recadrage ou une rotation, et une sauvegarde qui pouvait échouer en silence."
           }
         ]
       },
@@ -247,11 +247,11 @@
         "items": [
           {
             "type": "new",
-            "text": "Modifiez une annotation de texte après l'avoir créée : double-clic avec l'outil Sélection, ou clic avec l'outil Texte pour changer les mots."
+            "text": "Modifiez une annotation de texte après l’avoir créée : double-clic avec l’outil Sélection, ou clic avec l’outil Texte pour changer les mots."
           },
           {
             "type": "improved",
-            "text": "En sélectionnant un texte, la barre du haut affiche sa couleur, sa police, sa taille et gras/italique, pour le mettre en forme sans changer d'outil."
+            "text": "En sélectionnant un texte, la barre du haut affiche sa couleur, sa police, sa taille et gras/italique, pour le mettre en forme sans changer d’outil."
           },
           {
             "type": "fixed",
@@ -267,15 +267,15 @@
         "items": [
           {
             "type": "new",
-            "text": "Curseurs de précision : chaque outil de dessin (et le recadrage) affiche une croix avec la mini-icône de l'outil actif, qui change instantanément quand vous changez d'outil."
+            "text": "Curseurs de précision : chaque outil de dessin (et le recadrage) affiche une croix avec la mini-icône de l’outil actif, qui change instantanément quand vous changez d’outil."
           },
           {
             "type": "improved",
-            "text": "La fenêtre de l'éditeur s'ouvre désormais à la taille de votre capture au zoom 100 % quand elle tient sur l'écran ; fini la fenêtre fixe avec l'image rétrécie."
+            "text": "La fenêtre de l’éditeur s’ouvre désormais à la taille de votre capture au zoom 100 % quand elle tient sur l’écran ; fini la fenêtre fixe avec l’image rétrécie."
           },
           {
             "type": "improved",
-            "text": "Avec plusieurs moniteurs, l'éditeur apparaît sur l'écran où vous travaillez, pas toujours sur le principal."
+            "text": "Avec plusieurs moniteurs, l’éditeur apparaît sur l’écran où vous travaillez, pas toujours sur le principal."
           }
         ]
       },
@@ -287,7 +287,7 @@
         "items": [
           {
             "type": "new",
-            "text": "Tampons numérotés (1·2·3) qui s'incrémentent, parfaits pour les tutoriels et runbooks."
+            "text": "Tampons numérotés (1·2·3) qui s’incrémentent, parfaits pour les tutoriels et runbooks."
           },
           {
             "type": "new",
@@ -295,7 +295,7 @@
           },
           {
             "type": "new",
-            "text": "Recapturez la dernière zone d'un seul raccourci, sans resélectionner."
+            "text": "Recapturez la dernière zone d’un seul raccourci, sans resélectionner."
           },
           {
             "type": "new",
@@ -303,11 +303,11 @@
           },
           {
             "type": "new",
-            "text": "Capture rapide : envoyez une zone ou tout l'écran directement vers le presse-papiers ou un fichier, sans passer par l'éditeur."
+            "text": "Capture rapide : envoyez une zone ou tout l’écran directement vers le presse-papiers ou un fichier, sans passer par l’éditeur."
           },
           {
             "type": "new",
-            "text": "Copier dans le presse-papiers en taille réelle (1x) pour que les captures Retina se collent en pleine résolution, avec un affichage de la taille et de la résolution (DPI) dans l'éditeur."
+            "text": "Copier dans le presse-papiers en taille réelle (1x) pour que les captures Retina se collent en pleine résolution, avec un affichage de la taille et de la résolution (DPI) dans l’éditeur."
           },
           {
             "type": "fixed",
@@ -322,7 +322,7 @@
         "items": [
           {
             "type": "improved",
-            "text": "Au recadrage, l'image entière s'ajuste à la fenêtre, tout étant sélectionné par défaut."
+            "text": "Au recadrage, l’image entière s’ajuste à la fenêtre, tout étant sélectionné par défaut."
           },
           {
             "type": "improved",
@@ -330,7 +330,7 @@
           },
           {
             "type": "fixed",
-            "text": "Correction d'un curseur de redimensionnement parasite à l'ouverture d'une image."
+            "text": "Correction d’un curseur de redimensionnement parasite à l’ouverture d’une image."
           }
         ]
       },
@@ -341,7 +341,7 @@
         "items": [
           {
             "type": "fixed",
-            "text": "La barre de menus complète de macOS (Fichier, Édition, Capture, Image, Outils) s'affiche désormais de façon fiable dans l'éditeur."
+            "text": "La barre de menus complète de macOS (Fichier, Édition, Capture, Image, Outils) s’affiche désormais de façon fiable dans l’éditeur."
           },
           {
             "type": "improved",
@@ -360,7 +360,7 @@
         "items": [
           {
             "type": "new",
-            "text": "Ouvrez l'éditeur automatiquement après une capture système."
+            "text": "Ouvrez l’éditeur automatiquement après une capture système."
           },
           {
             "type": "new",
@@ -387,7 +387,7 @@
           },
           {
             "type": "improved",
-            "text": "De nombreuses améliorations de l'éditeur."
+            "text": "De nombreuses améliorations de l’éditeur."
           }
         ]
       },
@@ -398,15 +398,15 @@
         "items": [
           {
             "type": "new",
-            "text": "Première version : capturez une zone, une fenêtre ou tout l'écran."
+            "text": "Première version : capturez une zone, une fenêtre ou tout l’écran."
           },
           {
             "type": "new",
-            "text": "14 outils d'annotation et partage natif macOS."
+            "text": "14 outils d’annotation et partage natif macOS."
           },
           {
             "type": "new",
-            "text": "Confidentialité d'abord : sans compte, sans suivi, rien ne quitte votre Mac."
+            "text": "Confidentialité d’abord : sans compte, sans suivi, rien ne quitte votre Mac."
           }
         ]
       }
@@ -417,5 +417,8 @@
       "fixed": "Corrigé"
     },
     "comingSoon": "Bientôt disponible"
+  },
+  "a11y": {
+    "skip_to_content": "Aller au contenu"
   }
 }

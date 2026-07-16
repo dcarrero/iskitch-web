@@ -12,14 +12,18 @@ const icons = [
 ---
 <section id="features" class="features">
   <div class="container">
-    <h2>{t.features.title}</h2>
-    <p class="lead">{t.features.lead}</p>
+    <div class="section-head">
+      <h2>{t.features.title}</h2>
+      <p class="lead">{t.features.lead}</p>
+    </div>
 
     <div class="feature-grid">
       {t.features.items.map((item: any, i: number) => (
         <article>
-          <span class="feature-icon" aria-hidden="true" set:html={icons[i]}></span>
-          <h3>{item.title}</h3>
+          <h3>
+            <span class="feature-icon" aria-hidden="true" set:html={icons[i]}></span>
+            {item.title}
+          </h3>
           <p>{item.desc}</p>
         </article>
       ))}

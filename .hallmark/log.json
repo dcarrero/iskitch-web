@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-07-16",
+    "macrostructure": "Bento Grid",
+    "theme": "iSkitch brand (preexistente, no catálogo)",
+    "theme_axes": "light / grotesk-sans (Inter Tight) / warm (magenta 350°)",
+    "enrichment": "E-real-screenshot (captura real de la app, una por idioma)",
+    "nav": "N5 Floating pill",
+    "footer": "Ft2 Inline single line",
+    "brief": "iskitch.com · audit + fix de todos los hallazgos sobre la web publicada (Astro, 8 idiomas)",
+    "notes": "La macroestructura natural sería Workbench (secuencia de capturas paso a paso), no alcanzable con una sola captura por idioma. Paleta de marca preservada por decisión: el sitio está publicado y la marca es previa a Hallmark; solo se corrigieron los valores que incumplían WCAG AA."
+  }
+]

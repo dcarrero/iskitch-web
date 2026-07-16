@@ -38,7 +38,7 @@
     "title_line2": "Share in one click.",
     "lead": "iSkitch is a modern, native macOS take on the classic Skitch. Lives in your menu bar, ready for ⌥⌘4 at any moment — and shares through the macOS share sheet.",
     "cta_primary": "Download",
-    "cta_secondary": "See what's inside",
+    "cta_secondary": "See what’s inside",
     "appstore_coming_top": "Available on the",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
@@ -107,7 +107,7 @@
   "pricing": {
     "badge": "Pricing",
     "free_until": "One purchase. Yours forever.",
-    "intro": "A one-time purchase — no subscriptions, no accounts. Pay once and it's yours, updates included.",
+    "intro": "A one-time purchase — no subscriptions, no accounts. Pay once and it’s yours, updates included.",
     "price_display": "$9.99",
     "price_note": "one-time purchase",
     "price_amount": "9.99",
@@ -121,11 +121,11 @@
   "beta": {
     "badge": "Stay in the loop",
     "title": "More languages & features are coming",
-    "lead": "We're already working on the next version with more languages. Leave your email and we'll let you know about big updates.",
+    "lead": "We’re already working on the next version with more languages. Leave your email and we’ll let you know about big updates.",
     "email_label": "Your email",
     "email_placeholder": "you@example.com",
     "submit": "Notify me",
-    "success": "You're in. We'll email you about big updates.",
+    "success": "You’re in. We’ll email you about big updates.",
     "error": "Something went wrong. Try again or email hello@iskitch.com.",
     "privacy_note": "We only use your email for product news. No spam. Unsubscribe anytime."
   },
@@ -140,11 +140,11 @@
     "items": [
       {
         "q": "What is iSkitch?",
-        "a": "iSkitch is a modern, native macOS app to capture your screen, annotate it instantly and share it in one click. It's an independent, ground-up recreation of the classic Skitch experience, rebuilt in SwiftUI and AppKit for today's macOS. It is not made by or affiliated with Evernote or the original Skitch."
+        "a": "iSkitch is a modern, native macOS app to capture your screen, annotate it instantly and share it in one click. It’s an independent, ground-up recreation of the classic Skitch experience, rebuilt in SwiftUI and AppKit for today’s macOS. It is not made by or affiliated with Evernote or the original Skitch."
       },
       {
         "q": "How much does iSkitch cost?",
-        "a": "iSkitch is a one-time purchase of US$9.99 (or the equivalent in your local currency) — no subscription, ever. Buy it once and it's yours, including future updates."
+        "a": "iSkitch is a one-time purchase of US$9.99 (or the equivalent in your local currency) — no subscription, ever. Buy it once and it’s yours, including future updates."
       },
       {
         "q": "Which Macs and macOS versions does it support?",
@@ -155,8 +155,8 @@
         "a": "Eight: English, Spanish, French, German, Italian, Portuguese, Japanese and Korean. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
       },
       {
-        "q": "I press ⌥⌘4 but nothing is captured. What's wrong?",
-        "a": "It's almost always the Screen Recording permission. Open System Settings ▸ Privacy & Security ▸ Screen Recording, turn on iSkitch, and relaunch the app. The first time you capture, macOS asks for this permission automatically."
+        "q": "I press ⌥⌘4 but nothing is captured. What’s wrong?",
+        "a": "It’s almost always the Screen Recording permission. Open System Settings ▸ Privacy & Security ▸ Screen Recording, turn on iSkitch, and relaunch the app. The first time you capture, macOS asks for this permission automatically."
       },
       {
         "q": "Where are my screenshots saved?",
@@ -168,7 +168,7 @@
       },
       {
         "q": "Can I hide sensitive information?",
-        "a": "Yes. Use the Obscure tool and choose Pixelate, Blur, Solid block or Stripes to reliably cover anything you don't want to show."
+        "a": "Yes. Use the Obscure tool and choose Pixelate, Blur, Solid block or Stripes to reliably cover anything you don’t want to show."
       },
       {
         "q": "Does iSkitch collect my data?",
@@ -208,7 +208,7 @@
     ]
   },
   "changelog": {
-    "title": "What's new in iSkitch",
+    "title": "What’s new in iSkitch",
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
@@ -247,7 +247,7 @@
         "version": "1.4.1",
         "date": "July 4, 2026",
         "comingSoon": false,
-        "title": "Edit text you've already added",
+        "title": "Edit text you’ve already added",
         "items": [
           {
             "type": "new",
@@ -259,7 +259,7 @@
           },
           {
             "type": "fixed",
-            "text": "New text now keeps the font you've chosen from the very first character."
+            "text": "New text now keeps the font you’ve chosen from the very first character."
           }
         ]
       },
@@ -279,7 +279,7 @@
           },
           {
             "type": "improved",
-            "text": "On multiple displays, the editor opens on the screen where you're working, not always the main one."
+            "text": "On multiple displays, the editor opens on the screen where you’re working, not always the main one."
           }
         ]
       },
@@ -421,5 +421,8 @@
       "fixed": "Fixed"
     },
     "comingSoon": "Coming soon"
+  },
+  "a11y": {
+    "skip_to_content": "Skip to content"
   }
 }

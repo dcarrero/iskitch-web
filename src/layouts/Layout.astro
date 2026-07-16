@@ -123,6 +123,7 @@ const xDefault = (alternates ?? homeAlternates).find((a) => a.hreflang === "en")
   <link rel="alternate" type="text/markdown" href={`${site}${markdownPath}`} title="Markdown version (Markdown for Agents)" />
 )}
 <link rel="preload" href="/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/inter-tight-variable-latin.woff2" as="font" type="font/woff2" crossorigin />
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
 <!-- Google Analytics (GA4) — cargado async, no bloquea el render -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3L2G7Z90J"></script>
@@ -134,8 +135,7 @@ const xDefault = (alternates ?? homeAlternates).find((a) => a.hreflang === "en")
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">{t.a11y?.skip_to_content ?? "Skip to content"}</a>
 <slot />
 </body>
 </html>
-</content>
-</invoke>

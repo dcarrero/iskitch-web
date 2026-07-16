@@ -417,5 +417,8 @@
       "fixed": "Behoben"
     },
     "comingSoon": "Demnächst"
+  },
+  "a11y": {
+    "skip_to_content": "Zum Inhalt springen"
   }
 }

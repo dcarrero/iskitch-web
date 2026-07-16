@@ -68,25 +68,39 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
     if (!lightbox) return;
     const lbImg = lightbox.querySelector('.lightbox-img');
     const lbClose = lightbox.querySelector('.lightbox-close');
-    function open(src, alt) {
+    // Quién abrió el diálogo: al cerrar hay que devolverle el foco.
+    let lastTrigger = null;
+    function open(src, alt, trigger) {
+      lastTrigger = trigger || null;
       lbImg.src = src;
       lbImg.alt = alt || '';
       lightbox.classList.add('is-open');
       lightbox.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      lbClose.focus();
     }
     function close() {
+      if (!lightbox.classList.contains('is-open')) return;
       lightbox.classList.remove('is-open');
       lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
       setTimeout(() => { lbImg.src = ''; }, 200);
+      if (lastTrigger) { lastTrigger.focus(); lastTrigger = null; }
     }
     triggers.forEach((el) => el.addEventListener('click', (e) => {
       e.preventDefault();
-      open(el.getAttribute('data-lightbox-src'), el.getAttribute('data-lightbox-alt'));
+      open(el.getAttribute('data-lightbox-src'), el.getAttribute('data-lightbox-alt'), el);
     }));
     lbClose.addEventListener('click', close);
     lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { close(); return; }
+      // Mientras el diálogo está abierto el foco no sale de él: el único
+      // control es el botón de cerrar, así que el tab vuelve siempre a él.
+      if (e.key === 'Tab' && lightbox.classList.contains('is-open')) {
+        e.preventDefault();
+        lbClose.focus();
+      }
+    });
   })();
 </script>

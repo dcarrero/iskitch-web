@@ -2,7 +2,7 @@
   "lang": "it",
   "meta": {
     "title": "iSkitch — Cattura, annota e condividi per macOS",
-    "description": "iSkitch è una reinterpretazione moderna e nativa per macOS del classico Skitch — cattura una regione, una finestra o l'intero schermo, annotala all'istante e condividi con un clic."
+    "description": "iSkitch è una reinterpretazione moderna e nativa per macOS del classico Skitch — cattura una regione, una finestra o l’intero schermo, annotala all’istante e condividi con un clic."
   },
   "nav": {
     "features": "Funzionalità",
@@ -34,7 +34,7 @@
     "title_line2": "Condividi con un clic.",
     "lead": "iSkitch è una reinterpretazione moderna e nativa per macOS del classico Skitch. Vive nella barra dei menu, pronto per ⌥⌘4 in ogni momento — e condivide tramite il foglio di condivisione di macOS.",
     "cta_primary": "Scarica",
-    "cta_secondary": "Scopri cosa c'è dentro",
+    "cta_secondary": "Scopri cosa c’è dentro",
     "appstore_coming_top": "Disponibile sul",
     "appstore_coming_bottom": "Mac App Store",
     "meta": [
@@ -43,7 +43,7 @@
       "Universal Binary",
       "8 lingue"
     ],
-    "image_alt": "Screenshot dell'editor di annotazioni iSkitch con la cattura di un sito di marketing, frecce rosse, etichette di testo, evidenziatore magenta e aree pixelate — strumenti di annotazione in azione su macOS."
+    "image_alt": "Screenshot dell’editor di annotazioni iSkitch con la cattura di un sito di marketing, frecce rosse, etichette di testo, evidenziatore magenta e aree pixelate — strumenti di annotazione in azione su macOS."
   },
   "features": {
     "title": "Costruito per il macOS che usi oggi",
@@ -51,7 +51,7 @@
     "items": [
       {
         "title": "Cattura tutto",
-        "desc": "Regione (⌥⌘4), finestra o schermo intero. Si apre direttamente nell'editor."
+        "desc": "Regione (⌥⌘4), finestra o schermo intero. Si apre direttamente nell’editor."
       },
       {
         "title": "14 strumenti di annotazione",
@@ -67,7 +67,7 @@
       },
       {
         "title": "Spotlight e ritaglio",
-        "desc": "Concentra l'attenzione su ciò che conta. Ritaglia con proporzioni predefinite."
+        "desc": "Concentra l’attenzione su ciò che conta. Ritaglia con proporzioni predefinite."
       },
       {
         "title": "Privacy al primo posto",
@@ -135,12 +135,12 @@
     "lead": "Tutto quello che ti serve su iSkitch — cattura, prezzo, privacy e altro.",
     "items": [
       {
-        "q": "Cos'è iSkitch?",
-        "a": "iSkitch è un'app macOS moderna e nativa per catturare lo schermo, annotarlo all'istante e condividerlo con un clic. È una reinterpretazione indipendente e ricostruita da zero del classico Skitch, in SwiftUI e AppKit per il macOS di oggi. Non è realizzata da Evernote o dallo Skitch originale, né affiliata a essi."
+        "q": "Cos’è iSkitch?",
+        "a": "iSkitch è un’app macOS moderna e nativa per catturare lo schermo, annotarlo all’istante e condividerlo con un clic. È una reinterpretazione indipendente e ricostruita da zero del classico Skitch, in SwiftUI e AppKit per il macOS di oggi. Non è realizzata da Evernote o dallo Skitch originale, né affiliata a essi."
       },
       {
         "q": "Quanto costa iSkitch?",
-        "a": "iSkitch è un acquisto unico di 9,99 € (o l'equivalente nella tua valuta) — nessun abbonamento. La compri una volta ed è tua, aggiornamenti futuri inclusi."
+        "a": "iSkitch è un acquisto unico di 9,99 € (o l’equivalente nella tua valuta) — nessun abbonamento. La compri una volta ed è tua, aggiornamenti futuri inclusi."
       },
       {
         "q": "Quali Mac e versioni di macOS sono supportati?",
@@ -152,15 +152,15 @@
       },
       {
         "q": "Premo ⌥⌘4 ma non cattura nulla. Perché?",
-        "a": "Quasi sempre è l'autorizzazione Registrazione dello schermo. Apri Impostazioni di Sistema ▸ Privacy e sicurezza ▸ Registrazione dello schermo, attiva iSkitch e riavvia l'app. La prima volta che catturi, macOS la richiede automaticamente."
+        "a": "Quasi sempre è l’autorizzazione Registrazione dello schermo. Apri Impostazioni di Sistema ▸ Privacy e sicurezza ▸ Registrazione dello schermo, attiva iSkitch e riavvia l’app. La prima volta che catturi, macOS la richiede automaticamente."
       },
       {
         "q": "Dove vengono salvate le mie catture?",
-        "a": "Da nessuna parte finché non decidi tu. iSkitch non salva mai in silenzio: scegli la destinazione quando premi Salva o trascini l'immagine fuori dalla finestra. In Impostazioni ▸ Cattura puoi impostare una cartella e un formato predefiniti (PNG, JPG, PDF o TIFF)."
+        "a": "Da nessuna parte finché non decidi tu. iSkitch non salva mai in silenzio: scegli la destinazione quando premi Salva o trascini l’immagine fuori dalla finestra. In Impostazioni ▸ Cattura puoi impostare una cartella e un formato predefiniti (PNG, JPG, PDF o TIFF)."
       },
       {
         "q": "Come condivido o esporto una cattura?",
-        "a": "Tocca Condividi per usare il foglio di condivisione nativo di macOS (Mail, Messaggi, Note, Slack, AirDrop e altro), copia negli appunti, trascina l'immagine direttamente in qualsiasi app, o esporta in PNG, JPEG, PDF o TIFF."
+        "a": "Tocca Condividi per usare il foglio di condivisione nativo di macOS (Mail, Messaggi, Note, Slack, AirDrop e altro), copia negli appunti, trascina l’immagine direttamente in qualsiasi app, o esporta in PNG, JPEG, PDF o TIFF."
       },
       {
         "q": "Posso nascondere informazioni sensibili?",
@@ -205,7 +205,7 @@
   },
   "changelog": {
     "title": "Novità di iSkitch",
-    "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l'app.",
+    "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
         "version": "1.5.0",
@@ -223,7 +223,7 @@
           },
           {
             "type": "new",
-            "text": "Copia l'immagine dal menu Modifica con una scorciatoia (⌘⇧C), e Annulla/Ripristina sono anche nel menu."
+            "text": "Copia l’immagine dal menu Modifica con una scorciatoia (⌘⇧C), e Annulla/Ripristina sono anche nel menu."
           },
           {
             "type": "improved",
@@ -235,7 +235,7 @@
           },
           {
             "type": "fixed",
-            "text": "Corretti una perdita di memoria nelle sessioni lunghe, l'annulla dopo ritaglio o rotazione e un salvataggio che poteva fallire in silenzio."
+            "text": "Corretti una perdita di memoria nelle sessioni lunghe, l’annulla dopo ritaglio o rotazione e un salvataggio che poteva fallire in silenzio."
           }
         ]
       },
@@ -247,7 +247,7 @@
         "items": [
           {
             "type": "new",
-            "text": "Modifica un'annotazione di testo dopo averla creata: doppio clic con lo strumento Seleziona, o clic con lo strumento Testo per cambiare le parole."
+            "text": "Modifica un’annotazione di testo dopo averla creata: doppio clic con lo strumento Seleziona, o clic con lo strumento Testo per cambiare le parole."
           },
           {
             "type": "improved",
@@ -267,15 +267,15 @@
         "items": [
           {
             "type": "new",
-            "text": "Cursori di precisione: ogni strumento di disegno (e il ritaglio) mostra un mirino con la mini-icona dello strumento attivo, che cambia all'istante quando cambi strumento."
+            "text": "Cursori di precisione: ogni strumento di disegno (e il ritaglio) mostra un mirino con la mini-icona dello strumento attivo, che cambia all’istante quando cambi strumento."
           },
           {
             "type": "improved",
-            "text": "La finestra dell'editor si apre ora alla dimensione della tua cattura allo zoom 100% quando sta nello schermo; basta finestra fissa con l'immagine rimpicciolita."
+            "text": "La finestra dell’editor si apre ora alla dimensione della tua cattura allo zoom 100% quando sta nello schermo; basta finestra fissa con l’immagine rimpicciolita."
           },
           {
             "type": "improved",
-            "text": "Con più monitor, l'editor appare sullo schermo dove stai lavorando, non sempre su quello principale."
+            "text": "Con più monitor, l’editor appare sullo schermo dove stai lavorando, non sempre su quello principale."
           }
         ]
       },
@@ -295,7 +295,7 @@
           },
           {
             "type": "new",
-            "text": "Ricattura l'ultima area con una sola scorciatoia, senza riselezionare."
+            "text": "Ricattura l’ultima area con una sola scorciatoia, senza riselezionare."
           },
           {
             "type": "new",
@@ -303,15 +303,15 @@
           },
           {
             "type": "new",
-            "text": "Cattura rapida: invia un'area o l'intero schermo direttamente negli appunti o in un file, saltando l'editor."
+            "text": "Cattura rapida: invia un’area o l’intero schermo direttamente negli appunti o in un file, saltando l’editor."
           },
           {
             "type": "new",
-            "text": "Copia negli appunti a dimensione intera (1x) così gli screenshot Retina si incollano a piena risoluzione, con indicazione di dimensione e risoluzione (DPI) nell'editor."
+            "text": "Copia negli appunti a dimensione intera (1x) così gli screenshot Retina si incollano a piena risoluzione, con indicazione di dimensione e risoluzione (DPI) nell’editor."
           },
           {
             "type": "fixed",
-            "text": "Ora il ritaglio mostra anche le tue annotazioni, per ritagliare l'intera composizione."
+            "text": "Ora il ritaglio mostra anche le tue annotazioni, per ritagliare l’intera composizione."
           }
         ]
       },
@@ -322,7 +322,7 @@
         "items": [
           {
             "type": "improved",
-            "text": "Quando ritagli, l'intera immagine si adatta alla finestra, con tutto selezionato per impostazione predefinita."
+            "text": "Quando ritagli, l’intera immagine si adatta alla finestra, con tutto selezionato per impostazione predefinita."
           },
           {
             "type": "improved",
@@ -330,7 +330,7 @@
           },
           {
             "type": "fixed",
-            "text": "Corretto un cursore di ridimensionamento che compariva all'apertura di un'immagine."
+            "text": "Corretto un cursore di ridimensionamento che compariva all’apertura di un’immagine."
           }
         ]
       },
@@ -341,7 +341,7 @@
         "items": [
           {
             "type": "fixed",
-            "text": "La barra dei menu completa di macOS (File, Modifica, Cattura, Immagine, Strumenti) ora compare in modo affidabile nell'editor."
+            "text": "La barra dei menu completa di macOS (File, Modifica, Cattura, Immagine, Strumenti) ora compare in modo affidabile nell’editor."
           },
           {
             "type": "improved",
@@ -360,7 +360,7 @@
         "items": [
           {
             "type": "new",
-            "text": "Apri l'editor automaticamente dopo uno screenshot di sistema."
+            "text": "Apri l’editor automaticamente dopo uno screenshot di sistema."
           },
           {
             "type": "new",
@@ -387,7 +387,7 @@
           },
           {
             "type": "improved",
-            "text": "Numerosi perfezionamenti dell'editor."
+            "text": "Numerosi perfezionamenti dell’editor."
           }
         ]
       },
@@ -398,7 +398,7 @@
         "items": [
           {
             "type": "new",
-            "text": "Prima versione: cattura un'area, una finestra o l'intero schermo."
+            "text": "Prima versione: cattura un’area, una finestra o l’intero schermo."
           },
           {
             "type": "new",
@@ -417,5 +417,8 @@
       "fixed": "Corretto"
     },
     "comingSoon": "Prossimamente"
+  },
+  "a11y": {
+    "skip_to_content": "Vai al contenuto"
   }
 }
