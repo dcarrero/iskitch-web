@@ -236,6 +236,26 @@
           {
             "type": "fixed",
             "text": "Behoben: ein Speicherleck bei langen Sitzungen, das Widerrufen nach Zuschneiden oder Drehen und ein Sichern, das stillschweigend fehlschlagen konnte."
+          },
+          {
+            "type": "fixed",
+            "text": "Beim Sichern oder Kopieren großer Bildschirmfotos gehen keine Anmerkungen mehr verloren: Die Datei wurde ohne sie geschrieben und das Fenster schloss sich, als wäre alles gesichert. Jetzt warnt iSkitch und exportiert nichts."
+          },
+          {
+            "type": "fixed",
+            "text": "Verdeckte Bereiche sind immer vollständig deckend: Verpixeln und Weichzeichnen weichen nicht mehr auf ein durchscheinendes, noch lesbares Grau aus."
+          },
+          {
+            "type": "improved",
+            "text": "Vollbildaufnahmen lassen sich viel schneller sichern und teilen — sie wurden mit der vierfachen nötigen Größe verarbeitet."
+          },
+          {
+            "type": "fixed",
+            "text": "Der Standardordner zum Sichern bleibt zwischen Sitzungen erhalten, und die Überwachung des Bildschirmfoto-Ordners stoppt nicht mehr, wenn Sie ihn ändern."
+          },
+          {
+            "type": "improved",
+            "text": "iSkitch fordert nicht einmal mehr Netzwerkzugriff an. Er wurde nie genutzt: keine Telemetrie, keine Update-Prüfung, keine Verbindungen."
           }
         ]
       },

@@ -236,6 +236,26 @@
           {
             "type": "fixed",
             "text": "Corrigidos uma fuga de memória em sessões longas, o anular depois de recortar ou rodar, e uma gravação que podia falhar sem avisar."
+          },
+          {
+            "type": "fixed",
+            "text": "Guardar ou copiar uma captura grande já não perde as anotações: o ficheiro era escrito sem elas e a janela fechava como se estivesse guardado. Agora avisa e não exporta nada."
+          },
+          {
+            "type": "fixed",
+            "text": "As áreas ocultadas são sempre totalmente opacas: a pixelização e a desfocagem já não recorrem a um cinzento translúcido ainda legível."
+          },
+          {
+            "type": "improved",
+            "text": "Guardar e partilhar capturas de ecrã inteiro é muito mais rápido: eram processadas ao quádruplo do tamanho necessário."
+          },
+          {
+            "type": "fixed",
+            "text": "A pasta de gravação predefinida é memorizada entre sessões e a vigilância da pasta de capturas deixa de parar quando a muda."
+          },
+          {
+            "type": "improved",
+            "text": "O iSkitch já nem sequer pede acesso à rede. Nunca o usou: sem telemetria, sem procurar atualizações, sem ligações."
           }
         ]
       },

@@ -236,6 +236,26 @@
           {
             "type": "fixed",
             "text": "Corretti una perdita di memoria nelle sessioni lunghe, l’annulla dopo ritaglio o rotazione e un salvataggio che poteva fallire in silenzio."
+          },
+          {
+            "type": "fixed",
+            "text": "Salvare o copiare una schermata grande non perde più le annotazioni: il file veniva scritto senza di esse e la finestra si chiudeva come se fosse salvato. Ora avvisa e non esporta nulla."
+          },
+          {
+            "type": "fixed",
+            "text": "Le aree nascoste sono sempre completamente opache: pixelatura e sfocatura non ripiegano più su un grigio traslucido ancora leggibile."
+          },
+          {
+            "type": "improved",
+            "text": "Salvare e condividere le catture a schermo intero è molto più veloce: venivano elaborate al quadruplo della dimensione necessaria."
+          },
+          {
+            "type": "fixed",
+            "text": "La cartella di salvataggio predefinita viene ricordata tra le sessioni e il controllo della cartella delle schermate non si interrompe più quando la cambi."
+          },
+          {
+            "type": "improved",
+            "text": "iSkitch non chiede nemmeno più l’accesso alla rete. Non l’ha mai usato: nessuna telemetria, nessun controllo aggiornamenti, nessuna connessione."
           }
         ]
       },

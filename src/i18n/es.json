@@ -240,6 +240,26 @@
           {
             "type": "fixed",
             "text": "Corregidas una fuga de memoria en sesiones largas, el deshacer tras recortar o rotar, y un guardado que podía fallar sin avisar."
+          },
+          {
+            "type": "fixed",
+            "text": "Guardar o copiar una captura grande ya no pierde las anotaciones: el archivo se escribía sin ellas y la ventana se cerraba como si estuviera guardada. Ahora avisa y no exporta nada."
+          },
+          {
+            "type": "fixed",
+            "text": "Las zonas ocultas son siempre opacas: el pixelado y el difuminado ya no caen en un gris translúcido que dejaba leer lo de debajo."
+          },
+          {
+            "type": "improved",
+            "text": "Guardar y compartir capturas de pantalla completa es mucho más rápido: se procesaban al cuádruple del tamaño necesario."
+          },
+          {
+            "type": "fixed",
+            "text": "La carpeta de guardado por defecto se recuerda entre sesiones, y vigilar la carpeta de capturas del sistema ya no se detiene al cambiarla."
+          },
+          {
+            "type": "improved",
+            "text": "iSkitch ya ni siquiera pide permiso de red. Nunca lo usó: sin telemetría, sin comprobar actualizaciones, sin conexiones."
           }
         ]
       },

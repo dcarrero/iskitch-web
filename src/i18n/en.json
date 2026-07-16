@@ -240,6 +240,26 @@
           {
             "type": "fixed",
             "text": "Fixed a memory leak in long sessions, undo after cropping or rotating, and a save that could fail silently."
+          },
+          {
+            "type": "fixed",
+            "text": "Saving or copying a large screenshot no longer loses your annotations: the file was written without them and the window closed as if saved. Now it warns you and exports nothing."
+          },
+          {
+            "type": "fixed",
+            "text": "Hidden areas are always fully opaque: pixelate and blur no longer fall back to a translucent gray that could still be read."
+          },
+          {
+            "type": "improved",
+            "text": "Saving and sharing full-screen captures is much faster — they were processed at four times the size needed."
+          },
+          {
+            "type": "fixed",
+            "text": "The default save folder is remembered between launches, and watching the system screenshots folder no longer stops when you change it."
+          },
+          {
+            "type": "improved",
+            "text": "iSkitch no longer even requests network access. It never used it: no telemetry, no update checks, no connections."
           }
         ]
       },

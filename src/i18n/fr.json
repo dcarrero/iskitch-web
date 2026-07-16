@@ -236,6 +236,26 @@
           {
             "type": "fixed",
             "text": "Corrigé : une fuite de mémoire lors des longues sessions, l’annulation après un recadrage ou une rotation, et une sauvegarde qui pouvait échouer en silence."
+          },
+          {
+            "type": "fixed",
+            "text": "Enregistrer ou copier une grande capture ne perd plus vos annotations : le fichier était écrit sans elles et la fenêtre se fermait comme si tout était enregistré. iSkitch vous prévient et n’exporte rien."
+          },
+          {
+            "type": "fixed",
+            "text": "Les zones masquées sont toujours totalement opaques : la pixellisation et le flou ne basculent plus sur un gris translucide encore lisible."
+          },
+          {
+            "type": "improved",
+            "text": "Enregistrer et partager les captures plein écran est bien plus rapide : elles étaient traitées à quatre fois la taille nécessaire."
+          },
+          {
+            "type": "fixed",
+            "text": "Le dossier d’enregistrement par défaut est conservé d’une session à l’autre, et la surveillance du dossier de captures ne s’arrête plus quand vous le changez."
+          },
+          {
+            "type": "improved",
+            "text": "iSkitch ne demande même plus l’accès au réseau. Il ne l’a jamais utilisé : aucune télémétrie, aucune vérification de mise à jour, aucune connexion."
           }
         ]
       },
