@@ -43,7 +43,7 @@ const toolIcons = [
     <div class="tools-grid">
       {t.tools.names.map((name: string, i: number) => (
         <div class="tool">
-          <div class="tool-box" set:html={toolIcons[i]}></div>
+          <div class="tool-box" aria-hidden="true" set:html={toolIcons[i]}></div>
           <span>{name}</span>
         </div>
       ))}
