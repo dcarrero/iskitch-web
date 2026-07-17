@@ -41,7 +41,7 @@
       "Pagamento único",
       "Sem rastreamento",
       "Universal Binary",
-      "8 idiomas"
+      "18 idiomas"
     ],
     "image_alt": "Captura de ecrã do editor de anotações do iSkitch a mostrar a captura de um site de marketing com setas vermelhas, etiquetas de texto, realce magenta e zonas pixelizadas — ferramentas de anotação em ação no macOS."
   },
@@ -148,7 +148,7 @@
       },
       {
         "q": "Em que idiomas está o iSkitch?",
-        "a": "Em oito: inglês, espanhol, francês, alemão, italiano, português, japonês e coreano. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma."
+        "a": "Em dezoito: inglês, espanhol, francês, alemão, italiano, português, japonês, coreano, chinês simplificado, chinês tradicional, russo, neerlandês, sueco, polaco, turco, checo, indonésio e catalão. Os últimos dez chegam com a versão 1.6.0, que está em revisão na Mac App Store — até ser publicada, a app está nos primeiros oito. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma."
       },
       {
         "q": "Carrego em ⌥⌘4 mas não captura nada. Porquê?",
@@ -207,6 +207,26 @@
     "title": "Novidades do iSkitch",
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
+      {
+        "version": "1.6.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "A app em 18 idiomas",
+        "items": [
+          {
+            "type": "new",
+            "text": "Dez idiomas novos: chinês simplificado, chinês tradicional, russo, neerlandês, sueco, polaco, turco, checo, indonésio e catalão. Ao todo, dezoito."
+          },
+          {
+            "type": "fixed",
+            "text": "A ponta de seta «aberta» já não se lê como o verbo «abrir»: era um adjetivo traduzido como verbo em seis dos sete idiomas que já existiam."
+          },
+          {
+            "type": "fixed",
+            "text": "Rótulos mais claros nos idiomas que já existiam: «Preenchido» e «Contorno» nas formas, «Som» em vez de «Comentários» nas Definições, a ferramenta Foco traduzida em vez de ficar em inglês, e o Lápis que deixou de se chamar Caneta."
+          }
+        ]
+      },
       {
         "version": "1.5.0",
         "date": "17 de julho de 2026",

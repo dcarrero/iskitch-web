@@ -45,7 +45,7 @@
       "One-time purchase",
       "No tracking",
       "Universal Binary",
-      "8 languages"
+      "18 languages"
     ],
     "image_alt": "Screenshot of the iSkitch annotation editor showing a captured window of a marketing site with red arrows, text labels, a magenta highlight and pixelated areas — demonstrating annotation tools in action on macOS."
   },
@@ -152,7 +152,7 @@
       },
       {
         "q": "What languages does iSkitch support?",
-        "a": "Eight: English, Spanish, French, German, Italian, Portuguese, Japanese and Korean. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
+        "a": "Eighteen: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Simplified Chinese, Traditional Chinese, Russian, Dutch, Swedish, Polish, Turkish, Czech, Indonesian and Catalan. The last ten arrive with version 1.6.0, currently in review on the Mac App Store — until it ships, the app is in the first eight. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
       },
       {
         "q": "I press ⌥⌘4 but nothing is captured. What’s wrong?",
@@ -211,6 +211,26 @@
     "title": "What’s new in iSkitch",
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
+      {
+        "version": "1.6.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "The app in 18 languages",
+        "items": [
+          {
+            "type": "new",
+            "text": "Ten new languages: Simplified Chinese, Traditional Chinese, Russian, Dutch, Swedish, Polish, Turkish, Czech, Indonesian and Catalan — eighteen in total."
+          },
+          {
+            "type": "fixed",
+            "text": "The “open” arrowhead no longer reads as the verb “open”: it was an adjective translated as a verb in six of the seven existing languages."
+          },
+          {
+            "type": "fixed",
+            "text": "Clearer labels in the languages that were already there: “Filled” and “Outline” now read right for shapes, the Settings section is “Sound” instead of “Feedback”, the Spotlight tool is translated rather than left in English, and the Pen tool is a pencil, not a bezier pen."
+          }
+        ]
+      },
       {
         "version": "1.5.0",
         "date": "July 17, 2026",

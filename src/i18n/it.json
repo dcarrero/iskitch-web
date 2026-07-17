@@ -41,7 +41,7 @@
       "Acquisto singolo",
       "Nessun tracciamento",
       "Universal Binary",
-      "8 lingue"
+      "18 lingue"
     ],
     "image_alt": "Screenshot dell’editor di annotazioni iSkitch con la cattura di un sito di marketing, frecce rosse, etichette di testo, evidenziatore magenta e aree pixelate — strumenti di annotazione in azione su macOS."
   },
@@ -148,7 +148,7 @@
       },
       {
         "q": "In quali lingue è disponibile iSkitch?",
-        "a": "In otto: inglese, spagnolo, francese, tedesco, italiano, portoghese, giapponese e coreano. Segue automaticamente la lingua del sistema e puoi cambiarla in Impostazioni ▸ Generale ▸ Lingua."
+        "a": "In diciotto: inglese, spagnolo, francese, tedesco, italiano, portoghese, giapponese, coreano, cinese semplificato, cinese tradizionale, russo, olandese, svedese, polacco, turco, ceco, indonesiano e catalano. Le ultime dieci arrivano con la versione 1.6.0, ora in revisione sul Mac App Store — fino alla pubblicazione l’app è disponibile nelle prime otto. Segue automaticamente la lingua del sistema e puoi cambiarla in Impostazioni ▸ Generale ▸ Lingua."
       },
       {
         "q": "Premo ⌥⌘4 ma non cattura nulla. Perché?",
@@ -207,6 +207,26 @@
     "title": "Novità di iSkitch",
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
+      {
+        "version": "1.6.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "L’app in 18 lingue",
+        "items": [
+          {
+            "type": "new",
+            "text": "Dieci lingue nuove: cinese semplificato, cinese tradizionale, russo, olandese, svedese, polacco, turco, ceco, indonesiano e catalano. In tutto diciotto."
+          },
+          {
+            "type": "fixed",
+            "text": "La punta di freccia «aperta» non si legge più come il verbo «aprire»: era un aggettivo tradotto come verbo in sei delle sette lingue già presenti."
+          },
+          {
+            "type": "fixed",
+            "text": "Etichette più chiare nelle lingue che c’erano già: «Pieno» e «Contorno» per le forme, «Suono» invece di «Feedback» nelle Impostazioni, lo strumento Riflettore tradotto anziché in inglese, e la Penna che ora è una Matita."
+          }
+        ]
+      },
       {
         "version": "1.5.0",
         "date": "17 luglio 2026",

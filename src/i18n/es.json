@@ -45,7 +45,7 @@
       "Pago único",
       "Sin seguimiento",
       "Universal Binary",
-      "8 idiomas"
+      "18 idiomas"
     ],
     "image_alt": "Captura del editor de anotaciones de iSkitch mostrando una web de marketing capturada con flechas rojas, etiquetas de texto, un resaltado magenta y zonas pixeladas — herramientas de anotación funcionando en macOS."
   },
@@ -152,7 +152,7 @@
       },
       {
         "q": "¿En qué idiomas está iSkitch?",
-        "a": "En ocho: español, inglés, francés, alemán, italiano, portugués, japonés y coreano. Sigue el idioma de tu sistema automáticamente, y puedes cambiarlo en Ajustes ▸ General ▸ Idioma."
+        "a": "En dieciocho: español, inglés, francés, alemán, italiano, portugués, japonés, coreano, chino simplificado, chino tradicional, ruso, neerlandés, sueco, polaco, turco, checo, indonesio y catalán. Los diez últimos llegan con la versión 1.6.0, que está en revisión en la Mac App Store — hasta que se publique, la app está en los ocho primeros. Sigue el idioma de tu sistema automáticamente, y puedes cambiarlo en Ajustes ▸ General ▸ Idioma."
       },
       {
         "q": "Pulso ⌥⌘4 y no captura nada. ¿Qué pasa?",
@@ -211,6 +211,26 @@
     "title": "Novedades de iSkitch",
     "lead": "Todas las versiones de iSkitch, de la más reciente a la primera. Las actualizaciones son gratuitas para quien ya tiene la app.",
     "versions": [
+      {
+        "version": "1.6.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "La app en 18 idiomas",
+        "items": [
+          {
+            "type": "new",
+            "text": "Diez idiomas nuevos: chino simplificado, chino tradicional, ruso, neerlandés, sueco, polaco, turco, checo, indonesio y catalán. En total, dieciocho."
+          },
+          {
+            "type": "fixed",
+            "text": "La punta de flecha «abierta» ya no dice «Abrir»: era un adjetivo traducido como verbo en seis de los siete idiomas que ya había."
+          },
+          {
+            "type": "fixed",
+            "text": "Rótulos más claros en los idiomas que ya existían: «Relleno» y «Marco» en las figuras, «Sonido» en lugar de «Feedback» en Ajustes, la herramienta Spotlight traducida en vez de en inglés, y el lápiz que dejó de llamarse pluma."
+          }
+        ]
+      },
       {
         "version": "1.5.0",
         "date": "17 de julio de 2026",

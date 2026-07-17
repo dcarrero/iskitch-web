@@ -41,7 +41,7 @@
       "Einmaliger Kauf",
       "Kein Tracking",
       "Universal Binary",
-      "8 Sprachen"
+      "18 Sprachen"
     ],
     "image_alt": "Screenshot des iSkitch-Annotationseditors mit einer aufgenommenen Marketing-Website, roten Pfeilen, Textbeschriftungen, magenta Hervorhebung und pixelisierten Bereichen — Annotationswerkzeuge in Aktion auf macOS."
   },
@@ -148,7 +148,7 @@
       },
       {
         "q": "In welchen Sprachen gibt es iSkitch?",
-        "a": "In acht: Englisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Japanisch und Koreanisch. Sie folgt automatisch deiner Systemsprache, ändern kannst du sie unter Einstellungen ▸ Allgemein ▸ Sprache."
+        "a": "In achtzehn: Englisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Japanisch, Koreanisch, Chinesisch (vereinfacht), Chinesisch (traditionell), Russisch, Niederländisch, Schwedisch, Polnisch, Türkisch, Tschechisch, Indonesisch und Katalanisch. Die letzten zehn kommen mit Version 1.6.0, die gerade im Mac App Store geprüft wird — bis zur Veröffentlichung gibt es die App in den ersten acht. Sie folgt automatisch deiner Systemsprache, ändern kannst du sie unter Einstellungen ▸ Allgemein ▸ Sprache."
       },
       {
         "q": "Ich drücke ⌥⌘4, aber nichts wird aufgenommen. Woran liegt das?",
@@ -207,6 +207,26 @@
     "title": "Neuigkeiten in iSkitch",
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
+      {
+        "version": "1.6.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Die App in 18 Sprachen",
+        "items": [
+          {
+            "type": "new",
+            "text": "Zehn neue Sprachen: Chinesisch (vereinfacht), Chinesisch (traditionell), Russisch, Niederländisch, Schwedisch, Polnisch, Türkisch, Tschechisch, Indonesisch und Katalanisch — insgesamt achtzehn."
+          },
+          {
+            "type": "fixed",
+            "text": "Die „offene“ Pfeilspitze heißt nicht mehr „Öffnen“: ein Adjektiv, das in sechs der sieben vorhandenen Sprachen als Verb übersetzt war."
+          },
+          {
+            "type": "fixed",
+            "text": "Klarere Beschriftungen in den bisherigen Sprachen: „Gefüllt“ und „Kontur“ bei Formen, „Ton“ statt „Feedback“ in den Einstellungen, das Werkzeug Scheinwerfer übersetzt statt englisch, und der Stift heißt jetzt Bleistift."
+          }
+        ]
+      },
       {
         "version": "1.5.0",
         "date": "17. Juli 2026",

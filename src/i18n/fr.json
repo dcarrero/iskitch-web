@@ -41,7 +41,7 @@
       "Achat unique",
       "Sans pistage",
       "Universal Binary",
-      "8 langues"
+      "18 langues"
     ],
     "image_alt": "Capture d’écran de l’éditeur d’annotations iSkitch montrant la capture d’un site marketing avec des flèches rouges, des étiquettes de texte, un surlignage magenta et des zones pixelisées — démonstration des outils d’annotation sur macOS."
   },
@@ -148,7 +148,7 @@
       },
       {
         "q": "Dans quelles langues est iSkitch ?",
-        "a": "Huit : anglais, espagnol, français, allemand, italien, portugais, japonais et coréen. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue."
+        "a": "Dix-huit : anglais, espagnol, français, allemand, italien, portugais, japonais, coréen, chinois simplifié, chinois traditionnel, russe, néerlandais, suédois, polonais, turc, tchèque, indonésien et catalan. Les dix dernières arrivent avec la version 1.6.0, en cours d’examen sur le Mac App Store — en attendant sa publication, l’app est disponible dans les huit premières. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue."
       },
       {
         "q": "J’appuie sur ⌥⌘4 mais rien n’est capturé. Pourquoi ?",
@@ -207,6 +207,26 @@
     "title": "Nouveautés d’iSkitch",
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
+      {
+        "version": "1.6.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "L’app en 18 langues",
+        "items": [
+          {
+            "type": "new",
+            "text": "Dix nouvelles langues : chinois simplifié, chinois traditionnel, russe, néerlandais, suédois, polonais, turc, tchèque, indonésien et catalan. Dix-huit au total."
+          },
+          {
+            "type": "fixed",
+            "text": "La pointe de flèche « ouverte » ne se lit plus comme le verbe « ouvrir » : c’était un adjectif traduit comme un verbe dans six des sept langues existantes."
+          },
+          {
+            "type": "fixed",
+            "text": "Des libellés plus clairs dans les langues déjà présentes : « Rempli » et « Contour » pour les formes, « Son » au lieu de « Commentaires » dans les Réglages, l’outil Projecteur traduit au lieu de rester en anglais, et l’outil Crayon qui ne s’appelle plus Plume."
+          }
+        ]
+      },
       {
         "version": "1.5.0",
         "date": "17 juillet 2026",
