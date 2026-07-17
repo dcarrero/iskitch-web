@@ -209,8 +209,8 @@
     "versions": [
       {
         "version": "1.5.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "2026年7月17日",
+        "comingSoon": false,
         "title": "アクセシビリティと安定性",
         "items": [
           {

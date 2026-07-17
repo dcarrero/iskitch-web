@@ -213,8 +213,8 @@
     "versions": [
       {
         "version": "1.5.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "July 17, 2026",
+        "comingSoon": false,
         "title": "Accessibility and reliability",
         "items": [
           {

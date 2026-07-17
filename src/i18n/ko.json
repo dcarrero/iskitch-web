@@ -209,8 +209,8 @@
     "versions": [
       {
         "version": "1.5.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "2026년 7월 17일",
+        "comingSoon": false,
         "title": "접근성과 안정성",
         "items": [
           {
