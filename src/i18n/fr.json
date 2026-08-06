@@ -148,7 +148,7 @@
       },
       {
         "q": "Dans quelles langues est iSkitch ?",
-        "a": "Dix-huit : anglais, espagnol, français, allemand, italien, portugais, japonais, coréen, chinois simplifié, chinois traditionnel, russe, néerlandais, suédois, polonais, turc, tchèque, indonésien et catalan. Les dix dernières arrivent avec la version 1.6.0, en cours d’examen sur le Mac App Store — en attendant sa publication, l’app est disponible dans les huit premières. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue."
+        "a": "Dix-huit : anglais, espagnol, français, allemand, italien, portugais, japonais, coréen, chinois simplifié, chinois traditionnel, russe, néerlandais, suédois, polonais, turc, tchèque, indonésien et catalan. Les dix dernières sont arrivées avec la version 1.6.0. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue."
       },
       {
         "q": "J’appuie sur ⌥⌘4 mais rien n’est capturé. Pourquoi ?",
@@ -208,9 +208,45 @@
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "date": "",
         "comingSoon": true,
+        "title": "Les tampons, comme dans Skitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "Tampons point d’exclamation (!) et point d’interrogation (?) : l’outil Tampon propose désormais sept variantes."
+          },
+          {
+            "type": "new",
+            "text": "Tous les tampons se dessinent sur un disque de couleur, le signe en blanc au milieu, comme dans Skitch. Avant, seul le tampon numéroté l’avait."
+          },
+          {
+            "type": "new",
+            "text": "Une queue pour désigner : tirez la poignée qui apparaît à droite du tampon et elle pointe où vous voulez, comme la pointe d’une bulle."
+          },
+          {
+            "type": "new",
+            "text": "Du texte à côté du tampon : double-cliquez dessus et écrivez une étiquette. Sur les tampons numérotés, le double-clic corrige le chiffre."
+          },
+          {
+            "type": "fixed",
+            "text": "L’autorisation d’enregistrement de l’écran n’est plus demandée en boucle. La fenêtre d’accueil la vérifiait avec un appel qui déclenche la boîte de dialogue du système, toutes les deux secondes."
+          },
+          {
+            "type": "fixed",
+            "text": "Le redimensionnement ne change plus rien avant que la souris ne bouge vraiment. Avant, une modification passait sans que ⌘Z puisse l’annuler."
+          },
+          {
+            "type": "fixed",
+            "text": "L’outil à main levée ne s’appelle plus « plume » en indonésien, suédois, japonais, coréen et chinois."
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "18 juillet 2026",
+        "comingSoon": false,
         "title": "L’app en 18 langues",
         "items": [
           {

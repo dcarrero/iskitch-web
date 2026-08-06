@@ -148,7 +148,7 @@
       },
       {
         "q": "In welchen Sprachen gibt es iSkitch?",
-        "a": "In achtzehn: Englisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Japanisch, Koreanisch, Chinesisch (vereinfacht), Chinesisch (traditionell), Russisch, Niederländisch, Schwedisch, Polnisch, Türkisch, Tschechisch, Indonesisch und Katalanisch. Die letzten zehn kommen mit Version 1.6.0, die gerade im Mac App Store geprüft wird — bis zur Veröffentlichung gibt es die App in den ersten acht. Sie folgt automatisch deiner Systemsprache, ändern kannst du sie unter Einstellungen ▸ Allgemein ▸ Sprache."
+        "a": "In achtzehn: Englisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Japanisch, Koreanisch, Chinesisch (vereinfacht), Chinesisch (traditionell), Russisch, Niederländisch, Schwedisch, Polnisch, Türkisch, Tschechisch, Indonesisch und Katalanisch. Die letzten zehn kamen mit Version 1.6.0. Sie folgt automatisch deiner Systemsprache, ändern kannst du sie unter Einstellungen ▸ Allgemein ▸ Sprache."
       },
       {
         "q": "Ich drücke ⌥⌘4, aber nichts wird aufgenommen. Woran liegt das?",
@@ -208,9 +208,45 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "date": "",
         "comingSoon": true,
+        "title": "Stempel wie in Skitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "Stempel mit Ausrufezeichen (!) und Fragezeichen (?): Das Stempel-Werkzeug bietet jetzt sieben Varianten."
+          },
+          {
+            "type": "new",
+            "text": "Alle Stempel werden auf einer farbigen Scheibe mit weißem Zeichen gezeichnet – wie in Skitch. Vorher hatte das nur der nummerierte Stempel."
+          },
+          {
+            "type": "new",
+            "text": "Eine Spitze zum Zeigen: Zieh den Anfasser rechts neben dem Stempel, und die Spitze zeigt dorthin, wohin du willst – wie bei einer Sprechblase."
+          },
+          {
+            "type": "new",
+            "text": "Text neben dem Stempel: Doppelklick darauf, und du schreibst eine Beschriftung. Bei nummerierten Stempeln ändert der Doppelklick die Zahl."
+          },
+          {
+            "type": "fixed",
+            "text": "Die Berechtigung „Bildschirmaufnahme“ wird nicht mehr immer wieder abgefragt. Das Willkommensfenster prüfte sie mit einem Aufruf, der den Systemdialog auslöst – und zwar alle zwei Sekunden."
+          },
+          {
+            "type": "fixed",
+            "text": "Beim Ändern der Größe passiert erst etwas, wenn die Maus sich wirklich bewegt. Vorher schlich sich eine Änderung ein, die ⌘Z nicht zurücknahm."
+          },
+          {
+            "type": "fixed",
+            "text": "Das Freihand-Werkzeug heißt auf Indonesisch, Schwedisch, Japanisch, Koreanisch und Chinesisch nicht mehr „Feder“."
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "18. Juli 2026",
+        "comingSoon": false,
         "title": "Die App in 18 Sprachen",
         "items": [
           {

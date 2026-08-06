@@ -152,7 +152,7 @@
       },
       {
         "q": "¿En qué idiomas está iSkitch?",
-        "a": "En dieciocho: español, inglés, francés, alemán, italiano, portugués, japonés, coreano, chino simplificado, chino tradicional, ruso, neerlandés, sueco, polaco, turco, checo, indonesio y catalán. Los diez últimos llegan con la versión 1.6.0, que está en revisión en la Mac App Store — hasta que se publique, la app está en los ocho primeros. Sigue el idioma de tu sistema automáticamente, y puedes cambiarlo en Ajustes ▸ General ▸ Idioma."
+        "a": "En dieciocho: español, inglés, francés, alemán, italiano, portugués, japonés, coreano, chino simplificado, chino tradicional, ruso, neerlandés, sueco, polaco, turco, checo, indonesio y catalán. Los diez últimos llegaron con la versión 1.6.0. Sigue el idioma de tu sistema automáticamente, y puedes cambiarlo en Ajustes ▸ General ▸ Idioma."
       },
       {
         "q": "Pulso ⌥⌘4 y no captura nada. ¿Qué pasa?",
@@ -212,9 +212,45 @@
     "lead": "Todas las versiones de iSkitch, de la más reciente a la primera. Las actualizaciones son gratuitas para quien ya tiene la app.",
     "versions": [
       {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "date": "",
         "comingSoon": true,
+        "title": "Los sellos, como en Skitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "Sellos de exclamación (!) y de interrogación (?): la herramienta Sello ofrece ya siete variantes."
+          },
+          {
+            "type": "new",
+            "text": "Todos los sellos se dibujan sobre un disco de color con el signo en blanco, como en Skitch. Antes solo lo tenía el sello numerado."
+          },
+          {
+            "type": "new",
+            "text": "Cola para señalar: arrastra el tirador que aparece a la derecha del sello y apunta adonde quieras, como el pico de un bocadillo."
+          },
+          {
+            "type": "new",
+            "text": "Texto junto al sello: doble clic encima y escribes una etiqueta. En los sellos numerados, el doble clic corrige el número."
+          },
+          {
+            "type": "fixed",
+            "text": "Ya no se pide el permiso de Grabación de pantalla una y otra vez. La ventana de bienvenida lo comprobaba con una llamada que hace aparecer el diálogo del sistema, y lo hacía cada dos segundos."
+          },
+          {
+            "type": "fixed",
+            "text": "Redimensionar ya no cambia nada hasta que el ratón se mueve de verdad. Antes se colaba un cambio que ⌘Z no deshacía."
+          },
+          {
+            "type": "fixed",
+            "text": "El lápiz ya no se llama «pluma» en indonesio, sueco, japonés, coreano y chino."
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "18 de julio de 2026",
+        "comingSoon": false,
         "title": "La app en 18 idiomas",
         "items": [
           {

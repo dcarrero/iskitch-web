@@ -148,7 +148,7 @@
       },
       {
         "q": "Em que idiomas está o iSkitch?",
-        "a": "Em dezoito: inglês, espanhol, francês, alemão, italiano, português, japonês, coreano, chinês simplificado, chinês tradicional, russo, neerlandês, sueco, polaco, turco, checo, indonésio e catalão. Os últimos dez chegam com a versão 1.6.0, que está em revisão na Mac App Store — até ser publicada, a app está nos primeiros oito. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma."
+        "a": "Em dezoito: inglês, espanhol, francês, alemão, italiano, português, japonês, coreano, chinês simplificado, chinês tradicional, russo, neerlandês, sueco, polaco, turco, checo, indonésio e catalão. Os últimos dez chegaram com a versão 1.6.0. Segue automaticamente o idioma do sistema e pode mudá-lo em Definições ▸ Geral ▸ Idioma."
       },
       {
         "q": "Carrego em ⌥⌘4 mas não captura nada. Porquê?",
@@ -208,9 +208,45 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "date": "",
         "comingSoon": true,
+        "title": "Os selos, como no Skitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "Selos de exclamação (!) e de interrogação (?): a ferramenta Selo oferece agora sete variantes."
+          },
+          {
+            "type": "new",
+            "text": "Todos os selos são desenhados sobre um disco de cor com o sinal em branco, como no Skitch. Antes só o selo numerado o tinha."
+          },
+          {
+            "type": "new",
+            "text": "Uma cauda para apontar: arraste o manípulo que aparece à direita do selo e ela aponta para onde quiser, como o bico de um balão de fala."
+          },
+          {
+            "type": "new",
+            "text": "Texto ao lado do selo: duplo clique sobre ele e escreve uma etiqueta. Nos selos numerados, o duplo clique corrige o número."
+          },
+          {
+            "type": "fixed",
+            "text": "A permissão de gravação do ecrã já não é pedida repetidamente. A janela de boas-vindas verificava-a com uma chamada que faz aparecer a caixa de diálogo do sistema, a cada dois segundos."
+          },
+          {
+            "type": "fixed",
+            "text": "Redimensionar já não altera nada até o rato se mover de verdade. Antes passava uma alteração que o ⌘Z não desfazia."
+          },
+          {
+            "type": "fixed",
+            "text": "A ferramenta de desenho livre já não se chama «caneta» em indonésio, sueco, japonês, coreano e chinês."
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "18 de julho de 2026",
+        "comingSoon": false,
         "title": "A app em 18 idiomas",
         "items": [
           {

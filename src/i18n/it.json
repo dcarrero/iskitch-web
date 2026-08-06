@@ -148,7 +148,7 @@
       },
       {
         "q": "In quali lingue è disponibile iSkitch?",
-        "a": "In diciotto: inglese, spagnolo, francese, tedesco, italiano, portoghese, giapponese, coreano, cinese semplificato, cinese tradizionale, russo, olandese, svedese, polacco, turco, ceco, indonesiano e catalano. Le ultime dieci arrivano con la versione 1.6.0, ora in revisione sul Mac App Store — fino alla pubblicazione l’app è disponibile nelle prime otto. Segue automaticamente la lingua del sistema e puoi cambiarla in Impostazioni ▸ Generale ▸ Lingua."
+        "a": "In diciotto: inglese, spagnolo, francese, tedesco, italiano, portoghese, giapponese, coreano, cinese semplificato, cinese tradizionale, russo, olandese, svedese, polacco, turco, ceco, indonesiano e catalano. Le ultime dieci sono arrivate con la versione 1.6.0. Segue automaticamente la lingua del sistema e puoi cambiarla in Impostazioni ▸ Generale ▸ Lingua."
       },
       {
         "q": "Premo ⌥⌘4 ma non cattura nulla. Perché?",
@@ -208,9 +208,45 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "date": "",
         "comingSoon": true,
+        "title": "I timbri, come in Skitch",
+        "items": [
+          {
+            "type": "new",
+            "text": "Timbri con punto esclamativo (!) e punto interrogativo (?): lo strumento Timbro offre ora sette varianti."
+          },
+          {
+            "type": "new",
+            "text": "Tutti i timbri vengono disegnati su un disco colorato con il segno in bianco, come in Skitch. Prima ce l’aveva solo il timbro numerato."
+          },
+          {
+            "type": "new",
+            "text": "Una coda per indicare: trascina la maniglia che appare a destra del timbro e punta dove vuoi, come la punta di un fumetto."
+          },
+          {
+            "type": "new",
+            "text": "Testo accanto al timbro: doppio clic sopra e scrivi un’etichetta. Sui timbri numerati, il doppio clic corregge il numero."
+          },
+          {
+            "type": "fixed",
+            "text": "Il permesso di registrazione dello schermo non viene più chiesto di continuo. La finestra di benvenuto lo verificava con una chiamata che fa comparire la finestra di dialogo del sistema, ogni due secondi."
+          },
+          {
+            "type": "fixed",
+            "text": "Il ridimensionamento non cambia più nulla finché il mouse non si muove davvero. Prima si insinuava una modifica che ⌘Z non annullava."
+          },
+          {
+            "type": "fixed",
+            "text": "Lo strumento a mano libera non si chiama più «penna» in indonesiano, svedese, giapponese, coreano e cinese."
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "18 luglio 2026",
+        "comingSoon": false,
         "title": "L’app in 18 lingue",
         "items": [
           {

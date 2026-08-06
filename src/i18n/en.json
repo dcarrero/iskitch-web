@@ -152,7 +152,7 @@
       },
       {
         "q": "What languages does iSkitch support?",
-        "a": "Eighteen: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Simplified Chinese, Traditional Chinese, Russian, Dutch, Swedish, Polish, Turkish, Czech, Indonesian and Catalan. The last ten arrive with version 1.6.0, currently in review on the Mac App Store — until it ships, the app is in the first eight. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
+        "a": "Eighteen: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Simplified Chinese, Traditional Chinese, Russian, Dutch, Swedish, Polish, Turkish, Czech, Indonesian and Catalan. The last ten arrived in version 1.6.0. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
       },
       {
         "q": "I press ⌥⌘4 but nothing is captured. What’s wrong?",
@@ -212,9 +212,45 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
-        "version": "1.6.0",
+        "version": "1.7.0",
         "date": "",
         "comingSoon": true,
+        "title": "Stamps, the way Skitch did them",
+        "items": [
+          {
+            "type": "new",
+            "text": "Exclamation (!) and question (?) stamps: the Stamp tool now offers seven variants."
+          },
+          {
+            "type": "new",
+            "text": "Every stamp is drawn on a coloured disc with the sign in white, the way Skitch did it. Before, only the numbered stamp had it."
+          },
+          {
+            "type": "new",
+            "text": "A tail to point with: drag the handle that appears to the right of a stamp and it points wherever you want, like the tip of a speech bubble."
+          },
+          {
+            "type": "new",
+            "text": "Text beside the stamp: double-click it and type a label. On numbered stamps, double-clicking edits the number."
+          },
+          {
+            "type": "fixed",
+            "text": "The Screen Recording permission is no longer asked for over and over. The welcome window checked it with a call that makes the system dialog appear — and it did so every two seconds."
+          },
+          {
+            "type": "fixed",
+            "text": "Resizing no longer changes anything until the mouse actually moves. Before, a change slipped in that ⌘Z wouldn't undo."
+          },
+          {
+            "type": "fixed",
+            "text": "The freehand tool is no longer called a “pen” in Indonesian, Swedish, Japanese, Korean and Chinese."
+          }
+        ]
+      },
+      {
+        "version": "1.6.0",
+        "date": "July 18, 2026",
+        "comingSoon": false,
         "title": "The app in 18 languages",
         "items": [
           {
