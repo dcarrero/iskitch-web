@@ -1,5 +1,6 @@
 ---
 import AppStoreBadge from "./AppStoreBadge.astro";
+import PeerPushBadge from "./PeerPushBadge.astro"; // TEMPORAL — campaña de PeerPush
 interface Props { t: any }
 const { t } = Astro.props as Props;
 // Heros generados con la app real (tools/make_hero_screenshots.sh).
@@ -29,6 +30,8 @@ const heroSrcset = `${heroBase}-800.webp 800w, ${heroBase}-1280.webp 1280w, ${he
       <ul class="hero-meta">
         {t.hero.meta.map((m: string) => (<li><span class="dot dot-green"></span> {m}</li>))}
       </ul>
+
+      <PeerPushBadge t={t} />{/* TEMPORAL — campaña de PeerPush */}
     </div>
 
     <button class="hero-shot-link" type="button" data-lightbox-src={heroLargeWebp} data-lightbox-alt={t.hero.image_alt} aria-label="Expand screenshot">

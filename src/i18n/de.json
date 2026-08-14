@@ -494,6 +494,10 @@
     },
     "comingSoon": "Demnächst"
   },
+  "peerpush": {
+    "label": "Gib uns deine Stimme auf",
+    "aria": "Für iSkitch auf PeerPush abstimmen (öffnet einen neuen Tab)"
+  },
   "a11y": {
     "skip_to_content": "Zum Inhalt springen"
   }

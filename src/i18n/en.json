@@ -498,6 +498,10 @@
     },
     "comingSoon": "Coming soon"
   },
+  "peerpush": {
+    "label": "Vote for us on",
+    "aria": "Vote for iSkitch on PeerPush (opens in a new tab)"
+  },
   "a11y": {
     "skip_to_content": "Skip to content"
   }

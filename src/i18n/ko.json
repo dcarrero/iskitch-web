@@ -494,6 +494,10 @@
     },
     "comingSoon": "곧 출시"
   },
+  "peerpush": {
+    "label": "PeerPush에서 응원해 주세요",
+    "aria": "PeerPush에서 iSkitch에 투표하기(새 탭에서 열림)"
+  },
   "a11y": {
     "skip_to_content": "본문으로 건너뛰기"
   }

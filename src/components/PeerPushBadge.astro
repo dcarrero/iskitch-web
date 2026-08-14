@@ -1,0 +1,28 @@
+---
+// ⚠️ TEMPORAL — campaña de PeerPush.
+// Para retirarlo: borrar este fichero, su uso en Hero.astro, el bloque
+// "PeerPush" de global.css, la clave "peerpush" de los 8 JSON de i18n,
+// el script scripts/fetch-peerpush-badge.mjs y public/assets/peerpush-badge.png.
+//
+// La imagen se sirve desde nuestro dominio (peerpush.com no recibe ninguna
+// petición desde iskitch.com). Se refresca con `npm run peerpush:badge`.
+interface Props { t: any }
+const { t } = Astro.props as Props;
+const p = t.peerpush;
+const url = "https://peerpush.com/p/iskitch";
+---
+{p && (
+  <div class="peerpush">
+    {/* El texto es decorativo: el enlace ya lleva la frase completa en aria-label. */}
+    <span class="peerpush-label" aria-hidden="true">{p.label}</span>
+    <a class="peerpush-link" href={url} target="_blank" rel="noopener" aria-label={p.aria}>
+      <img
+        src="/assets/peerpush-badge.png"
+        alt=""
+        width="460"
+        height="130"
+        fetchpriority="low"
+        decoding="async" />
+    </a>
+  </div>
+)}

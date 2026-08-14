@@ -226,6 +226,20 @@ h1, h2, h3, .price-amount, .cl-version {
 .dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex: none; }
 .dot-green { background: var(--green); box-shadow: 0 0 0 3px rgba(40,200,64,.18); }
 
+/* ── PeerPush · TEMPORAL ───────────────────────────────────────
+   Campaña de votos en peerpush.com. Bloque autocontenido: para retirarlo
+   basta con borrar de aquí hasta el cierre del comentario final.
+   Va bajo la fila de metas, separado por una línea, y a 200px de ancho
+   (el badge original mide 230): tiene que leerse como una nota al pie del
+   hero, no como una segunda llamada a la acción compitiendo con la
+   descarga del Mac App Store, que queda justo encima. */
+.peerpush { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 22px 0 0; padding: 18px 0 0; border-top: 1px solid var(--line); }
+.peerpush-label { font-size: 13px; font-weight: 500; color: var(--ink-3); }
+.peerpush-link { display: inline-flex; border-radius: 10px; transition: transform .18s var(--ease-out); }
+.peerpush-link:hover { transform: translateY(-2px); }
+.peerpush-link img { display: block; width: 200px; height: auto; }
+/* ── fin PeerPush ─────────────────────────────────────────────── */
+
 /* Hero shot (a la derecha del texto, clicable). Un solo gesto en hover. */
 .hero-shot-link { position: relative; display: block; transition: transform .25s var(--ease-out); cursor: pointer; }
 .hero-shot-link:hover { transform: translateY(-4px); }
@@ -651,6 +665,7 @@ html { color-scheme: light; }
     scroll-behavior: auto !important;
   }
   .hero-shot-link:hover,
+  .peerpush-link:hover, /* TEMPORAL — PeerPush */
   .blog-card-link:hover,
   .btn:active,
   .appstore-badge:active { transform: none; }

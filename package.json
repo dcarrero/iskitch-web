@@ -14,7 +14,8 @@
     "astro": "astro",
     "og": "node scripts/generate-og.mjs",
     "icons": "node scripts/generate-icons.mjs",
-    "sync": "node --env-file=.env scripts/sync-acumbamail.mjs"
+    "sync": "node --env-file=.env scripts/sync-acumbamail.mjs",
+    "peerpush:badge": "node scripts/fetch-peerpush-badge.mjs"
   },
   "devDependencies": {
     "astro": "^6.4.8",

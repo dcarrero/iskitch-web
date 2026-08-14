@@ -494,6 +494,10 @@
     },
     "comingSoon": "近日公開"
   },
+  "peerpush": {
+    "label": "PeerPush で応援してください",
+    "aria": "PeerPush で iSkitch に投票する（新しいタブで開きます）"
+  },
   "a11y": {
     "skip_to_content": "コンテンツへスキップ"
   }
