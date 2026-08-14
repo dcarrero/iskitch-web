@@ -7,6 +7,9 @@
 //
 //   npm run peerpush:badge
 //
+// En automático lo lanza .github/workflows/refresh-peerpush-badge.yml cada 6 h:
+// si la imagen cambia, commitea y Cloudflare Pages redespliega.
+//
 // ⚠️ TEMPORAL: borrar este script (y la entrada de package.json) cuando
 // termine la campaña de PeerPush.
 import { writeFile, readFile } from "node:fs/promises";

@@ -1,0 +1,47 @@
+name: Refresh PeerPush badge
+
+# El badge de PeerPush es dinámico: su servidor cambia el texto según el estado
+# del producto ("Trending Now", "#1 of the day"…). Nosotros lo alojamos para no
+# hacer peticiones a terceros desde iskitch.com, así que hay que volver a
+# descargarlo cada cierto tiempo. Cada 6 horas + lanzable a mano.
+#
+# Si la imagen no ha cambiado no hay commit, y por tanto no hay redespliegue.
+#
+# ⚠️ TEMPORAL: borrar este workflow cuando termine la campaña de PeerPush.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+# Un solo refresco a la vez: dos pushes simultáneos a main se pisarían.
+concurrency:
+  group: peerpush-badge
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Download badge
+        run: node scripts/fetch-peerpush-badge.mjs
+
+      - name: Commit if it changed
+        run: |
+          if git diff --quiet -- public/assets/peerpush-badge.png; then
+            echo "El badge no ha cambiado — sin commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/assets/peerpush-badge.png
+          git commit -m "web: refrescar el badge de PeerPush"
+          git push
