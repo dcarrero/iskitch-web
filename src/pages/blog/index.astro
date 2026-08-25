@@ -8,7 +8,9 @@ import { articlePath, blogIndexPath, entrySlug, readingMinutes, dateLabel, LANGS
 const LANG = "en";
 const entries = (await getCollection("blog"))
   .filter((e) => e.data.lang === LANG)
-  .sort((a, b) => a.data.order - b.data.order);
+  // Más recientes primero. `order` solo desempata dentro del mismo día
+  // (las cuatro guías de junio comparten fecha de publicación).
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime() || a.data.order - b.data.order);
 
 const posts = entries.map((e) => ({
   href: articlePath(LANG, entrySlug(e.id)),
