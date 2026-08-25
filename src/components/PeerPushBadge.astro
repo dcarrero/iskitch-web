@@ -5,7 +5,9 @@
 // el script scripts/fetch-peerpush-badge.mjs y public/assets/peerpush-badge.png.
 //
 // La imagen se sirve desde nuestro dominio (peerpush.com no recibe ninguna
-// petición desde iskitch.com). Se refresca con `npm run peerpush:badge`.
+// petición desde iskitch.com) y es FIJA: el workflow que la refrescaba cada 6 h
+// se retiró el 26-ago-2026. `npm run peerpush:badge` sigue ahí por si algún día
+// se quiere actualizar a mano; si no se ejecuta, el badge no cambia nunca.
 interface Props { t: any }
 const { t } = Astro.props as Props;
 const p = t.peerpush;
