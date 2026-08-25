@@ -6,7 +6,7 @@ pubDate: 2026-06-23
 order: 2
 heroAlt: "Skitch の現代的な代替として示された、macOS 上の iSkitch 注釈エディタ。"
 tags: ["Skitch", "代替アプリ", "macOS"]
-related: ["how-to-take-screenshots-on-mac", "how-to-annotate-screenshots-on-mac"]
+related: ["skitch-features-compared", "how-to-take-screenshots-on-mac", "how-to-annotate-screenshots-on-mac"]
 ---
 
 Skitch の代替を探しているなら、問題はもうご存じでしょう。手早くスクリーンショットに注釈を付けるのに愛用していたあのアプリが、すっかり古くなってしまったのです。ここでは、Skitch に何が起きたのか、なぜ安定して動かなくなったのか、そして代わりに何を使えばよいのかを見ていきます。

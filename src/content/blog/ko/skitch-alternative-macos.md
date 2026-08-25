@@ -6,7 +6,7 @@ pubDate: 2026-06-23
 order: 2
 heroAlt: "Skitch의 현대적 대안으로 제시된, macOS의 iSkitch 주석 편집기."
 tags: ["Skitch", "대안", "macOS"]
-related: ["how-to-take-screenshots-on-mac", "how-to-annotate-screenshots-on-mac"]
+related: ["skitch-features-compared", "how-to-take-screenshots-on-mac", "how-to-annotate-screenshots-on-mac"]
 ---
 
 Skitch 대안을 찾고 있다면 이미 문제를 알고 계실 겁니다: 빠른 스크린샷 주석을 위해 사랑했던 그 앱이 나이를 드러내고 있다는 것이죠. Skitch에 무슨 일이 있었는지, 왜 더 이상 안정적으로 작동하지 않는지, 그리고 대신 무엇을 써야 하는지 살펴봅시다.

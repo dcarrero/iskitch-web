@@ -6,7 +6,7 @@ pubDate: 2026-06-23
 order: 2
 heroAlt: "Der iSkitch-Annotationseditor auf macOS, gezeigt als moderne Alternative zu Skitch."
 tags: ["Skitch", "Alternativen", "macOS"]
-related: ["how-to-take-screenshots-on-mac", "how-to-annotate-screenshots-on-mac"]
+related: ["skitch-features-compared", "how-to-take-screenshots-on-mac", "how-to-annotate-screenshots-on-mac"]
 ---
 
 Wenn du nach einer Skitch-Alternative suchst, kennst du das Problem bereits: Die App, die du für schnelle Screenshot-Annotationen geliebt hast, zeigt ihr Alter. Schauen wir uns an, was mit Skitch passiert ist, warum es nicht mehr zuverlässig funktioniert und was du stattdessen nutzen kannst.
