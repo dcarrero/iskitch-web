@@ -48,6 +48,9 @@ export async function onRequestPost({ request, env }) {
     const record = {
       email,
       lang: String((body && body.lang) || "en"),
+      // "web" (formulario del sitio) o "app" (modal de novedades de iSkitch).
+      // Sirve para saber por dónde entra la gente; el resto del flujo es idéntico.
+      source: String((body && body.source) || "web").slice(0, 16),
       ts: now,
       ua: request.headers.get("user-agent") || "",
       ip: request.headers.get("cf-connecting-ip") || "",
