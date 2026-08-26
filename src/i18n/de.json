@@ -123,7 +123,8 @@
     "submit": "Benachrichtigen",
     "success": "Du bist dabei. Wir melden uns bei wichtigen Updates.",
     "error": "Etwas ist schiefgelaufen. Versuche es erneut oder schreibe an hello@iskitch.com.",
-    "privacy_note": "Wir nutzen deine E-Mail nur für Produktneuigkeiten. Kein Spam. Jederzeit abbestellbar."
+    "privacy_note": "Wir nutzen deine E-Mail nur für Produktneuigkeiten. Kein Spam. Jederzeit abbestellbar.",
+    "consent": "Ich habe die <a href=\"/de/privacy/\">Datenschutzerklärung</a> gelesen und akzeptiere sie."
   },
   "cta": {
     "title": "Mach heute deinen ersten Screenshot",

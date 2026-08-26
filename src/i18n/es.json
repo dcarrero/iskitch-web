@@ -127,7 +127,8 @@
     "submit": "Avísame",
     "success": "¡Listo! Te avisaremos de las novedades importantes.",
     "error": "Algo ha ido mal. Inténtalo de nuevo o escríbenos a hello@iskitch.com.",
-    "privacy_note": "Solo usamos tu email para novedades del producto. Sin spam. Puedes darte de baja cuando quieras."
+    "privacy_note": "Solo usamos tu email para novedades del producto. Sin spam. Puedes darte de baja cuando quieras.",
+    "consent": "He leído y acepto la <a href=\"/es/privacy/\">política de privacidad</a>."
   },
   "cta": {
     "title": "Captura tu primera pantalla hoy",

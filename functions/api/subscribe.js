@@ -40,6 +40,12 @@ export async function onRequestPost({ request, env }) {
       return jsonResponse({ ok: false, error: "invalid_email" }, 400);
     }
 
+    // Consentimiento explícito obligatorio. Sin él no hay base legal para
+    // guardar el correo, así que se rechaza en vez de aceptarlo a medias.
+    if (body.consent !== true) {
+      return jsonResponse({ ok: false, error: "consent_required" }, 400);
+    }
+
     if (!env || !env.SUBSCRIBERS) {
       return jsonResponse({ ok: false, error: "kv_not_configured" }, 500);
     }
@@ -51,6 +57,9 @@ export async function onRequestPost({ request, env }) {
       // "web" (formulario del sitio) o "app" (modal de novedades de iSkitch).
       // Sirve para saber por dónde entra la gente; el resto del flujo es idéntico.
       source: String((body && body.source) || "web").slice(0, 16),
+      // Prueba del consentimiento: cuándo lo dio y desde qué versión del texto.
+      consent: true,
+      consent_ts: String((body && body.consent_ts) || now).slice(0, 40),
       ts: now,
       ua: request.headers.get("user-agent") || "",
       ip: request.headers.get("cf-connecting-ip") || "",

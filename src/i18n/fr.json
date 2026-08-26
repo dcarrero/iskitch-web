@@ -123,7 +123,8 @@
     "submit": "Me prévenir",
     "success": "C’est fait. Nous vous écrirons pour les grandes nouveautés.",
     "error": "Quelque chose s’est mal passé. Réessayez ou écrivez-nous à hello@iskitch.com.",
-    "privacy_note": "Nous utilisons votre email uniquement pour les actualités du produit. Pas de spam. Désinscription à tout moment."
+    "privacy_note": "Nous utilisons votre email uniquement pour les actualités du produit. Pas de spam. Désinscription à tout moment.",
+    "consent": "J'ai lu et j'accepte la <a href=\"/fr/privacy/\">politique de confidentialité</a>."
   },
   "cta": {
     "title": "Capturez votre premier écran aujourd’hui",

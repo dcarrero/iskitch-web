@@ -123,7 +123,8 @@
     "submit": "Avisar-me",
     "success": "Pronto. Avisamos-te das grandes novidades.",
     "error": "Algo correu mal. Tente de novo ou escreva para hello@iskitch.com.",
-    "privacy_note": "Usamos o seu email apenas para novidades do produto. Sem spam. Cancele quando quiser."
+    "privacy_note": "Usamos o seu email apenas para novidades do produto. Sem spam. Cancele quando quiser.",
+    "consent": "Li e aceito a <a href=\"/pt/privacy/\">política de privacidade</a>."
   },
   "cta": {
     "title": "Capture o seu primeiro ecrã hoje",

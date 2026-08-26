@@ -511,6 +511,13 @@ html { color-scheme: light; }
 .beta-form input[type="email"]:disabled { opacity: .55; cursor: not-allowed; }
 .beta-form input[type="email"]::placeholder { color: var(--ink-3); }
 .beta-form .hp { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+/* Consentimiento: ocupa toda la fila bajo el campo y el botón, con el texto
+   pequeño pero legible — es una casilla legal, no un pie de página. */
+.beta-consent { flex: 1 0 100%; display: flex; align-items: flex-start; justify-content: center;
+  gap: 8px; font-size: 13.5px; line-height: 1.5; color: var(--ink-2); text-align: left; margin-top: 2px; }
+.beta-consent input[type="checkbox"] { margin: 3px 0 0; width: 16px; height: 16px; accent-color: var(--brand-3); flex: 0 0 auto; }
+.beta-consent a { color: var(--brand-3); text-decoration: underline; text-underline-offset: 3px; }
+.beta-consent span { max-width: 44ch; }
 .beta-form button[type="submit"] { flex: 0 0 auto; height: 54px; }
 .beta-form button[type="submit"]:disabled { opacity: .55; cursor: not-allowed; }
 /* Altura reservada: el mensaje de estado no debe empujar la página al aparecer. */

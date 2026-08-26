@@ -127,7 +127,8 @@
     "submit": "Notify me",
     "success": "You’re in. We’ll email you about big updates.",
     "error": "Something went wrong. Try again or email hello@iskitch.com.",
-    "privacy_note": "We only use your email for product news. No spam. Unsubscribe anytime."
+    "privacy_note": "We only use your email for product news. No spam. Unsubscribe anytime.",
+    "consent": "I have read and accept the <a href=\"/privacy/\">privacy policy</a>."
   },
   "cta": {
     "title": "Capture your first screenshot today",

@@ -20,6 +20,10 @@ const { t } = Astro.props as Props;
       <input type="text" name="honeypot" tabindex="-1" autocomplete="off"
              aria-hidden="true" class="hp" />
       <button type="submit" class="btn btn-primary btn-lg">{t.beta.submit}</button>
+      <label class="beta-consent">
+        <input type="checkbox" id="beta-consent" name="consent" required />
+        <span set:html={t.beta.consent}></span>
+      </label>
       <p class="beta-status" id="beta-status" aria-live="polite"></p>
     </form>
 
@@ -37,10 +41,18 @@ const { t } = Astro.props as Props;
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      // Sin la casilla marcada no se envía nada: el navegador ya lo impide con
+      // `required`, pero el consentimiento viaja en el cuerpo para quedar
+      // registrado junto al alta, que es lo que hace falta para poder probarlo.
+      const consentBox = form.querySelector('input[name="consent"]');
+      if (consentBox && !consentBox.checked) { consentBox.reportValidity(); return; }
       const payload = {
         email: input.value,
         honeypot: form.querySelector('input[name="honeypot"]').value,
-        lang: document.documentElement.lang || 'en'
+        lang: document.documentElement.lang || 'en',
+        source: 'web',
+        consent: true,
+        consent_ts: new Date().toISOString()
       };
       submit.disabled = true;
       status.textContent = '…';
