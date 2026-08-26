@@ -25,7 +25,7 @@ Wir sind diese Liste Zeile für Zeile durchgegangen und haben sie mit iSkitch ve
 
 | Skitch, 2011 | iSkitch | Anmerkung |
 |---|---|---|
-| Bildschirmfotos aufnehmen | Ja | Bereich, Fenster und Vollbild mit ⌥⌘4 / ⌥⌘5 / ⌥⌘3, Kurzbefehle frei belegbar |
+| Bildschirmfotos aufnehmen | Ja | Bereich, Fenster und Vollbild; ⌥⌘4 greift überall und lässt sich frei belegen |
 | Aufnahme über die iSight | Nein | Das macht Photo Booth bereits, und besser |
 | Automatisches Archivieren von Aufnahmen und Änderungen | Teilweise | Schnellaufnahme direkt in einen Ordner, aber noch kein durchsuchbarer Verlauf |
 | Web-Aufnahme per Bookmarklet | Nein | Stand 2011 schon als *Coming soon!* da |

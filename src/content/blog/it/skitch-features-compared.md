@@ -25,7 +25,7 @@ Abbiamo ripreso quell'elenco riga per riga e l'abbiamo confrontato con iSkitch, 
 
 | Skitch, 2011 | iSkitch | Nota |
 |---|---|---|
-| Catturare schermate | Sì | Area, finestra e schermo intero con ⌥⌘4 / ⌥⌘5 / ⌥⌘3, scorciatoie modificabili |
+| Catturare schermate | Sì | Area, finestra e schermo intero; ⌥⌘4 funziona da qualsiasi app ed è modificabile |
 | Catturare dalla iSight | No | Photo Booth lo fa già, e meglio |
 | Archiviazione automatica di catture e modifiche | In parte | Cattura rapida direttamente in una cartella, ma niente cronologia consultabile |
 | Cattura web con bookmarklet | No | Già nel 2011 diceva *Coming soon!* |

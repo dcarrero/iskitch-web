@@ -25,7 +25,7 @@ Nous avons repris cette liste ligne par ligne et l'avons comparée à iSkitch, l
 
 | Skitch, 2011 | iSkitch | Note |
 |---|---|---|
-| Captures d'écran | Oui | Zone, fenêtre et plein écran avec ⌥⌘4 / ⌥⌘5 / ⌥⌘3, raccourcis modifiables |
+| Captures d'écran | Oui | Zone, fenêtre et plein écran ; ⌥⌘4 fonctionne depuis n'importe quelle app et se modifie |
 | Capture depuis l'iSight | Non | Photo Booth le fait déjà, et mieux |
 | Archivage automatique des captures et des retouches | En partie | Capture rapide directement dans un dossier, mais pas encore d'historique consultable |
 | Capture web avec un bookmarklet | Non | La page indiquait déjà *Coming soon!* en 2011 |

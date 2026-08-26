@@ -25,7 +25,7 @@ Percorremos essa lista linha a linha e comparámo-la com o iSkitch, a aplicaçã
 
 | Skitch, 2011 | iSkitch | Nota |
 |---|---|---|
-| Capturar o ecrã | Sim | Área, janela e ecrã inteiro com ⌥⌘4 / ⌥⌘5 / ⌥⌘3, atalhos configuráveis |
+| Capturar o ecrã | Sim | Área, janela e ecrã inteiro; ⌥⌘4 funciona a partir de qualquer aplicação e é configurável |
 | Capturar a partir da iSight | Não | O Photo Booth já faz isso, e melhor |
 | Arquivo automático de capturas e edições | Em parte | Captura rápida direta para uma pasta, mas ainda sem histórico navegável |
 | Captura web com bookmarklet | Não | Já em 2011 dizia *Coming soon!* |

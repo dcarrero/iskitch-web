@@ -25,7 +25,7 @@ We went through that list line by line against iSkitch, the app we ship today. S
 
 | Skitch, 2011 | iSkitch | Note |
 |---|---|---|
-| Capture screenshots | Yes | Region, window, full screen — ⌥⌘4 / ⌥⌘5 / ⌥⌘3, all remappable |
+| Capture screenshots | Yes | Region, window, full screen — ⌥⌘4 works anywhere and can be remapped |
 | Capture from your iSight | No | Photo Booth does this, and does it better |
 | Auto archiving of captures & edits | Partly | Quick-capture straight to a folder; no browsable history yet |
 | Web capture with a bookmarklet | No | It said *Coming soon!* in 2011 |

@@ -25,7 +25,7 @@ Hemos repasado esa lista línea a línea contra iSkitch, la app que vendemos hoy
 
 | Skitch, 2011 | iSkitch | Nota |
 |---|---|---|
-| Capturas de pantalla | Sí | Región, ventana y pantalla completa con ⌥⌘4 / ⌥⌘5 / ⌥⌘3, y puedes cambiar los atajos |
+| Capturas de pantalla | Sí | Región, ventana y pantalla completa; ⌥⌘4 funciona desde cualquier app y se puede cambiar |
 | Capturar desde la iSight | No | Photo Booth ya lo hace, y mejor |
 | Archivado automático de capturas y ediciones | A medias | Captura rápida directa a una carpeta, pero todavía sin historial navegable |
 | Captura web con bookmarklet | No | En 2011 ya ponía *Coming soon!* |
