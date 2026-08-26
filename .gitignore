@@ -8,3 +8,10 @@ dist/
 .env
 .env.*
 _backup/
+
+# Exportaciones de la lista de suscriptores. NUNCA en este repo: es PÚBLICO.
+# El script tools/iskitch-ops.sh (en iskitch-mac, privado) las escribe fuera de
+# aquí a propósito, pero esto es el cinturón por si alguien lo hace a mano.
+*.csv
+suscriptores*
+subscribers*
