@@ -177,7 +177,7 @@
       },
       {
         "q": "Does iSkitch collect my data?",
-        "a": "No. iSkitch works entirely offline — no accounts, no tracking, no analytics — and your captures never leave your Mac."
+        "a": "Only your email, and only if you ask us to. The app works offline — no accounts, no tracking, no analytics — and your screenshots never leave your Mac. The one exception is the product-news subscription: if you type your address in the iSkitch news window, accept the privacy policy and press Subscribe, that address reaches us. Nothing else does."
       }
     ]
   },

@@ -173,7 +173,7 @@
       },
       {
         "q": "iSkitch collecte-t-elle mes données ?",
-        "a": "Non. iSkitch fonctionne entièrement hors-ligne — pas de comptes, pas de pistage, pas d’analytique — et vos captures ne quittent jamais votre Mac."
+        "a": "Uniquement votre e-mail, et seulement si vous le demandez. L'app fonctionne hors ligne — pas de comptes, pas de pistage, pas d'analytique — et vos captures ne quittent jamais votre Mac. Seule exception : l'abonnement aux nouveautés. Si vous saisissez votre adresse dans la fenêtre Nouveautés iSkitch, acceptez la politique de confidentialité et appuyez sur S'abonner, cette adresse nous parvient. Rien d'autre."
       }
     ]
   },

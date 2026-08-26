@@ -6,7 +6,7 @@ import baseT from "../../i18n/pt.json";
 const t = { ...baseT,
   meta: {
     title: "Política de privacidade — iSkitch",
-    description: "Como o iSkitch trata os seus dados: não recolhe nenhum. As suas capturas ficam no Mac e a app nunca se liga aos nossos servidores."
+    description: "Como o iSkitch trata os teus dados: as tuas capturas ficam no teu Mac. A única coisa que pode sair é o teu endereço de e-mail, e só se subscreveres as novidades."
   }
 };
 ---
@@ -14,13 +14,13 @@ const t = { ...baseT,
   <Nav t={t} />
   <main class="prose">
     <h1>Política de privacidade</h1>
-    <p class="effective">Data de entrada em vigor: 28 de maio de 2026</p>
+    <p class="effective">Data de entrada em vigor: 26 de agosto de 2026</p>
 
     <p>Esta política explica como a aplicação <strong>iSkitch</strong> para macOS trata os seus dados. A app é desenvolvida e distribuída pela <strong>Color Vivo Internet, S.L.</strong>, sociedade espanhola com sede em Madrid (Espanha).</p>
 
     <h2>Resumo</h2>
     <ul>
-      <li><strong>Sem recolha de dados pessoais.</strong> O iSkitch não recolhe, armazena nem transmite dados pessoais a nós ou a terceiros.</li>
+      <li><strong>Só recebemos o teu e-mail se fores tu a dá-lo.</strong> O iSkitch não recolhe nem transmite nada por sua conta. A única exceção é a subscrição das novidades: se escreveres o teu endereço, aceitares esta política e carregares no botão, esse endereço chega até nós. Mais nada.</li>
       <li><strong>Sem analítica nem rastreamento.</strong> A app não contém telemetria, SDKs de analítica nem serviços de relatório de falhas.</li>
       <li><strong>As suas capturas ficam no Mac.</strong> Capturas, anotações e edições são processadas localmente.</li>
       <li><strong>Gravação de ecrã apenas a pedido.</strong> O macOS pede esta permissão só quando inicia uma captura.</li>
@@ -30,7 +30,9 @@ const t = { ...baseT,
     <p>O iSkitch guarda uma pequena quantidade de informação no Mac para recordar as suas preferências entre sessões: preferências em <code>UserDefaults</code>, estado da janela do editor e ficheiros exportados (apenas quando os guarda explicitamente, no destino à sua escolha). Nada disto nos é transmitido.</p>
 
     <h2>O que a app envia pela rede</h2>
-    <p>O iSkitch <strong>não estabelece ligações de saída por iniciativa própria</strong>. Não operamos servidores que recebam os seus dados. O <em>entitlement</em> opcional <code>com.apple.security.network.client</code> apenas existe para que a partilha iniciada por si através da folha nativa do macOS funcione (por exemplo, enviar uma captura por Mail ou Mensagens).</p>
+<p>O iSkitch <strong>não envia nada por sua conta</strong>: não há telemetria, nem verificação de atualizações, nem carregamento de conteúdo remoto. A aplicação funciona inteiramente sem ligação.</p>
+    <p>A <strong>única</strong> ligação de saída é a subscrição das novidades, e só acontece se a pedires. Ao escreveres o teu e-mail na janela <em>Novidades do iSkitch</em>, marcares a caixa de aceitação e carregares em <em>Subscrever</em>, a aplicação envia para <code>iskitch.com/api/subscribe</code> o teu endereço, o idioma em que estás a usar a aplicação e o registo de que aceitaste esta política. É para isso — e só para isso — que a aplicação declara <code>com.apple.security.network.client</code> desde a versão 1.8.0.</p>
+    <p><strong>As tuas capturas, anotações e edições nunca são enviadas para lado nenhum.</strong> O que partilhas através da folha de partilha do macOS é tratado pela extensão que escolheres (Mail, Mensagens, AirDrop), cada uma com as suas próprias permissões.</p>
 
     <h2>Permissões que o iSkitch pode pedir</h2>
     <ul>
@@ -40,7 +42,7 @@ const t = { ...baseT,
     </ul>
 
     <h2>Sobre este site (iskitch.com)</h2>
-    <p>O site de marketing <strong>iskitch.com</strong> usa <strong>Google Analytics 4</strong> para entender o tráfego agregado — páginas visitadas, país, navegador. Não usamos esta informação para identificar pessoas, criar perfis ou fazer publicidade. Se se inscrever na beta, guardamos o seu email em Cloudflare KV e copiamo-lo uma vez para <strong>Acumbamail</strong>. Cancelamento em qualquer momento em <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>.</p>
+    <p>Se subscreveres as novidades — a partir do formulário deste site ou da própria aplicação — guardamos no Cloudflare KV o teu <strong>endereço de e-mail</strong>, o <strong>idioma</strong> em que te inscreveste, se veio da web ou da aplicação, e a <strong>data em que aceitaste esta política</strong>. Uma vez por dia copiamos as inscrições novas para o <strong>Acumbamail</strong>, o nosso fornecedor de e-mail. A base legal é o teu <strong>consentimento</strong>, e usamo-lo apenas para te contar novidades do iSkitch: sem publicidade e sem cedência a terceiros. Podes cancelar a subscrição no rodapé de qualquer e-mail que te enviemos, ou escrever-nos para <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>.</p>
     <p>Esta recolha no site é <strong>independente da app</strong>: o iSkitch no seu Mac não contém Google Analytics nem qualquer SDK de rastreamento.</p>
 
     <h2>Apple como terceiro</h2>
@@ -50,7 +52,7 @@ const t = { ...baseT,
     <p>O iSkitch tem classificação <strong>4+</strong> na App Store. Não recolhemos dados de menores de 13 anos.</p>
 
     <h2>Os seus direitos sob o RGPD</h2>
-    <p>Como o iSkitch não realiza processamento do lado do servidor e não recebemos os seus dados, não existem dados pessoais em nosso poder para aceder, retificar, portar ou apagar.</p>
+    <p>Se não subscreveste as novidades, não temos qualquer dado teu: tudo o que o iSkitch guarda vive no teu Mac, controla-lo tu e podes apagar a aplicação e as suas preferências quando quiseres.</p><p>Se subscreveste, tratamos o teu endereço de e-mail com base legal no teu <strong>consentimento</strong>, e tens direito a aceder-lhe, retificá-lo, portá-lo, opores-te ao tratamento, retirar o consentimento e pedir o seu apagamento. Escreve-nos para <a href="mailto:hello@iskitch.com">hello@iskitch.com</a> e tratamos disso; também podes cancelar a subscrição no rodapé de qualquer e-mail. Conservamos o endereço até cancelares a subscrição ou nos pedires para o apagar. Se achares que não agimos bem, podes reclamar junto da <a href="https://www.aepd.es" rel="noopener">Agência Espanhola de Proteção de Dados</a>.</p>
 
     <h2>Alterações</h2>
     <p>Se mudarmos a forma como o iSkitch trata os dados, esta página será atualizada com nova data de entrada em vigor.</p>
