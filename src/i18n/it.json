@@ -151,6 +151,10 @@
         "a": "In diciotto: inglese, spagnolo, francese, tedesco, italiano, portoghese, giapponese, coreano, cinese semplificato, cinese tradizionale, russo, olandese, svedese, polacco, turco, ceco, indonesiano e catalano. Le ultime dieci sono arrivate con la versione 1.6.0. Segue automaticamente la lingua del sistema e puoi cambiarla in Impostazioni ▸ Generale ▸ Lingua."
       },
       {
+        "q": "Quali scorciatoie da tastiera ha iSkitch?",
+        "a": "Cinque scorciatoie globali, che funzionano da qualsiasi app: ⌥⌘4 cattura un'area, ⌥⌘5 permette di scegliere una finestra con un clic, ⌥⇧⌘5 prende direttamente la finestra che hai davanti, ⌥⌘3 cattura tutto lo schermo e ⌥⇧⌘4 ripete l'ultima area. Tutte e cinque si cambiano una per una in Impostazioni ▸ Cattura ▸ Scorciatoia. Nell'editor ci sono inoltre le scorciatoie abituali di macOS: ⌘S per salvare, ⇧⌘C per copiare l'immagine, ⌘Z per annullare e ⌥⌘ più una lettera per ogni strumento. Nota: le scorciatoie globali di finestra, finestra in primo piano e ripeti area arrivano con la versione 1.8.0; prima, fuori dall'app funziona solo ⌥⌘4."
+      },
+      {
         "q": "Premo ⌥⌘4 ma non cattura nulla. Perché?",
         "a": "Quasi sempre è l’autorizzazione Registrazione dello schermo. Apri Impostazioni di Sistema ▸ Privacy e sicurezza ▸ Registrazione dello schermo, attiva iSkitch e riavvia l’app. La prima volta che catturi, macOS la richiede automaticamente."
       },
@@ -207,6 +211,54 @@
     "title": "Novità di iSkitch",
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
+      {
+        "version": "1.8.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Le catture, come dovevano essere",
+        "items": [
+          {
+            "type": "new",
+            "text": "La cattura di una finestra arriva con la sua ombra e gli angoli arrotondati, su sfondo trasparente invece che con la scrivania dietro."
+          },
+          {
+            "type": "new",
+            "text": "Cattura la finestra su cui stai già lavorando, direttamente con ⌥⇧⌘5, senza doverla puntare."
+          },
+          {
+            "type": "new",
+            "text": "Ridimensionare l'immagine da Immagine ▸ Ridimensiona immagine…, in pixel, con proporzioni bloccate e scorciatoie al 25, 50, 75 e 100 %. Le annotazioni si ridimensionano con lei e ⌘Z annulla tutto."
+          },
+          {
+            "type": "new",
+            "text": "Esportazione in GIF e BMP, oltre a PNG, JPG, TIFF e PDF."
+          },
+          {
+            "type": "new",
+            "text": "L'intensità di pixel e sfocatura si regola e si ricorda per ogni annotazione: nella stessa schermata puoi accennare un indirizzo IP e rendere una password del tutto illeggibile."
+          },
+          {
+            "type": "new",
+            "text": "Tutte e cinque le scorciatoie di cattura si cambiano una per una in Impostazioni ▸ Cattura ▸ Scorciatoia."
+          },
+          {
+            "type": "fixed",
+            "text": "Catturare una finestra cattura quella finestra. Prima prendeva lo schermo e ritagliava il suo rettangolo, quindi si portava dietro tutto ciò che stava sopra."
+          },
+          {
+            "type": "fixed",
+            "text": "⌥⌘5, ⌥⌘3 e ⌥⇧⌘4 funzionano da qualsiasi app. Solo ⌥⌘4 era una vera scorciatoia globale; le altre richiedevano iSkitch in primo piano."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG e BMP non incorniciano più di nero le zone trasparenti: vengono composte su bianco prima di salvare."
+          },
+          {
+            "type": "fixed",
+            "text": "La barra in basso indicava la metà dei pixel reali della cattura, e il ridimensionamento partiva da quella cifra sbagliata."
+          }
+        ]
+      },
       {
         "version": "1.7.0",
         "date": "8 agosto 2026",

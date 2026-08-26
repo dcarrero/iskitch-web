@@ -151,6 +151,10 @@
         "a": "Dix-huit : anglais, espagnol, français, allemand, italien, portugais, japonais, coréen, chinois simplifié, chinois traditionnel, russe, néerlandais, suédois, polonais, turc, tchèque, indonésien et catalan. Les dix dernières sont arrivées avec la version 1.6.0. Elle suit automatiquement la langue de votre système, et vous pouvez la changer dans Réglages ▸ Général ▸ Langue."
       },
       {
+        "q": "Quels raccourcis clavier propose iSkitch ?",
+        "a": "Cinq raccourcis globaux, utilisables depuis n'importe quelle app : ⌥⌘4 capture une zone, ⌥⌘5 permet de choisir une fenêtre d'un clic, ⌥⇧⌘5 prend directement la fenêtre que vous avez devant, ⌥⌘3 capture tout l'écran et ⌥⇧⌘4 répète la dernière zone. Les cinq se modifient un par un dans Réglages ▸ Capture ▸ Raccourci. Dans l'éditeur, vous retrouvez les raccourcis habituels de macOS : ⌘S pour enregistrer, ⇧⌘C pour copier l'image, ⌘Z pour annuler, et ⌥⌘ suivi d'une lettre pour chaque outil. Remarque : les raccourcis globaux de fenêtre, fenêtre active et répétition de zone arrivent avec la version 1.8.0 ; avant, seul ⌥⌘4 fonctionne hors de l'app."
+      },
+      {
         "q": "J’appuie sur ⌥⌘4 mais rien n’est capturé. Pourquoi ?",
         "a": "C’est presque toujours l’autorisation Enregistrement de l’écran. Ouvrez Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l’écran, activez iSkitch et relancez l’app. La première fois que vous capturez, macOS demande cette autorisation automatiquement."
       },
@@ -207,6 +211,54 @@
     "title": "Nouveautés d’iSkitch",
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
+      {
+        "version": "1.8.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Les captures, comme elles auraient dû être",
+        "items": [
+          {
+            "type": "new",
+            "text": "La capture de fenêtre arrive avec son ombre et ses coins arrondis, sur fond transparent au lieu du bureau qui se trouvait derrière."
+          },
+          {
+            "type": "new",
+            "text": "Capturez la fenêtre dans laquelle vous travaillez déjà, directement avec ⌥⇧⌘5, sans avoir à la viser."
+          },
+          {
+            "type": "new",
+            "text": "Redimensionner l'image depuis Image ▸ Redimensionner l'image…, en pixels, proportions verrouillées et raccourcis à 25, 50, 75 et 100 %. Les annotations suivent, et ⌘Z annule le tout."
+          },
+          {
+            "type": "new",
+            "text": "Export en GIF et BMP, en plus de PNG, JPG, TIFF et PDF."
+          },
+          {
+            "type": "new",
+            "text": "L'intensité de la pixellisation et du flou se règle, et se retient par annotation : dans la même capture, suggérer une adresse IP et rendre un mot de passe totalement illisible."
+          },
+          {
+            "type": "new",
+            "text": "Les cinq raccourcis de capture se modifient un par un dans Réglages ▸ Capture ▸ Raccourci."
+          },
+          {
+            "type": "fixed",
+            "text": "Capturer une fenêtre capture bien cette fenêtre. Avant, l'app prenait l'écran et découpait son rectangle : tout ce qui se trouvait au-dessus partait avec."
+          },
+          {
+            "type": "fixed",
+            "text": "⌥⌘5, ⌥⌘3 et ⌥⇧⌘4 fonctionnent depuis n'importe quelle app. Seul ⌥⌘4 était un vrai raccourci global ; les autres exigeaient iSkitch au premier plan."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG et BMP n'encadrent plus de noir les zones transparentes : elles sont composées sur blanc avant l'enregistrement."
+          },
+          {
+            "type": "fixed",
+            "text": "La barre du bas annonçait la moitié des pixels réels de la capture, et le redimensionnement partait de ce chiffre erroné."
+          }
+        ]
+      },
       {
         "version": "1.7.0",
         "date": "8 août 2026",

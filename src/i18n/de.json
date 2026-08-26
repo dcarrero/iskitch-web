@@ -151,6 +151,10 @@
         "a": "In achtzehn: Englisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Japanisch, Koreanisch, Chinesisch (vereinfacht), Chinesisch (traditionell), Russisch, Niederländisch, Schwedisch, Polnisch, Türkisch, Tschechisch, Indonesisch und Katalanisch. Die letzten zehn kamen mit Version 1.6.0. Sie folgt automatisch deiner Systemsprache, ändern kannst du sie unter Einstellungen ▸ Allgemein ▸ Sprache."
       },
       {
+        "q": "Welche Tastaturkurzbefehle hat iSkitch?",
+        "a": "Fünf globale Kurzbefehle, die aus jeder App funktionieren: ⌥⌘4 nimmt einen Bereich auf, ⌥⌘5 lässt dich ein Fenster per Klick auswählen, ⌥⇧⌘5 nimmt direkt das Fenster auf, das du vor dir hast, ⌥⌘3 nimmt den ganzen Bildschirm auf und ⌥⇧⌘4 wiederholt den letzten Bereich. Alle fünf lassen sich einzeln unter Einstellungen ▸ Aufnahme ▸ Kurzbefehl ändern. Im Editor gelten zusätzlich die üblichen macOS-Kurzbefehle: ⌘S zum Sichern, ⇧⌘C zum Kopieren des Bildes, ⌘Z zum Widerrufen und ⌥⌘ plus Buchstabe für jedes Werkzeug. Hinweis: Die globalen Kurzbefehle für Fenster, vorderstes Fenster und Bereich wiederholen kommen mit Version 1.8.0 — davor funktioniert außerhalb der App nur ⌥⌘4."
+      },
+      {
         "q": "Ich drücke ⌥⌘4, aber nichts wird aufgenommen. Woran liegt das?",
         "a": "Fast immer an der Bildschirmaufnahme-Berechtigung. Öffne Systemeinstellungen ▸ Datenschutz & Sicherheit ▸ Bildschirmaufnahme, aktiviere iSkitch und starte die App neu. Beim ersten Aufnehmen fragt macOS automatisch danach."
       },
@@ -207,6 +211,54 @@
     "title": "Neuigkeiten in iSkitch",
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
+      {
+        "version": "1.8.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Aufnahmen, wie sie sein sollten",
+        "items": [
+          {
+            "type": "new",
+            "text": "Fensteraufnahmen kommen mit Schatten und abgerundeten Ecken, auf transparentem Hintergrund statt mit dem Schreibtisch dahinter."
+          },
+          {
+            "type": "new",
+            "text": "Das Fenster aufnehmen, in dem du gerade arbeitest — direkt mit ⌥⇧⌘5, ohne es erst anklicken zu müssen."
+          },
+          {
+            "type": "new",
+            "text": "Bildgröße ändern über Bild ▸ Bildgröße ändern…, in Pixeln, mit gesperrten Proportionen und 25/50/75/100 %. Anmerkungen skalieren mit, und ⌘Z macht alles zusammen rückgängig."
+          },
+          {
+            "type": "new",
+            "text": "Export als GIF und BMP, zusätzlich zu PNG, JPG, TIFF und PDF."
+          },
+          {
+            "type": "new",
+            "text": "Die Stärke von Verpixeln und Weichzeichnen lässt sich regeln, und zwar pro Anmerkung: eine IP nur andeuten und ein Passwort im selben Bild völlig unlesbar machen."
+          },
+          {
+            "type": "new",
+            "text": "Alle fünf Aufnahme-Kurzbefehle lassen sich einzeln unter Einstellungen ▸ Aufnahme ▸ Kurzbefehl ändern."
+          },
+          {
+            "type": "fixed",
+            "text": "Ein Fenster aufnehmen nimmt jetzt dieses Fenster auf. Vorher wurde der Bildschirm aufgenommen und das Rechteck ausgeschnitten — alles, was darüber lag, kam mit."
+          },
+          {
+            "type": "fixed",
+            "text": "⌥⌘5, ⌥⌘3 und ⌥⇧⌘4 funktionieren aus jeder App. Nur ⌥⌘4 war ein echter globaler Kurzbefehl; die anderen brauchten iSkitch im Vordergrund."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG und BMP rahmen transparente Stellen nicht mehr schwarz ein — sie werden vorher auf Weiß gelegt."
+          },
+          {
+            "type": "fixed",
+            "text": "Die untere Leiste nannte die Hälfte der tatsächlichen Pixel, und die Größenänderung ging von dieser falschen Zahl aus."
+          }
+        ]
+      },
       {
         "version": "1.7.0",
         "date": "8. August 2026",

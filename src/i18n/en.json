@@ -155,6 +155,10 @@
         "a": "Eighteen: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Simplified Chinese, Traditional Chinese, Russian, Dutch, Swedish, Polish, Turkish, Czech, Indonesian and Catalan. The last ten arrived in version 1.6.0. It follows your system language automatically, and you can change it in Settings ▸ General ▸ Language."
       },
       {
+        "q": "What keyboard shortcuts does iSkitch have?",
+        "a": "Five global shortcuts that work from any app: ⌥⌘4 captures a region, ⌥⌘5 lets you pick a window with a click, ⌥⇧⌘5 grabs the window you already have in front, ⌥⌘3 captures the full screen and ⌥⇧⌘4 repeats the last region. All five can be changed one by one in Settings ▸ Capture ▸ Shortcut. Inside the editor you also get the usual macOS shortcuts: ⌘S to save, ⇧⌘C to copy the image, ⌘Z to undo, and ⌥⌘ plus a letter for each tool. Note: the global shortcuts for window, front window and repeat region arrive with version 1.8.0 — in earlier versions only ⌥⌘4 works outside the app."
+      },
+      {
         "q": "I press ⌥⌘4 but nothing is captured. What’s wrong?",
         "a": "It’s almost always the Screen Recording permission. Open System Settings ▸ Privacy & Security ▸ Screen Recording, turn on iSkitch, and relaunch the app. The first time you capture, macOS asks for this permission automatically."
       },
@@ -211,6 +215,54 @@
     "title": "What’s new in iSkitch",
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
+      {
+        "version": "1.8.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Captures, as they should have been",
+        "items": [
+          {
+            "type": "new",
+            "text": "Window captures now come with the window's shadow and rounded corners, on a transparent background instead of whatever was on the desktop behind it."
+          },
+          {
+            "type": "new",
+            "text": "Capture the window you're already working in, straight away with ⌥⇧⌘5 — no need to point and click at it."
+          },
+          {
+            "type": "new",
+            "text": "Resize the image from Image ▸ Resize Image…, in pixels, with proportions locked and 25/50/75/100% presets. Annotations scale with it, and ⌘Z undoes the whole thing."
+          },
+          {
+            "type": "new",
+            "text": "Export to GIF and BMP, on top of PNG, JPG, TIFF and PDF."
+          },
+          {
+            "type": "new",
+            "text": "The strength of pixelation and blur is now adjustable, per annotation: hint at an IP address and make a password completely unreadable in the same screenshot."
+          },
+          {
+            "type": "new",
+            "text": "All five capture shortcuts can be changed one by one in Settings ▸ Capture ▸ Shortcut."
+          },
+          {
+            "type": "fixed",
+            "text": "Capturing a window now captures that window. It used to grab the screen and crop the window's rectangle, so anything sitting on top came along with it."
+          },
+          {
+            "type": "fixed",
+            "text": "⌥⌘5, ⌥⌘3 and ⌥⇧⌘4 work from any app. Only ⌥⌘4 was a real global shortcut; the rest needed iSkitch to be in front."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG and BMP no longer frame transparent areas in black — they are composited onto white first."
+          },
+          {
+            "type": "fixed",
+            "text": "The bottom bar reported half the pixels a capture really had, and resizing started from that wrong figure."
+          }
+        ]
+      },
       {
         "version": "1.7.0",
         "date": "August 8, 2026",

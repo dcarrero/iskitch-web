@@ -155,6 +155,10 @@
         "a": "En dieciocho: español, inglés, francés, alemán, italiano, portugués, japonés, coreano, chino simplificado, chino tradicional, ruso, neerlandés, sueco, polaco, turco, checo, indonesio y catalán. Los diez últimos llegaron con la versión 1.6.0. Sigue el idioma de tu sistema automáticamente, y puedes cambiarlo en Ajustes ▸ General ▸ Idioma."
       },
       {
+        "q": "¿Qué atajos de teclado tiene iSkitch?",
+        "a": "Cinco atajos globales, que funcionan desde cualquier aplicación: ⌥⌘4 captura una región, ⌥⌘5 deja elegir una ventana con un clic, ⌥⇧⌘5 coge directamente la ventana que tienes delante, ⌥⌘3 captura la pantalla completa y ⌥⇧⌘4 repite la última región. Los cinco se cambian uno a uno en Ajustes ▸ Captura ▸ Atajo. Dentro del editor tienes además los atajos de siempre de macOS: ⌘S para guardar, ⇧⌘C para copiar la imagen, ⌘Z para deshacer y ⌥⌘ con una letra para cada herramienta. Nota: los atajos globales de ventana, ventana activa y repetir región llegan con la versión 1.8.0; en versiones anteriores solo ⌥⌘4 funciona fuera de la app."
+      },
+      {
         "q": "Pulso ⌥⌘4 y no captura nada. ¿Qué pasa?",
         "a": "Casi siempre es el permiso de Grabación de pantalla. Abre Ajustes del Sistema ▸ Privacidad y seguridad ▸ Grabación de pantalla, activa iSkitch y reinicia la app. La primera vez que capturas, macOS te lo pide automáticamente."
       },
@@ -211,6 +215,54 @@
     "title": "Novedades de iSkitch",
     "lead": "Todas las versiones de iSkitch, de la más reciente a la primera. Las actualizaciones son gratuitas para quien ya tiene la app.",
     "versions": [
+      {
+        "version": "1.8.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Las capturas, como debían ser",
+        "items": [
+          {
+            "type": "new",
+            "text": "La captura de ventana sale con su sombra y sus esquinas redondeadas, sobre fondo transparente en lugar del escritorio que hubiera detrás."
+          },
+          {
+            "type": "new",
+            "text": "Captura la ventana en la que ya estás trabajando, directa con ⌥⇧⌘5, sin tener que apuntar y hacer clic."
+          },
+          {
+            "type": "new",
+            "text": "Redimensionar la imagen desde Imagen ▸ Redimensionar imagen…, en píxeles, con proporción bloqueada y atajos al 25, 50, 75 y 100 %. Las anotaciones se reescalan con ella y ⌘Z lo deshace entero."
+          },
+          {
+            "type": "new",
+            "text": "Exportar a GIF y BMP, además de PNG, JPG, TIFF y PDF."
+          },
+          {
+            "type": "new",
+            "text": "La intensidad del pixelado y del difuminado se regula, y se guarda en cada anotación: en la misma captura puedes insinuar una IP y dejar una contraseña ilegible del todo."
+          },
+          {
+            "type": "new",
+            "text": "Los cinco atajos de captura se cambian uno a uno en Ajustes ▸ Captura ▸ Atajo."
+          },
+          {
+            "type": "fixed",
+            "text": "Capturar una ventana captura esa ventana. Antes tomaba la pantalla y recortaba su rectángulo, así que se llevaba dentro lo que estuviera por encima."
+          },
+          {
+            "type": "fixed",
+            "text": "⌥⌘5, ⌥⌘3 y ⌥⇧⌘4 funcionan desde cualquier aplicación. Solo ⌥⌘4 era un atajo global de verdad; los demás exigían tener iSkitch delante."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG y BMP ya no enmarcan en negro lo que era transparente: se componen sobre blanco antes de guardar."
+          },
+          {
+            "type": "fixed",
+            "text": "La barra inferior indicaba la mitad de los píxeles que tenía la captura, y redimensionar partía de esa cifra equivocada."
+          }
+        ]
+      },
       {
         "version": "1.7.0",
         "date": "8 de agosto de 2026",
