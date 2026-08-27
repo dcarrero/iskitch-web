@@ -18,6 +18,13 @@ const FONT = "Helvetica Neue, Hiragino Sans, Hiragino Kaku Gothic ProN, Apple SD
 const EYEBROW = { en: "GUIDE", es: "GUÍA", fr: "GUIDE", de: "ANLEITUNG", it: "GUIDA", pt: "GUIA", ja: "ガイド", ko: "가이드" };
 const CJK = new Set(["ja", "ko"]);
 
+// Bloque eyebrow + título: tamaño del eyebrow, altura visual de sus mayúsculas,
+// aire hasta el título y centro vertical del conjunto en el lienzo.
+const EYEBROW_SIZE = 26;
+const EYEBROW_CAP = Math.round(EYEBROW_SIZE * 0.72);
+const EYEBROW_GAP = 34;
+const STACK_CENTER = 340;
+
 function esc(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
@@ -62,9 +69,15 @@ function svg({ title, lang, eyebrow }) {
   if (lines.length > 3) fontSize = cjk ? 50 : 56;
   if (lines.length > 4) { fontSize = cjk ? 44 : 48; lines = lines.slice(0, 5); }
   const lineH = fontSize * 1.18;
-  const blockH = lines.length * lineH;
-  // Posiciones absolutas, bloque de título centrado verticalmente.
-  const yy = Math.round(320 - blockH / 2 + fontSize * 0.9);
+  // Eyebrow y título se apilan y se centran COMO UN BLOQUE. Con posiciones
+  // absolutas (eyebrow fijo + título centrado) los títulos de 4 o 5 líneas
+  // crecían hacia arriba hasta pisar el eyebrow.
+  const capH = fontSize * (cjk ? 0.88 : 0.72); // altura visual de una línea
+  const titleH = (lines.length - 1) * lineH + capH;
+  const stackH = EYEBROW_CAP + EYEBROW_GAP + titleH;
+  const top = Math.round(STACK_CENTER - stackH / 2);
+  const eyebrowY = top + EYEBROW_CAP;                        // línea base del eyebrow
+  const yy = Math.round(eyebrowY + EYEBROW_GAP + capH);      // línea base de la 1.ª línea
   const tspans = lines.map((l, i) => `<tspan x="90" y="${yy + Math.round(i * lineH)}">${esc(l)}</tspan>`).join("");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
@@ -84,7 +97,7 @@ function svg({ title, lang, eyebrow }) {
     <text x="62" y="30" font-family="${FONT}" font-size="30" font-weight="800" fill="#1D1D1F">iSkitch</text>
   </g>
   <!-- eyebrow -->
-  <text x="90" y="200" font-family="${FONT}" font-size="26" font-weight="800" letter-spacing="3" fill="#E61F5C">${esc(eyebrow)}</text>
+  <text x="90" y="${eyebrowY}" font-family="${FONT}" font-size="${EYEBROW_SIZE}" font-weight="800" letter-spacing="3" fill="#E61F5C">${esc(eyebrow)}</text>
   <!-- title -->
   <text font-family="${FONT}" font-size="${fontSize}" font-weight="800" fill="#1D1D1F" letter-spacing="-0.5">${tspans}</text>
   <!-- footer -->
