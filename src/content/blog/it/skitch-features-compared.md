@@ -3,6 +3,7 @@ title: "Tutto quello che Skitch faceva nel 2011 e cosa fa iSkitch oggi"
 description: "Abbiamo recuperato dall'Internet Archive l'elenco originale delle funzioni di skitch.com e l'abbiamo confrontato riga per riga con iSkitch. Cosa abbiamo ricostruito, cosa lasciamo fuori di proposito e cosa manca ancora."
 lang: "it"
 pubDate: 2026-08-25
+updatedDate: 2026-08-27
 order: 5
 heroAlt: "L'elenco archiviato delle funzioni di skitch.com del 2011 accanto all'editor di iSkitch su macOS."
 tags: ["Skitch", "funzioni", "macOS"]
@@ -25,7 +26,7 @@ Abbiamo ripreso quell'elenco riga per riga e l'abbiamo confrontato con iSkitch, 
 
 | Skitch, 2011 | iSkitch | Nota |
 |---|---|---|
-| Catturare schermate | Sì | Area, finestra e schermo intero; ⌥⌘4 funziona da qualsiasi app ed è modificabile |
+| Catturare schermate | Sì | Area, finestra e schermo intero; cinque scorciatoie globali, modificabili una per una |
 | Catturare dalla iSight | No | Photo Booth lo fa già, e meglio |
 | Archiviazione automatica di catture e modifiche | In parte | Cattura rapida direttamente in una cartella, ma niente cronologia consultabile |
 | Cattura web con bookmarklet | No | Già nel 2011 diceva *Coming soon!* |
@@ -41,9 +42,9 @@ Quello che quella pagina non aveva: timer con conto alla rovescia, ripetere l'ul
 | Testo, frecce, forme, schizzi, tavoletta Wacom | Sì | 14 strumenti, 4 punte di freccia, 7 timbri |
 | Organizzare con tag e raccolte | No | Quello era il sito, non l'app |
 | Filigrana | No | Lo stiamo valutando |
-| Salvare in tif, gif, bmp, svg e pdf | In parte | PNG, JPG, TIFF e PDF. Né GIF, né BMP, né SVG |
-| Ombra, sfondo trasparente, tenere solo la cattura | No | Lo stiamo valutando |
-| Ridimensionare con misure o preimpostazioni | No | Lo zoom va dal 25 al 300 %, ma non tocca i pixel |
+| Salvare in tif, gif, bmp, svg e pdf | In parte | PNG, JPG, TIFF, GIF, BMP e PDF. Niente SVG |
+| Ombra, sfondo trasparente, tenere solo la cattura | In parte | Le catture di finestra arrivano con la loro ombra su sfondo trasparente; a un'immagine già fatta non si può aggiungere né l'una né l'altro |
+| Ridimensionare con misure o preimpostazioni | Sì | Immagine ▸ Ridimensiona immagine…, in pixel, con proporzioni bloccate e preimpostazioni al 25, 50, 75 e 100 % |
 
 E al contrario, quello che iSkitch ha e che in quell'elenco non compare: **quattro modi per nascondere informazioni riservate** (pixel, sfocatura, blocco pieno, righe), un **faro** che oscura tutto tranne il punto che stai spiegando, adesivi, immagini sovrapposte, collage, ruotare e capovolgere, e l'interfaccia in **18 lingue**.
 
@@ -67,10 +68,7 @@ Quello che a noi manca è l'**annotazione dei PDF**, arrivata con Skitch 2.5 e c
 
 La versione onesta, tutta insieme:
 
-- Ridimensionare un'immagine a una misura precisa
-- Ombra e sfondo trasparente
 - Filigrane
-- Esportare in GIF e BMP
 - Catturare una pagina web intera
 - Annotare i PDF
 - Una cronologia delle catture precedenti

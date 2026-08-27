@@ -3,6 +3,7 @@ title: "Was in iSkitch 1.8.0 kommt — und der Fehler, der von Anfang an da war"
 description: "Ein Fenster aufnehmen hat nie ein Fenster aufgenommen. Das zu beheben machte den Weg frei für Schatten, transparenten Hintergrund, echte globale Kurzbefehle, Größenänderung und Export als GIF und BMP."
 lang: "de"
 pubDate: 2026-08-26
+updatedDate: 2026-08-27
 order: 6
 heroAlt: "Ein Fenster, aufgenommen mit Schatten und abgerundeten Ecken auf transparentem Hintergrund."
 tags: ["iSkitch", "Version", "macOS"]
@@ -45,6 +46,6 @@ Alle vier sind jetzt echte globale Kurzbefehle, ein fünfter ist dazugekommen (*
 
 Wir haben die [Datenschutzerklärung](/de/privacy/) entsprechend neu geschrieben, in allen acht Sprachen. Dort stand, die App „verbinde sich nie mit unseren Servern", und ab dieser Version wäre das nicht mehr wahr.
 
-## Wann
+## Ab sofort verfügbar
 
-1.8.0 ist fertig und geht in die App-Store-Prüfung. Sie kommt als kostenloses Update für alle, die iSkitch bereits haben. Wie immer: ohne Abo und ohne Konto.
+1.8.0 ist seit dem 27. August 2026 im Mac App Store. Ein kostenloses Update für alle, die iSkitch bereits haben. Wie immer: ohne Abo und ohne Konto.

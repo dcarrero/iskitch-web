@@ -218,8 +218,8 @@
     "versions": [
       {
         "version": "1.8.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "August 27, 2026",
+        "comingSoon": false,
         "title": "Captures, as they should have been",
         "items": [
           {

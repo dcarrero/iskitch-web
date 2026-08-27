@@ -3,6 +3,7 @@ title: "Alles, was Skitch 2011 konnte – und was iSkitch heute kann"
 description: "Wir haben die ursprüngliche Funktionsliste von skitch.com aus dem Internet Archive geholt und Zeile für Zeile mit iSkitch abgeglichen. Was wir nachgebaut haben, was wir bewusst weglassen und was noch fehlt."
 lang: "de"
 pubDate: 2026-08-25
+updatedDate: 2026-08-27
 order: 5
 heroAlt: "Die archivierte Funktionsliste von skitch.com aus dem Jahr 2011 neben dem iSkitch-Editor unter macOS."
 tags: ["Skitch", "Funktionen", "macOS"]
@@ -25,7 +26,7 @@ Wir sind diese Liste Zeile für Zeile durchgegangen und haben sie mit iSkitch ve
 
 | Skitch, 2011 | iSkitch | Anmerkung |
 |---|---|---|
-| Bildschirmfotos aufnehmen | Ja | Bereich, Fenster und Vollbild; ⌥⌘4 greift überall und lässt sich frei belegen |
+| Bildschirmfotos aufnehmen | Ja | Bereich, Fenster und Vollbild; fünf globale Kurzbefehle, jeder einzeln belegbar |
 | Aufnahme über die iSight | Nein | Das macht Photo Booth bereits, und besser |
 | Automatisches Archivieren von Aufnahmen und Änderungen | Teilweise | Schnellaufnahme direkt in einen Ordner, aber noch kein durchsuchbarer Verlauf |
 | Web-Aufnahme per Bookmarklet | Nein | Stand 2011 schon als *Coming soon!* da |
@@ -41,9 +42,9 @@ Was diese Seite nicht hatte: einen Countdown-Timer, das Wiederholen des letzten 
 | Text, Pfeile, Formen, Skizzen, Wacom-Tablett | Ja | 14 Werkzeuge, 4 Pfeilspitzen, 7 Stempel |
 | Bilder mit Tags und Sets ordnen | Nein | Das war die Website, nicht die App |
 | Wasserzeichen | Nein | Wird geprüft |
-| Speichern als tif, gif, bmp, svg und pdf | Teilweise | PNG, JPG, TIFF und PDF. Kein GIF, BMP oder SVG |
-| Schlagschatten, transparenter Hintergrund, nur die Aufnahme behalten | Nein | Wird geprüft |
-| Größe ändern per Vorgabe oder Zahlenwert | Nein | Zoom von 25 bis 300 %, aber das ändert die Pixel nicht |
+| Speichern als tif, gif, bmp, svg und pdf | Teilweise | PNG, JPG, TIFF, GIF, BMP und PDF. Kein SVG |
+| Schlagschatten, transparenter Hintergrund, nur die Aufnahme behalten | Teilweise | Fensteraufnahmen kommen mit ihrem Schatten auf transparentem Hintergrund; einem fertigen Bild lässt sich beides nicht nachträglich hinzufügen |
+| Größe ändern per Vorgabe oder Zahlenwert | Ja | Bild ▸ Bildgröße ändern…, in Pixeln, mit gesperrten Proportionen und Vorgaben für 25, 50, 75 und 100 % |
 
 Und andersherum, was iSkitch kann und auf der Liste von 2011 überhaupt nicht vorkommt: **vier Wege, sensible Informationen abzudecken** (verpixeln, weichzeichnen, deckender Block, Schraffur), ein **Spotlight**, das alles außer der gemeinten Stelle abdunkelt, Sticker, eingefügte Bilder, Collagen, Drehen und Spiegeln – und die Oberfläche in **18 Sprachen**.
 
@@ -67,10 +68,7 @@ Was uns noch fehlt, ist die **PDF-Anmerkung**, die mit Skitch 2.5 kam und nach 3
 
 Die ehrliche Fassung, alles an einer Stelle:
 
-- Ein Bild auf eine bestimmte Größe bringen
-- Schlagschatten und transparenter Hintergrund
 - Wasserzeichen
-- Export als GIF und BMP
 - Aufnahme einer ganzen Webseite
 - PDF-Anmerkungen
 - Ein durchsuchbarer Verlauf früherer Aufnahmen

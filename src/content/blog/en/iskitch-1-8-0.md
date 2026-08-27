@@ -3,6 +3,7 @@ title: "What's Coming in iSkitch 1.8.0 — and the Bug That Was There All Along"
 description: "Capturing a window never actually captured a window. Fixing that opened the door to shadows, transparent backgrounds, real global shortcuts, resizing, and GIF and BMP export."
 lang: "en"
 pubDate: 2026-08-26
+updatedDate: 2026-08-27
 order: 6
 heroAlt: "A window captured with its shadow and rounded corners on a transparent background."
 tags: ["iSkitch", "release", "macOS"]
@@ -45,6 +46,6 @@ All four are now real global shortcuts, a fifth one has joined them (**⌥⇧⌘
 
 We've rewritten the [privacy policy](/privacy/) accordingly, in all eight languages. It previously claimed the app "never connects to our servers", and starting with this version that would no longer be true.
 
-## When
+## Available now
 
-1.8.0 is finished and heading to App Store review. It'll show up as a free update for everyone who already has iSkitch — as always, no subscription, no account.
+1.8.0 has been on the Mac App Store since August 27, 2026. It's a free update for everyone who already has iSkitch — as always, no subscription, no account.

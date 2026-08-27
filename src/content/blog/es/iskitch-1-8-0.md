@@ -3,6 +3,7 @@ title: "Lo que llega en iSkitch 1.8.0, y el fallo que llevaba ahí desde el prim
 description: "Capturar una ventana nunca capturó una ventana. Arreglarlo abrió la puerta a la sombra, el fondo transparente, los atajos globales de verdad, redimensionar y exportar a GIF y BMP."
 lang: "es"
 pubDate: 2026-08-26
+updatedDate: 2026-08-27
 order: 6
 heroAlt: "Una ventana capturada con su sombra y sus esquinas redondeadas sobre fondo transparente."
 tags: ["iSkitch", "versión", "macOS"]
@@ -45,6 +46,6 @@ La 1.8.0 añade una ventana que te invita a suscribirte a las novedades. Es la p
 
 Hemos reescrito la [política de privacidad](/es/privacy/) en consecuencia, en los ocho idiomas. Antes decía que la app «nunca se conecta a nuestros servidores», y a partir de esta versión eso dejaría de ser cierto.
 
-## Cuándo
+## Ya disponible
 
-La 1.8.0 está terminada y camino de la revisión de App Store. Llegará como actualización gratuita para quien ya tenga iSkitch. Como siempre: sin suscripción y sin cuenta.
+La 1.8.0 está en la Mac App Store desde el 27 de agosto de 2026. Es una actualización gratuita para quien ya tenga iSkitch. Como siempre: sin suscripción y sin cuenta.

@@ -3,6 +3,7 @@ title: "Everything Skitch Could Do in 2011 — and What iSkitch Does Today"
 description: "We pulled the original skitch.com feature list out of the Internet Archive and checked it line by line against iSkitch. What we rebuilt, what we left out on purpose, and what's still missing."
 lang: "en"
 pubDate: 2026-08-25
+updatedDate: 2026-08-27
 order: 5
 heroAlt: "The archived skitch.com feature list from 2011 next to the iSkitch editor running on macOS."
 tags: ["Skitch", "features", "macOS"]
@@ -25,7 +26,7 @@ We went through that list line by line against iSkitch, the app we ship today. S
 
 | Skitch, 2011 | iSkitch | Note |
 |---|---|---|
-| Capture screenshots | Yes | Region, window, full screen — ⌥⌘4 works anywhere and can be remapped |
+| Capture screenshots | Yes | Region, window, full screen — five global shortcuts, each one remappable |
 | Capture from your iSight | No | Photo Booth does this, and does it better |
 | Auto archiving of captures & edits | Partly | Quick-capture straight to a folder; no browsable history yet |
 | Web capture with a bookmarklet | No | It said *Coming soon!* in 2011 |
@@ -41,9 +42,9 @@ Things that page never had: a countdown timer, recapture-last-region, picking wh
 | Text, arrows, shapes, sketch, Wacom tablet | Yes | 14 tools, 4 arrowhead styles, 7 stamps |
 | Organise images with tags and sets | No | That was the website, not the app |
 | Watermark your images | No | Under consideration |
-| Save tif, gif, bmp, svg & pdf | Partly | PNG, JPG, TIFF and PDF. No GIF, BMP or SVG |
-| Add shadow, transparent background, wipe snap only | No | Under consideration |
-| Resize with presets or digits | No | You can zoom 25–300%, but that doesn't change the pixels |
+| Save tif, gif, bmp, svg & pdf | Partly | PNG, JPG, TIFF, GIF, BMP and PDF. No SVG |
+| Add shadow, transparent background, wipe snap only | Partly | Window captures arrive with their shadow on a transparent background; neither can be added to an image afterwards |
+| Resize with presets or digits | Yes | Image ▸ Resize Image…, in pixels, proportions locked, with 25/50/75/100% presets |
 
 And the other direction — what iSkitch has that the 2011 list doesn't mention at all: **four ways to hide sensitive information** (pixelate, blur, a solid block, stripes), a **spotlight** that dims everything but the point you're making, stickers, image overlays, side-by-side collages, rotate and flip, and the whole interface in **18 languages**.
 
@@ -67,10 +68,7 @@ The one Evernote feature we don't match is **PDF annotation**, which arrived in 
 
 The honest version, all in one place:
 
-- Resize an image to a given size
-- Drop shadow and transparent background
 - Watermarks
-- GIF and BMP export
 - Full-page web capture
 - PDF markup
 - A browsable history of past captures
