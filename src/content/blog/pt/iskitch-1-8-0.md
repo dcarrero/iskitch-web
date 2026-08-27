@@ -1,5 +1,5 @@
 ---
-title: "O que chega no iSkitch 1.8.0, e o erro que estava lá desde o primeiro dia"
+title: "O iSkitch 1.8.0 já está disponível, e o erro que estava lá desde o primeiro dia"
 description: "Capturar uma janela nunca capturou uma janela. Corrigi-lo abriu a porta à sombra, ao fundo transparente, aos atalhos globais a sério, ao redimensionamento e à exportação para GIF e BMP."
 lang: "pt"
 pubDate: 2026-08-26

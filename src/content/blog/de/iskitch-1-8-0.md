@@ -1,5 +1,5 @@
 ---
-title: "Was in iSkitch 1.8.0 kommt — und der Fehler, der von Anfang an da war"
+title: "iSkitch 1.8.0 ist erschienen — und der Fehler, der von Anfang an da war"
 description: "Ein Fenster aufnehmen hat nie ein Fenster aufgenommen. Das zu beheben machte den Weg frei für Schatten, transparenten Hintergrund, echte globale Kurzbefehle, Größenänderung und Export als GIF und BMP."
 lang: "de"
 pubDate: 2026-08-26

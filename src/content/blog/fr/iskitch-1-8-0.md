@@ -1,5 +1,5 @@
 ---
-title: "Ce qui arrive dans iSkitch 1.8.0, et le bug qui était là depuis le début"
+title: "iSkitch 1.8.0 est disponible, et le bug qui était là depuis le début"
 description: "Capturer une fenêtre ne capturait jamais une fenêtre. Le corriger a ouvert la voie à l'ombre, au fond transparent, aux vrais raccourcis globaux, au redimensionnement et à l'export GIF et BMP."
 lang: "fr"
 pubDate: 2026-08-26

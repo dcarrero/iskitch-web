@@ -1,5 +1,5 @@
 ---
-title: "What's Coming in iSkitch 1.8.0 — and the Bug That Was There All Along"
+title: "iSkitch 1.8.0 Is Out — and the Bug That Was There All Along"
 description: "Capturing a window never actually captured a window. Fixing that opened the door to shadows, transparent backgrounds, real global shortcuts, resizing, and GIF and BMP export."
 lang: "en"
 pubDate: 2026-08-26

@@ -1,5 +1,5 @@
 ---
-title: "Cosa arriva in iSkitch 1.8.0, e il bug che c'era dal primo giorno"
+title: "iSkitch 1.8.0 è disponibile, e il bug che c'era dal primo giorno"
 description: "Catturare una finestra non ha mai catturato una finestra. Sistemarlo ha aperto la strada all'ombra, allo sfondo trasparente, alle vere scorciatoie globali, al ridimensionamento e all'esportazione in GIF e BMP."
 lang: "it"
 pubDate: 2026-08-26
