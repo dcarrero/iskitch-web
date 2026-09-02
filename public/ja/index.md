@@ -4,7 +4,8 @@
 
 **ステータス:** Mac App Store で配信中。
 **プラットフォーム:** macOS 14 以降。Universal Binary (Apple Silicon + Intel)。
-**言語:** 日本語、English、Español、Français、Deutsch、Italiano、Português。
+**アプリの対応言語（18）:** 日本語、English、Español、Français、Deutsch、Italiano、Português、한국어、Català、Čeština、Bahasa Indonesia、Nederlands、Polski、Русский、Svenska、Türkçe、简体中文、繁體中文。
+**このサイトの言語（8）:** 日本語、English、Español、Français、Deutsch、Italiano、Português、한국어。
 **価格:** ¥1,500 (JPY) の買い切り。サブスクもアカウントも不要。
 
 ## iSkitch とは
@@ -37,6 +38,7 @@ Mac App Store で iSkitch をダウンロード: https://apps.apple.com/app/iski
 - プライバシー: https://iskitch.com/ja/privacy
 - 利用規約: https://iskitch.com/ja/terms
 - サポート: https://iskitch.com/ja/support
+- 更新履歴（最新バージョンは常にこちら）: https://iskitch.com/ja/changelog
 
 ## 発行
 

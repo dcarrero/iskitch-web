@@ -4,7 +4,8 @@
 
 **상태:** 이제 Mac App Store에서 이용 가능.
 **플랫폼:** macOS 14 이상. Universal Binary (Apple Silicon + Intel).
-**언어:** 한국어, English, Español, Français, Deutsch, Italiano, Português, 日本語.
+**앱 지원 언어(18개):** 한국어, English, Español, Français, Deutsch, Italiano, Português, 日本語, Català, Čeština, Bahasa Indonesia, Nederlands, Polski, Русский, Svenska, Türkçe, 简体中文, 繁體中文.
+**이 사이트의 언어(8개):** 한국어, English, Español, Français, Deutsch, Italiano, Português, 日本語.
 **가격:** ₩17,000 (KRW) 한 번 결제. 구독 없음, 계정 없음.
 
 ## iSkitch란
@@ -37,6 +38,7 @@ Mac App Store에서 iSkitch 다운로드: https://apps.apple.com/app/iskitch/id6
 - 개인정보처리방침: https://iskitch.com/ko/privacy
 - 이용약관: https://iskitch.com/ko/terms
 - 지원: https://iskitch.com/ko/support
+- 변경 사항(최신 버전은 항상 여기): https://iskitch.com/ko/changelog
 
 ## 배포
 

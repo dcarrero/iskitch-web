@@ -4,7 +4,8 @@
 
 **Statut :** Disponible maintenant sur le Mac App Store.
 **Plateforme :** macOS 14 ou ultérieur. Universal Binary (Apple Silicon + Intel).
-**Langues :** Français, English, Español.
+**Langues de l'app (18) :** Français, English, Español, Deutsch, Italiano, Português, 日本語, 한국어, Català, Čeština, Bahasa Indonesia, Nederlands, Polski, Русский, Svenska, Türkçe, 简体中文, 繁體中文.
+**Langues du site (8) :** Français, English, Español, Deutsch, Italiano, Português, 日本語, 한국어.
 **Prix :** Un achat unique de 9,99 € (EUR). Sans abonnement ni compte.
 
 ## Qu'est-ce qu'iSkitch
@@ -37,6 +38,7 @@ Téléchargez iSkitch sur le Mac App Store : https://apps.apple.com/app/iskitch/
 - Politique de confidentialité : https://iskitch.com/fr/privacy
 - Conditions d'utilisation : https://iskitch.com/fr/terms
 - Aide : https://iskitch.com/fr/support
+- Nouveautés (toujours la version actuelle) : https://iskitch.com/fr/changelog
 
 ## Éditeur
 
