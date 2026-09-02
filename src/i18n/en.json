@@ -116,7 +116,15 @@
       "macOS 14 or later",
       "Apple Silicon & Intel",
       "No tracking"
-    ]
+    ],
+    "trust": {
+      "updated": "Last update: {date} — v{version}",
+      "updated_link": "See what changed",
+      "releases": "{count} releases so far",
+      "human": "Behind iSkitch there's one person, David — and the same person answers every support email.",
+      "refund": "You buy through the Mac App Store, so refunds are handled by Apple.",
+      "refund_link": "Request a refund"
+    }
   },
   "beta": {
     "badge": "Stay in the loop",

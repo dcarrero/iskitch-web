@@ -112,7 +112,15 @@
       "macOS 14 ou ultérieur",
       "Apple Silicon et Intel",
       "Sans pistage"
-    ]
+    ],
+    "trust": {
+      "updated": "Dernière mise à jour : {date} — v{version}",
+      "updated_link": "Voir ce qui a changé",
+      "releases": "{count} versions publiées à ce jour",
+      "human": "Derrière iSkitch, il y a une personne, David — et c’est la même qui répond à chaque e-mail d’assistance.",
+      "refund": "L’achat se fait sur le Mac App Store : les remboursements sont donc gérés par Apple.",
+      "refund_link": "Demander un remboursement"
+    }
   },
   "beta": {
     "badge": "Restez informé",

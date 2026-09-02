@@ -112,7 +112,15 @@
       "macOS 14 以降",
       "Apple Silicon と Intel",
       "トラッキングなし"
-    ]
+    ],
+    "trust": {
+      "updated": "最終アップデート：{date}（v{version}）",
+      "updated_link": "変更点を見る",
+      "releases": "これまでに {count} 回のリリース",
+      "human": "iSkitch をつくっているのは David 一人です。サポートのメールにも同じ本人が返信します。",
+      "refund": "購入は Mac App Store 経由なので、返金は Apple が対応します。",
+      "refund_link": "返金をリクエストする"
+    }
   },
   "beta": {
     "badge": "最新情報をチェック",

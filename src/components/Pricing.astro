@@ -3,6 +3,19 @@ import AppStoreBadge from "./AppStoreBadge.astro";
 interface Props { t: any }
 const { t } = Astro.props as Props;
 const p = t.pricing;
+
+// Franja de confianza. Los datos NO se escriben a mano: salen del propio
+// changelog, así que publicar una versión nueva los actualiza solos y nunca
+// pueden afirmar una fecha que no sea la real.
+const trust = p.trust;
+const releases = (t.changelog?.versions ?? []).filter((v: any) => !v.comingSoon);
+const latest = releases[0];
+const prefix = t.lang === "en" ? "" : `/${t.lang}`;
+const updated = latest?.date
+  ? trust.updated.replace("{date}", latest.date).replace("{version}", latest.version)
+  : null;
+const releaseCount = trust.releases.replace("{count}", String(releases.length));
+const supportEmail = "hello@iskitch.com";
 ---
 <section id="download" class="pricing">
   <div class="container">
@@ -22,5 +35,23 @@ const p = t.pricing;
     <ul class="pricing-meta">
       {p.meta.map((m: string) => (<li><span class="dot dot-green"></span> {m}</li>))}
     </ul>
+
+    {trust && (
+      <div class="pricing-trust">
+        <p class="trust-line trust-updated">
+          {updated && (
+            <span class="trust-fact"><span class="dot dot-green"></span> {updated}</span>
+          )}
+          <span class="trust-fact">{releaseCount}</span>
+          <a class="trust-link" href={`${prefix}/changelog`}>{trust.updated_link}</a>
+        </p>
+        <p class="trust-line">
+          {trust.human} <a class="trust-link" href={`mailto:${supportEmail}`}>{supportEmail}</a>
+        </p>
+        <p class="trust-line">
+          {trust.refund} <a class="trust-link" href="https://reportaproblem.apple.com" target="_blank" rel="noopener">{trust.refund_link}</a>
+        </p>
+      </div>
+    )}
   </div>
 </section>

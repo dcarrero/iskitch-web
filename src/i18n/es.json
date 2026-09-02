@@ -116,7 +116,15 @@
       "macOS 14 o posterior",
       "Apple Silicon e Intel",
       "Sin seguimiento"
-    ]
+    ],
+    "trust": {
+      "updated": "Última actualización: {date} — v{version}",
+      "updated_link": "Ver qué cambió",
+      "releases": "{count} versiones publicadas hasta hoy",
+      "human": "Detrás de iSkitch hay una persona, David, y esa misma persona contesta todos los correos de soporte.",
+      "refund": "La compra se hace en la Mac App Store, así que los reembolsos los gestiona Apple.",
+      "refund_link": "Solicitar un reembolso"
+    }
   },
   "beta": {
     "badge": "Mantente al día",

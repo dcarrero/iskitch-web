@@ -339,6 +339,40 @@ h1, h2, h3, .price-amount, .cl-version {
 .pricing-meta { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 22px; padding: 0; margin: 0; font-size: 13px; font-weight: 500; color: var(--ink-2); }
 .pricing-meta li { display: inline-flex; align-items: center; gap: 6px; }
 
+/* Franja de confianza del bloque de precio.
+   No son testimonios: son hechos comprobables (fecha de la última versión,
+   número de versiones, quién contesta el correo, quién gestiona el reembolso).
+   Los enlaces van subrayados a propósito: a 13.5px el color solo no basta
+   para distinguirlos del texto (WCAG 1.4.1). */
+.pricing-trust {
+  max-width: 640px;
+  margin: 36px auto 0;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 9px;
+}
+.trust-line {
+  margin: 0;
+  font-size: 13.5px; line-height: 1.6;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.trust-updated {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: 4px 8px;
+  color: var(--ink-1); font-weight: 600;
+}
+.trust-fact { display: inline-flex; align-items: center; gap: 6px; }
+/* El separador es un pseudo-elemento del segundo dato, no un nodo suelto:
+   así nunca se queda huérfano al final de una línea cuando el texto envuelve. */
+.trust-fact + .trust-fact::before { content: "·"; color: var(--ink-3); margin-right: 4px; }
+.trust-link {
+  color: var(--brand-3);
+  text-decoration: underline; text-underline-offset: 3px;
+  font-weight: 500;
+}
+.trust-link:hover { color: var(--brand-4); }
+
 /* Badge del CTA final (sobre fondo rosa) */
 .cta-badge { display: flex; justify-content: center; }
 
@@ -414,6 +448,14 @@ h1, h2, h3, .price-amount, .cl-version {
   .features article:nth-child(5),
   .features article:nth-child(6) { grid-column: span 1; padding: 24px; }
   .tools-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  /* En pantalla estrecha cada dato ocupa su propia línea: el separador sobra. */
+  .pricing-trust { margin-top: 30px; padding-top: 22px; }
+  .trust-updated { flex-direction: column; gap: 4px; }
+  /* Inline (no inline-flex): con el texto envuelto en dos líneas, el punto
+     debe ir pegado a la primera palabra, no centrado al lado del bloque. */
+  .trust-fact { display: inline; }
+  .trust-fact .dot { vertical-align: middle; margin-right: 2px; }
+  .trust-fact + .trust-fact::before { content: none; }
   .footer-grid { flex-direction: column; align-items: flex-start; }
   .footer-links { margin-left: 0; flex-wrap: wrap; }
 }
