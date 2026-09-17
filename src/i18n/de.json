@@ -168,6 +168,10 @@
         "a": "Fast immer an der Bildschirmaufnahme-Berechtigung. Öffne Systemeinstellungen ▸ Datenschutz & Sicherheit ▸ Bildschirmaufnahme, aktiviere iSkitch und starte die App neu. Beim ersten Aufnehmen fragt macOS automatisch danach."
       },
       {
+        "q": "Funktioniert iSkitch ohne die Berechtigung für Bildschirmaufnahme?",
+        "a": "Ja, auf zwei Wegen – praktisch auf einem Firmen-Mac, auf dem Sie sie nicht erteilen können. Schalten Sie Einstellungen ▸ Aufnahme ▸ „Editor nach System-Screenshot öffnen“ ein und verwenden Sie weiter ⇧⌘4 von macOS: iSkitch öffnet jeden Screenshot im Editor und fragt nur nach dem Ordner, in dem macOS sie speichert. Oder Sie kopieren ab 1.8.1 einen Screenshot mit ⌃⇧⌘4 und setzen ihn mit ⌘V oder ⇧⌘N in iSkitch ein. Keiner der beiden Wege läuft über die Bildschirmaufnahme."
+      },
+      {
         "q": "Wo werden meine Screenshots gespeichert?",
         "a": "Nirgendwo, bis du es entscheidest. iSkitch speichert nie im Stillen: Du wählst das Ziel, wenn du auf Sichern drückst oder das Bild aus dem Fenster ziehst. Unter Einstellungen ▸ Aufnahme kannst du einen Standardordner und ein Standardformat festlegen (PNG, JPG, PDF oder TIFF)."
       },
@@ -220,6 +224,26 @@
     "title": "Neuigkeiten in iSkitch",
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
+      {
+        "version": "1.8.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Keine Berechtigung für Bildschirmaufnahme? Geht trotzdem",
+        "items": [
+          {
+            "type": "new",
+            "text": "Neu aus der Zwischenablage: Ablage ▸ Neu aus der Zwischenablage (⇧⌘N, das Kürzel von Skitch) öffnet das Bild aus der Zwischenablage im Editor – und Bearbeiten ▸ Einsetzen (⌘V) tut dasselbe, solange kein Textfeld darauf wartet. Die alte Gewohnheit ist zurück: ⌃⇧⌘4 in macOS, dann einsetzen. Das läuft nicht über die Bildschirmaufnahme, braucht also keine Berechtigung dafür, und eine Retina-Aufnahme behält ihre 2×-Pixel."
+          },
+          {
+            "type": "new",
+            "text": "Schlägt eine Aufnahme mangels Berechtigung fehl, erklärt der Hinweis jetzt die zwei Auswege – weiter ⇧⌘4 von macOS verwenden und iSkitch jeden Screenshot öffnen lassen, oder mit ⇧⌘N einsetzen – mit einer Taste, die den ersten direkt dort einschaltet. Das Willkommensfenster und Einstellungen ▸ Aufnahme sagen es ebenfalls."
+          },
+          {
+            "type": "fixed",
+            "text": "„Editor nach System-Screenshot öffnen“ öffnet den Editor jetzt immer. Es hing stillschweigend von der allgemeinen Einstellung „Editor öffnen“ für iSkitchs eigene Aufnahmen ab: War die aus, öffnete der überwachte Screenshot nichts."
+          }
+        ]
+      },
       {
         "version": "1.8.0",
         "date": "27. August 2026",

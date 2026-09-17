@@ -19,13 +19,17 @@ The most common reason is the Screen Recording permission. After the first launc
 
 Open *System Settings ▸ Privacy & Security ▸ Screen Recording*, find iSkitch in the list and make sure its switch is ON. If it isn't listed yet, just press ⌥⌘4 once — macOS will prompt automatically.
 
+### Does iSkitch work without the Screen Recording permission?
+
+Yes, two ways — useful on a company Mac where you can't grant it. Turn on *Settings ▸ Capture ▸ "Open editor after a system screenshot"*, keep using macOS's ⇧⌘4, and iSkitch opens each screenshot in the editor; it only asks for the folder where macOS saves them. Or, from version 1.8.1, copy a screenshot with ⌃⇧⌘4 and paste it into iSkitch with ⌘V or ⇧⌘N. Neither goes through screen capture.
+
 ### Where are my screenshots saved?
 
 iSkitch never saves silently. You decide where each capture goes when you press **Save…** (or drag the image out of the window). In *iSkitch ▸ Settings ▸ Capture* you can set a **default folder** and **default format** (PNG/JPG/PDF/TIFF) so the dialog opens already where you want it.
 
 ### Can I change the capture shortcut?
 
-The default is ⌥⌘4. Customising shortcuts is on the roadmap — it'll arrive in a future update.
+Yes. The default is ⌥⌘4, and since version 1.8.0 all five shortcuts — region, window, front window, full screen and recapture last region — can be changed one by one in *Settings ▸ Capture ▸ Shortcut*.
 
 ### How do I share to a specific app?
 

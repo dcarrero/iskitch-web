@@ -168,6 +168,10 @@
         "a": "C’est presque toujours l’autorisation Enregistrement de l’écran. Ouvrez Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement de l’écran, activez iSkitch et relancez l’app. La première fois que vous capturez, macOS demande cette autorisation automatiquement."
       },
       {
+        "q": "iSkitch fonctionne-t-il sans l'autorisation Enregistrement de l'écran ?",
+        "a": "Oui, de deux façons — utile sur un Mac d'entreprise où vous ne pouvez pas l'accorder. Activez Réglages ▸ Capture ▸ « Ouvrir l'éditeur après une capture du système », continuez d'utiliser ⇧⌘4 de macOS, et iSkitch ouvre chaque capture dans l'éditeur ; il ne demande que le dossier où macOS les enregistre. Ou, à partir de la 1.8.1, copiez une capture avec ⌃⇧⌘4 et collez-la dans iSkitch avec ⌘V ou ⇧⌘N. Aucune des deux ne passe par la capture d'écran."
+      },
+      {
         "q": "Où sont enregistrées mes captures ?",
         "a": "Nulle part jusqu’à ce que vous décidiez. iSkitch n’enregistre jamais en silence : vous choisissez la destination en appuyant sur Enregistrer ou en glissant l’image hors de la fenêtre. Dans Réglages ▸ Capture, vous pouvez définir un dossier et un format par défaut (PNG, JPG, PDF ou TIFF)."
       },
@@ -220,6 +224,26 @@
     "title": "Nouveautés d’iSkitch",
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
+      {
+        "version": "1.8.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Pas d'autorisation Enregistrement de l'écran ? Ça marche quand même",
+        "items": [
+          {
+            "type": "new",
+            "text": "Nouveau depuis le presse-papiers : Fichier ▸ Nouveau depuis le presse-papiers (⇧⌘N, le raccourci de Skitch) ouvre dans l'éditeur l'image qui se trouve dans le presse-papiers — et Édition ▸ Coller (⌘V) fait de même dès qu'aucun champ de texte n'attend le collage. La vieille habitude est de retour : ⌃⇧⌘4 dans macOS, puis coller. Cela ne passe pas par la capture d'écran, donc aucune autorisation Enregistrement de l'écran n'est nécessaire, et une capture Retina garde ses pixels en 2×."
+          },
+          {
+            "type": "new",
+            "text": "Quand une capture échoue faute d'autorisation, l'alerte explique désormais les deux solutions — continuer avec ⇧⌘4 de macOS et laisser iSkitch ouvrir chaque capture, ou coller avec ⇧⌘N — avec un bouton qui active la première sur place. La fenêtre de bienvenue et Réglages ▸ Capture le disent aussi."
+          },
+          {
+            "type": "fixed",
+            "text": "« Ouvrir l'éditeur après une capture du système » ouvre désormais toujours l'éditeur. Il dépendait en silence du réglage général « Ouvrir l'éditeur » des captures d'iSkitch : avec celui-ci désactivé, la capture surveillée n'ouvrait rien."
+          }
+        ]
+      },
       {
         "version": "1.8.0",
         "date": "27 août 2026",

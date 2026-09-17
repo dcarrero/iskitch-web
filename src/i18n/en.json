@@ -172,6 +172,10 @@
         "a": "It’s almost always the Screen Recording permission. Open System Settings ▸ Privacy & Security ▸ Screen Recording, turn on iSkitch, and relaunch the app. The first time you capture, macOS asks for this permission automatically."
       },
       {
+        "q": "Does iSkitch work without the Screen Recording permission?",
+        "a": "Yes, two ways — useful on a company Mac where you can't grant it. Turn on Settings ▸ Capture ▸ “Open editor after a system screenshot”, keep using macOS's ⇧⌘4, and iSkitch opens each screenshot in the editor; it only asks for the folder where macOS saves them. Or, from 1.8.1, copy a screenshot with ⌃⇧⌘4 and paste it into iSkitch with ⌘V or ⇧⌘N. Neither goes through screen capture."
+      },
+      {
         "q": "Where are my screenshots saved?",
         "a": "Nowhere until you decide. iSkitch never saves silently: you choose the destination when you press Save or drag the image out of the window. In Settings ▸ Capture you can set a default folder and format (PNG, JPG, PDF or TIFF)."
       },
@@ -224,6 +228,26 @@
     "title": "What’s new in iSkitch",
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
+      {
+        "version": "1.8.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "No Screen Recording permission? That works too",
+        "items": [
+          {
+            "type": "new",
+            "text": "New from Clipboard: File ▸ New from Clipboard (⇧⌘N, Skitch's shortcut) opens whatever image is on the clipboard in the editor — and so does Edit ▸ Paste (⌘V) whenever no text field is waiting for it. The old habit is back: ⌃⇧⌘4 in macOS, then paste. It doesn't go through screen capture, so it needs no Screen Recording permission, and a Retina capture keeps its 2× pixels."
+          },
+          {
+            "type": "new",
+            "text": "When a capture fails for lack of permission, the alert now explains the two ways around it — keep using macOS's ⇧⌘4 and let iSkitch open each screenshot, or paste with ⇧⌘N — with a button that turns the first one on right there. The welcome window and Settings ▸ Capture say so too."
+          },
+          {
+            "type": "fixed",
+            "text": "“Open editor after a system screenshot” now always opens the editor. It silently depended on the general “Open the editor” setting for iSkitch's own captures, so with that one off the watched screenshot opened nothing."
+          }
+        ]
+      },
       {
         "version": "1.8.0",
         "date": "August 27, 2026",

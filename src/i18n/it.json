@@ -168,6 +168,10 @@
         "a": "Quasi sempre è l’autorizzazione Registrazione dello schermo. Apri Impostazioni di Sistema ▸ Privacy e sicurezza ▸ Registrazione dello schermo, attiva iSkitch e riavvia l’app. La prima volta che catturi, macOS la richiede automaticamente."
       },
       {
+        "q": "iSkitch funziona senza l'autorizzazione Registrazione dello schermo?",
+        "a": "Sì, in due modi — utile su un Mac aziendale dove non puoi concederla. Attiva Impostazioni ▸ Cattura ▸ «Apri l'editor dopo una schermata di sistema», continua a usare ⇧⌘4 di macOS e iSkitch apre ogni schermata nell'editor; chiede solo la cartella dove macOS le salva. Oppure, dalla 1.8.1, copia una schermata con ⌃⇧⌘4 e incollala in iSkitch con ⌘V o ⇧⌘N. Nessuno dei due passa dalla cattura dello schermo."
+      },
+      {
         "q": "Dove vengono salvate le mie catture?",
         "a": "Da nessuna parte finché non decidi tu. iSkitch non salva mai in silenzio: scegli la destinazione quando premi Salva o trascini l’immagine fuori dalla finestra. In Impostazioni ▸ Cattura puoi impostare una cartella e un formato predefiniti (PNG, JPG, PDF o TIFF)."
       },
@@ -220,6 +224,26 @@
     "title": "Novità di iSkitch",
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
+      {
+        "version": "1.8.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Senza l'autorizzazione Registrazione dello schermo? Si può lo stesso",
+        "items": [
+          {
+            "type": "new",
+            "text": "Nuovo dagli appunti: File ▸ Nuovo dagli appunti (⇧⌘N, la scorciatoia di Skitch) apre nell'editor l'immagine che c'è negli appunti — e Modifica ▸ Incolla (⌘V) fa lo stesso ogni volta che nessun campo di testo sta aspettando l'incolla. Torna l'abitudine di sempre: ⌃⇧⌘4 di macOS e incolla. Non passa dalla cattura dello schermo, quindi non serve l'autorizzazione Registrazione dello schermo, e una schermata Retina conserva i suoi pixel a 2×."
+          },
+          {
+            "type": "new",
+            "text": "Quando una cattura fallisce per mancanza di autorizzazione, l'avviso ora spiega le due alternative — continuare con ⇧⌘4 di macOS e lasciare che iSkitch apra ogni schermata, o incollare con ⇧⌘N — con un pulsante che attiva la prima lì stesso. Lo dicono anche la finestra di benvenuto e Impostazioni ▸ Cattura."
+          },
+          {
+            "type": "fixed",
+            "text": "«Apri l'editor dopo una schermata di sistema» ora apre sempre l'editor. Dipendeva in silenzio dall'impostazione generale «Apri l'editor» delle catture di iSkitch: con quella spenta, la schermata sorvegliata non apriva nulla."
+          }
+        ]
+      },
       {
         "version": "1.8.0",
         "date": "27 agosto 2026",

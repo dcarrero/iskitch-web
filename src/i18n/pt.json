@@ -168,6 +168,10 @@
         "a": "Quase sempre é a permissão de Gravação de ecrã. Abra Definições do Sistema ▸ Privacidade e segurança ▸ Gravação de ecrã, ative o iSkitch e reinicie a app. Na primeira captura, o macOS pede esta permissão automaticamente."
       },
       {
+        "q": "O iSkitch funciona sem a permissão de Gravação de ecrã?",
+        "a": "Sim, de duas formas — útil num Mac de empresa onde não a pode conceder. Ative Definições ▸ Captura ▸ «Abrir o editor após uma captura do sistema», continue a usar ⇧⌘4 do macOS e o iSkitch abre cada captura no editor; só pede a pasta onde o macOS as guarda. Ou, a partir da 1.8.1, copie uma captura com ⌃⇧⌘4 e cole-a no iSkitch com ⌘V ou ⇧⌘N. Nenhuma das duas passa pela captura de ecrã."
+      },
+      {
         "q": "Onde são guardadas as minhas capturas?",
         "a": "Em lado nenhum até decidir. O iSkitch nunca guarda em silêncio: escolhe o destino ao carregar em Guardar ou ao arrastar a imagem para fora da janela. Em Definições ▸ Captura pode definir uma pasta e um formato predefinidos (PNG, JPG, PDF ou TIFF)."
       },
@@ -220,6 +224,26 @@
     "title": "Novidades do iSkitch",
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
+      {
+        "version": "1.8.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Sem permissão de Gravação de ecrã? Também dá",
+        "items": [
+          {
+            "type": "new",
+            "text": "Novo a partir da área de transferência: Ficheiro ▸ Novo a partir da área de transferência (⇧⌘N, o atalho do Skitch) abre no editor a imagem que estiver na área de transferência — e Editar ▸ Colar (⌘V) faz o mesmo sempre que nenhum campo de texto esteja à espera. Volta o hábito de sempre: ⌃⇧⌘4 do macOS e colar. Não passa pela captura de ecrã, por isso não precisa da permissão de Gravação de ecrã, e uma captura Retina mantém os seus píxeis a 2×."
+          },
+          {
+            "type": "new",
+            "text": "Quando uma captura falha por falta de permissão, o aviso explica agora as duas alternativas — continuar com ⇧⌘4 do macOS e deixar o iSkitch abrir cada captura, ou colar com ⇧⌘N — com um botão que ativa a primeira ali mesmo. A janela de boas-vindas e Definições ▸ Captura também o dizem."
+          },
+          {
+            "type": "fixed",
+            "text": "«Abrir o editor após uma captura do sistema» abre agora sempre o editor. Dependia em silêncio da definição geral «Abrir o editor» das capturas do iSkitch: com essa desligada, a captura vigiada não abria nada."
+          }
+        ]
+      },
       {
         "version": "1.8.0",
         "date": "27 de agosto de 2026",
