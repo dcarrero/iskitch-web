@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.8.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "17. September 2026",
+        "comingSoon": false,
         "title": "Keine Berechtigung für Bildschirmaufnahme? Geht trotzdem",
         "items": [
           {
@@ -237,6 +237,10 @@
           {
             "type": "new",
             "text": "Schlägt eine Aufnahme mangels Berechtigung fehl, erklärt der Hinweis jetzt die zwei Auswege – weiter ⇧⌘4 von macOS verwenden und iSkitch jeden Screenshot öffnen lassen, oder mit ⇧⌘N einsetzen – mit einer Taste, die den ersten direkt dort einschaltet. Das Willkommensfenster und Einstellungen ▸ Aufnahme sagen es ebenfalls."
+          },
+          {
+            "type": "fixed",
+            "text": "Bereichs- und Vollbildaufnahmen auf einem Display mit skalierter Auflösung (etwa ein 4K-Monitor auf 2560×1440) kamen in 1× oder unscharf heraus. iSkitch nimmt den Bereich jetzt über denselben Screenshot-Mechanismus auf wie ⇧⌘4 von macOS – Pixel für Pixel identisch."
           },
           {
             "type": "fixed",

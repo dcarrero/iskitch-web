@@ -230,8 +230,8 @@
     "versions": [
       {
         "version": "1.8.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "17 de septiembre de 2026",
+        "comingSoon": false,
         "title": "¿Sin permiso de Grabación de pantalla? También se puede",
         "items": [
           {
@@ -241,6 +241,10 @@
           {
             "type": "new",
             "text": "Cuando una captura falla por falta de permiso, el aviso explica ahora las dos alternativas —seguir con ⇧⌘4 de macOS y que iSkitch abra cada captura, o pegar con ⇧⌘N— con un botón que activa la primera ahí mismo. La ventana de bienvenida y Ajustes ▸ Captura también lo dicen."
+          },
+          {
+            "type": "fixed",
+            "text": "Las capturas de región y de pantalla completa en una pantalla con resolución escalada (por ejemplo, un monitor 4K a 2560×1440) salían a 1× o borrosas. iSkitch pide ahora la región por la misma maquinaria de capturas que ⇧⌘4 de macOS: idéntica píxel a píxel."
           },
           {
             "type": "fixed",

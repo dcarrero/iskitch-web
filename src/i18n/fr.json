@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.8.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "17 septembre 2026",
+        "comingSoon": false,
         "title": "Pas d'autorisation Enregistrement de l'écran ? Ça marche quand même",
         "items": [
           {
@@ -237,6 +237,10 @@
           {
             "type": "new",
             "text": "Quand une capture échoue faute d'autorisation, l'alerte explique désormais les deux solutions — continuer avec ⇧⌘4 de macOS et laisser iSkitch ouvrir chaque capture, ou coller avec ⇧⌘N — avec un bouton qui active la première sur place. La fenêtre de bienvenue et Réglages ▸ Capture le disent aussi."
+          },
+          {
+            "type": "fixed",
+            "text": "Les captures de zone et de plein écran sur un écran en résolution mise à l’échelle (par exemple un moniteur 4K réglé sur 2560×1440) sortaient en 1× ou floues. iSkitch capture désormais la zone par le même mécanisme de capture que ⇧⌘4 de macOS : identique pixel par pixel."
           },
           {
             "type": "fixed",

@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.8.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "17 de setembro de 2026",
+        "comingSoon": false,
         "title": "Sem permissão de Gravação de ecrã? Também dá",
         "items": [
           {
@@ -237,6 +237,10 @@
           {
             "type": "new",
             "text": "Quando uma captura falha por falta de permissão, o aviso explica agora as duas alternativas — continuar com ⇧⌘4 do macOS e deixar o iSkitch abrir cada captura, ou colar com ⇧⌘N — com um botão que ativa a primeira ali mesmo. A janela de boas-vindas e Definições ▸ Captura também o dizem."
+          },
+          {
+            "type": "fixed",
+            "text": "As capturas de região e de ecrã completo num ecrã com resolução dimensionada (por exemplo, um monitor 4K a 2560×1440) saíam a 1× ou desfocadas. O iSkitch captura agora a região pelo mesmo mecanismo de captura do ⇧⌘4 do macOS: idêntica píxel a píxel."
           },
           {
             "type": "fixed",

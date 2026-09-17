@@ -230,8 +230,8 @@
     "versions": [
       {
         "version": "1.8.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "September 17, 2026",
+        "comingSoon": false,
         "title": "No Screen Recording permission? That works too",
         "items": [
           {
@@ -241,6 +241,10 @@
           {
             "type": "new",
             "text": "When a capture fails for lack of permission, the alert now explains the two ways around it — keep using macOS's ⇧⌘4 and let iSkitch open each screenshot, or paste with ⇧⌘N — with a button that turns the first one on right there. The welcome window and Settings ▸ Capture say so too."
+          },
+          {
+            "type": "fixed",
+            "text": "Region and full-screen captures on a display running at a scaled resolution (for example a 4K monitor set to 2560×1440) came out at 1× or blurry. iSkitch now takes the region through the same screenshot machinery as macOS's ⇧⌘4 — pixel for pixel identical."
           },
           {
             "type": "fixed",

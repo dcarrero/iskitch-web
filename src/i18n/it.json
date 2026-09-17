@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.8.1",
-        "date": "",
-        "comingSoon": true,
+        "date": "17 settembre 2026",
+        "comingSoon": false,
         "title": "Senza l'autorizzazione Registrazione dello schermo? Si può lo stesso",
         "items": [
           {
@@ -237,6 +237,10 @@
           {
             "type": "new",
             "text": "Quando una cattura fallisce per mancanza di autorizzazione, l'avviso ora spiega le due alternative — continuare con ⇧⌘4 di macOS e lasciare che iSkitch apra ogni schermata, o incollare con ⇧⌘N — con un pulsante che attiva la prima lì stesso. Lo dicono anche la finestra di benvenuto e Impostazioni ▸ Cattura."
+          },
+          {
+            "type": "fixed",
+            "text": "Le acquisizioni di area e a schermo intero su un display con risoluzione in scala (ad esempio un monitor 4K impostato a 2560×1440) uscivano a 1× o sfocate. Ora iSkitch acquisisce l’area con lo stesso meccanismo di ⇧⌘4 di macOS: identica pixel per pixel."
           },
           {
             "type": "fixed",
