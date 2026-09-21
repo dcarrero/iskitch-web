@@ -225,6 +225,30 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.9.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "WebP, a qualidade onde se guarda, e Redimensionar à vista",
+        "items": [
+          {
+            "type": "new",
+            "text": "Exportar para WebP: nas Definições, no botão de guardar do editor e na janela de guardar, com qualidade ajustável e transparência. 100 % guarda sem perdas. O macOS lê WebP mas continua sem o escrever, por isso o iSkitch traz o seu próprio codificador."
+          },
+          {
+            "type": "new",
+            "text": "Formato e qualidade na própria janela de guardar: um menu Formato e, para JPEG e WebP, um cursor Qualidade — como a folha Exportar da Pré-visualização. O que escolher aí fica como predefinição. O controlo em Definições ▸ Captura ▸ Saída aparece agora para qualquer formato com perdas."
+          },
+          {
+            "type": "new",
+            "text": "Redimensionar imagem, à vista: ⇧⌘R, um botão na barra de recorte e outro ao lado das medidas em píxeis no fundo do editor. Sempre esteve no menu Imagem; agora encontra-se."
+          },
+          {
+            "type": "fixed",
+            "text": "A barra de recorte mostrava pontos, não píxeis: numa captura Retina dizia 1280x800 enquanto a barra inferior dizia 2560x1600. Agora trabalha em píxeis e di-lo, e escrever 1281 recorta exatamente para 1281 (antes dava 1282)."
+          }
+        ]
+      },
+      {
         "version": "1.8.1",
         "date": "17 de setembro de 2026",
         "comingSoon": false,

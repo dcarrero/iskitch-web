@@ -229,6 +229,30 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.9.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "WebP, quality where you save, and Resize in plain sight",
+        "items": [
+          {
+            "type": "new",
+            "text": "Export to WebP: in Settings, in the editor's save button and in the save dialog, with adjustable quality and transparency preserved. 100% saves lossless. macOS reads WebP but still can't write it, so iSkitch brings its own encoder."
+          },
+          {
+            "type": "new",
+            "text": "Format and quality in the save dialog itself: a Format pop-up and, for JPEG and WebP, a Quality slider — like Preview's Export sheet. What you choose there becomes the default. The slider in Settings ▸ Capture ▸ Output now appears for any lossy format."
+          },
+          {
+            "type": "new",
+            "text": "Resize Image, in plain sight: ⇧⌘R, a button in the crop bar and another next to the pixel dimensions at the bottom of the editor. It was always in the Image menu; now you can find it."
+          },
+          {
+            "type": "fixed",
+            "text": "The crop bar showed points, not pixels: on a Retina capture it said 1280x800 while the bottom bar said 2560x1600. It now works in pixels and says so, and typing 1281 crops to exactly 1281 (it used to give 1282)."
+          }
+        ]
+      },
+      {
         "version": "1.8.1",
         "date": "September 17, 2026",
         "comingSoon": false,

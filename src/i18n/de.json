@@ -225,6 +225,30 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.9.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "WebP, Qualität dort, wo gesichert wird, und „Bildgröße ändern“ gut sichtbar",
+        "items": [
+          {
+            "type": "new",
+            "text": "Export als WebP: in den Einstellungen, in der Sichern-Taste des Editors und im Sichern-Dialog, mit einstellbarer Qualität und erhaltener Transparenz. 100 % sichert verlustfrei. macOS liest WebP, kann es aber immer noch nicht schreiben, deshalb bringt iSkitch seinen eigenen Encoder mit."
+          },
+          {
+            "type": "new",
+            "text": "Format und Qualität direkt im Sichern-Dialog: ein Einblendmenü „Format“ und, für JPEG und WebP, ein Regler „Qualität“ — wie im Exportieren-Dialog der Vorschau. Was Sie dort wählen, wird zum Standard. Der Regler unter Einstellungen ▸ Aufnahme ▸ Ausgabe erscheint jetzt für jedes verlustbehaftete Format."
+          },
+          {
+            "type": "new",
+            "text": "Bildgröße ändern, gut sichtbar: ⇧⌘R, eine Taste in der Zuschneideleiste und eine weitere neben den Pixelmaßen unten im Editor. Es war immer im Menü „Bild“; jetzt findet man es auch."
+          },
+          {
+            "type": "fixed",
+            "text": "Die Zuschneideleiste zeigte Punkte statt Pixel: Bei einer Retina-Aufnahme stand dort 1280x800, während die untere Leiste 2560x1600 anzeigte. Sie arbeitet jetzt in Pixeln und sagt es auch, und 1281 einzugeben schneidet exakt auf 1281 zu (vorher wurden 1282 daraus)."
+          }
+        ]
+      },
+      {
         "version": "1.8.1",
         "date": "17. September 2026",
         "comingSoon": false,

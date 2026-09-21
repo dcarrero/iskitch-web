@@ -225,6 +225,30 @@
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
+        "version": "1.9.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "WebP, la qualité là où l'on enregistre, et Redimensionner bien en vue",
+        "items": [
+          {
+            "type": "new",
+            "text": "Exporter en WebP : dans les Réglages, dans le bouton Enregistrer de l'éditeur et dans la fenêtre d'enregistrement, avec qualité réglable et transparence conservée. 100 % enregistre sans perte. macOS lit le WebP mais ne sait toujours pas l'écrire, alors iSkitch apporte son propre encodeur."
+          },
+          {
+            "type": "new",
+            "text": "Format et qualité dans la fenêtre d'enregistrement elle-même : un menu Format et, pour JPEG et WebP, un curseur Qualité — comme la feuille Exporter d'Aperçu. Ce que vous y choisissez devient la valeur par défaut. Le curseur de Réglages ▸ Capture ▸ Sortie apparaît désormais pour tout format avec perte."
+          },
+          {
+            "type": "new",
+            "text": "Redimensionner l'image, bien en vue : ⇧⌘R, un bouton dans la barre de recadrage et un autre à côté des dimensions en pixels en bas de l'éditeur. C'était depuis toujours dans le menu Image ; maintenant on le trouve."
+          },
+          {
+            "type": "fixed",
+            "text": "La barre de recadrage affichait des points, pas des pixels : sur une capture Retina elle disait 1280x800 alors que la barre du bas disait 2560x1600. Elle travaille désormais en pixels et le dit, et saisir 1281 recadre exactement à 1281 (avant, cela donnait 1282)."
+          }
+        ]
+      },
+      {
         "version": "1.8.1",
         "date": "17 septembre 2026",
         "comingSoon": false,
