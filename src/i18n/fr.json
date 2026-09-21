@@ -245,6 +245,14 @@
           {
             "type": "fixed",
             "text": "La barre de recadrage affichait des points, pas des pixels : sur une capture Retina elle disait 1280x800 alors que la barre du bas disait 2560x1600. Elle travaille désormais en pixels et le dit, et saisir 1281 recadre exactement à 1281 (avant, cela donnait 1282)."
+          },
+          {
+            "type": "fixed",
+            "text": "Le JPEG à 80 % est maintenant un vrai 80 % : l'encodeur JPEG de macOS a sa propre échelle de qualité, et son 80 écrivait les tables que tous les autres outils (Affinity, XnConvert, Squoosh, ImageMagick) appellent 94, si bien que le fichier sortait jusqu'à trois fois plus gros que le leur au même réglage. Le curseur est désormais calibré sur l'échelle standard : le nombre choisi est celui que n'importe quel outil lit dans le fichier, et la taille est au même niveau. Un utilisateur l'a mesuré dans cinq apps."
+          },
+          {
+            "type": "fixed",
+            "text": "Les petites images s'ouvrent centrées : la fenêtre de l'éditeur ne descend pas sous 800x600, et une image plus petite restait dans le coin supérieur gauche. Elle s'ouvre maintenant au centre (à 100 % si elle tient, réduite sinon)."
           }
         ]
       },

@@ -245,6 +245,14 @@
           {
             "type": "fixed",
             "text": "Die Zuschneideleiste zeigte Punkte statt Pixel: Bei einer Retina-Aufnahme stand dort 1280x800, während die untere Leiste 2560x1600 anzeigte. Sie arbeitet jetzt in Pixeln und sagt es auch, und 1281 einzugeben schneidet exakt auf 1281 zu (vorher wurden 1282 daraus)."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG bei 80 % ist jetzt wirklich 80 %: Der JPEG-Encoder von macOS hat eine eigene Qualitätsskala, und seine 80 schrieb die Tabellen, die jedes andere Werkzeug (Affinity, XnConvert, Squoosh, ImageMagick) 94 nennt. Die Datei war bei gleicher Einstellung bis zu dreimal so groß wie bei den anderen. Der Regler ist jetzt auf die Standardskala kalibriert: Die gewählte Zahl ist die, die jedes Werkzeug aus der Datei liest, und die Größe liegt gleichauf. Ein Nutzer hat es in fünf Apps nachgemessen."
+          },
+          {
+            "type": "fixed",
+            "text": "Kleine Bilder öffnen sich zentriert: Das Editorfenster wird nicht kleiner als 800x600, und ein kleineres Bild saß in der linken oberen Ecke. Jetzt öffnet es sich mittig (bei 100 %, wenn es passt, sonst verkleinert)."
           }
         ]
       },

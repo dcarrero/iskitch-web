@@ -249,6 +249,14 @@
           {
             "type": "fixed",
             "text": "The crop bar showed points, not pixels: on a Retina capture it said 1280x800 while the bottom bar said 2560x1600. It now works in pixels and says so, and typing 1281 crops to exactly 1281 (it used to give 1282)."
+          },
+          {
+            "type": "fixed",
+            "text": "JPEG at 80% is now really 80%: macOS's built-in encoder has its own quality scale, and its 80 wrote the tables every other tool (Affinity, XnConvert, Squoosh, ImageMagick) calls 94, so the file came out up to three times bigger than theirs at the same setting. The slider is now calibrated to the standard scale: the number you pick is the one any tool reads back from the file, and sizes are on a par. A user measured it across five apps."
+          },
+          {
+            "type": "fixed",
+            "text": "Small images open centred: the editor window doesn't go below 800x600, and an image smaller than that sat in the top-left corner. It now opens centred (at 100% if it fits, scaled down if it doesn't)."
           }
         ]
       },

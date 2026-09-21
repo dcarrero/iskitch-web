@@ -245,6 +245,14 @@
           {
             "type": "fixed",
             "text": "A barra de recorte mostrava pontos, não píxeis: numa captura Retina dizia 1280x800 enquanto a barra inferior dizia 2560x1600. Agora trabalha em píxeis e di-lo, e escrever 1281 recorta exatamente para 1281 (antes dava 1282)."
+          },
+          {
+            "type": "fixed",
+            "text": "O JPEG a 80 % é agora mesmo 80 %: o codificador JPEG do macOS tem a sua própria escala de qualidade, e o seu 80 escrevia as tabelas a que qualquer outra ferramenta (Affinity, XnConvert, Squoosh, ImageMagick) chama 94, pelo que o ficheiro saía até três vezes maior do que o delas com o mesmo ajuste. O controlo está agora calibrado com a escala padrão: o número que escolhe é o que qualquer ferramenta lê do ficheiro, e o tamanho fica a par. Um utilizador mediu-o em cinco apps."
+          },
+          {
+            "type": "fixed",
+            "text": "As imagens pequenas abrem centradas: a janela do editor não desce de 800x600, e uma imagem mais pequena ficava no canto superior esquerdo. Agora abre ao centro (a 100 % se couber, reduzida se não)."
           }
         ]
       },
