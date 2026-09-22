@@ -7,7 +7,7 @@ updatedDate: 2026-08-27
 order: 6
 heroAlt: "Ein Fenster, aufgenommen mit Schatten und abgerundeten Ecken auf transparentem Hintergrund."
 tags: ["iSkitch", "Version", "macOS"]
-related: ["skitch-features-compared", "how-to-take-screenshots-on-mac"]
+related: ["iskitch-1-9-0", "skitch-features-compared"]
 ---
 
 Vor zwei Tagen haben wir einen Vergleich Funktion für Funktion mit dem originalen Skitch veröffentlicht, mit der Liste dessen, was iSkitch noch nicht konnte. Beim Abarbeiten dieser Liste kam etwas Unerwartetes heraus: **Ein Fenster aufnehmen hat nie ein Fenster aufgenommen.**

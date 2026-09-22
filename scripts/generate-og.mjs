@@ -40,11 +40,23 @@ function frontmatter(md) {
   return { title: get("title"), lang: get("lang") };
 }
 
-// Ajuste de línea. CJK no tiene espacios: se parte por carácter.
+// Ajuste de línea. El japonés no tiene espacios: se parte por carácter. El
+// coreano sí los tiene y se parte por palabras como el latino (partir «캡처하기»
+// a mitad es tan feo como partir «captura»); solo comparte con el japonés el
+// ancho de línea y el tamaño de letra.
 function wrap(text, lang, maxChars) {
-  if (CJK.has(lang)) {
+  if (lang === "ja") {
+    // Cada carácter CJK es un punto de corte, pero una secuencia latina
+    // («1.8.1», «JPEG», «iSkitch») se mantiene entera: partirla por la mitad
+    // deja «1» al final de una línea y «.8.1» al principio de la siguiente.
+    const tokens = text.match(/[A-Za-z0-9.\-]+|\s+|./gu) ?? [];
     const lines = [];
-    for (let i = 0; i < text.length; i += maxChars) lines.push(text.slice(i, i + maxChars));
+    let line = "";
+    for (const t of tokens) {
+      if (line.length + t.length > maxChars && line.trim()) { lines.push(line.trim()); line = t.trim(); }
+      else line += t;
+    }
+    if (line.trim()) lines.push(line.trim());
     return lines;
   }
   const words = text.split(/\s+/);

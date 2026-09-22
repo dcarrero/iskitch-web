@@ -7,7 +7,7 @@ updatedDate: 2026-08-27
 order: 6
 heroAlt: "影と角丸を保ったまま透明な背景に載ったウインドウのキャプチャ。"
 tags: ["iSkitch", "リリース", "macOS"]
-related: ["skitch-features-compared", "how-to-take-screenshots-on-mac"]
+related: ["iskitch-1-9-0", "skitch-features-compared"]
 ---
 
 数日前、オリジナルの Skitch との機能ごとの比較を公開し、iSkitch にまだできないことを一覧にしました。その一覧をつぶしていく中で、思いがけないことが見つかりました。**ウインドウのキャプチャは、一度もウインドウを撮っていなかったのです。**

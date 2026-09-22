@@ -7,7 +7,7 @@ updatedDate: 2026-08-27
 order: 6
 heroAlt: "A window captured with its shadow and rounded corners on a transparent background."
 tags: ["iSkitch", "release", "macOS"]
-related: ["skitch-features-compared", "how-to-take-screenshots-on-mac"]
+related: ["iskitch-1-9-0", "skitch-features-compared"]
 ---
 
 We published a feature-by-feature comparison against the original Skitch a couple of days ago, listing what iSkitch still couldn't do. Working through that list turned up something we didn't expect: **capturing a window never captured a window.**

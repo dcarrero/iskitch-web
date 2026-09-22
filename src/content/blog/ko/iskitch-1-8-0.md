@@ -7,7 +7,7 @@ updatedDate: 2026-08-27
 order: 6
 heroAlt: "그림자와 둥근 모서리를 그대로 담아 투명한 배경 위에 놓인 창 캡처."
 tags: ["iSkitch", "릴리스", "macOS"]
-related: ["skitch-features-compared", "how-to-take-screenshots-on-mac"]
+related: ["iskitch-1-9-0", "skitch-features-compared"]
 ---
 
 며칠 전 원조 Skitch와 기능을 하나씩 비교한 글을 올리면서, iSkitch가 아직 하지 못하는 일을 목록으로 정리했습니다. 그 목록을 처리하다가 예상치 못한 사실이 드러났습니다. **창 캡처는 한 번도 창을 캡처한 적이 없었습니다.**

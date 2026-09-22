@@ -7,7 +7,7 @@ updatedDate: 2026-08-27
 order: 6
 heroAlt: "Une fenêtre capturée avec son ombre et ses coins arrondis sur fond transparent."
 tags: ["iSkitch", "version", "macOS"]
-related: ["skitch-features-compared", "how-to-take-screenshots-on-mac"]
+related: ["iskitch-1-9-0", "skitch-features-compared"]
 ---
 
 Il y a deux jours, nous avons publié une comparaison fonction par fonction avec le Skitch d'origine, avec la liste de ce qu'iSkitch ne savait toujours pas faire. En parcourant cette liste, une surprise : **capturer une fenêtre ne capturait jamais une fenêtre.**

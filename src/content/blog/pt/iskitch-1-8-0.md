@@ -7,7 +7,7 @@ updatedDate: 2026-08-27
 order: 6
 heroAlt: "Uma janela capturada com a sua sombra e os cantos arredondados sobre fundo transparente."
 tags: ["iSkitch", "versão", "macOS"]
-related: ["skitch-features-compared", "how-to-take-screenshots-on-mac"]
+related: ["iskitch-1-9-0", "skitch-features-compared"]
 ---
 
 Há dois dias publicámos uma comparação função a função com o Skitch original, com a lista do que o iSkitch ainda não sabia fazer. Ao percorrer essa lista apareceu algo que não esperávamos: **capturar uma janela nunca capturou uma janela.**
