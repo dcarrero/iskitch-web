@@ -3,7 +3,7 @@ title: "Tout ce que Skitch savait faire en 2011, et ce que fait iSkitch aujourd'
 description: "Nous avons ressorti de l'Internet Archive la liste des fonctions d'origine de skitch.com et l'avons confrontée ligne par ligne à iSkitch. Ce que nous avons reconstruit, ce que nous laissons volontairement de côté et ce qui manque encore."
 lang: "fr"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "La liste des fonctions de skitch.com de 2011, archivée, à côté de l'éditeur iSkitch sur macOS."
 tags: ["Skitch", "fonctionnalités", "macOS"]
@@ -42,7 +42,7 @@ Ce que cette page n'avait pas : un retardateur, la reprise de la dernière zone,
 | Texte, flèches, formes, croquis, tablette Wacom | Oui | 14 outils, 4 styles de pointe de flèche, 7 tampons |
 | Organiser avec des tags et des collections | Non | C'était le site, pas l'application |
 | Filigrane | Non | À l'étude |
-| Enregistrer en tif, gif, bmp, svg et pdf | En partie | PNG, JPG, TIFF, GIF, BMP et PDF. Pas de SVG |
+| Enregistrer en tif, gif, bmp, svg et pdf | En partie | PNG, JPG, TIFF, GIF, BMP, WebP et PDF. Pas de SVG |
 | Ombre portée, fond transparent, ne garder que la capture | En partie | Les captures de fenêtre arrivent avec leur ombre sur fond transparent ; impossible d'ajouter l'une ou l'autre à une image déjà faite |
 | Redimensionner avec des valeurs ou des préréglages | Oui | Image ▸ Redimensionner l'image…, en pixels, proportions verrouillées, avec des préréglages à 25, 50, 75 et 100 % |
 

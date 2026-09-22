@@ -173,11 +173,11 @@
       },
       {
         "q": "Wo werden meine Screenshots gespeichert?",
-        "a": "Nirgendwo, bis du es entscheidest. iSkitch speichert nie im Stillen: Du wählst das Ziel, wenn du auf Sichern drückst oder das Bild aus dem Fenster ziehst. Unter Einstellungen ▸ Aufnahme kannst du einen Standardordner und ein Standardformat festlegen (PNG, JPG, PDF oder TIFF)."
+        "a": "Nirgendwo, bis du es entscheidest. iSkitch speichert nie im Stillen: Du wählst das Ziel, wenn du auf Sichern drückst oder das Bild aus dem Fenster ziehst. Unter Einstellungen ▸ Aufnahme kannst du einen Standardordner und ein Standardformat festlegen (PNG, JPG, PDF, TIFF oder WebP)."
       },
       {
         "q": "Wie teile oder exportiere ich eine Aufnahme?",
-        "a": "Klicke auf Teilen für das native macOS-Teilen-Menü (Mail, Nachrichten, Notizen, Slack, AirDrop und mehr), kopiere in die Zwischenablage, zieh das Bild direkt in jede App oder exportiere als PNG, JPEG, PDF oder TIFF."
+        "a": "Klicke auf Teilen für das native macOS-Teilen-Menü (Mail, Nachrichten, Notizen, Slack, AirDrop und mehr), kopiere in die Zwischenablage, zieh das Bild direkt in jede App oder exportiere als PNG, JPEG, PDF, TIFF oder WebP."
       },
       {
         "q": "Kann ich sensible Infos verbergen?",
@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.9.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "22. September 2026",
+        "comingSoon": false,
         "title": "WebP, Qualität dort, wo gesichert wird, und „Bildgröße ändern“ gut sichtbar",
         "items": [
           {

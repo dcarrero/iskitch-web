@@ -25,7 +25,7 @@ Yes, two ways — useful on a company Mac where you can't grant it. Turn on *Set
 
 ### Where are my screenshots saved?
 
-iSkitch never saves silently. You decide where each capture goes when you press **Save…** (or drag the image out of the window). In *iSkitch ▸ Settings ▸ Capture* you can set a **default folder** and **default format** (PNG/JPG/PDF/TIFF) so the dialog opens already where you want it.
+iSkitch never saves silently. You decide where each capture goes when you press **Save…** (or drag the image out of the window). In *iSkitch ▸ Settings ▸ Capture* you can set a **default folder** and **default format** (PNG/JPG/PDF/TIFF/WebP) so the dialog opens already where you want it.
 
 ### Can I change the capture shortcut?
 

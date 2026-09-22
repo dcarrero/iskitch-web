@@ -3,7 +3,7 @@ title: "Todo lo que hacía Skitch en 2011 y qué hace iSkitch hoy"
 description: "Hemos rescatado del Internet Archive la lista original de funciones de skitch.com y la hemos repasado línea a línea contra iSkitch. Qué hemos recuperado, qué dejamos fuera a propósito y qué nos falta."
 lang: "es"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "La lista de funciones de skitch.com de 2011 archivada, junto al editor de iSkitch en macOS."
 tags: ["Skitch", "funciones", "macOS"]
@@ -42,7 +42,7 @@ Cosas que aquella página no tenía: temporizador con cuenta atrás, repetir la 
 | Texto, flechas, formas, bocetos y tableta Wacom | Sí | 14 herramientas, 4 puntas de flecha y 7 sellos |
 | Organizar con etiquetas y colecciones | No | Eso era la web, no la app |
 | Marca de agua | No | Lo estamos valorando |
-| Guardar en tif, gif, bmp, svg y pdf | A medias | PNG, JPG, TIFF, GIF, BMP y PDF. SVG no |
+| Guardar en tif, gif, bmp, svg y pdf | A medias | PNG, JPG, TIFF, GIF, BMP, WebP y PDF. SVG no |
 | Sombra, fondo transparente, borrar todo menos la captura | A medias | Las capturas de ventana salen con su sombra sobre fondo transparente; a una imagen ya hecha no se le puede añadir ninguna de las dos cosas |
 | Redimensionar con medidas o preajustes | Sí | Imagen ▸ Redimensionar imagen…, en píxeles, con proporción bloqueada y atajos al 25, 50, 75 y 100 % |
 

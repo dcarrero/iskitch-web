@@ -3,7 +3,7 @@ title: "2011年のSkitchができたこと、そして今のiSkitchができる�
 description: "Internet Archiveから当時のskitch.comの機能一覧を掘り起こし、iSkitchと一行ずつ突き合わせました。作り直したもの、あえて作らなかったもの、そしてまだ足りないもの。"
 lang: "ja"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "アーカイブされた2011年のskitch.com機能一覧と、macOS上のiSkitchエディタ。"
 tags: ["Skitch", "機能", "macOS"]
@@ -42,7 +42,7 @@ related: ["skitch-alternative-macos", "how-to-annotate-screenshots-on-mac"]
 | テキスト、矢印、図形、手描き、Wacomタブレット | あり | 14種類のツール、4種類の矢じり、7種類のスタンプ |
 | タグとセットによる整理 | なし | それはWebサイト側の機能でした |
 | 透かしの追加 | なし | 検討中です |
-| tif、gif、bmp、svg、pdfで保存 | 一部 | PNG、JPG、TIFF、GIF、BMP、PDF。SVGはありません |
+| tif、gif、bmp、svg、pdfで保存 | 一部 | PNG、JPG、TIFF、GIF、BMP、WebP、PDF。SVGはありません |
 | 影、背景の透過、撮影部分以外の消去 | 一部 | ウインドウの撮影は影付き・背景透過で保存されます。できあがった画像にあとから足すことはできません |
 | 数値やプリセットでのサイズ変更 | あり | 「イメージ ▸ 画像のサイズを変更…」でピクセル単位。比率は固定で、25／50／75／100 % のプリセット付きです |
 

@@ -3,7 +3,7 @@ title: "Tutto quello che Skitch faceva nel 2011 e cosa fa iSkitch oggi"
 description: "Abbiamo recuperato dall'Internet Archive l'elenco originale delle funzioni di skitch.com e l'abbiamo confrontato riga per riga con iSkitch. Cosa abbiamo ricostruito, cosa lasciamo fuori di proposito e cosa manca ancora."
 lang: "it"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "L'elenco archiviato delle funzioni di skitch.com del 2011 accanto all'editor di iSkitch su macOS."
 tags: ["Skitch", "funzioni", "macOS"]
@@ -42,7 +42,7 @@ Quello che quella pagina non aveva: timer con conto alla rovescia, ripetere l'ul
 | Testo, frecce, forme, schizzi, tavoletta Wacom | Sì | 14 strumenti, 4 punte di freccia, 7 timbri |
 | Organizzare con tag e raccolte | No | Quello era il sito, non l'app |
 | Filigrana | No | Lo stiamo valutando |
-| Salvare in tif, gif, bmp, svg e pdf | In parte | PNG, JPG, TIFF, GIF, BMP e PDF. Niente SVG |
+| Salvare in tif, gif, bmp, svg e pdf | In parte | PNG, JPG, TIFF, GIF, BMP, WebP e PDF. Niente SVG |
 | Ombra, sfondo trasparente, tenere solo la cattura | In parte | Le catture di finestra arrivano con la loro ombra su sfondo trasparente; a un'immagine già fatta non si può aggiungere né l'una né l'altro |
 | Ridimensionare con misure o preimpostazioni | Sì | Immagine ▸ Ridimensiona immagine…, in pixel, con proporzioni bloccate e preimpostazioni al 25, 50, 75 e 100 % |
 

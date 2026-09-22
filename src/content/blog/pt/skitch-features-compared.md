@@ -3,7 +3,7 @@ title: "Tudo o que o Skitch fazia em 2011 e o que o iSkitch faz hoje"
 description: "Fomos buscar ao Internet Archive a lista original de funcionalidades do skitch.com e comparámo-la linha a linha com o iSkitch. O que reconstruímos, o que deixámos de fora de propósito e o que ainda falta."
 lang: "pt"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "A lista arquivada de funcionalidades do skitch.com de 2011 ao lado do editor do iSkitch no macOS."
 tags: ["Skitch", "funcionalidades", "macOS"]
@@ -42,7 +42,7 @@ O que aquela página não tinha: temporizador com contagem decrescente, repetir 
 | Texto, setas, formas, esboços, tablet Wacom | Sim | 14 ferramentas, 4 pontas de seta, 7 carimbos |
 | Organizar com etiquetas e coleções | Não | Isso era o site, não a aplicação |
 | Marca de água | Não | Está em estudo |
-| Guardar em tif, gif, bmp, svg e pdf | Em parte | PNG, JPG, TIFF, GIF, BMP e PDF. SVG não |
+| Guardar em tif, gif, bmp, svg e pdf | Em parte | PNG, JPG, TIFF, GIF, BMP, WebP e PDF. SVG não |
 | Sombra, fundo transparente, ficar só com a captura | Em parte | As capturas de janela saem com a sua sombra sobre fundo transparente; a uma imagem já feita não se pode acrescentar nenhuma das duas coisas |
 | Redimensionar com medidas ou predefinições | Sim | Imagem ▸ Redimensionar imagem…, em píxeis, com proporções bloqueadas e predefinições a 25, 50, 75 e 100 % |
 

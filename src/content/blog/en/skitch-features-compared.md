@@ -3,7 +3,7 @@ title: "Everything Skitch Could Do in 2011 — and What iSkitch Does Today"
 description: "We pulled the original skitch.com feature list out of the Internet Archive and checked it line by line against iSkitch. What we rebuilt, what we left out on purpose, and what's still missing."
 lang: "en"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "The archived skitch.com feature list from 2011 next to the iSkitch editor running on macOS."
 tags: ["Skitch", "features", "macOS"]
@@ -42,7 +42,7 @@ Things that page never had: a countdown timer, recapture-last-region, picking wh
 | Text, arrows, shapes, sketch, Wacom tablet | Yes | 14 tools, 4 arrowhead styles, 7 stamps |
 | Organise images with tags and sets | No | That was the website, not the app |
 | Watermark your images | No | Under consideration |
-| Save tif, gif, bmp, svg & pdf | Partly | PNG, JPG, TIFF, GIF, BMP and PDF. No SVG |
+| Save tif, gif, bmp, svg & pdf | Partly | PNG, JPG, TIFF, GIF, BMP, WebP and PDF. No SVG |
 | Add shadow, transparent background, wipe snap only | Partly | Window captures arrive with their shadow on a transparent background; neither can be added to an image afterwards |
 | Resize with presets or digits | Yes | Image ▸ Resize Image…, in pixels, proportions locked, with 25/50/75/100% presets |
 

@@ -177,11 +177,11 @@
       },
       {
         "q": "Where are my screenshots saved?",
-        "a": "Nowhere until you decide. iSkitch never saves silently: you choose the destination when you press Save or drag the image out of the window. In Settings ▸ Capture you can set a default folder and format (PNG, JPG, PDF or TIFF)."
+        "a": "Nowhere until you decide. iSkitch never saves silently: you choose the destination when you press Save or drag the image out of the window. In Settings ▸ Capture you can set a default folder and format (PNG, JPG, PDF, TIFF or WebP)."
       },
       {
         "q": "How do I share or export a capture?",
-        "a": "Click Share to use the native macOS share sheet (Mail, Messages, Notes, Slack, AirDrop and more), copy to the clipboard, drag the image straight into any app, or export to PNG, JPEG, PDF or TIFF."
+        "a": "Click Share to use the native macOS share sheet (Mail, Messages, Notes, Slack, AirDrop and more), copy to the clipboard, drag the image straight into any app, or export to PNG, JPEG, PDF, TIFF or WebP."
       },
       {
         "q": "Can I hide sensitive information?",
@@ -230,8 +230,8 @@
     "versions": [
       {
         "version": "1.9.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "September 22, 2026",
+        "comingSoon": false,
         "title": "WebP, quality where you save, and Resize in plain sight",
         "items": [
           {

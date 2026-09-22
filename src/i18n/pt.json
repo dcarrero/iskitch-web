@@ -173,11 +173,11 @@
       },
       {
         "q": "Onde são guardadas as minhas capturas?",
-        "a": "Em lado nenhum até decidir. O iSkitch nunca guarda em silêncio: escolhe o destino ao carregar em Guardar ou ao arrastar a imagem para fora da janela. Em Definições ▸ Captura pode definir uma pasta e um formato predefinidos (PNG, JPG, PDF ou TIFF)."
+        "a": "Em lado nenhum até decidir. O iSkitch nunca guarda em silêncio: escolhe o destino ao carregar em Guardar ou ao arrastar a imagem para fora da janela. Em Definições ▸ Captura pode definir uma pasta e um formato predefinidos (PNG, JPG, PDF, TIFF ou WebP)."
       },
       {
         "q": "Como partilho ou exporto uma captura?",
-        "a": "Toque em Partilhar para usar a folha de partilha nativa do macOS (Mail, Mensagens, Notas, Slack, AirDrop e mais), copie para a área de transferência, arraste a imagem diretamente para qualquer app, ou exporte para PNG, JPEG, PDF ou TIFF."
+        "a": "Toque em Partilhar para usar a folha de partilha nativa do macOS (Mail, Mensagens, Notas, Slack, AirDrop e mais), copie para a área de transferência, arraste a imagem diretamente para qualquer app, ou exporte para PNG, JPEG, PDF, TIFF ou WebP."
       },
       {
         "q": "Posso esconder informação sensível?",
@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.9.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "22 de setembro de 2026",
+        "comingSoon": false,
         "title": "WebP, a qualidade onde se guarda, e Redimensionar à vista",
         "items": [
           {

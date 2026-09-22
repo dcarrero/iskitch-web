@@ -173,11 +173,11 @@
       },
       {
         "q": "Où sont enregistrées mes captures ?",
-        "a": "Nulle part jusqu’à ce que vous décidiez. iSkitch n’enregistre jamais en silence : vous choisissez la destination en appuyant sur Enregistrer ou en glissant l’image hors de la fenêtre. Dans Réglages ▸ Capture, vous pouvez définir un dossier et un format par défaut (PNG, JPG, PDF ou TIFF)."
+        "a": "Nulle part jusqu’à ce que vous décidiez. iSkitch n’enregistre jamais en silence : vous choisissez la destination en appuyant sur Enregistrer ou en glissant l’image hors de la fenêtre. Dans Réglages ▸ Capture, vous pouvez définir un dossier et un format par défaut (PNG, JPG, PDF, TIFF ou WebP)."
       },
       {
         "q": "Comment partager ou exporter une capture ?",
-        "a": "Cliquez sur Partager pour utiliser la feuille de partage native de macOS (Mail, Messages, Notes, Slack, AirDrop et plus), copiez dans le presse-papiers, glissez l’image directement dans n’importe quelle app, ou exportez en PNG, JPEG, PDF ou TIFF."
+        "a": "Cliquez sur Partager pour utiliser la feuille de partage native de macOS (Mail, Messages, Notes, Slack, AirDrop et plus), copiez dans le presse-papiers, glissez l’image directement dans n’importe quelle app, ou exportez en PNG, JPEG, PDF, TIFF ou WebP."
       },
       {
         "q": "Puis-je masquer des informations sensibles ?",
@@ -226,8 +226,8 @@
     "versions": [
       {
         "version": "1.9.0",
-        "date": "",
-        "comingSoon": true,
+        "date": "22 septembre 2026",
+        "comingSoon": false,
         "title": "WebP, la qualité là où l'on enregistre, et Redimensionner bien en vue",
         "items": [
           {

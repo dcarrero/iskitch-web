@@ -3,7 +3,7 @@ title: "2011년 Skitch가 할 수 있던 모든 것, 그리고 오늘의 iSkitch
 description: "Internet Archive에서 skitch.com의 초기 기능 목록을 꺼내 iSkitch와 한 줄씩 대조했습니다. 무엇을 되살렸고, 무엇을 일부러 만들지 않았으며, 무엇이 아직 없는지."
 lang: "ko"
 pubDate: 2026-08-25
-updatedDate: 2026-08-27
+updatedDate: 2026-09-22
 order: 5
 heroAlt: "보관된 2011년 skitch.com 기능 목록과 macOS에서 실행 중인 iSkitch 편집기."
 tags: ["Skitch", "기능", "macOS"]
@@ -42,7 +42,7 @@ related: ["skitch-alternative-macos", "how-to-annotate-screenshots-on-mac"]
 | 텍스트, 화살표, 도형, 스케치, Wacom 태블릿 | 있음 | 도구 14가지, 화살촉 4종, 스탬프 7종 |
 | 태그와 세트로 정리 | 없음 | 그건 웹사이트 기능이었습니다 |
 | 워터마크 | 없음 | 검토 중입니다 |
-| tif, gif, bmp, svg, pdf로 저장 | 일부 | PNG, JPG, TIFF, GIF, BMP, PDF. SVG는 없습니다 |
+| tif, gif, bmp, svg, pdf로 저장 | 일부 | PNG, JPG, TIFF, GIF, BMP, WebP, PDF. SVG는 없습니다 |
 | 그림자, 배경 투명화, 캡처 부분만 남기기 | 일부 | 창 캡처는 그림자와 투명한 배경으로 저장됩니다. 이미 만든 이미지에 나중에 더할 수는 없습니다 |
 | 수치나 사전 설정으로 크기 변경 | 있음 | 이미지 ▸ 이미지 크기 조절…에서 픽셀 단위로 지정합니다. 비율은 고정되고 25·50·75·100 % 사전 설정이 있습니다 |
 
