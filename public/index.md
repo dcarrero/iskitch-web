@@ -19,7 +19,7 @@ It's built in SwiftUI + AppKit by [Color Vivo Internet, S.L.](https://colorvivo.
 - **Capture anything.** Region (⌥⌘4), window or full screen. Opens straight in the editor.
 - **14 annotation tools.** Tapered arrows, text with system fonts, shapes, highlighter, pen, stamps and more.
 - **Hide sensitive info.** Pixelate, blur, solid block or stripes — reliably unreadable.
-- **Native sharing.** macOS share sheet, drag-out to any app, copy or save as PNG/JPG/PDF.
+- **Native sharing.** macOS share sheet, drag-out to any app, copy or save as PNG/JPG/PDF/WebP.
 - **Spotlight & crop.** Focus attention on what matters. Crop with aspect ratio presets.
 - **Privacy first.** No accounts. No tracking. No data leaves your Mac.
 
@@ -30,6 +30,10 @@ Select · Arrow · Text · Rectangle · Ellipse · Line · Highlight · Pixelate
 ## Download
 
 Download iSkitch on the Mac App Store: https://apps.apple.com/app/iskitch/id6773733499 — a one-time purchase of $9.99. No subscription, no accounts.
+
+## Press
+
+- appgefahren.de (German), 16 September 2026 — "iSkitch für macOS: Der kleine Screenshot-Helfer mit Skitch-DNA": https://www.appgefahren.de/iskitch-fuer-macos-der-kleine-screenshot-helfer-mit-skitch-dna-405507.html
 
 ## Contact
 

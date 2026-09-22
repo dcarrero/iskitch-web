@@ -119,7 +119,8 @@
       "releases": "지금까지 {count}개의 릴리스",
       "human": "iSkitch는 David 한 사람이 만듭니다. 지원 메일에도 같은 사람이 직접 답장합니다.",
       "refund": "구매는 Mac App Store에서 이루어지므로 환불은 Apple이 처리합니다.",
-      "refund_link": "환불 요청하기"
+      "refund_link": "환불 요청하기",
+      "press_label": "언론 보도: "
     }
   },
   "beta": {

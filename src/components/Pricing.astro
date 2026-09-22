@@ -1,5 +1,6 @@
 ---
 import AppStoreBadge from "./AppStoreBadge.astro";
+import { PRESS, formatPressDate } from "./press";
 interface Props { t: any }
 const { t } = Astro.props as Props;
 const p = t.pricing;
@@ -51,6 +52,12 @@ const supportEmail = "hello@iskitch.com";
         <p class="trust-line">
           {trust.refund} <a class="trust-link" href="https://reportaproblem.apple.com" target="_blank" rel="noopener">{trust.refund_link}</a>
         </p>
+        {PRESS.map((m) => (
+          <p class="trust-line">
+            {trust.press_label}<a class="trust-link" href={m.url} target="_blank" rel="noopener" hreflang={m.lang}>{m.outlet}</a>
+            {" — "}<q lang={m.lang}>{m.title}</q>{" "}({m.byline ? `${m.byline}, ` : ""}{formatPressDate(m.date, t.lang)})
+          </p>
+        ))}
       </div>
     )}
   </div>
