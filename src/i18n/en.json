@@ -234,6 +234,38 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.9.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "One shortcut for all three capture modes, and zoom with ⌘ + scroll",
+        "items": [
+          {
+            "type": "new",
+            "text": "A mode bar while capturing, like the one from ⇧⌘5: Region · Window · Full Screen and Cancel, at the bottom of the screen. Switch with the mouse or with the keys 1, 2 and 3, so a single shortcut (⌥⌘4 or ⌥⌘5) reaches all three modes. The per-mode shortcuts are still there."
+          },
+          {
+            "type": "new",
+            "text": "Zoom with ⌘ + the mouse wheel, and with the trackpad pinch. Over the canvas, ⌘ + wheel zooms in and out in the same steps as ⌘+ and ⌘−; on the trackpad the zoom is continuous. Without ⌘, the wheel still scrolls the image."
+          },
+          {
+            "type": "fixed",
+            "text": "A capture opened at 51 % even when it fitted at 100 %. The initial zoom was worked out during the editor's first layout pass, while the window was still at its 800x600 minimum, and stayed locked there. It is now decided with the real window size: 100 % when the image fits, scaled down only when it doesn't. The bug dates back to 1.4.0."
+          },
+          {
+            "type": "fixed",
+            "text": "The open editor covered what you were about to capture. With a capture already open, starting another one brought the editor to the front, on top of the window you wanted. The capture overlay now becomes the key window before the app activates, and the editor stays where it was."
+          },
+          {
+            "type": "fixed",
+            "text": "Without Screen Recording permission, a capture no longer opens the overlay. The system dialog came up underneath the full-screen overlay, which took all the clicks, so the only way out was to cancel. iSkitch now tries a 2x2 px test capture first; if it fails, the system dialog appears on a clear screen and the Welcome and permissions screen explains the restart."
+          },
+          {
+            "type": "improved",
+            "text": "A click without dragging no longer closes the capture. It stays open so you can pick another mode in the bar; Escape or Cancel still exits."
+          }
+        ]
+      },
+      {
         "version": "1.9.0",
         "date": "September 22, 2026",
         "comingSoon": false,

@@ -230,6 +230,38 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
+        "version": "1.9.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Una scorciatoia per i tre modi di cattura, e zoom con ⌘ + rotellina",
+        "items": [
+          {
+            "type": "new",
+            "text": "Una barra dei modi durante la cattura, come quella di ⇧⌘5: Area · Finestra · Schermo intero e Annulla, in basso sullo schermo. Si cambia con il mouse o con i tasti 1, 2 e 3: così una sola scorciatoia (⌥⌘4 o ⌥⌘5) raggiunge tutti e tre i modi. Le scorciatoie dei singoli modi restano al loro posto."
+          },
+          {
+            "type": "new",
+            "text": "Zoom con ⌘ + rotellina del mouse e con il pizzico sul trackpad. Sul quadro, ⌘ + rotellina ingrandisce e riduce con gli stessi passi di ⌘+ e ⌘−; sul trackpad lo zoom è continuo. Senza ⌘, la rotellina continua a far scorrere l'immagine."
+          },
+          {
+            "type": "fixed",
+            "text": "Una cattura si apriva al 51 % anche quando ci stava al 100 %. Lo zoom iniziale veniva calcolato nella prima passata di layout dell'editor, con la finestra ancora al minimo di 800x600, e lì restava bloccato. Ora lo decide la dimensione reale della finestra: 100 % se l'immagine ci sta, ridotta solo se non ci sta. Il bug risaliva alla 1.4.0."
+          },
+          {
+            "type": "fixed",
+            "text": "L'editor aperto copriva quello che stavi per catturare. Con una cattura già aperta, avviarne un'altra portava l'editor in primo piano, sopra la finestra che volevi catturare. Ora il livello di cattura diventa la finestra attiva prima che l'app passi in primo piano, e l'editor resta dov'era."
+          },
+          {
+            "type": "fixed",
+            "text": "Senza il permesso di Registrazione schermo, la cattura non apre più il livello. La finestra di dialogo del sistema usciva sotto il livello a schermo intero, che si prendeva tutti i clic: si poteva solo annullare. Ora iSkitch prova prima una cattura di test di 2x2 px; se fallisce, la finestra del sistema compare a schermo libero e la schermata di Benvenuto e permessi spiega il riavvio."
+          },
+          {
+            "type": "improved",
+            "text": "Un clic senza trascinare non chiude più la cattura. Resta aperta per scegliere un altro modo nella barra; per uscire, Esc o Annulla."
+          }
+        ]
+      },
+      {
         "version": "1.9.0",
         "date": "22 settembre 2026",
         "comingSoon": false,

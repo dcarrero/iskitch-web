@@ -230,6 +230,38 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.9.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Um atalho para os três modos de captura, e zoom com ⌘ + roda",
+        "items": [
+          {
+            "type": "new",
+            "text": "Uma barra de modos ao capturar, como a de ⇧⌘5: Região · Janela · Ecrã completo e Cancelar, na parte de baixo do ecrã. Muda-se com o rato ou com as teclas 1, 2 e 3, de forma que um só atalho (⌥⌘4 ou ⌥⌘5) chega aos três modos. Os atalhos de cada modo continuam lá."
+          },
+          {
+            "type": "new",
+            "text": "Zoom com ⌘ + roda do rato e com o gesto de pinça no trackpad. Sobre a tela, ⌘ + roda amplia e reduz nos mesmos passos que ⌘+ e ⌘−; no trackpad o zoom é contínuo. Sem ⌘, a roda continua a deslocar a imagem."
+          },
+          {
+            "type": "fixed",
+            "text": "Uma captura abria a 51 % mesmo cabendo a 100 %. O zoom inicial era calculado na primeira passagem de disposição do editor, com a janela ainda no mínimo de 800x600, e ficava ali preso. Agora é decidido com o tamanho real da janela: 100 % se a imagem couber, e reduzida só se não couber. Vinha da 1.4.0."
+          },
+          {
+            "type": "fixed",
+            "text": "O editor aberto tapava o que ia capturar. Com uma captura já aberta, iniciar outra trazia o editor para a frente, por cima da janela que queria capturar. Agora a camada de captura passa a ser a janela com o foco antes de a aplicação ficar activa, e o editor fica onde estava."
+          },
+          {
+            "type": "fixed",
+            "text": "Sem permissão de Gravação do ecrã, a captura já não abre a camada. A caixa de diálogo do sistema surgia por baixo da camada em ecrã completo, que ficava com todos os cliques: só se podia cancelar. Agora o iSkitch faz antes uma captura de teste de 2x2 px; se falhar, a caixa do sistema surge com o ecrã livre e o ecrã de Boas-vindas e permissões explica o reinício."
+          },
+          {
+            "type": "improved",
+            "text": "Um clique sem arrastar já não fecha a captura. Fica aberta para escolher outro modo na barra; para sair, Escape ou Cancelar."
+          }
+        ]
+      },
+      {
         "version": "1.9.0",
         "date": "22 de setembro de 2026",
         "comingSoon": false,

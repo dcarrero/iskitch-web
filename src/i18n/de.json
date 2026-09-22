@@ -230,6 +230,38 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.9.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Ein Kurzbefehl für alle drei Aufnahmemodi, und Zoomen mit ⌘ + Mausrad",
+        "items": [
+          {
+            "type": "new",
+            "text": "Eine Modusleiste während der Aufnahme, wie die von ⇧⌘5: Bereich · Fenster · Vollbild und Abbrechen, am unteren Bildschirmrand. Gewechselt wird mit der Maus oder mit den Tasten 1, 2 und 3 — eine einzige Tastenkombination (⌥⌘4 oder ⌥⌘5) erreicht also alle drei Modi. Die Kurzbefehle der einzelnen Modi bleiben erhalten."
+          },
+          {
+            "type": "new",
+            "text": "Zoomen mit ⌘ + Mausrad und mit der Pinch-Geste auf dem Trackpad. Über der Arbeitsfläche vergrößert und verkleinert ⌘ + Mausrad in denselben Schritten wie ⌘+ und ⌘−; auf dem Trackpad ist der Zoom stufenlos. Ohne ⌘ scrollt das Mausrad weiterhin das Bild."
+          },
+          {
+            "type": "fixed",
+            "text": "Eine Aufnahme öffnete sich mit 51 %, obwohl sie mit 100 % gepasst hätte. Der Anfangszoom wurde im ersten Layoutdurchlauf des Editors berechnet, als das Fenster noch auf seinem Minimum von 800x600 stand, und blieb dort hängen. Jetzt entscheidet ihn die tatsächliche Fenstergröße: 100 %, wenn das Bild passt, verkleinert nur, wenn nicht. Der Fehler stammte aus 1.4.0."
+          },
+          {
+            "type": "fixed",
+            "text": "Der geöffnete Editor verdeckte das, was Sie aufnehmen wollten. War bereits eine Aufnahme geöffnet, holte die nächste den Editor nach vorn, über das gewünschte Fenster. Die Aufnahmeebene wird jetzt zum aktiven Fenster, bevor die App in den Vordergrund kommt, und der Editor bleibt, wo er war."
+          },
+          {
+            "type": "fixed",
+            "text": "Ohne die Berechtigung „Bildschirmaufnahme“ öffnet eine Aufnahme die Ebene nicht mehr. Der Systemdialog erschien unter der bildschirmfüllenden Ebene, die alle Klicks abfing: Es blieb nur Abbrechen. iSkitch versucht jetzt zuerst eine Testaufnahme von 2x2 px; schlägt sie fehl, erscheint der Systemdialog auf freiem Bildschirm, und das Fenster „Willkommen und Berechtigungen“ erklärt den Neustart."
+          },
+          {
+            "type": "improved",
+            "text": "Ein Klick ohne Ziehen schließt die Aufnahme nicht mehr. Sie bleibt offen, damit Sie in der Leiste einen anderen Modus wählen können; zum Beenden Esc oder Abbrechen."
+          }
+        ]
+      },
+      {
         "version": "1.9.0",
         "date": "22. September 2026",
         "comingSoon": false,

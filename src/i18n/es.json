@@ -234,6 +234,38 @@
     "lead": "Todas las versiones de iSkitch, de la más reciente a la primera. Las actualizaciones son gratuitas para quien ya tiene la app.",
     "versions": [
       {
+        "version": "1.9.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Un atajo para los tres modos de captura, y zoom con ⌘ + rueda",
+        "items": [
+          {
+            "type": "new",
+            "text": "Una barra de modos al capturar, como la de ⇧⌘5: Región · Ventana · Pantalla completa y Cancelar, en la parte baja de la pantalla. Se cambia con el ratón o con las teclas 1, 2 y 3, así que con un solo atajo (⌥⌘4 o ⌥⌘5) se llega a los tres modos. Los atajos de cada modo siguen ahí."
+          },
+          {
+            "type": "new",
+            "text": "Zoom con ⌘ + rueda del ratón y con la pinza del trackpad. Sobre el lienzo, ⌘ + rueda amplía y reduce en los mismos pasos que ⌘+ y ⌘−; en el trackpad el zoom es continuo. Sin ⌘, la rueda sigue desplazando la imagen."
+          },
+          {
+            "type": "fixed",
+            "text": "Una captura abría al 51 % aunque cupiera al 100 %. El zoom inicial se calculaba en la primera pasada de layout del editor, con la ventana todavía en su mínimo de 800x600, y ahí se quedaba clavado. Ahora lo decide el tamaño real de la ventana: 100 % si la imagen cabe, y reducida solo si no cabe. Venía de la 1.4.0."
+          },
+          {
+            "type": "fixed",
+            "text": "El editor abierto tapaba lo que ibas a capturar. Con una captura ya abierta, lanzar otra traía el editor al frente, encima de la ventana que querías capturar. Ahora el overlay de captura pasa a ser la ventana con el foco antes de que la app se active, y el editor se queda donde estaba."
+          },
+          {
+            "type": "fixed",
+            "text": "Sin permiso de Grabación de pantalla, la captura ya no abre el overlay. El diálogo del sistema salía debajo del overlay a pantalla completa, que se quedaba con todos los clics: solo se podía cancelar. Ahora iSkitch hace antes una captura de prueba de 2x2 px; si falla, el diálogo del sistema sale con la pantalla libre y la pantalla de Bienvenida y permisos explica el reinicio."
+          },
+          {
+            "type": "improved",
+            "text": "Un clic sin arrastrar ya no cierra la captura. Se queda abierta para elegir otro modo en la barra; para salir, Escape o Cancelar."
+          }
+        ]
+      },
+      {
         "version": "1.9.0",
         "date": "22 de septiembre de 2026",
         "comingSoon": false,

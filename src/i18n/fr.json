@@ -230,6 +230,38 @@
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
+        "version": "1.9.1",
+        "date": "",
+        "comingSoon": true,
+        "title": "Un raccourci pour les trois modes de capture, et le zoom avec ⌘ + molette",
+        "items": [
+          {
+            "type": "new",
+            "text": "Une barre de modes pendant la capture, comme celle de ⇧⌘5 : Zone · Fenêtre · Plein écran et Annuler, en bas de l'écran. On change à la souris ou avec les touches 1, 2 et 3 : un seul raccourci (⌥⌘4 ou ⌥⌘5) donne accès aux trois modes. Les raccourcis propres à chaque mode restent en place."
+          },
+          {
+            "type": "new",
+            "text": "Zoom avec ⌘ + molette de la souris et avec le pincement du trackpad. Sur le canevas, ⌘ + molette agrandit et réduit par les mêmes paliers que ⌘+ et ⌘− ; sur le trackpad, le zoom est continu. Sans ⌘, la molette fait toujours défiler l'image."
+          },
+          {
+            "type": "fixed",
+            "text": "Une capture s'ouvrait à 51 % alors qu'elle tenait à 100 %. Le zoom initial était calculé lors de la première passe de mise en page de l'éditeur, quand la fenêtre était encore à son minimum de 800x600, et il restait figé là. Il est désormais déterminé avec la taille réelle de la fenêtre : 100 % si l'image tient, réduite seulement si elle déborde. Le bug remontait à la 1.4.0."
+          },
+          {
+            "type": "fixed",
+            "text": "L'éditeur ouvert masquait ce que vous alliez capturer. Avec une capture déjà ouverte, en lancer une autre ramenait l'éditeur au premier plan, par-dessus la fenêtre visée. La surcouche de capture devient maintenant la fenêtre active avant que l'app ne passe au premier plan, et l'éditeur reste où il était."
+          },
+          {
+            "type": "fixed",
+            "text": "Sans l'autorisation Enregistrement de l'écran, la capture n'ouvre plus la surcouche. La boîte de dialogue du système apparaissait sous la surcouche plein écran, qui captait tous les clics : il ne restait qu'à annuler. iSkitch tente désormais d'abord une capture test de 2x2 px ; si elle échoue, la boîte de dialogue s'affiche sur un écran dégagé et l'écran de Bienvenue et autorisations explique le redémarrage."
+          },
+          {
+            "type": "improved",
+            "text": "Un clic sans glisser ne ferme plus la capture. Elle reste ouverte pour choisir un autre mode dans la barre ; pour sortir, Échap ou Annuler."
+          }
+        ]
+      },
+      {
         "version": "1.9.0",
         "date": "22 septembre 2026",
         "comingSoon": false,
