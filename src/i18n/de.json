@@ -120,7 +120,7 @@
       "human": "Hinter iSkitch steht eine Person, David — und dieselbe Person beantwortet jede Support-Mail.",
       "refund": "Gekauft wird im Mac App Store, Rückerstattungen wickelt also Apple ab.",
       "refund_link": "Rückerstattung anfordern",
-      "press_label": "In der Presse: "
+      "press_label": "In der Presse"
     }
   },
   "beta": {
@@ -214,6 +214,10 @@
       {
         "text": "Anleitungen",
         "href": "/de/blog"
+      },
+      {
+        "text": "Auf PeerPush abstimmen",
+        "href": "https://peerpush.com/p/iskitch"
       },
       {
         "text": "Color Vivo",
@@ -615,10 +619,6 @@
       "fixed": "Behoben"
     },
     "comingSoon": "Demnächst"
-  },
-  "peerpush": {
-    "label": "Gib uns deine Stimme auf",
-    "aria": "Für iSkitch auf PeerPush abstimmen (öffnet einen neuen Tab)"
   },
   "a11y": {
     "skip_to_content": "Zum Inhalt springen"

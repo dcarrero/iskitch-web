@@ -52,12 +52,19 @@ const supportEmail = "hello@iskitch.com";
         <p class="trust-line">
           {trust.refund} <a class="trust-link" href="https://reportaproblem.apple.com" target="_blank" rel="noopener">{trust.refund_link}</a>
         </p>
-        {PRESS.map((m) => (
-          <p class="trust-line">
-            {trust.press_label}<a class="trust-link" href={m.url} target="_blank" rel="noopener" hreflang={m.lang}>{m.outlet}</a>
-            {" — "}<q lang={m.lang}>{m.title}</q>{" "}({m.byline ? `${m.byline}, ` : ""}{formatPressDate(m.date, t.lang)})
-          </p>
-        ))}
+        {PRESS.length > 0 && (
+          <div class="trust-press">
+            <p class="trust-line trust-press-label" id="press-label">{trust.press_label}</p>
+            <ul class="trust-press-list" aria-labelledby="press-label">
+              {PRESS.map((m) => (
+                <li class="trust-line">
+                  <a class="trust-link" href={m.url} target="_blank" rel="noopener" hreflang={m.lang}>{m.outlet}</a>
+                  {" — "}<q lang={m.lang}>{m.title}</q>{" "}<span class="trust-press-meta">({m.byline ? `${m.byline}, ` : ""}{formatPressDate(m.date, t.lang)})</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     )}
   </div>

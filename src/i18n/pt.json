@@ -120,7 +120,7 @@
       "human": "Por trás do iSkitch está uma pessoa, o David — e é a mesma que responde a todos os e-mails de apoio.",
       "refund": "A compra é feita na Mac App Store, por isso os reembolsos são tratados pela Apple.",
       "refund_link": "Pedir um reembolso",
-      "press_label": "Na imprensa: "
+      "press_label": "Na imprensa"
     }
   },
   "beta": {
@@ -214,6 +214,10 @@
       {
         "text": "Guias",
         "href": "/pt/blog"
+      },
+      {
+        "text": "Votar no PeerPush",
+        "href": "https://peerpush.com/p/iskitch"
       },
       {
         "text": "Color Vivo",
@@ -615,10 +619,6 @@
       "fixed": "Corrigido"
     },
     "comingSoon": "Em breve"
-  },
-  "peerpush": {
-    "label": "Vota em nós no",
-    "aria": "Vota em iSkitch no PeerPush (abre num novo separador)"
   },
   "a11y": {
     "skip_to_content": "Ir para o conteúdo"

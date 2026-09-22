@@ -120,7 +120,7 @@
       "human": "iSkitch는 David 한 사람이 만듭니다. 지원 메일에도 같은 사람이 직접 답장합니다.",
       "refund": "구매는 Mac App Store에서 이루어지므로 환불은 Apple이 처리합니다.",
       "refund_link": "환불 요청하기",
-      "press_label": "언론 보도: "
+      "press_label": "언론 보도"
     }
   },
   "beta": {
@@ -214,6 +214,10 @@
       {
         "text": "가이드",
         "href": "/ko/blog"
+      },
+      {
+        "text": "PeerPush에서 투표",
+        "href": "https://peerpush.com/p/iskitch"
       },
       {
         "text": "Color Vivo",
@@ -615,10 +619,6 @@
       "fixed": "수정"
     },
     "comingSoon": "곧 출시"
-  },
-  "peerpush": {
-    "label": "PeerPush에서 응원해 주세요",
-    "aria": "PeerPush에서 iSkitch에 투표하기(새 탭에서 열림)"
   },
   "a11y": {
     "skip_to_content": "본문으로 건너뛰기"

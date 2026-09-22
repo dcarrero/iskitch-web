@@ -34,6 +34,8 @@ Download iSkitch on the Mac App Store: https://apps.apple.com/app/iskitch/id6773
 ## Press
 
 - appgefahren.de (German), 16 September 2026 — "iSkitch für macOS: Der kleine Screenshot-Helfer mit Skitch-DNA": https://www.appgefahren.de/iskitch-fuer-macos-der-kleine-screenshot-helfer-mit-skitch-dna-405507.html
+- programacion.net (Spanish), 27 June 2026 — "iSkitch: captura, anota y comparte pantallazos en macOS con un atajo de teclado": https://programacion.net/noticia/iskitch-captura-anota-y-comparte-pantallazos-en-macos-con-un-atajo-de-teclado_2274
+- incubaweb.com (Spanish), 28 May 2026 — "iSkitch recupera el espíritu de Skitch con una app nativa para macOS": https://incubaweb.com/iskitch-recupera-el-espiritu-de-skitch-con-una-app-nativa-para-macos/
 
 ## Contact
 

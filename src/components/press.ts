@@ -14,6 +14,7 @@ export type PressMention = {
 };
 
 export const PRESS: PressMention[] = [
+  // Más recientes primero.
   {
     outlet: "appgefahren.de",
     title: "iSkitch für macOS: Der kleine Screenshot-Helfer mit Skitch-DNA",
@@ -21,6 +22,20 @@ export const PRESS: PressMention[] = [
     date: "2026-09-16",
     lang: "de",
     byline: "Mel",
+  },
+  {
+    outlet: "programacion.net",
+    title: "iSkitch: captura, anota y comparte pantallazos en macOS con un atajo de teclado",
+    url: "https://programacion.net/noticia/iskitch-captura-anota-y-comparte-pantallazos-en-macos-con-un-atajo-de-teclado_2274",
+    date: "2026-06-27",
+    lang: "es",
+  },
+  {
+    outlet: "incubaweb.com",
+    title: "iSkitch recupera el espíritu de Skitch con una app nativa para macOS",
+    url: "https://incubaweb.com/iskitch-recupera-el-espiritu-de-skitch-con-una-app-nativa-para-macos/",
+    date: "2026-05-28",
+    lang: "es",
   },
 ];
 

@@ -124,7 +124,7 @@
       "human": "Behind iSkitch there's one person, David — and the same person answers every support email.",
       "refund": "You buy through the Mac App Store, so refunds are handled by Apple.",
       "refund_link": "Request a refund",
-      "press_label": "In the press: "
+      "press_label": "In the press"
     }
   },
   "beta": {
@@ -218,6 +218,10 @@
       {
         "text": "Guides",
         "href": "/blog"
+      },
+      {
+        "text": "Vote on PeerPush",
+        "href": "https://peerpush.com/p/iskitch"
       },
       {
         "text": "Color Vivo",
@@ -619,10 +623,6 @@
       "fixed": "Fixed"
     },
     "comingSoon": "Coming soon"
-  },
-  "peerpush": {
-    "label": "Vote for us on",
-    "aria": "Vote for iSkitch on PeerPush (opens in a new tab)"
   },
   "a11y": {
     "skip_to_content": "Skip to content"

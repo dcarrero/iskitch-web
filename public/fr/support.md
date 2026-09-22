@@ -21,7 +21,7 @@ Ouvrez *Réglages Système ▸ Confidentialité et sécurité ▸ Enregistrement
 
 ### Où sont enregistrées mes captures ?
 
-iSkitch n'enregistre jamais en silence. Vous décidez où va chaque capture en appuyant sur **Enregistrer…** (ou en faisant glisser l'image hors de la fenêtre). Dans *iSkitch ▸ Réglages ▸ Capture*, vous pouvez définir un **dossier par défaut** et un **format par défaut** (PNG/JPG/PDF/TIFF).
+iSkitch n'enregistre jamais en silence. Vous décidez où va chaque capture en appuyant sur **Enregistrer…** (ou en faisant glisser l'image hors de la fenêtre). Dans *iSkitch ▸ Réglages ▸ Capture*, vous pouvez définir un **dossier par défaut** et un **format par défaut** (PNG/JPG/PDF/TIFF/WebP).
 
 ### Puis-je changer le raccourci de capture ?
 

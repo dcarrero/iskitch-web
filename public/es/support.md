@@ -21,7 +21,7 @@ Abre *Ajustes del Sistema ▸ Privacidad y seguridad ▸ Grabación de pantalla*
 
 ### ¿Dónde se guardan mis capturas?
 
-iSkitch nunca guarda en silencio. Tú decides el destino de cada captura al pulsar **Guardar…** (o al arrastrar la imagen fuera de la ventana). En *iSkitch ▸ Ajustes ▸ Captura* puedes fijar una **carpeta por defecto** y un **formato por defecto** (PNG/JPG/PDF/TIFF) para que el diálogo se abra ya donde quieres.
+iSkitch nunca guarda en silencio. Tú decides el destino de cada captura al pulsar **Guardar…** (o al arrastrar la imagen fuera de la ventana). En *iSkitch ▸ Ajustes ▸ Captura* puedes fijar una **carpeta por defecto** y un **formato por defecto** (PNG/JPG/PDF/TIFF/WebP) para que el diálogo se abra ya donde quieres.
 
 ### ¿Puedo cambiar el atajo de captura?
 
