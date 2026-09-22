@@ -236,7 +236,7 @@
       {
         "version": "1.9.1",
         "date": "28 de septiembre de 2026",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "Un atajo para los tres modos de captura, y zoom con ⌘ + rueda",
         "items": [
           {

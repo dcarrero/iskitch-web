@@ -232,7 +232,7 @@
       {
         "version": "1.9.1",
         "date": "28. September 2026",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "Ein Kurzbefehl für alle drei Aufnahmemodi, und Zoomen mit ⌘ + Mausrad",
         "items": [
           {

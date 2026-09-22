@@ -232,7 +232,7 @@
       {
         "version": "1.9.1",
         "date": "28 septembre 2026",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "Un raccourci pour les trois modes de capture, et le zoom avec ⌘ + molette",
         "items": [
           {

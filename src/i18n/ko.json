@@ -232,7 +232,7 @@
       {
         "version": "1.9.1",
         "date": "2026년 9월 28일",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "단축키 하나로 세 가지 캡처 모드, 그리고 ⌘ + 휠로 확대·축소",
         "items": [
           {

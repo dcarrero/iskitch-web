@@ -236,7 +236,7 @@
       {
         "version": "1.9.1",
         "date": "September 28, 2026",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "One shortcut for all three capture modes, and zoom with ⌘ + scroll",
         "items": [
           {
