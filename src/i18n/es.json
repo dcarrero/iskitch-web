@@ -234,6 +234,34 @@
     "lead": "Todas las versiones de iSkitch, de la más reciente a la primera. Las actualizaciones son gratuitas para quien ya tiene la app.",
     "versions": [
       {
+        "version": "1.9.2",
+        "date": "",
+        "comingSoon": true,
+        "title": "La opacidad del resaltador, y un pixelado que de verdad oculta",
+        "items": [
+          {
+            "type": "new",
+            "text": "La opacidad del resaltador se regula, del 10 al 100 %. Un deslizador y una casilla de porcentaje en la barra de la herramienta, con una muestra del resultado. Se guarda en cada resaltado y se recuerda para el siguiente; el 45 % sigue siendo el valor por defecto, así que nada cambia si no lo tocas."
+          },
+          {
+            "type": "new",
+            "text": "Con Seleccionar se cambia el estilo de lo ya dibujado. Selecciona una flecha, un resaltado o una zona pixelada y la barra muestra sus propias opciones y valores: cambia su color, grosor, opacidad o intensidad y se le aplica a ese elemento. Los textos muestran ahora su tamaño y su negrita o cursiva, no los de la herramienta."
+          },
+          {
+            "type": "fixed",
+            "text": "El pixelado podía dejar leer números. Cada bloque tomaba un solo píxel de su centro en vez de la media, y en una línea de texto los bloques medían unos 3 pt de alto. Ahora cada bloque es la media real de lo que tapa, una línea de texto queda en dos o tres bloques de alto incluso con la intensidad al mínimo, y un ruido leve en cada bloque frena las herramientas que reconstruyen texto pixelado probando candidatos. Tampoco salen ya rayas en los bordes. Para contraseñas, lo seguro sigue siendo «Bloque», y así lo dice el tooltip."
+          },
+          {
+            "type": "fixed",
+            "text": "La intensidad del pixelado no llegaba a las zonas nuevas. El deslizador solo cambiaba la seleccionada; las nuevas salían siempre a 1x. Venía de la 1.8.0."
+          },
+          {
+            "type": "fixed",
+            "text": "Deshacer un cambio de estilo borraba el elemento. Cambiar el color o el grosor de algo recién dibujado no guardaba paso en el historial, así que ⌘Z volvía a antes de que existiera. Ahora ⌘Z deshace solo el cambio de estilo, y un arrastre entero de un deslizador cuenta como un paso."
+          }
+        ]
+      },
+      {
         "version": "1.9.1",
         "date": "28 de septiembre de 2026",
         "comingSoon": false,

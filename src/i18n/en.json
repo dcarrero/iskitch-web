@@ -234,6 +234,34 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.9.2",
+        "date": "",
+        "comingSoon": true,
+        "title": "Highlighter opacity, and pixelation that really hides",
+        "items": [
+          {
+            "type": "new",
+            "text": "Adjustable highlighter opacity, from 10 to 100 %. A slider and a percentage box in the tool bar, with a preview swatch. It's saved with each highlight and remembered for the next one; 45 % is still the default, so nothing changes unless you touch it."
+          },
+          {
+            "type": "new",
+            "text": "Restyle what's already drawn with the Select tool. Select an arrow, a highlight or a pixelated area and the bar shows that item's own options and values: change its colour, width, opacity or strength and it applies to that item. Text now shows its own size and bold or italic, not the tool's."
+          },
+          {
+            "type": "fixed",
+            "text": "Pixelation could leave numbers readable. Each block took a single pixel from its centre instead of the average, and on a line of text the blocks were about 3 pt high. Each block is now the true average of what it covers, a line of text ends up two or three blocks high even at the lowest strength, and a light noise on each block stops tools that rebuild pixelated text by trying candidates. No more stripes along the edges either. For passwords, Solid is still the safe choice, and the tooltip says so."
+          },
+          {
+            "type": "fixed",
+            "text": "The pixelation strength didn't reach new areas. The slider only changed the selected one; new ones always came out at 1x. The bug dates back to 1.8.0."
+          },
+          {
+            "type": "fixed",
+            "text": "Undoing a style change deleted the item. Changing the colour or width of something you had just drawn left no undo step, so ⌘Z went back to before it existed. ⌘Z now undoes just the style change, and a whole slider drag counts as one step."
+          }
+        ]
+      },
+      {
         "version": "1.9.1",
         "date": "September 28, 2026",
         "comingSoon": false,

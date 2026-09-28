@@ -230,6 +230,34 @@
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
+        "version": "1.9.2",
+        "date": "",
+        "comingSoon": true,
+        "title": "L'opacité du surligneur, et une pixellisation qui masque vraiment",
+        "items": [
+          {
+            "type": "new",
+            "text": "L'opacité du surligneur se règle, de 10 à 100 %. Un curseur et une case de pourcentage dans la barre de l'outil, avec un aperçu du résultat. Elle est enregistrée avec chaque surlignage et mémorisée pour le suivant ; 45 % reste la valeur par défaut, donc rien ne change si vous n'y touchez pas."
+          },
+          {
+            "type": "new",
+            "text": "Modifiez le style de ce qui est déjà dessiné avec l'outil Sélectionner. Sélectionnez une flèche, un surlignage ou une zone pixellisée et la barre affiche les options et les valeurs propres à cet élément : changez sa couleur, son épaisseur, son opacité ou son intensité, et le changement s'applique à cet élément. Les textes affichent désormais leur propre taille et leur gras ou italique, et non ceux de l'outil."
+          },
+          {
+            "type": "fixed",
+            "text": "La pixellisation pouvait laisser des chiffres lisibles. Chaque bloc prenait un seul pixel en son centre au lieu de la moyenne, et sur une ligne de texte les blocs mesuraient environ 3 pt de haut. Chaque bloc est maintenant la vraie moyenne de ce qu'il recouvre, une ligne de texte occupe deux ou trois blocs de haut même à l'intensité minimale, et un léger bruit sur chaque bloc freine les outils qui reconstituent un texte pixellisé en essayant des candidats. Plus de rayures sur les bords non plus. Pour les mots de passe, « Plein » reste le choix sûr, et l'infobulle le dit."
+          },
+          {
+            "type": "fixed",
+            "text": "L'intensité de la pixellisation ne s'appliquait pas aux nouvelles zones. Le curseur ne modifiait que la zone sélectionnée ; les nouvelles sortaient toujours à 1x. Le bug remontait à la 1.8.0."
+          },
+          {
+            "type": "fixed",
+            "text": "Annuler un changement de style supprimait l'élément. Changer la couleur ou l'épaisseur d'un élément tout juste dessiné ne créait aucune étape d'annulation, si bien que ⌘Z revenait à avant son existence. Désormais ⌘Z annule seulement le changement de style, et un glissement complet du curseur compte pour une seule étape."
+          }
+        ]
+      },
+      {
         "version": "1.9.1",
         "date": "28 septembre 2026",
         "comingSoon": false,

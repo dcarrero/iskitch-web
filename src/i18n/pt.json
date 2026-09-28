@@ -230,6 +230,34 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.9.2",
+        "date": "",
+        "comingSoon": true,
+        "title": "Opacidade do realce, e uma pixelização que esconde mesmo",
+        "items": [
+          {
+            "type": "new",
+            "text": "Opacidade do realce ajustável, de 10 a 100 %. Um controlo de deslize e uma caixa de percentagem na barra da ferramenta, com uma amostra do resultado. É guardada em cada realce e lembrada para o seguinte; 45 % continua a ser o valor predefinido, por isso nada muda se não lhe tocar."
+          },
+          {
+            "type": "new",
+            "text": "Mude o estilo do que já está desenhado com a ferramenta Selecionar. Selecione uma seta, um realce ou uma área pixelizada e a barra mostra as opções e os valores desse elemento: mude a cor, a espessura, a opacidade ou a intensidade e a alteração aplica-se só a ele. Os textos mostram agora o próprio tamanho e o negrito ou itálico, e não os da ferramenta."
+          },
+          {
+            "type": "fixed",
+            "text": "A pixelização podia deixar números legíveis. Cada bloco usava um único píxel do centro em vez da média, e numa linha de texto os blocos tinham cerca de 3 pt de altura. Agora cada bloco é a média real do que tapa, uma linha de texto fica com dois ou três blocos de altura mesmo com a intensidade no mínimo, e um ruído leve em cada bloco trava as ferramentas que reconstroem texto pixelizado a testar candidatos. Também já não surgem riscas nas margens. Para palavras-passe, a opção segura continua a ser «Sólido», e a dica da ferramenta di-lo."
+          },
+          {
+            "type": "fixed",
+            "text": "A intensidade da pixelização não chegava às áreas novas. O controlo de deslize só alterava a área selecionada; as novas saíam sempre a 1x. O erro vinha da 1.8.0."
+          },
+          {
+            "type": "fixed",
+            "text": "Anular uma alteração de estilo apagava o elemento. Mudar a cor ou a espessura de algo acabado de desenhar não criava um passo no histórico, por isso ⌘Z voltava a antes de ele existir. Agora ⌘Z anula só a alteração de estilo, e arrastar um controlo de deslize do início ao fim conta como um único passo."
+          }
+        ]
+      },
+      {
         "version": "1.9.1",
         "date": "28 de setembro de 2026",
         "comingSoon": false,

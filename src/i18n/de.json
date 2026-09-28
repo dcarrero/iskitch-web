@@ -230,6 +230,34 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.9.2",
+        "date": "",
+        "comingSoon": true,
+        "title": "Deckkraft für den Textmarker, und eine Verpixelung, die wirklich verbirgt",
+        "items": [
+          {
+            "type": "new",
+            "text": "Einstellbare Deckkraft für den Textmarker, von 10 bis 100 %. Ein Schieberegler und ein Prozentfeld in der Werkzeugleiste, mit einem Vorschaufeld. Sie wird mit jeder Markierung gespeichert und für die nächste gemerkt; 45 % bleibt der Standard, es ändert sich also nichts, solange Sie den Regler nicht anfassen."
+          },
+          {
+            "type": "new",
+            "text": "Bereits Gezeichnetes mit dem Werkzeug „Auswählen“ umgestalten. Wählen Sie einen Pfeil, eine Markierung oder einen verpixelten Bereich aus, und die Leiste zeigt die Optionen und Werte genau dieses Elements: Ändern Sie Farbe, Stärke, Deckkraft oder Intensität, und die Änderung gilt für dieses Element. Texte zeigen jetzt ihre eigene Größe und Fett oder Kursiv an, nicht die des Werkzeugs."
+          },
+          {
+            "type": "fixed",
+            "text": "Die Verpixelung konnte Zahlen lesbar lassen. Jeder Block übernahm ein einziges Pixel aus seiner Mitte statt des Durchschnitts, und auf einer Textzeile waren die Blöcke nur etwa 3 pt hoch. Jetzt ist jeder Block der echte Durchschnitt dessen, was er abdeckt, eine Textzeile ist selbst bei der geringsten Stärke zwei bis drei Blöcke hoch, und ein leichtes Rauschen auf jedem Block bremst Werkzeuge aus, die verpixelten Text durch das Durchprobieren von Kandidaten rekonstruieren. Auch Streifen an den Rändern gibt es nicht mehr. Für Passwörter bleibt „Vollfläche“ die sichere Wahl, und der Tooltip sagt das auch."
+          },
+          {
+            "type": "fixed",
+            "text": "Die Stärke der Verpixelung kam bei neuen Bereichen nicht an. Der Regler änderte nur den ausgewählten Bereich; neue kamen immer mit 1x heraus. Der Fehler stammte aus 1.8.0."
+          },
+          {
+            "type": "fixed",
+            "text": "Das Widerrufen einer Stiländerung löschte das Element. Wenn Sie Farbe oder Stärke von etwas gerade Gezeichnetem änderten, entstand kein Widerrufschritt, sodass ⌘Z bis vor seine Entstehung zurücksprang. Jetzt macht ⌘Z nur die Stiländerung rückgängig, und ein ganzes Ziehen am Schieberegler zählt als ein Schritt."
+          }
+        ]
+      },
+      {
         "version": "1.9.1",
         "date": "28. September 2026",
         "comingSoon": false,
