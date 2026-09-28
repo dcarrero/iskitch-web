@@ -244,6 +244,10 @@
             "text": "Mude o estilo do que já está desenhado com a ferramenta Selecionar. Selecione uma seta, um realce ou uma área pixelizada e a barra mostra as opções e os valores desse elemento: mude a cor, a espessura, a opacidade ou a intensidade e a alteração aplica-se só a ele. Os textos mostram agora o próprio tamanho e o negrito ou itálico, e não os da ferramenta."
           },
           {
+            "type": "new",
+            "text": "Aumente a nitidez da imagem. Imagem ▸ Tornar mais nítido… aplica uma máscara de nitidez a toda a captura, com um controlo de deslize de intensidade e uma pré-visualização de antes e depois em tamanho real. As anotações não são alteradas, e ⌘Z anula a operação."
+          },
+          {
             "type": "fixed",
             "text": "A pixelização podia deixar números legíveis. Cada bloco usava um único píxel do centro em vez da média, e numa linha de texto os blocos tinham cerca de 3 pt de altura. Agora cada bloco é a média real do que tapa, uma linha de texto fica com dois ou três blocos de altura mesmo com a intensidade no mínimo, e um ruído leve em cada bloco trava as ferramentas que reconstroem texto pixelizado a testar candidatos. Também já não surgem riscas nas margens. Para palavras-passe, a opção segura continua a ser «Sólido», e a dica da ferramenta di-lo."
           },

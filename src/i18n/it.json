@@ -244,6 +244,10 @@
             "text": "Con Seleziona cambi lo stile di ciò che hai già disegnato. Seleziona una freccia, un'evidenziazione o un'area pixelata e la barra mostra le opzioni e i valori di quell'elemento: cambiane colore, spessore, opacità o intensità e la modifica si applica a quell'elemento. I testi ora mostrano la loro dimensione e il loro grassetto o corsivo, non quelli dello strumento."
           },
           {
+            "type": "new",
+            "text": "Aumenta la nitidezza dell'immagine. Immagine ▸ Aumenta nitidezza… applica una maschera di contrasto a tutta la cattura, con un cursore dell'intensità e un'anteprima prima/dopo a grandezza reale. Le annotazioni non vengono toccate, e ⌘Z la annulla."
+          },
+          {
             "type": "fixed",
             "text": "La pixelatura poteva lasciare leggibili i numeri. Ogni blocco prendeva un solo pixel dal suo centro invece della media, e su una riga di testo i blocchi erano alti circa 3 pt. Ora ogni blocco è la vera media di ciò che copre, una riga di testo resta alta due o tre blocchi anche con l'intensità al minimo, e un leggero rumore su ogni blocco frena gli strumenti che ricostruiscono il testo pixelato provando dei candidati. Niente più strisce lungo i bordi. Per le password la scelta sicura resta «Pieno», e il tooltip lo dice."
           },

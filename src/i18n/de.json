@@ -244,6 +244,10 @@
             "text": "Bereits Gezeichnetes mit dem Werkzeug „Auswählen“ umgestalten. Wählen Sie einen Pfeil, eine Markierung oder einen verpixelten Bereich aus, und die Leiste zeigt die Optionen und Werte genau dieses Elements: Ändern Sie Farbe, Stärke, Deckkraft oder Intensität, und die Änderung gilt für dieses Element. Texte zeigen jetzt ihre eigene Größe und Fett oder Kursiv an, nicht die des Werkzeugs."
           },
           {
+            "type": "new",
+            "text": "Bild scharfzeichnen. Bild ▸ Scharfzeichnen… wendet eine Unscharfmaskierung auf die gesamte Aufnahme an, mit einem Schieberegler für die Stärke und einer Vorher-nachher-Vorschau in Originalgröße. Annotationen bleiben unberührt, und ⌘Z macht es rückgängig."
+          },
+          {
             "type": "fixed",
             "text": "Die Verpixelung konnte Zahlen lesbar lassen. Jeder Block übernahm ein einziges Pixel aus seiner Mitte statt des Durchschnitts, und auf einer Textzeile waren die Blöcke nur etwa 3 pt hoch. Jetzt ist jeder Block der echte Durchschnitt dessen, was er abdeckt, eine Textzeile ist selbst bei der geringsten Stärke zwei bis drei Blöcke hoch, und ein leichtes Rauschen auf jedem Block bremst Werkzeuge aus, die verpixelten Text durch das Durchprobieren von Kandidaten rekonstruieren. Auch Streifen an den Rändern gibt es nicht mehr. Für Passwörter bleibt „Vollfläche“ die sichere Wahl, und der Tooltip sagt das auch."
           },
