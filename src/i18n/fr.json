@@ -232,7 +232,7 @@
       {
         "version": "1.9.2",
         "date": "5 octobre 2026",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "L'opacité du surligneur, et une pixellisation qui masque vraiment",
         "items": [
           {

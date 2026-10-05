@@ -236,7 +236,7 @@
       {
         "version": "1.9.2",
         "date": "October 5, 2026",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "Highlighter opacity, and pixelation that really hides",
         "items": [
           {

@@ -232,7 +232,7 @@
       {
         "version": "1.9.2",
         "date": "2026年10月5日",
-        "comingSoon": true,
+        "comingSoon": false,
         "title": "ハイライトの不透明度と、本当に隠れるピクセル化",
         "items": [
           {
