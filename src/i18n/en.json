@@ -234,6 +234,26 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.10.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Adjust the selection before capturing",
+        "items": [
+          {
+            "type": "new",
+            "text": "Adjust a region before you capture it. Turn on Settings ▸ Capture ▸ \"Adjust the selection before capturing\" and, when you release the mouse, the selection stays on screen with handles. Drag a handle to resize it, drag inside to move it, or drag outside to start again. Press Return or Space, double-click inside it, or click Capture in the bar to take the shot. The screen stays live underneath, so you can wait for the exact frame of a video. It's off by default: drag and release still captures straight away."
+          },
+          {
+            "type": "improved",
+            "text": "With more than one display, the display you click on now takes the keyboard, so the arrow keys and Return act on the selection you just made."
+          },
+          {
+            "type": "improved",
+            "text": "Pressing Return with nothing selected no longer closes the capture overlay. Escape cancels."
+          }
+        ]
+      },
+      {
         "version": "1.9.2",
         "date": "October 5, 2026",
         "comingSoon": false,

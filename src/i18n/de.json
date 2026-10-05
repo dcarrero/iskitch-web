@@ -230,6 +230,26 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.10.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Auswahl vor der Aufnahme anpassen",
+        "items": [
+          {
+            "type": "new",
+            "text": "Passen Sie einen Bereich an, bevor Sie ihn aufnehmen. Aktivieren Sie Einstellungen ▸ Aufnehmen ▸ „Auswahl vor der Aufnahme anpassen“, und wenn Sie die Maus loslassen, bleibt die Auswahl mit Griffen auf dem Bildschirm. Ziehen Sie an einem Griff, um die Größe zu ändern, ziehen Sie innerhalb, um sie zu verschieben, oder außerhalb, um neu zu beginnen. Drücken Sie den Zeilenschalter oder die Leertaste, doppelklicken Sie in die Auswahl oder klicken Sie in der Leiste auf „Aufnehmen“, um das Bild aufzunehmen. Der Bildschirm läuft darunter weiter, sodass Sie auf genau das richtige Einzelbild eines Videos warten können. Die Option ist standardmäßig aus: Ziehen und Loslassen nimmt weiterhin sofort auf."
+          },
+          {
+            "type": "improved",
+            "text": "Bei mehreren Bildschirmen erhält jetzt der Bildschirm die Tastatur, auf den Sie klicken, sodass die Pfeiltasten und der Zeilenschalter auf die Auswahl wirken, die Sie gerade gezogen haben."
+          },
+          {
+            "type": "improved",
+            "text": "Der Zeilenschalter ohne Auswahl schließt die Aufnahmeansicht nicht mehr. Abbrechen können Sie mit Escape."
+          }
+        ]
+      },
+      {
         "version": "1.9.2",
         "date": "5. Oktober 2026",
         "comingSoon": false,

@@ -230,6 +230,26 @@
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
+        "version": "1.10.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Ajuster la sélection avant la capture",
+        "items": [
+          {
+            "type": "new",
+            "text": "Ajustez une zone avant de la capturer. Activez Réglages ▸ Capturer ▸ « Ajuster la sélection avant la capture » et, quand vous relâchez la souris, la sélection reste à l'écran avec des poignées. Faites glisser une poignée pour la redimensionner, faites glisser à l'intérieur pour la déplacer, ou à l'extérieur pour recommencer. Appuyez sur Retour ou Espace, double-cliquez à l'intérieur ou cliquez sur « Capturer » dans la barre pour prendre la capture. L'écran reste animé en dessous, vous pouvez donc attendre l'image exacte d'une vidéo. L'option est désactivée par défaut : glisser et relâcher capture toujours immédiatement."
+          },
+          {
+            "type": "improved",
+            "text": "Avec plusieurs écrans, celui sur lequel vous cliquez reçoit désormais le clavier, si bien que les flèches et Retour agissent sur la sélection que vous venez de faire."
+          },
+          {
+            "type": "improved",
+            "text": "Appuyer sur Retour sans rien de sélectionné ne ferme plus l'écran de capture. Pour annuler, appuyez sur Échap."
+          }
+        ]
+      },
+      {
         "version": "1.9.2",
         "date": "5 octobre 2026",
         "comingSoon": false,

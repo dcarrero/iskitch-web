@@ -230,6 +230,26 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
+        "version": "1.10.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Regola la selezione prima di catturare",
+        "items": [
+          {
+            "type": "new",
+            "text": "Regola un'area prima di catturarla. Attiva Impostazioni ▸ Cattura ▸ «Regola la selezione prima di catturare» e, quando rilasci il mouse, la selezione resta sullo schermo con le maniglie. Trascina una maniglia per ridimensionarla, trascina all'interno per spostarla o all'esterno per ricominciare. Premi A capo o Spazio, fai doppio clic all'interno o fai clic su «Cattura» nella barra per scattare. Sotto, lo schermo resta in movimento, così puoi aspettare il fotogramma esatto di un video. L'opzione è disattivata di default: trascinare e rilasciare cattura subito come prima."
+          },
+          {
+            "type": "improved",
+            "text": "Con più di un monitor, quello su cui fai clic ora riceve la tastiera, così le frecce e A capo agiscono sulla selezione che hai appena fatto."
+          },
+          {
+            "type": "improved",
+            "text": "Premere A capo senza nulla di selezionato non chiude più la schermata di cattura. Per annullare c'è Esc."
+          }
+        ]
+      },
+      {
         "version": "1.9.2",
         "date": "5 ottobre 2026",
         "comingSoon": false,

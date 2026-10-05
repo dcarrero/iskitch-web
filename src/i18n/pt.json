@@ -230,6 +230,26 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.10.0",
+        "date": "",
+        "comingSoon": true,
+        "title": "Ajustar a seleção antes de capturar",
+        "items": [
+          {
+            "type": "new",
+            "text": "Ajuste uma região antes de a capturar. Ative Definições ▸ Capturar ▸ «Ajustar a seleção antes de capturar» e, ao largar o rato, a seleção fica no ecrã com pegas. Arraste uma pega para a redimensionar, arraste por dentro para a mover ou por fora para começar outra. Prima Return ou Espaço, faça duplo clique dentro dela ou clique em Capturar na barra para fazer a captura. O ecrã continua ao vivo por baixo, por isso pode esperar pelo fotograma exato de um vídeo. Vem desativado: arrastar e largar continua a capturar de imediato."
+          },
+          {
+            "type": "improved",
+            "text": "Com mais de um ecrã, o ecrã em que clica passa a receber o teclado, por isso as setas e o Return atuam sobre a seleção que acabou de fazer."
+          },
+          {
+            "type": "improved",
+            "text": "Premir Return sem nada selecionado já não fecha a sobreposição de captura. Para cancelar, use Esc."
+          }
+        ]
+      },
+      {
         "version": "1.9.2",
         "date": "5 de outubro de 2026",
         "comingSoon": false,
