@@ -230,9 +230,25 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
-        "version": "1.10.0",
-        "date": "12 ottobre 2026",
+        "version": "1.10.1",
+        "date": "9 ottobre 2026",
         "comingSoon": true,
+        "title": "Si toglie di mezzo quando catturi",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "iSkitch nasconde le proprie finestre durante la cattura e le mostra di nuovo al termine. Un editor aperto non copre più ciò che vuoi catturare e non compare più nell'immagine."
+          },
+          {
+            "type": "fixed",
+            "text": "⌘C copia l'immagine annotata, come in Skitch. ⇧⌘C continua a funzionare e, in un campo di testo, ⌘C copia il testo come sempre."
+          }
+        ]
+      },
+      {
+        "version": "1.10.0",
+        "date": "8 ottobre 2026",
+        "comingSoon": false,
         "title": "Regola la selezione prima di catturare",
         "items": [
           {

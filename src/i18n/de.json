@@ -230,9 +230,25 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
-        "version": "1.10.0",
-        "date": "12. Oktober 2026",
+        "version": "1.10.1",
+        "date": "9. Oktober 2026",
         "comingSoon": true,
+        "title": "Aus dem Weg beim Aufnehmen",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "iSkitch blendet seine eigenen Fenster während der Aufnahme aus und zeigt sie danach wieder an. Ein geöffneter Editor verdeckt nicht mehr, was Sie aufnehmen möchten, und erscheint nicht mehr im Bild."
+          },
+          {
+            "type": "fixed",
+            "text": "⌘C kopiert das kommentierte Bild, wie in Skitch. ⇧⌘C funktioniert weiterhin, und in einem Textfeld kopiert ⌘C wie gewohnt den Text."
+          }
+        ]
+      },
+      {
+        "version": "1.10.0",
+        "date": "8. Oktober 2026",
+        "comingSoon": false,
         "title": "Auswahl vor der Aufnahme anpassen",
         "items": [
           {
