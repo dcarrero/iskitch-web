@@ -235,8 +235,8 @@
     "versions": [
       {
         "version": "1.10.1",
-        "date": "9 de octubre de 2026",
-        "comingSoon": true,
+        "date": "8 de octubre de 2026",
+        "comingSoon": false,
         "title": "Se aparta cuando capturas",
         "items": [
           {

@@ -231,8 +231,8 @@
     "versions": [
       {
         "version": "1.10.1",
-        "date": "2026년 10월 9일",
-        "comingSoon": true,
+        "date": "2026년 10월 8일",
+        "comingSoon": false,
         "title": "캡처할 때 비켜 줍니다",
         "items": [
           {

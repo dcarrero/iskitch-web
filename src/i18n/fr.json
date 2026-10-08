@@ -231,8 +231,8 @@
     "versions": [
       {
         "version": "1.10.1",
-        "date": "9 octobre 2026",
-        "comingSoon": true,
+        "date": "8 octobre 2026",
+        "comingSoon": false,
         "title": "S'efface pendant la capture",
         "items": [
           {

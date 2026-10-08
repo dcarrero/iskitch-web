@@ -231,8 +231,8 @@
     "versions": [
       {
         "version": "1.10.1",
-        "date": "2026年10月9日",
-        "comingSoon": true,
+        "date": "2026年10月8日",
+        "comingSoon": false,
         "title": "キャプチャ中はウインドウが邪魔をしません",
         "items": [
           {
