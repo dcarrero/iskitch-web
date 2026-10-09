@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Footer from "../../components/Footer.astro";
+import ContactForm from "../../components/ContactForm.astro";
 import baseT from "../../i18n/pt.json";
 const t = { ...baseT,
   meta: {
@@ -9,6 +10,11 @@ const t = { ...baseT,
     description: "Como instalar o iSkitch, conceder a permissão de Gravação de ecrã, perguntas frequentes e como contactar-nos."
   }
 };
+const sf = t.support_form;
+const supportFields = [
+  { name: "version", label: sf.version, hint: sf.version_hint, maxlength: 60 },
+  { name: "message", label: sf.message, hint: sf.message_hint, type: "textarea" as const, required: true, maxlength: 5000 },
+];
 ---
 <Layout t={t} markdownPath="/pt/support.md">
   <Nav t={t} />
@@ -55,6 +61,9 @@ const t = { ...baseT,
 
     <h2>Precisa de mais ajuda?</h2>
     <p>Escreva para <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Respondemos em 24-48 horas (seg-sex, hora CET).</p>
+
+    <p>{sf.lead}</p>
+    <ContactForm endpoint="/api/support-request" fields={supportFields} s={sf} />
 
     <h2>Legal</h2>
     <p>

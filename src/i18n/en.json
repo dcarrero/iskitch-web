@@ -731,5 +731,19 @@
   },
   "a11y": {
     "skip_to_content": "Skip to content"
+  },
+  "support_form": {
+    "lead": "Or use this form:",
+    "name": "Name",
+    "email": "Email",
+    "version": "iSkitch version",
+    "version_hint": "In iSkitch ▸ Settings ▸ General, at the bottom. Leave it blank if you don't know it.",
+    "message": "How can we help?",
+    "message_hint": "Tell us what you were doing, what happened and what you expected. Please include your macOS version if it's a bug.",
+    "consent": "I agree to iSkitch storing these details to answer my message. See the <a href=\"/privacy\">privacy policy</a>.",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thanks! We've received your message and will reply by email, usually within 24–48 hours (Mon–Fri).",
+    "error": "Something went wrong. Please try again, or email hello@iskitch.com."
   }
 }

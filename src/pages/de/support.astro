@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Footer from "../../components/Footer.astro";
+import ContactForm from "../../components/ContactForm.astro";
 import baseT from "../../i18n/de.json";
 const t = { ...baseT,
   meta: {
@@ -9,6 +10,11 @@ const t = { ...baseT,
     description: "Wie du iSkitch installierst, die Bildschirmaufnahme-Berechtigung erteilst, häufige Fragen und wie du uns erreichst."
   }
 };
+const sf = t.support_form;
+const supportFields = [
+  { name: "version", label: sf.version, hint: sf.version_hint, maxlength: 60 },
+  { name: "message", label: sf.message, hint: sf.message_hint, type: "textarea" as const, required: true, maxlength: 5000 },
+];
 ---
 <Layout t={t} markdownPath="/de/support.md">
   <Nav t={t} />
@@ -62,6 +68,9 @@ const t = { ...baseT,
       <li>Was du getan hast und was du erwartet hast</li>
       <li>Ein Screenshot, falls relevant (kannst du mit iSkitch machen 😉)</li>
     </ul>
+
+    <p>{sf.lead}</p>
+    <ContactForm endpoint="/api/support-request" fields={supportFields} s={sf} />
 
     <h2>Rechtliches</h2>
     <p>

@@ -1,8 +1,12 @@
 // Cloudflare Pages Function · /api/admin/press
-// Lista las peticiones de código de prueba del formulario de /press.
-// Protegido con env var ADMIN_KEY, como /api/admin/subscribers.
+// Lista los envíos de los formularios de la web. Protegido con env var
+// ADMIN_KEY, como /api/admin/subscribers.
 //
-//   GET /api/admin/press?key=TU_ADMIN_KEY   → JSON, más recientes primero
+//   GET /api/admin/press?key=TU_ADMIN_KEY               → peticiones de /press
+//   GET /api/admin/press?kind=support&key=TU_ADMIN_KEY  → consultas de /support
+// JSON, más recientes primero.
+
+const PREFIXES = { press: "press:", support: "support:" };
 
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
@@ -14,10 +18,13 @@ export async function onRequestGet({ request, env }) {
     return new Response("KV not configured", { status: 500 });
   }
 
+  const prefix = PREFIXES[(url.searchParams.get("kind") || "press").toLowerCase()];
+  if (!prefix) return new Response("Unknown kind", { status: 400 });
+
   const requests = [];
   let cursor;
   while (true) {
-    const list = await env.SUBSCRIBERS.list({ prefix: "press:", cursor });
+    const list = await env.SUBSCRIBERS.list({ prefix, cursor });
     for (const { name } of list.keys) {
       const v = await env.SUBSCRIBERS.get(name);
       if (!v) continue;

@@ -4,7 +4,7 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import baseT from "../i18n/en.json";
 import { PRESS, formatPressDate } from "../components/press";
-import PressRequestForm from "../components/PressRequestForm.astro";
+import ContactForm from "../components/ContactForm.astro";
 const t = { ...baseT,
   switcher: { label: "ES", href: "/es/press" },
   meta: {
@@ -26,23 +26,23 @@ const first = releases[releases.length - 1];
 const formStrings = {
   name: "Name",
   email: "Email",
-  url: "Publication, blog or channel URL",
-  url_hint: "Where your article or video will appear.",
-  message: "Message (optional)",
-  message_hint: "Tell us about your audience, the language and when you plan to publish, or anything else.",
   consent: 'I agree to iSkitch storing these details to answer my request. See the <a href="/privacy">privacy policy</a>.',
   submit: "Request a review code",
   sending: "Sending…",
   success: "Thanks! We've received your request and will reply by email, usually within 24–48 hours (Mon–Fri).",
   error: "Something went wrong. Please try again, or email hello@iskitch.com.",
 };
+const formFields = [
+  { name: "url", label: "Publication, blog or channel URL", hint: "Where your article or video will appear.", required: true, inputmode: "url", autocomplete: "url" },
+  { name: "message", label: "Message (optional)", hint: "Tell us about your audience, the language and when you plan to publish, or anything else.", type: "textarea" as const },
+];
 ---
 <Layout t={t} markdownPath="/press.md" alternates={alternates}>
   <Nav t={t} />
   <main class="prose">
     <h1>Press</h1>
     <p class="press-lead">Writing about Mac apps for a publication, blog, newsletter or channel? We'll give you a free code so you can test the full version of iSkitch before you write.</p>
-    <PressRequestForm s={formStrings} />
+    <ContactForm endpoint="/api/press-request" fields={formFields} s={formStrings} />
     <p>The developer replies in person, usually within 24–48 hours (Mon–Fri), with a Mac App Store code. Codes expire 28 days after we create them, so we send them when you're ready to test. If you'd like to run a giveaway, we can also provide codes for your readers. Prefer email? Write to <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>.</p>
 
     <h2>Fact sheet</h2>
