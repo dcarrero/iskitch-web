@@ -4,20 +4,21 @@
 // correo (ver functions-lib/contact.js). Se consultan con
 // `mac/tools/iskitch-ops.sh support`.
 
-import { EMAIL_RE, jsonResponse, clean, connectionInfo, storeAndNotify } from "../../functions-lib/contact.js";
+import { EMAIL_RE, jsonResponse, clean, cleanLine, guard, connectionInfo, storeAndNotify } from "../../functions-lib/contact.js";
 
 export async function onRequestPost({ request, env }) {
   try {
-    let body = {};
-    try { body = await request.json(); } catch (_) {}
+    const g = await guard(request, env);
+    if (g instanceof Response) return g;
+    const body = g.body;
 
     if (body && body.honeypot && String(body.honeypot).length > 0) {
       return jsonResponse({ ok: true });
     }
 
-    const name = clean(body.name, 120);
-    const email = clean(body.email, 200).toLowerCase();
-    const version = clean(body.version, 60);
+    const name = cleanLine(body.name, 120);
+    const email = cleanLine(body.email, 200).toLowerCase();
+    const version = cleanLine(body.version, 60);
     const message = clean(body.message, 5000);
 
     if (!name) return jsonResponse({ ok: false, error: "name_required" }, 400);
@@ -29,7 +30,7 @@ export async function onRequestPost({ request, env }) {
     const conn = connectionInfo(request);
     const record = {
       name, email, version, message,
-      lang: clean(body.lang || "en", 8),
+      lang: cleanLine(body.lang || "en", 8),
       consent: true,
       ts: new Date().toISOString(),
       country: conn.country,

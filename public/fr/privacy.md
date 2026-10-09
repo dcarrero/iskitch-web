@@ -2,7 +2,7 @@
 
 > Comment iSkitch traite vos données : vos captures restent sur votre Mac. La seule chose qui peut en sortir est votre adresse e-mail, et seulement si vous vous abonnez aux nouveautés.
 
-**Date d'entrée en vigueur :** 26 août 2026
+**Date d'entrée en vigueur :** 9 octobre 2026
 
 Cette politique explique comment l'application **iSkitch** pour macOS traite vos données. L'app est développée et distribuée par **Color Vivo Internet, S.L.**, société espagnole basée à Madrid (Espagne).
 
@@ -43,6 +43,8 @@ La **seule** connexion sortante est l'abonnement aux nouveautés, et elle n'a li
 Le site marketing **iskitch.com** utilise **Google Analytics 4** pour comprendre le trafic agrégé — pages visitées, pays, navigateur. Google peut déposer des cookies et traiter les données hors de l'UE. Nous **n'utilisons pas** ces informations pour identifier des individus, faire du profilage ou de la publicité.
 
 Si vous vous abonnez aux nouveautés — depuis le formulaire de ce site ou depuis l'application — nous conservons dans Cloudflare KV votre **adresse e-mail**, la **langue** d'inscription, l'origine (web ou application) et la **date d'acceptation de cette politique**. Une fois par jour, nous copions les nouvelles inscriptions vers **Acumbamail**, notre prestataire d'e-mailing. La base légale est votre **consentement**, et nous l'utilisons uniquement pour vous parler d'iSkitch : ni publicité, ni cession à des tiers. Vous pouvez vous désabonner depuis le pied de page de n'importe quel e-mail, ou nous écrire à hello@iskitch.com.
+
+Si vous nous écrivez via le formulaire de contact de la page d'assistance ou le formulaire de codes de test de la page presse, nous conservons ce que vous saisissez (nom, **adresse e-mail**, version d'iSkitch ou URL du média, et votre message) ainsi que des données techniques sur l'envoi : **adresse IP**, localisation approximative qui en découle (ville, région, pays), fournisseur réseau, navigateur et langue. Nous les stockons dans Cloudflare KV et les recevons dans notre propre boîte via le service d'e-mail de Cloudflare. La base légale est votre **consentement** ; nous les utilisons uniquement pour vous répondre et éviter les abus des formulaires. Chaque envoi est supprimé automatiquement au bout de **12 mois** ; écrivez à hello@iskitch.com si vous souhaitez qu'il le soit plus tôt.
 
 Cette collecte sur le site est **indépendante de l'app** : iSkitch sur votre Mac ne contient ni Google Analytics ni aucun autre SDK de pistage.
 

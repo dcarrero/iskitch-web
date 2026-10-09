@@ -2,7 +2,7 @@
 
 > Come iSkitch tratta i tuoi dati: le tue catture restano sul tuo Mac. L'unica cosa che può uscirne è il tuo indirizzo email, e solo se ti iscrivi alle novità.
 
-**Data di entrata in vigore:** 26 agosto 2026
+**Data di entrata in vigore:** 9 ottobre 2026
 
 Questa informativa spiega come l'applicazione **iSkitch** per macOS tratta i tuoi dati. L'app è sviluppata e distribuita da **Color Vivo Internet, S.L.**, società spagnola con sede a Madrid (Spagna).
 
@@ -34,6 +34,8 @@ L'**unica** connessione in uscita è l'iscrizione alle novità, e avviene solo s
 ## A proposito di questo sito (iskitch.com)
 
 Se ti iscrivi alle novità — dal modulo di questo sito o dall'app stessa — conserviamo su Cloudflare KV il tuo **indirizzo email**, la **lingua** con cui ti sei iscritto, se è arrivato dal web o dall'app, e la **data in cui hai accettato questa informativa**. Una volta al giorno copiamo le nuove iscrizioni su **Acumbamail**, il nostro fornitore di email. La base giuridica è il tuo **consenso**, e la usiamo solo per raccontarti le novità di iSkitch: niente pubblicità, niente cessione a terzi. Puoi disiscriverti dal piè di pagina di qualsiasi email, o scriverci a hello@iskitch.com.
+
+Se ci scrivi tramite il modulo di contatto della pagina di assistenza o quello per i codici di prova della pagina stampa, conserviamo ciò che inserisci (nome, **indirizzo email**, versione di iSkitch o URL della testata, e il tuo messaggio) insieme a dati tecnici dell'invio: **indirizzo IP**, posizione approssimativa ricavata da esso (città, regione, paese), fornitore di rete, browser e lingua. Li conserviamo in Cloudflare KV e ci arrivano nella nostra casella tramite il servizio email di Cloudflare. La base giuridica è il tuo **consenso** e li usiamo solo per risponderti e per evitare abusi dei moduli. Ogni invio viene cancellato automaticamente dopo **12 mesi**; scrivi a hello@iskitch.com se vuoi che venga cancellato prima.
 
 Questa raccolta sul sito è **indipendente dall'app**: iSkitch sul tuo Mac non contiene Google Analytics né altri SDK di tracciamento.
 

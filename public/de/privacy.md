@@ -2,7 +2,7 @@
 
 > Wie iSkitch mit deinen Daten umgeht: Deine Aufnahmen bleiben auf deinem Mac. Das Einzige, was hinausgehen kann, ist deine E-Mail-Adresse — und nur, wenn du die Neuigkeiten abonnierst.
 
-**Gültig ab:** 26. August 2026
+**Gültig ab:** 9. Oktober 2026
 
 Diese Richtlinie erklärt, wie die **iSkitch**-App für macOS deine Daten behandelt. Die App wird entwickelt und vertrieben von **Color Vivo Internet, S.L.**, einer spanischen Gesellschaft mit Sitz in Madrid (Spanien).
 
@@ -34,6 +34,8 @@ Die **einzige** ausgehende Verbindung ist das Abo der Neuigkeiten, und es kommt 
 ## Über diese Website (iskitch.com)
 
 Wenn du die Neuigkeiten abonnierst — über das Formular dieser Website oder in der App selbst — speichern wir in Cloudflare KV deine **E-Mail-Adresse**, die **Sprache** der Anmeldung, ob sie aus dem Web oder der App kam, und das **Datum, an dem du diese Erklärung akzeptiert hast**. Einmal täglich übertragen wir neue Anmeldungen zu **Acumbamail**, unserem E-Mail-Dienstleister. Rechtsgrundlage ist deine **Einwilligung**, und wir nutzen sie nur, um dir von iSkitch zu erzählen: keine Werbung, keine Weitergabe an Dritte. Du kannst dich über die Fußzeile jeder E-Mail abmelden oder uns an hello@iskitch.com schreiben.
+
+Wenn du uns über das Kontaktformular auf der Support-Seite oder das Formular für Testcodes auf der Presseseite schreibst, speichern wir deine Eingaben (Name, **E-Mail-Adresse**, iSkitch-Version oder URL des Mediums und deine Nachricht) zusammen mit technischen Daten der Anfrage: **IP-Adresse**, der daraus abgeleitete ungefähre Standort (Stadt, Region, Land), Netzanbieter, Browser und Sprache. Wir speichern sie in Cloudflare KV und leiten sie über den E-Mail-Dienst von Cloudflare an unser eigenes Postfach weiter. Rechtsgrundlage ist deine **Einwilligung**; wir nutzen die Daten nur, um dir zu antworten und Missbrauch der Formulare zu verhindern. Jede Anfrage wird nach **12 Monaten** automatisch gelöscht; schreib an hello@iskitch.com, wenn du sie früher löschen lassen möchtest.
 
 Diese Datenerhebung auf der Website ist **unabhängig von der App**: iSkitch auf deinem Mac enthält weder Google Analytics noch ein anderes Tracking-SDK.
 

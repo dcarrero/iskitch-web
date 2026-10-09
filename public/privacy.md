@@ -2,7 +2,7 @@
 
 > How iSkitch handles your data: your captures stay on your Mac. The only thing that can ever leave is your email address, and only if you subscribe to product news.
 
-**Effective Date:** 28 May 2026
+**Effective Date:** 9 October 2026
 
 This policy explains how the **iSkitch** macOS application handles your data. The app is built and distributed by **Color Vivo Internet, S.L.**, a Spanish company based in Madrid (Spain).
 
@@ -44,6 +44,8 @@ Whatever you share through the macOS share sheet is handled by the extension you
 The marketing website at **iskitch.com** (where you are reading this) uses **Google Analytics 4** to understand aggregated traffic — visited pages, country, browser. Google may set cookies and process data outside the EU. We do **not** use this information to identify individuals, build profiles or run advertising.
 
 If you subscribe to product news — from the form on this site or from the app itself — we keep your **email address**, the **language** you signed up in, whether it came from the web or the app, and the **date you accepted this policy** in Cloudflare KV. Once a day we copy new sign-ups to **Acumbamail**, our email provider. The legal basis is your **consent**, and we use it only to tell you about iSkitch: no advertising, no sharing with third parties. You can unsubscribe from the footer of any email we send, or write to hello@iskitch.com.
+
+If you write to us through the contact form on the support page or the review-code form on the press page, we keep what you enter (name, **email address**, iSkitch version or publication URL, and your message) together with technical data about the request: **IP address**, approximate location derived from it (city, region, country), network provider, browser and language. We store it in Cloudflare KV and forward it to our own inbox using Cloudflare's email service. The legal basis is your **consent**, and we use it only to answer you and to keep the forms free of abuse. Each submission is deleted automatically after **12 months**; write to hello@iskitch.com if you want it deleted sooner.
 
 This data collection on the website is **independent from the app**: iSkitch on your Mac does not contain Google Analytics or any other tracking SDK.
 
