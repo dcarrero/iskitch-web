@@ -120,7 +120,8 @@
       "human": "Hinter iSkitch steht eine Person, David — und dieselbe Person beantwortet jede Support-Mail.",
       "refund": "Gekauft wird im Mac App Store, Rückerstattungen wickelt also Apple ab.",
       "refund_link": "Rückerstattung anfordern",
-      "press_label": "In der Presse"
+      "press_label": "In der Presse",
+      "press_cta": "Sie schreiben über Mac-Apps? Fordern Sie einen kostenlosen Testcode an"
     }
   },
   "beta": {
@@ -210,6 +211,10 @@
       {
         "text": "Hilfe",
         "href": "/de/support"
+      },
+      {
+        "text": "Presse",
+        "href": "/press"
       },
       {
         "text": "Anleitungen",

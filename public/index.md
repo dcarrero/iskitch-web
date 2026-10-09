@@ -44,6 +44,7 @@ Download iSkitch on the Mac App Store: https://apps.apple.com/app/iskitch/id6773
 - Privacy policy: https://iskitch.com/privacy
 - Terms of use: https://iskitch.com/terms
 - Support: https://iskitch.com/support
+- Press (fact sheet and free review codes for journalists and bloggers): https://iskitch.com/press
 - Changelog (always the current version): https://iskitch.com/changelog
 
 ## Publisher

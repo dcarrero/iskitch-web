@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import baseT from "../i18n/en.json";
+import { PRESS, formatPressDate } from "../components/press";
+const t = { ...baseT,
+  switcher: { label: "ES", href: "/es/press" },
+  meta: {
+    title: "Press — iSkitch",
+    description: "Writing about Mac apps? Request a free review code for iSkitch, the native Skitch successor for macOS. Fact sheet, icon and press coverage."
+  }
+};
+const alternates = [
+  { hreflang: "en", href: "https://iskitch.com/press/" },
+  { hreflang: "es", href: "https://iskitch.com/es/press/" },
+];
+
+// La ficha sale del changelog, como la franja de Precio: publicar una versión
+// la actualiza sola.
+const releases = (t.changelog?.versions ?? []).filter((v: any) => !v.comingSoon);
+const latest = releases[0];
+const first = releases[releases.length - 1];
+
+const subject = "Review code request — iSkitch";
+const body = [
+  "Hi David,",
+  "",
+  "I'd like a review code for iSkitch.",
+  "",
+  "Name:",
+  "Publication / blog / channel:",
+  "URL:",
+  "Language of the article:",
+  "Planned publication date (if known):",
+  "",
+  "Thanks!",
+].join("\n");
+const mailto = `mailto:hello@iskitch.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+---
+<Layout t={t} markdownPath="/press.md" alternates={alternates}>
+  <Nav t={t} />
+  <main class="prose">
+    <h1>Press</h1>
+    <p class="press-lead">Writing about Mac apps for a publication, blog, newsletter or channel? We'll give you a free code so you can test the full version of iSkitch before you write.</p>
+    <p class="press-cta">
+      <a class="btn btn-primary btn-lg" href={mailto}>Request a review code</a>
+    </p>
+    <p>The button opens an email to <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Tell us your name and where you write, and the developer replies in person, usually within 24–48 hours (Mon–Fri), with a Mac App Store code. Codes expire 28 days after we create them, so we send them when you're ready to test. If you'd like to run a giveaway, we can also provide codes for your readers.</p>
+
+    <h2>Fact sheet</h2>
+    <dl class="press-facts">
+      <dt>What it is</dt>
+      <dd>A native Mac app to capture, annotate and share screenshots, built as a modern successor to Skitch.</dd>
+      <dt>Latest version</dt>
+      <dd>{latest.version} ({latest.date}) · {releases.length} releases since {first.date}</dd>
+      <dt>Price</dt>
+      <dd>One-time purchase of $9.99 / £9.99 / 9.99 € on the Mac App Store. No subscription, no account.</dd>
+      <dt>Requirements</dt>
+      <dd>macOS 14 or later · Apple Silicon and Intel</dd>
+      <dt>Languages</dt>
+      <dd>18</dd>
+      <dt>Privacy</dt>
+      <dd>No tracking or analytics. Captures stay on the Mac unless you share them.</dd>
+      <dt>Developer</dt>
+      <dd>David Carrero · Color Vivo Internet, S.L. · Madrid, Spain</dd>
+      <dt>Links</dt>
+      <dd><a href="https://apps.apple.com/app/iskitch/id6773733499" target="_blank" rel="noopener">Mac App Store</a> · <a href="/">iskitch.com</a> · <a href="/changelog">Changelog</a></dd>
+    </dl>
+
+    <h2>In a nutshell</h2>
+    <p>Skitch was the quickest way to point at something on a screenshot: an arrow, a word, done. iSkitch brings that back as a native Mac app. It lives in the menu bar, captures with <kbd>⌥⌘4</kbd> and opens the editor straight away, with Skitch-style arrows, text and stamps, numbered callouts, highlighter, blur and pixelate, crop and resize. The result goes out through the macOS share sheet, by drag and drop or with <kbd>⌘C</kbd>.</p>
+    <p>It's built by one developer, who also answers every support email, and most updates come from what users ask for. You can follow them in the <a href="/changelog">changelog</a>.</p>
+
+    <h2>Press kit</h2>
+    <ul>
+      <li><a href="/icon-512.png" download="iskitch-icon-512.png">App icon (PNG, 512 × 512)</a></li>
+      <li>Screenshots of the current version, in any of the app's languages: ask in the same email and we'll send them at full resolution.</li>
+    </ul>
+
+    {PRESS.length > 0 && (
+      <>
+        <h2>Coverage</h2>
+        <ul>
+          {PRESS.map((m) => (
+            <li>
+              <a href={m.url} target="_blank" rel="noopener" hreflang={m.lang}>{m.outlet}</a>
+              {" — "}<q lang={m.lang}>{m.title}</q>{" "}({m.byline ? `${m.byline}, ` : ""}{formatPressDate(m.date, "en")})
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <h2>Contact</h2>
+    <p>David Carrero, developer of iSkitch: <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Happy to answer questions or provide a quote for your article.</p>
+  </main>
+  <Footer t={t} />
+</Layout>
+
+<style>
+  .press-lead { font-size: 17px; color: var(--ink-1); }
+  .press-cta { margin: 24px 0; }
+  .press-cta .btn, .press-cta .btn:hover { color: var(--paper); text-decoration: none; }
+  .press-facts { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
+  .press-facts dt { font-weight: 600; color: var(--ink-1); font-size: 15px; line-height: 1.7; }
+  .press-facts dd { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.7; }
+  @media (max-width: 560px) {
+    .press-facts { grid-template-columns: 1fr; gap: 0; }
+    .press-facts dd { margin-bottom: 10px; }
+  }
+</style>

@@ -124,7 +124,8 @@
       "human": "Detrás de iSkitch hay una persona, David, y esa misma persona contesta todos los correos de soporte.",
       "refund": "La compra se hace en la Mac App Store, así que los reembolsos los gestiona Apple.",
       "refund_link": "Solicitar un reembolso",
-      "press_label": "En la prensa"
+      "press_label": "En la prensa",
+      "press_cta": "¿Escribes sobre apps de Mac? Pide un código gratuito para probarla"
     }
   },
   "beta": {
@@ -214,6 +215,10 @@
       {
         "text": "Soporte",
         "href": "/es/support"
+      },
+      {
+        "text": "Prensa",
+        "href": "/es/press"
       },
       {
         "text": "Guías",

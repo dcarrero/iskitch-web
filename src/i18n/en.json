@@ -124,7 +124,8 @@
       "human": "Behind iSkitch there's one person, David — and the same person answers every support email.",
       "refund": "You buy through the Mac App Store, so refunds are handled by Apple.",
       "refund_link": "Request a refund",
-      "press_label": "In the press"
+      "press_label": "In the press",
+      "press_cta": "Writing about Mac apps? Request a free review code"
     }
   },
   "beta": {
@@ -214,6 +215,10 @@
       {
         "text": "Support",
         "href": "/support"
+      },
+      {
+        "text": "Press",
+        "href": "/press"
       },
       {
         "text": "Guides",

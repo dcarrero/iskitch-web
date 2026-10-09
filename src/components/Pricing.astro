@@ -63,6 +63,9 @@ const supportEmail = "hello@iskitch.com";
                 </li>
               ))}
             </ul>
+            {trust.press_cta && (
+              <p class="trust-line"><a class="trust-link" href={t.lang === "es" ? "/es/press" : "/press"}>{trust.press_cta} →</a></p>
+            )}
           </div>
         )}
       </div>

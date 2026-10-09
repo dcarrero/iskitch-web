@@ -23,6 +23,11 @@ const STATIC_PAGES: StaticPage[] = [
   { seg: "terms", priority: 0.3, changefreq: "yearly" },
 ];
 
+/** Páginas que solo existen en algunos idiomas (hreflang solo entre ellos). */
+const PARTIAL_PAGES: (StaticPage & { langs: string[] })[] = [
+  { seg: "press", priority: 0.4, changefreq: "monthly", langs: ["en", "es"] },
+];
+
 /** Ruta de una página estática en un idioma (EN sin prefijo). */
 function pagePath(lang: string, seg: string): string {
   const base = lang === "en" ? "" : `/${lang}`;
@@ -45,6 +50,19 @@ export function pageUrls(): SitemapUrl[] {
       urls.push({
         loc: `${SITE}${pagePath(lang, page.seg)}`,
         lastmod: SITE_REVISION,
+        changefreq: page.changefreq,
+        priority: page.priority,
+        alternates,
+      });
+    }
+  }
+  for (const page of PARTIAL_PAGES) {
+    const alternates = page.langs.map((l) => ({ hreflang: l, href: `${SITE}${pagePath(l, page.seg)}` }));
+    alternates.push({ hreflang: "x-default", href: `${SITE}${pagePath("en", page.seg)}` });
+    for (const lang of page.langs) {
+      urls.push({
+        loc: `${SITE}${pagePath(lang, page.seg)}`,
+        lastmod: "2026-10-09",
         changefreq: page.changefreq,
         priority: page.priority,
         alternates,

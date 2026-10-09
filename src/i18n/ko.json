@@ -120,7 +120,8 @@
       "human": "iSkitch는 David 한 사람이 만듭니다. 지원 메일에도 같은 사람이 직접 답장합니다.",
       "refund": "구매는 Mac App Store에서 이루어지므로 환불은 Apple이 처리합니다.",
       "refund_link": "환불 요청하기",
-      "press_label": "언론 보도"
+      "press_label": "언론 보도",
+      "press_cta": "Mac 앱에 대해 글을 쓰시나요? 무료 리뷰 코드를 요청하세요"
     }
   },
   "beta": {
@@ -210,6 +211,10 @@
       {
         "text": "지원",
         "href": "/ko/support"
+      },
+      {
+        "text": "보도 자료",
+        "href": "/press"
       },
       {
         "text": "가이드",
