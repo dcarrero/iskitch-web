@@ -3,6 +3,13 @@
 // Usa el mismo namespace que la lista (binding SUBSCRIBERS) con el prefijo
 // "press:", que el sync de Acumbamail no lee (solo lista "subscriber:").
 // Se consultan con /api/admin/press o `mac/tools/iskitch-ops.sh press`.
+//
+// Además avisa por correo a hello@iskitch.com con Cloudflare Email Sending.
+// Las Pages Functions no admiten el binding send_email, así que va por la API
+// REST. Variables en Pages ▸ Settings ▸ Variables and Secrets (y redesplegar):
+//   CF_ACCOUNT_ID    id de la cuenta de Cloudflare
+//   CF_EMAIL_TOKEN   token de API con permiso de Email Sending (secreto)
+// Sin ellas la petición se guarda igual y solo falta el aviso.
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -11,6 +18,46 @@ function jsonResponse(data, status) {
     status: status || 200,
     headers: { "Content-Type": "application/json; charset=utf-8" },
   });
+}
+
+const NOTIFY_TO = "hello@iskitch.com";
+const NOTIFY_FROM = { address: "web@iskitch.com", name: "iSkitch web" };
+
+function escapeHtml(v) {
+  return String(v).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// Devuelve "sent", "skipped" (sin configurar) o "error:<detalle>". Nunca lanza:
+// si el aviso falla, la petición ya está guardada en KV.
+async function notify(env, r) {
+  if (!env.CF_ACCOUNT_ID || !env.CF_EMAIL_TOKEN) return "skipped";
+  const lines = [
+    `Name: ${r.name}`,
+    `Email: ${r.email}`,
+    `URL: ${r.url}`,
+    `Language: ${r.lang} · Country: ${r.country || "?"}`,
+    "",
+    r.message || "(no message)",
+  ];
+  try {
+    const resp = await fetch(`https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/email/sending/send`, {
+      method: "POST",
+      headers: { "Authorization": `Bearer ${env.CF_EMAIL_TOKEN}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        to: NOTIFY_TO,
+        from: NOTIFY_FROM,
+        // Responder al aviso contesta directamente a quien pide el código.
+        reply_to: { address: r.email, name: r.name },
+        subject: `Review code request: ${r.name} (${new URL(r.url).hostname})`,
+        text: lines.join("\n"),
+        html: `<p>${lines.slice(0, 4).map(escapeHtml).join("<br>")}</p><p style="white-space:pre-wrap">${escapeHtml(r.message || "(no message)")}</p>`,
+      }),
+    });
+    if (resp.ok) return "sent";
+    return `error:${resp.status} ${(await resp.text()).slice(0, 200)}`;
+  } catch (e) {
+    return `error:${String((e && e.message) || e).slice(0, 200)}`;
+  }
 }
 
 function clean(v, max) {
@@ -58,7 +105,13 @@ export async function onRequestPost({ request, env }) {
 
     // Clave con fecha delante: el listado sale en orden cronológico y una
     // segunda petición del mismo medio no pisa la primera.
-    await env.SUBSCRIBERS.put(`press:${now}:${email}`, JSON.stringify(record));
+    const key = `press:${now}:${email}`;
+    await env.SUBSCRIBERS.put(key, JSON.stringify(record));
+
+    // El resultado del aviso queda en el registro, para ver en `iskitch-ops.sh
+    // press` si alguna petición no llegó por correo.
+    record.notified = await notify(env, record);
+    try { await env.SUBSCRIBERS.put(key, JSON.stringify(record)); } catch (_) {}
 
     return jsonResponse({ ok: true });
   } catch (e) {
