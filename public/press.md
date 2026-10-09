@@ -4,7 +4,7 @@
 
 Writing about Mac apps for a publication, blog, newsletter or channel? We'll give you a free code so you can test the full version of iSkitch before you write.
 
-**Request a review code:** email hello@iskitch.com with your name, where you write (with URL), the language of the article and, if you know it, the planned publication date. The developer replies in person, usually within 24–48 hours (Mon–Fri), with a Mac App Store code. Codes expire 28 days after we create them, so we send them when you're ready to test. Codes for a reader giveaway are also available.
+**Request a review code:** use the form at https://iskitch.com/press or email hello@iskitch.com with your name, where you write (with URL), the language of the article and, if you know it, the planned publication date. The developer replies in person, usually within 24–48 hours (Mon–Fri), with a Mac App Store code. Codes expire 28 days after we create them, so we send them when you're ready to test. Codes for a reader giveaway are also available.
 
 ## Fact sheet
 

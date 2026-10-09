@@ -4,6 +4,7 @@ import Nav from "../../components/Nav.astro";
 import Footer from "../../components/Footer.astro";
 import baseT from "../../i18n/es.json";
 import { PRESS, formatPressDate } from "../../components/press";
+import PressRequestForm from "../../components/PressRequestForm.astro";
 const t = { ...baseT,
   switcher: { label: "EN", href: "/press" },
   meta: {
@@ -22,31 +23,27 @@ const releases = (t.changelog?.versions ?? []).filter((v: any) => !v.comingSoon)
 const latest = releases[0];
 const first = releases[releases.length - 1];
 
-const subject = "Solicitud de código para reseña — iSkitch";
-const body = [
-  "Hola, David:",
-  "",
-  "Me gustaría un código para probar iSkitch.",
-  "",
-  "Nombre:",
-  "Medio / blog / canal:",
-  "URL:",
-  "Idioma del artículo:",
-  "Fecha prevista de publicación (si la hay):",
-  "",
-  "¡Gracias!",
-].join("\n");
-const mailto = `mailto:hello@iskitch.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+const formStrings = {
+  name: "Nombre",
+  email: "Correo electrónico",
+  url: "URL del medio, blog o canal",
+  url_hint: "Donde se publicará tu artículo o vídeo.",
+  message: "Mensaje (opcional)",
+  message_hint: "Cuéntanos sobre tu público, el idioma y cuándo piensas publicar, o lo que quieras.",
+  consent: 'Acepto que iSkitch guarde estos datos para responder a mi petición. Ver la <a href="/es/privacy">política de privacidad</a>.',
+  submit: "Pedir un código de prueba",
+  sending: "Enviando…",
+  success: "¡Gracias! Hemos recibido tu petición y te contestaremos por correo, normalmente en 24-48 horas (de lunes a viernes).",
+  error: "Algo ha fallado. Vuelve a intentarlo o escribe a hello@iskitch.com.",
+};
 ---
 <Layout t={t} markdownPath="/es/press.md" alternates={alternates}>
   <Nav t={t} />
   <main class="prose">
     <h1>Prensa</h1>
     <p class="press-lead">¿Escribes sobre apps de Mac en un medio, un blog, una newsletter o un canal? Te damos un código gratuito para que pruebes la versión completa de iSkitch antes de escribir.</p>
-    <p class="press-cta">
-      <a class="btn btn-primary btn-lg" href={mailto}>Pedir un código de prueba</a>
-    </p>
-    <p>El botón abre un correo a <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>. Cuéntanos tu nombre y dónde escribes, y el propio desarrollador te contesta, normalmente en 24-48 horas (de lunes a viernes), con un código de la Mac App Store. Los códigos caducan 28 días después de crearlos, así que los mandamos cuando vayas a probar la app. Si quieres hacer un sorteo, también podemos darte códigos para tus lectores.</p>
+    <PressRequestForm s={formStrings} />
+    <p>El propio desarrollador te contesta, normalmente en 24-48 horas (de lunes a viernes), con un código de la Mac App Store. Los códigos caducan 28 días después de crearlos, así que los mandamos cuando vayas a probar la app. Si quieres hacer un sorteo, también podemos darte códigos para tus lectores. ¿Prefieres el correo? Escribe a <a href="mailto:hello@iskitch.com">hello@iskitch.com</a>.</p>
 
     <h2>Ficha</h2>
     <dl class="press-facts">
@@ -100,8 +97,6 @@ const mailto = `mailto:hello@iskitch.com?subject=${encodeURIComponent(subject)}&
 
 <style>
   .press-lead { font-size: 17px; color: var(--ink-1); }
-  .press-cta { margin: 24px 0; }
-  .press-cta .btn, .press-cta .btn:hover { color: var(--paper); text-decoration: none; }
   .press-facts { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
   .press-facts dt { font-weight: 600; color: var(--ink-1); font-size: 15px; line-height: 1.7; }
   .press-facts dd { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.7; }

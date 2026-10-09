@@ -1,0 +1,112 @@
+---
+// Formulario de /press para pedir un código de prueba. Envía a
+// /api/press-request, que lo guarda en KV; David lo lee con
+// `mac/tools/iskitch-ops.sh press` y contesta él con el código.
+interface Props {
+  s: {
+    name: string; email: string; url: string; url_hint: string;
+    message: string; message_hint: string;
+    consent: string; submit: string; sending: string; success: string; error: string;
+  };
+}
+const { s } = Astro.props as Props;
+---
+<form class="press-form" id="press-form" data-sending={s.sending} data-success={s.success} data-error={s.error} novalidate>
+  <div class="pf-row">
+    <label for="pf-name">{s.name}</label>
+    <input id="pf-name" name="name" type="text" required maxlength="120" autocomplete="name" />
+  </div>
+  <div class="pf-row">
+    <label for="pf-email">{s.email}</label>
+    <input id="pf-email" name="email" type="email" required maxlength="200" autocomplete="email" />
+  </div>
+  <div class="pf-row">
+    <label for="pf-url">{s.url}</label>
+    <input id="pf-url" name="url" type="text" inputmode="url" required maxlength="300" autocomplete="url" aria-describedby="pf-url-hint" />
+    <p class="pf-hint" id="pf-url-hint">{s.url_hint}</p>
+  </div>
+  <div class="pf-row">
+    <label for="pf-message">{s.message}</label>
+    <textarea id="pf-message" name="message" rows="5" maxlength="3000" aria-describedby="pf-message-hint"></textarea>
+    <p class="pf-hint" id="pf-message-hint">{s.message_hint}</p>
+  </div>
+  <input type="text" name="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" class="pf-hp" />
+  <label class="pf-consent">
+    <input type="checkbox" name="consent" required />
+    <span set:html={s.consent}></span>
+  </label>
+  <button type="submit" class="btn btn-primary btn-lg">{s.submit}</button>
+  <p class="pf-status" id="pf-status" role="status" aria-live="polite"></p>
+</form>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('press-form');
+    if (!form) return;
+    const status = document.getElementById('pf-status');
+    const submit = form.querySelector('button[type="submit"]');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // Validación del navegador: marca el primer campo que falte.
+      const bad = Array.from(form.querySelectorAll('input[required], textarea[required]')).find((el) => !el.checkValidity());
+      if (bad) { bad.reportValidity(); bad.focus(); return; }
+      const v = (n) => form.elements[n].value;
+      const payload = {
+        name: v('name'), email: v('email'), url: v('url'), message: v('message'),
+        honeypot: v('honeypot'),
+        lang: document.documentElement.lang || 'en',
+        consent: true
+      };
+      submit.disabled = true;
+      status.textContent = form.dataset.sending;
+      status.className = 'pf-status pending';
+      try {
+        const resp = await fetch('/api/press-request', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const json = await resp.json().catch(() => ({}));
+        if (resp.ok && json.ok) {
+          status.textContent = form.dataset.success;
+          status.className = 'pf-status ok';
+          form.reset();
+        } else {
+          status.textContent = form.dataset.error;
+          status.className = 'pf-status err';
+        }
+      } catch (_) {
+        status.textContent = form.dataset.error;
+        status.className = 'pf-status err';
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  })();
+</script>
+
+<style>
+  .press-form { display: flex; flex-direction: column; gap: 18px; margin: 28px 0 8px; padding: 24px; border: 1px solid var(--line-strong); border-radius: 14px; background: var(--paper); }
+  .pf-row { display: flex; flex-direction: column; gap: 6px; }
+  .pf-row label { font-weight: 600; font-size: 14px; color: var(--ink-1); }
+  .pf-row input, .pf-row textarea {
+    font: inherit; font-size: 15px; color: var(--ink-1); background: var(--paper);
+    border: 1px solid var(--line-strong); border-radius: 10px; padding: 10px 12px; width: 100%; box-sizing: border-box;
+  }
+  .pf-row textarea { resize: vertical; min-height: 110px; }
+  .pf-row input:focus-visible, .pf-row textarea:focus-visible { outline: 2px solid var(--brand-3); outline-offset: 1px; border-color: var(--brand-3); }
+  .press-form .pf-hint { margin: 0; font-size: 13px; color: var(--ink-3); line-height: 1.5; }
+  .pf-hp { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+  .pf-consent { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+  .pf-consent input { margin: 3px 0 0; width: 16px; height: 16px; accent-color: var(--brand-3); flex: 0 0 auto; }
+  .press-form .btn { align-self: flex-start; color: var(--paper); text-decoration: none; }
+  .press-form .btn:disabled { opacity: .55; cursor: not-allowed; }
+  .press-form .pf-status { margin: 0; min-height: 1.4em; font-size: 14px; font-weight: 600; }
+  .press-form .pf-status.ok { color: var(--green-ink); }
+  .press-form .pf-status.err { color: var(--brand-3); }
+  .press-form .pf-status.pending { color: var(--ink-2); font-weight: 500; }
+  @media (max-width: 560px) {
+    .press-form { padding: 18px; }
+    .press-form .btn { align-self: stretch; justify-content: center; }
+  }
+</style>

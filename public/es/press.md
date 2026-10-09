@@ -4,7 +4,7 @@
 
 ¿Escribes sobre apps de Mac en un medio, un blog, una newsletter o un canal? Te damos un código gratuito para que pruebes la versión completa de iSkitch antes de escribir.
 
-**Pedir un código de prueba:** escribe a hello@iskitch.com con tu nombre, dónde escribes (con la URL), el idioma del artículo y, si la sabes, la fecha prevista de publicación. El propio desarrollador te contesta, normalmente en 24-48 horas (de lunes a viernes), con un código de la Mac App Store. Los códigos caducan 28 días después de crearlos, así que los mandamos cuando vayas a probar la app. También hay códigos para sorteos entre lectores.
+**Pedir un código de prueba:** usa el formulario de https://iskitch.com/es/press o escribe a hello@iskitch.com con tu nombre, dónde escribes (con la URL), el idioma del artículo y, si la sabes, la fecha prevista de publicación. El propio desarrollador te contesta, normalmente en 24-48 horas (de lunes a viernes), con un código de la Mac App Store. Los códigos caducan 28 días después de crearlos, así que los mandamos cuando vayas a probar la app. También hay códigos para sorteos entre lectores.
 
 ## Ficha
 
