@@ -235,6 +235,26 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
+        "version": "1.10.2",
+        "date": "11 ottobre 2026",
+        "comingSoon": true,
+        "title": "Pronta per macOS 27",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "Trascinare l'immagine con il pulsante a forma di mano ora funziona in Slack e nelle aree di caricamento dei siti web, come quella di Gmail: iSkitch consegna un vero file PNG. Il file non si chiama più «Screenshot.png.png»."
+          },
+          {
+            "type": "fixed",
+            "text": "Su macOS 27 i menu tornano a segnare il timer di cattura, il livello di zoom e il formato di salvataggio che hai scelto. macOS 27 nasconde le immagini nei menu e iSkitch ne usava una per quel segno di spunta."
+          },
+          {
+            "type": "improved",
+            "text": "Un solo colore per i pulsanti: il rosa di iSkitch è ora il colore di evidenziazione dell'app, a meno che tu non ne abbia scelto un altro in Impostazioni di Sistema. Prima alcuni pulsanti erano rosa, altri blu e uno arancione."
+          }
+        ]
+      },
+      {
         "version": "1.10.1",
         "date": "8 ottobre 2026",
         "comingSoon": false,

@@ -235,6 +235,26 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.10.2",
+        "date": "11. Oktober 2026",
+        "comingSoon": true,
+        "title": "Bereit für macOS 27",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "Das Bild mit der Hand-Taste zu ziehen funktioniert jetzt auch in Slack und in Upload-Bereichen von Websites wie bei Gmail: iSkitch übergibt eine echte PNG-Datei. Die Datei heißt nicht mehr „Screenshot.png.png“."
+          },
+          {
+            "type": "fixed",
+            "text": "Unter macOS 27 markieren die Menüs wieder den gewählten Aufnahme-Timer, die Zoomstufe und das Speicherformat. macOS 27 blendet Bilder in Menüs aus, und iSkitch nutzte eines für dieses Häkchen."
+          },
+          {
+            "type": "improved",
+            "text": "Eine Farbe für alle Tasten: Das Pink von iSkitch ist jetzt die Akzentfarbe der App, außer du hast in den Systemeinstellungen eine andere gewählt. Vorher waren manche Tasten pink, andere blau und eine orange."
+          }
+        ]
+      },
+      {
         "version": "1.10.1",
         "date": "8. Oktober 2026",
         "comingSoon": false,

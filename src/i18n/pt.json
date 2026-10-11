@@ -235,6 +235,26 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.10.2",
+        "date": "11 de outubro de 2026",
+        "comingSoon": true,
+        "title": "Pronta para o macOS 27",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "Arrastar a imagem com o botão da mão já funciona no Slack e nas áreas de carregamento dos sites, como a do Gmail: o iSkitch entrega um ficheiro PNG verdadeiro. O ficheiro já não se chama «Screenshot.png.png»."
+          },
+          {
+            "type": "fixed",
+            "text": "No macOS 27, os menus voltam a assinalar o temporizador de captura, o nível de zoom e o formato de gravação que escolheu. O macOS 27 oculta as imagens nos menus e o iSkitch usava uma para essa marca."
+          },
+          {
+            "type": "improved",
+            "text": "Uma só cor nos botões: o rosa do iSkitch é agora a cor de destaque da app, a menos que tenha escolhido outra nas Definições do Sistema. Antes, alguns botões eram rosa, outros azuis e um laranja."
+          }
+        ]
+      },
+      {
         "version": "1.10.1",
         "date": "8 de outubro de 2026",
         "comingSoon": false,

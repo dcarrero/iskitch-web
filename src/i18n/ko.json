@@ -235,6 +235,26 @@
     "lead": "iSkitch의 모든 릴리스를 최신순으로. 업데이트는 앱을 보유한 모든 분께 무료입니다.",
     "versions": [
       {
+        "version": "1.10.2",
+        "date": "2026년 10월 11일",
+        "comingSoon": true,
+        "title": "macOS 27 지원",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "손 모양 버튼으로 이미지를 드래그하면 이제 Slack과 Gmail 같은 웹사이트의 업로드 영역에도 놓을 수 있습니다. iSkitch가 실제 PNG 파일을 넘겨줍니다. 파일 이름이 더 이상 'Screenshot.png.png'가 되지 않습니다."
+          },
+          {
+            "type": "fixed",
+            "text": "macOS 27에서 메뉴가 다시 선택한 캡처 타이머, 확대/축소 수준 및 저장 포맷을 체크 표시합니다. macOS 27은 메뉴의 이미지를 숨기는데, iSkitch는 이 체크 표시에 이미지를 사용했습니다."
+          },
+          {
+            "type": "improved",
+            "text": "버튼 색상 통일: 이제 iSkitch의 분홍색이 앱의 강조 색상이며, 시스템 설정에서 다른 강조 색상을 선택했다면 그 색상이 적용됩니다. 이전에는 일부 버튼은 분홍색, 일부는 파란색, 하나는 주황색이었습니다."
+          }
+        ]
+      },
+      {
         "version": "1.10.1",
         "date": "2026년 10월 8일",
         "comingSoon": false,

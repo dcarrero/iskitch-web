@@ -239,6 +239,26 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.10.2",
+        "date": "October 11, 2026",
+        "comingSoon": true,
+        "title": "Ready for macOS 27",
+        "items": [
+          {
+            "type": "fixed",
+            "text": "Dragging the image with the hand button now works in Slack and in web upload areas such as Gmail's: iSkitch hands over a real PNG file. The file is no longer named “Screenshot.png.png”."
+          },
+          {
+            "type": "fixed",
+            "text": "On macOS 27, the menus once again mark the capture timer, zoom level and save format you have chosen. macOS 27 hides images in menus, and iSkitch used one for that checkmark."
+          },
+          {
+            "type": "improved",
+            "text": "One color for buttons: iSkitch pink is now the app's accent color, or the accent color you picked in System Settings takes over. Before, some buttons were pink, others blue and one orange."
+          }
+        ]
+      },
+      {
         "version": "1.10.1",
         "date": "October 8, 2026",
         "comingSoon": false,
