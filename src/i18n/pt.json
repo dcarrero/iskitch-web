@@ -236,8 +236,8 @@
     "versions": [
       {
         "version": "1.10.2",
-        "date": "11 de outubro de 2026",
-        "comingSoon": true,
+        "date": "12 de outubro de 2026",
+        "comingSoon": false,
         "title": "Pronta para o macOS 27",
         "items": [
           {

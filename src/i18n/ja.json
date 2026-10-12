@@ -236,8 +236,8 @@
     "versions": [
       {
         "version": "1.10.2",
-        "date": "2026年10月11日",
-        "comingSoon": true,
+        "date": "2026年10月12日",
+        "comingSoon": false,
         "title": "macOS 27に対応",
         "items": [
           {
