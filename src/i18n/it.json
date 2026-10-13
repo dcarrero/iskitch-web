@@ -235,6 +235,22 @@
     "lead": "Tutte le versioni di iSkitch, dalla più recente alla prima. Gli aggiornamenti sono gratuiti per chi possiede l’app.",
     "versions": [
       {
+        "version": "1.10.3",
+        "date": "13 ottobre 2026",
+        "comingSoon": true,
+        "title": "Ricorda la tua freccia e lo spessore",
+        "items": [
+          {
+            "type": "improved",
+            "text": "Lo stile della punta di freccia e lo spessore della linea che scegli nella barra degli strumenti ora vengono ricordati: la finestra dell'editor successiva, e iSkitch dopo un riavvio, partono con quei valori. Prima venivano conservati solo se li impostavi in Impostazioni ▸ Editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Impostazioni ▸ Editor ora mostra lo spessore che l'editor usa davvero (indicava 4 px mentre l'editor partiva da 20), e il suo cursore arriva a 60 px, come nella barra degli strumenti."
+          }
+        ]
+      },
+      {
         "version": "1.10.2",
         "date": "12 ottobre 2026",
         "comingSoon": false,

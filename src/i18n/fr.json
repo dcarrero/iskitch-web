@@ -235,6 +235,22 @@
     "lead": "Toutes les versions d’iSkitch, de la plus récente à la première. Les mises à jour sont gratuites pour tous les détenteurs de l’app.",
     "versions": [
       {
+        "version": "1.10.3",
+        "date": "13 octobre 2026",
+        "comingSoon": true,
+        "title": "Retient votre flèche et votre épaisseur de trait",
+        "items": [
+          {
+            "type": "improved",
+            "text": "Le style de pointe de flèche et l'épaisseur de trait que vous choisissez dans la barre d'outils sont désormais mémorisés : la fenêtre d'éditeur suivante, et iSkitch après un redémarrage, s'ouvrent avec ces valeurs. Auparavant, ils n'étaient conservés que si vous les définissiez dans Réglages ▸ Éditeur."
+          },
+          {
+            "type": "fixed",
+            "text": "Réglages ▸ Éditeur affiche désormais l'épaisseur de trait réellement utilisée par l'éditeur (il indiquait 4 px alors que l'éditeur démarrait à 20), et son curseur va jusqu'à 60 px, comme dans la barre d'outils."
+          }
+        ]
+      },
+      {
         "version": "1.10.2",
         "date": "12 octobre 2026",
         "comingSoon": false,

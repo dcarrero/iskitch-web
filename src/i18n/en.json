@@ -239,6 +239,22 @@
     "lead": "Every iSkitch release, newest first. Updates are free for everyone who owns the app.",
     "versions": [
       {
+        "version": "1.10.3",
+        "date": "October 13, 2026",
+        "comingSoon": true,
+        "title": "Remembers your arrow and line width",
+        "items": [
+          {
+            "type": "improved",
+            "text": "The arrowhead style and line width you pick in the toolbar are now remembered: the next editor window, and iSkitch after a restart, start with them. Before, they were only kept if you set them in Settings ▸ Editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Settings ▸ Editor now shows the line width the editor really uses (it said 4 px while the editor started at 20), and its slider goes up to 60 px, like the toolbar."
+          }
+        ]
+      },
+      {
         "version": "1.10.2",
         "date": "October 12, 2026",
         "comingSoon": false,

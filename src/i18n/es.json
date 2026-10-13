@@ -239,6 +239,22 @@
     "lead": "Todas las versiones de iSkitch, de la más reciente a la primera. Las actualizaciones son gratuitas para quien ya tiene la app.",
     "versions": [
       {
+        "version": "1.10.3",
+        "date": "13 de octubre de 2026",
+        "comingSoon": true,
+        "title": "Recuerda tu flecha y tu grosor",
+        "items": [
+          {
+            "type": "improved",
+            "text": "El estilo de punta de flecha y el grosor que eliges en la barra se recuerdan: la siguiente ventana del editor, y iSkitch después de reiniciar, arrancan con ellos. Antes solo se conservaban si los fijabas en Ajustes ▸ Editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Ajustes ▸ Editor muestra ahora el grosor que usa de verdad el editor (ponía 4 px y el editor arrancaba en 20), y su deslizador llega a 60 px, como la barra."
+          }
+        ]
+      },
+      {
         "version": "1.10.2",
         "date": "12 de octubre de 2026",
         "comingSoon": false,

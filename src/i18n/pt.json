@@ -235,6 +235,22 @@
     "lead": "Todas as versões do iSkitch, da mais recente à primeira. As atualizações são gratuitas para quem já tem a app.",
     "versions": [
       {
+        "version": "1.10.3",
+        "date": "13 de outubro de 2026",
+        "comingSoon": true,
+        "title": "Memoriza a sua seta e a espessura",
+        "items": [
+          {
+            "type": "improved",
+            "text": "O estilo da ponta da seta e a espessura da linha que escolhe na barra de ferramentas passam a ficar memorizados: a janela seguinte do editor, e o iSkitch depois de reiniciar, começam com eles. Antes só se mantinham se os definisse em Definições ▸ Editor."
+          },
+          {
+            "type": "fixed",
+            "text": "Definições ▸ Editor mostra agora a espessura que o editor usa de facto (indicava 4 px e o editor começava em 20), e o seu controlo de deslize vai até 60 px, como na barra de ferramentas."
+          }
+        ]
+      },
+      {
         "version": "1.10.2",
         "date": "12 de outubro de 2026",
         "comingSoon": false,

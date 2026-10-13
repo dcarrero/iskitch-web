@@ -235,6 +235,22 @@
     "lead": "Alle iSkitch-Versionen, neueste zuerst. Updates sind für alle Besitzer der App kostenlos.",
     "versions": [
       {
+        "version": "1.10.3",
+        "date": "13. Oktober 2026",
+        "comingSoon": true,
+        "title": "Merkt sich deinen Pfeil und deine Linienstärke",
+        "items": [
+          {
+            "type": "improved",
+            "text": "Den Stil der Pfeilspitze und die Linienstärke, die du in der Symbolleiste wählst, merkt sich iSkitch jetzt: Das nächste Editorfenster und iSkitch nach einem Neustart beginnen damit. Bisher blieben sie nur erhalten, wenn du sie unter Einstellungen ▸ Editor festgelegt hattest."
+          },
+          {
+            "type": "fixed",
+            "text": "Einstellungen ▸ Editor zeigt jetzt die Linienstärke, die der Editor tatsächlich verwendet (dort stand 4 px, während der Editor mit 20 startete), und der Schieberegler reicht wie in der Symbolleiste bis 60 px."
+          }
+        ]
+      },
+      {
         "version": "1.10.2",
         "date": "12. Oktober 2026",
         "comingSoon": false,
