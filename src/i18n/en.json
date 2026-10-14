@@ -240,8 +240,8 @@
     "versions": [
       {
         "version": "1.10.3",
-        "date": "October 13, 2026",
-        "comingSoon": true,
+        "date": "October 14, 2026",
+        "comingSoon": false,
         "title": "Remembers your arrow and line width",
         "items": [
           {

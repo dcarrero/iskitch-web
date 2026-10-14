@@ -236,8 +236,8 @@
     "versions": [
       {
         "version": "1.10.3",
-        "date": "2026年10月13日",
-        "comingSoon": true,
+        "date": "2026年10月14日",
+        "comingSoon": false,
         "title": "矢印と線の太さを記憶",
         "items": [
           {

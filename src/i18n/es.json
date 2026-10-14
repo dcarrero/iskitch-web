@@ -240,8 +240,8 @@
     "versions": [
       {
         "version": "1.10.3",
-        "date": "13 de octubre de 2026",
-        "comingSoon": true,
+        "date": "14 de octubre de 2026",
+        "comingSoon": false,
         "title": "Recuerda tu flecha y tu grosor",
         "items": [
           {
